@@ -1,0 +1,1 @@
+[comms-daemon] root=<local>/model-training interval=30s scope=grok

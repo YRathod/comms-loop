@@ -1,0 +1,24 @@
+{
+ "file": "data/hotpot_heldout_v7.jsonl",
+ "sha256": "b5830085312090204214e437d77b7b2fec4cf943ef2824757e0d9091015853e4",
+ "n": 400,
+ "seed": 20260923,
+ "pool_after_exclusions": 4905,
+ "excluded_files": [
+  "data/hotpot_heldout_v1.jsonl",
+  "data/hotpot_dev2_v1.jsonl",
+  "data/hotpot_dev3_v1.jsonl",
+  "data/hotpot_heldout_v2.jsonl",
+  "data/hotpot_heldout_v3.jsonl",
+  "data/hotpot_heldout_v4.jsonl",
+  "data/hotpot_heldout_v5.jsonl",
+  "data/hotpot_heldout_v6.jsonl"
+ ],
+ "overlap_with_used_ids": 0,
+ "types": {
+  "comparison": 77,
+  "bridge": 323
+ },
+ "built_utc": "2026-09-15T18:49:39Z",
+ "key": "KEYS.md #15"
+}

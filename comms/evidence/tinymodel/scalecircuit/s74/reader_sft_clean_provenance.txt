@@ -1,0 +1,27 @@
+{
+ "1_split": {
+  "bad": 0,
+  "n": 1903
+ },
+ "2_exact_question": {
+  "bad": 0
+ },
+ "3_content_3gram": {
+  "share": 0.0408701125009834,
+  "null_mean": 0.045095958735171845,
+  "p95": 0.04714170692431562,
+  "p99": 0.04745695626360578,
+  "verdict": "PASS"
+ },
+ "4_answer_leak": {
+  "rows_with_anchor_and_answer": 0,
+  "anchors_checked": 2077,
+  "flagged": []
+ },
+ "info_shared_paragraph_title_with_heldout_context": {
+  "rows": 1067,
+  "note": "Wikipedia overlap between train and dev contexts; reported, not a leg"
+ }
+}
+verdict CLEAN
+stamp written (verdict CLEAN)

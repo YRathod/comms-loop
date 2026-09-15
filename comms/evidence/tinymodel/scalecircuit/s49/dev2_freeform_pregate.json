@@ -1,0 +1,5563 @@
+{
+ "summary": {
+  "f1_sp": 0.46867360417360415,
+  "f1_chain": 0.4619506604506604,
+  "f1_retrieval": 0.4766324786324786,
+  "f1_iterative": 0.4826853146853147,
+  "f1_iterative_notes": 0.5521086691086691,
+  "f1_superset": 0.4630233421549211,
+  "f1_superset_notes": 0.5607039072039072,
+  "f1_superset_fallback": 0.46787182700340596,
+  "f1_select": 0.47867360417360416,
+  "f1_iterative_fallback": 0.47746581196581195,
+  "n": 100,
+  "oracle_union": 0.6598705738705739,
+  "chain_wins": 16,
+  "chain_losses": 17,
+  "retrieval_wins": 11,
+  "retrieval_losses": 8,
+  "iterative_wins": 11,
+  "iterative_losses": 8,
+  "iterative_notes_wins": 20,
+  "iterative_notes_losses": 9,
+  "superset_wins": 7,
+  "superset_losses": 8,
+  "superset_notes_wins": 20,
+  "superset_notes_losses": 8,
+  "superset_fallback_wins": 7,
+  "superset_fallback_losses": 7,
+  "select_wins": 3,
+  "select_losses": 1,
+  "iterative_fallback_wins": 9,
+  "iterative_fallback_losses": 7
+ },
+ "args": {
+  "adapter": "models/tagger_lora_0.5b",
+  "base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lstm": "checkpoints/compare/decomp_filter_lstm.pt",
+  "docs": "0-99",
+  "out": "scale/results/pipeline_dev2_freeform_pregate.json",
+  "max_seconds": 7200,
+  "decomposer": "models/decomp_pregate_1.5b",
+  "decomposer_base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "data": "data/hotpot_dev2_v1.jsonl",
+  "budget_tokens": 3000,
+  "retrieve_k": 6,
+  "wiring_k": 4
+ },
+ "partial": false,
+ "rows": [
+  {
+   "doc": 0,
+   "q": "What collaboration with DJ Muggs did Gary Grice participate do in 2005?",
+   "gold": [
+    "Grandmasters"
+   ],
+   "tag": "H1: Which collaboration with DJ Muggs did Gary Grice participate in? | H2: NA",
+   "key": "NA",
+   "hops": [
+    [
+     "free",
+     "Which collaboration with DJ Muggs did Gary Grice participate in?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Grandmasters",
+   "chain": "Grandmasters",
+   "retrieval": "Grandmasters",
+   "iterative": "Grandmasters",
+   "iterative_notes": "Grandmasters",
+   "superset": "Grandmasters",
+   "superset_notes": "Grandmasters",
+   "superset_fallback": "Grandmasters",
+   "select": "Grandmasters",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Grandmasters",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which collaboration with DJ Muggs did Gary Grice participate in?",
+     "Grandmasters",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which collaboration with DJ Muggs did Gary Grice participate in?",
+     "Pain Language",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 1,
+   "q": "Which became a Cathedral first St Chad's Cathedral, Birmingham or Chelmsford Cathedral?",
+   "gold": [
+    "Metropolitan Cathedral Church and Basilica of Saint Chad"
+   ],
+   "tag": "NA",
+   "key": "writer of publisher of employer of leader of Around the World in 80 Days ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "St Chad's Cathedral, Birmingham",
+   "chain": "St Chad's Cathedral, Birmingham",
+   "retrieval": "St Chad's Cathedral, Birmingham",
+   "iterative": "St Chad's Cathedral, Birmingham",
+   "iterative_notes": "St Chad's Cathedral, Birmingham",
+   "superset": "St Chad's Cathedral, Birmingham",
+   "superset_notes": "St Chad's Cathedral, Birmingham",
+   "superset_fallback": "St Chad's Cathedral, Birmingham",
+   "select": "St Chad's Cathedral, Birmingham",
+   "select_how": "single-pass",
+   "f1_select": 0.3076923076923077,
+   "iterative_fallback": "St Chad's Cathedral, Birmingham",
+   "f1_iterative_fallback": 0.3076923076923077,
+   "f1_sp": 0.3076923076923077,
+   "f1_chain": 0.3076923076923077,
+   "f1_retrieval": 0.3076923076923077,
+   "f1_iterative": 0.3076923076923077,
+   "f1_iterative_notes": 0.3076923076923077,
+   "f1_superset": 0.3076923076923077,
+   "f1_superset_notes": 0.3076923076923077,
+   "f1_superset_fallback": 0.3076923076923077,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "St Chad's Cathedral, Birmingham",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 2,
+   "q": " Heaven starred what Australian actress who portrayed Katharine Hepburn in the 2004 film \"The Aviator?\"",
+   "gold": [
+    "Catherine Elise Blanchett"
+   ],
+   "tag": "H1: Which Australian actress portrayed Katharine Hepburn in the 2004 film \"The Aviator\"? | H2: NA",
+   "key": "home of employer of Keith Nichol ?",
+   "hops": [
+    [
+     "free",
+     "Which Australian actress portrayed Katharine Hepburn in the 2004 film \"The Aviator\"?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Cate Blanchett",
+   "chain": "Cate Blanchett",
+   "retrieval": "Cate Blanchett",
+   "iterative": "Cate Blanchett",
+   "iterative_notes": "Cate Blanchett",
+   "superset": "Cate Blanchett",
+   "superset_notes": "Cate Blanchett",
+   "superset_fallback": "Cate Blanchett",
+   "select": "Cate Blanchett",
+   "select_how": "agree",
+   "f1_select": 0.4,
+   "iterative_fallback": "Cate Blanchett",
+   "f1_iterative_fallback": 0.4,
+   "f1_sp": 0.4,
+   "f1_chain": 0.4,
+   "f1_retrieval": 0.4,
+   "f1_iterative": 0.4,
+   "f1_iterative_notes": 0.4,
+   "f1_superset": 0.4,
+   "f1_superset_notes": 0.4,
+   "f1_superset_fallback": 0.4,
+   "trace": [
+    [
+     "Which Australian actress portrayed Katharine Hepburn in the 2004 film \"The Aviator\"?",
+     "Cate Blanchett",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Australian actress portrayed Katharine Hepburn in the 2004 film \"The Aviator\"?",
+     "Cate Blanchett",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 3,
+   "q": " \"JK Wedding Entrance Dance\" is a viral video that uses a song by a rapper whose first album was certified what?",
+   "gold": [
+    "double platinum"
+   ],
+   "tag": "H1: Which rapper released a song used in the viral video \"JK Wedding Entrance Dance\"? | H2: What was the certification of #1's first album?",
+   "key": "country of employer of Gary L. Bennett ?",
+   "hops": [
+    [
+     "free",
+     "Which rapper released a song used in the viral video \"JK Wedding Entrance Dance\"?"
+    ],
+    [
+     "free",
+     "What was the certification of #1's first album?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Chris Brown's first album was certified double platinum.",
+   "chain": "double platinum",
+   "retrieval": "double platinum",
+   "iterative": "double platinum",
+   "iterative_notes": "double platinum",
+   "superset": "Chris Brown self-titled debut studio album the first was certified double platinum by the Recording Industry Association of America (RIAA",
+   "superset_notes": "double platinum",
+   "superset_fallback": "Chris Brown self-titled debut studio album the first was certified double platinum by the Recording Industry Association of America (RIAA",
+   "select": "Chris Brown's first album was certified double platinum.",
+   "select_how": "undecided->sp",
+   "f1_select": 0.3636363636363636,
+   "iterative_fallback": "double platinum",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 0.3636363636363636,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.1904761904761905,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.1904761904761905,
+   "trace": [
+    [
+     "Which rapper released a song used in the viral video \"JK Wedding Entrance Dance\"?",
+     "Chris Brown",
+     ""
+    ],
+    [
+     "What was the certification of Chris Brown's first album?",
+     "double platinum",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which rapper released a song used in the viral video \"JK Wedding Entrance Dance\"?",
+     "Chris Brown",
+     ""
+    ],
+    [
+     "What was the certification of Chris Brown's first album?",
+     "double platinum",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 4,
+   "q": "Where does the founder of The International Grenfell Association act as a missionary to?",
+   "gold": [
+    "Newfoundland and Labrador"
+   ],
+   "tag": "H1: Who founded The International Grenfell Association? | H2: Where did #1 act as a missionary?",
+   "key": "country of producer of Atom Egoyan ?",
+   "hops": [
+    [
+     "free",
+     "Who founded The International Grenfell Association?"
+    ],
+    [
+     "free",
+     "Where did #1 act as a missionary?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "northern Newfoundland and the coast of Labrador",
+   "chain": "Newfoundland and Labrador",
+   "retrieval": "northern Newfoundland and the coast of Labrador",
+   "iterative": "Newfoundland and Labrador",
+   "iterative_notes": "Newfoundland and Labrador",
+   "superset": "Newfoundland and Labrador",
+   "superset_notes": "Newfoundland and Labrador",
+   "superset_fallback": "Newfoundland and Labrador",
+   "select": "northern Newfoundland and the coast of Labrador",
+   "select_how": "undecided->sp",
+   "f1_select": 0.6666666666666666,
+   "iterative_fallback": "Newfoundland and Labrador",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who founded The International Grenfell Association?",
+     "Sir Wilfred Grenfell",
+     ""
+    ],
+    [
+     "Where did Sir Wilfred Grenfell act as a missionary?",
+     "Newfoundland and Labrador",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who founded The International Grenfell Association?",
+     "Sir Wilfred Grenfell",
+     ""
+    ],
+    [
+     "Where did Sir Wilfred Grenfell act as a missionary?",
+     "Newfoundland and Labrador",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 5,
+   "q": " If You Ever Get Lonely was covered by what Lyric Street Records-affiliated band?",
+   "gold": [
+    "Love and Theft"
+   ],
+   "tag": "H1: Which band covered \"If You Ever Get Lonely\"? | H2: Is #1 a Lyric Street Records-affiliated band?",
+   "key": "employer of leader of Celebrity Fifteen to One ?",
+   "hops": [
+    [
+     "free",
+     "Which band covered \"If You Ever Get Lonely\"?"
+    ],
+    [
+     "free",
+     "Is #1 a Lyric Street Records-affiliated band?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Love and Theft",
+   "chain": "yes",
+   "retrieval": "Love and Theft",
+   "iterative": "Love and Theft",
+   "iterative_notes": "Love and Theft",
+   "superset": "Love and Theft",
+   "superset_notes": "Love and Theft",
+   "superset_fallback": "Love and Theft",
+   "select": "Love and Theft",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Love and Theft",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which band covered \"If You Ever Get Lonely\"?",
+     "Love and Theft",
+     ""
+    ],
+    [
+     "Is Love and Theft a Lyric Street Records-affiliated band?",
+     "yes",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which band covered \"If You Ever Get Lonely\"?",
+     "Love and Theft",
+     ""
+    ],
+    [
+     "Is Love and Theft a Lyric Street Records-affiliated band?",
+     "Yes",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 6,
+   "q": "Where does the team coached by someone with the nickname \"Coach K\" play?",
+   "gold": [
+    "Cameron Indoor Stadium"
+   ],
+   "tag": "H1: Who coached a team with the nickname \"Coach K\"? | H2: Where does #1's team play?",
+   "key": "home of Thirukkalacherry ?",
+   "hops": [
+    [
+     "free",
+     "Who coached a team with the nickname \"Coach K\"?"
+    ],
+    [
+     "free",
+     "Where does #1's team play?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Bowers Stadium",
+   "chain": "Bowers Stadium",
+   "retrieval": "Bowers Stadium",
+   "iterative": "Bowers Stadium",
+   "iterative_notes": "Bowers Stadium",
+   "superset": "Bowers Stadium",
+   "superset_notes": "Bowers Stadium",
+   "superset_fallback": "Bowers Stadium",
+   "select": "Bowers Stadium",
+   "select_how": "agree",
+   "f1_select": 0.4,
+   "iterative_fallback": "Bowers Stadium",
+   "f1_iterative_fallback": 0.4,
+   "f1_sp": 0.4,
+   "f1_chain": 0.4,
+   "f1_retrieval": 0.4,
+   "f1_iterative": 0.4,
+   "f1_iterative_notes": 0.4,
+   "f1_superset": 0.4,
+   "f1_superset_notes": 0.4,
+   "f1_superset_fallback": 0.4,
+   "trace": [
+    [
+     "Who coached a team with the nickname \"Coach K\"?",
+     "K. C. Jones,K. C. Keeler",
+     ""
+    ],
+    [
+     "Where does K. C. Jones,K. C. Keeler's team play?",
+     "Bowers Stadium",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who coached a team with the nickname \"Coach K\"?",
+     "George Karl",
+     ""
+    ],
+    [
+     "Where does George Karl's team play?",
+     "None of the entities mentioned in the passages play for George Karl's team.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 7,
+   "q": "The Rhymers' Club met at Ye Olde Cheshire Cheese listed as what type of house?",
+   "gold": [
+    "public"
+   ],
+   "tag": "H1: At which type of house did The Rhymers' Club meet? | H2: NA",
+   "key": "NA",
+   "hops": [
+    [
+     "free",
+     "At which type of house did The Rhymers' Club meet?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "public house",
+   "chain": "public house",
+   "retrieval": "public house",
+   "iterative": "public house",
+   "iterative_notes": "pub",
+   "superset": "public house",
+   "superset_notes": "pub",
+   "superset_fallback": "public house",
+   "select": "public house",
+   "select_how": "agree",
+   "f1_select": 0.6666666666666666,
+   "iterative_fallback": "public house",
+   "f1_iterative_fallback": 0.6666666666666666,
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "At which type of house did The Rhymers' Club meet?",
+     "public house",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "At which type of house did The Rhymers' Club meet?",
+     "pub",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 8,
+   "q": "The 1978 NBA World Championship Series had as MVP which Hall of Fame class member of 1988?",
+   "gold": [
+    "Westley Sissel Unseld"
+   ],
+   "tag": "H1: Which Hall of Fame class member won Most Valuable Player in the 1978 NBA World Championship Series? | H2: Is #1 also a member of the 1988 Hall of Fame class?",
+   "key": "attribute of Russell D. Moore ?",
+   "hops": [
+    [
+     "free",
+     "Which Hall of Fame class member won Most Valuable Player in the 1978 NBA World Championship Series?"
+    ],
+    [
+     "free",
+     "Is #1 also a member of the 1988 Hall of Fame class?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Wes Unseld",
+   "chain": "No",
+   "retrieval": "Wes Unseld",
+   "iterative": "Wes Unseld",
+   "iterative_notes": "Wes Unseld",
+   "superset": "Wes Unseld",
+   "superset_notes": "Wes Unseld",
+   "superset_fallback": "Wes Unseld",
+   "select": "Wes Unseld",
+   "select_how": "agree",
+   "f1_select": 0.4,
+   "iterative_fallback": "Wes Unseld",
+   "f1_iterative_fallback": 0.4,
+   "f1_sp": 0.4,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.4,
+   "f1_iterative": 0.4,
+   "f1_iterative_notes": 0.4,
+   "f1_superset": 0.4,
+   "f1_superset_notes": 0.4,
+   "f1_superset_fallback": 0.4,
+   "trace": [
+    [
+     "Which Hall of Fame class member won Most Valuable Player in the 1978 NBA World Championship Series?",
+     "Wes Unseld",
+     ""
+    ],
+    [
+     "Is Wes Unseld also a member of the 1988 Hall of Fame class?",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Hall of Fame class member won Most Valuable Player in the 1978 NBA World Championship Series?",
+     "Wes Unseld",
+     ""
+    ],
+    [
+     "Is Wes Unseld also a member of the 1988 Hall of Fame class?",
+     "No",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 9,
+   "q": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": "employer of leader of Fitz and The Tantrums ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "select": "No",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "No",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 10,
+   "q": "Which composer, who was a crucial figure in the transition between the Classical and Romantic eras in Western art music, wrote Piano Sonata No. 16 ?",
+   "gold": [
+    "Ludwig van Beethoven"
+   ],
+   "tag": "H1: Which composer was a crucial figure in the transition between the Classical and Romantic eras? | H2: Did #1 write Piano Sonata No. 16?",
+   "key": "attribute of writer of Chapter II ?",
+   "hops": [
+    [
+     "free",
+     "Which composer was a crucial figure in the transition between the Classical and Romantic eras?"
+    ],
+    [
+     "free",
+     "Did #1 write Piano Sonata No. 16?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ludwig van Beethoven",
+   "chain": "Yes",
+   "retrieval": "Ludwig van Beethoven",
+   "iterative": "Ludwig van Beethoven",
+   "iterative_notes": "Ludwig van Beethoven",
+   "superset": "Ludwig van Beethoven",
+   "superset_notes": "Ludwig van Beethoven",
+   "superset_fallback": "Ludwig van Beethoven",
+   "select": "Ludwig van Beethoven",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Ludwig van Beethoven",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which composer was a crucial figure in the transition between the Classical and Romantic eras?",
+     "Ludwig van Beethoven",
+     ""
+    ],
+    [
+     "Did Ludwig van Beethoven write Piano Sonata No. 16?",
+     "Yes",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which composer was a crucial figure in the transition between the Classical and Romantic eras?",
+     "Ludwig van Beethoven",
+     ""
+    ],
+    [
+     "Did Ludwig van Beethoven write Piano Sonata No. 16?",
+     "Yes",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 11,
+   "q": "Who is affiliated with more countries as a director, Robert Florey and R. G. Springsteen?",
+   "gold": [
+    "Robert Florey"
+   ],
+   "tag": "NA",
+   "key": "founder of publisher of The Greatest Event in Television History ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Robert Florey",
+   "chain": "Robert Florey",
+   "retrieval": "Robert Florey",
+   "iterative": "Robert Florey",
+   "iterative_notes": "Robert Florey",
+   "superset": "Robert Florey",
+   "superset_notes": "Robert Florey",
+   "superset_fallback": "Robert Florey",
+   "select": "Robert Florey",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Robert Florey",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Robert Florey",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 12,
+   "q": "Carlo Buccirosso had a role in a movie that premiered at what film festival?",
+   "gold": [
+    "Cannes Film Festival"
+   ],
+   "tag": "H1: Which movie did Carlo Buccirosso have a role in? | H2: At what film festival did #1 premiere?",
+   "key": "owner of producer of director of Vera Cruz ?",
+   "hops": [
+    [
+     "free",
+     "Which movie did Carlo Buccirosso have a role in?"
+    ],
+    [
+     "free",
+     "At what film festival did #1 premiere?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Cannes Film Festival",
+   "chain": "Cannes Film Festival",
+   "retrieval": "Cannes Film Festival",
+   "iterative": "Cannes Film Festival",
+   "iterative_notes": "Breckenridge Film Festival",
+   "superset": "Un'estate ai Caraibi",
+   "superset_notes": "Breckenridge Film Festival",
+   "superset_fallback": "Un'estate ai Caraibi",
+   "select": "Un'estate ai Caraibi",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Cannes Film Festival",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which movie did Carlo Buccirosso have a role in?",
+     "Un'estate ai Caraibi",
+     ""
+    ],
+    [
+     "At what film festival did Un'estate ai Caraibi premiere?",
+     "Cannes Film Festival",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which movie did Carlo Buccirosso have a role in?",
+     "Il divo\nUn'estate ai Caraibi\nUn ciclone in famiglia",
+     ""
+    ],
+    [
+     "At what film festival did Il divo\nUn'estate ai Caraibi\nUn ciclone in famiglia premiere?",
+     "Il divo premiere was not mentioned. Un'estate ai Caraibi premiered on Showtime. Un ciclone in",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 13,
+   "q": "Skyplex has which roller coaster that will become the tallest in the world when it opens in 2020?",
+   "gold": [
+    "Skyscraper"
+   ],
+   "tag": "H1: Which roller coaster at Skyplex will open in 2020? | H2: NA",
+   "key": "attribute of leader of Finally ?",
+   "hops": [
+    [
+     "free",
+     "Which roller coaster at Skyplex will open in 2020?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Skyscraper",
+   "chain": "Skyscraper",
+   "retrieval": "Skyscraper",
+   "iterative": "Skyscraper",
+   "iterative_notes": "Skyscraper",
+   "superset": "Skyscraper",
+   "superset_notes": "Skyscraper",
+   "superset_fallback": "Skyscraper",
+   "select": "Skyscraper",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Skyscraper",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which roller coaster at Skyplex will open in 2020?",
+     "Skyscraper",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which roller coaster at Skyplex will open in 2020?",
+     "Skyscraper",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 14,
+   "q": "How was Tiger Pataudi related to Iftikhar Ali Khan Pataudi?",
+   "gold": [
+    "His son"
+   ],
+   "tag": "H1: Who was Iftikhar Ali Khan Pataudi? | H2: How was #1 related to Tiger Pataudi?",
+   "key": "home of leader of Mara and Mondrem ?",
+   "hops": [
+    [
+     "free",
+     "Who was Iftikhar Ali Khan Pataudi?"
+    ],
+    [
+     "free",
+     "How was #1 related to Tiger Pataudi?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "son",
+   "chain": "Iftikhar Ali Khan Pataudi and Mansoor Ali Khan Pataudi (nicknamed Tiger Pataudi",
+   "retrieval": "son",
+   "iterative": "son",
+   "iterative_notes": "Tiger Pataudi was related to Iftikhar Ali Khan Pataudi as his father.",
+   "superset": "Tiger Pataudi was the son of Iftikhar Ali Khan Pataudi.",
+   "superset_notes": "Tiger Pataudi was related to Iftikhar Ali Khan Pataudi as his son.",
+   "superset_fallback": "son",
+   "select": "son",
+   "select_how": "agree",
+   "f1_select": 0.6666666666666666,
+   "iterative_fallback": "son",
+   "f1_iterative_fallback": 0.6666666666666666,
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.14285714285714285,
+   "f1_superset": 0.1818181818181818,
+   "f1_superset_notes": 0.2857142857142857,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Who was Iftikhar Ali Khan Pataudi?",
+     "Iftikhar Ali Khan Pataudi was the 8th Nawab of Pataudi and the captain of",
+     ""
+    ],
+    [
+     "How was Iftikhar Ali Khan Pataudi was the 8th Nawab of Pataudi and the captain of related to Tiger Pataudi?",
+     "Iftikhar Ali Khan Pataudi and Mansoor Ali Khan Pataudi (nicknamed Tiger Pataudi",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who was Iftikhar Ali Khan Pataudi?",
+     "Iftikhar Ali Khan Pataudi was the 8th Nawab of Pataudi and the captain of",
+     ""
+    ],
+    [
+     "How was Iftikhar Ali Khan Pataudi was the 8th Nawab of Pataudi and the captain of related to Tiger Pataudi?",
+     "Iftikhar Ali Khan Pataudi and Mansoor Ali Khan Pataudi were father and son.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 15,
+   "q": "Which park is larger, Timanfaya National Park or Sierra Nevada National Park?",
+   "gold": [
+    "Sierra Nevada National Park"
+   ],
+   "tag": "NA",
+   "key": "attribute of Sara Symington ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Sierra Nevada National Park",
+   "chain": "Sierra Nevada National Park",
+   "retrieval": "Sierra Nevada National Park",
+   "iterative": "Sierra Nevada National Park",
+   "iterative_notes": "Sierra Nevada National Park",
+   "superset": "Sierra Nevada National Park",
+   "superset_notes": "Sierra Nevada National Park",
+   "superset_fallback": "Sierra Nevada National Park",
+   "select": "Sierra Nevada National Park",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Sierra Nevada National Park",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Sierra Nevada National Park",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 16,
+   "q": " The 1919 Mississippi gubernatorial election Incumbent Democrat was a master of what?",
+   "gold": [
+    "filibuster"
+   ],
+   "tag": "H1: Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election? | H2: What was the incumbent Democrat in #1 a master of?",
+   "key": "leader of Valencia CF [ retired ] ?",
+   "hops": [
+    [
+     "free",
+     "Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election?"
+    ],
+    [
+     "free",
+     "What was the incumbent Democrat in #1 a master of?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "term-limit",
+   "chain": "master of filibuster",
+   "retrieval": "winning the primary",
+   "iterative": "Theodore G. Bilbo was a master of filibuster",
+   "iterative_notes": "master of filibuster",
+   "superset": "bully",
+   "superset_notes": "master of filibuster",
+   "superset_fallback": "bully",
+   "select": "term-limit",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "term-limit",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.5,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.25,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election?",
+     "Theodore G. Bilbo",
+     ""
+    ],
+    [
+     "What was the incumbent Democrat in Theodore G. Bilbo a master of?",
+     "master of filibuster",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election?",
+     "Theodore G. Bilbo",
+     ""
+    ],
+    [
+     "What was the incumbent Democrat in Theodore G. Bilbo a master of?",
+     "master of filibuster",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 17,
+   "q": "Which Olympic game featured Boules and happened right before medals started to be awarded?",
+   "gold": [
+    "The Summer Olympic Games"
+   ],
+   "tag": "H1: Which Olympic games were held before medals began being awarded? | H2: Did #1 feature boules?",
+   "key": "employer of Richard Darman [ actor ] ?",
+   "hops": [
+    [
+     "free",
+     "Which Olympic games were held before medals began being awarded?"
+    ],
+    [
+     "free",
+     "Did #1 feature boules?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "1900 Summer Olympics",
+   "chain": "No",
+   "retrieval": "1900 Summer Olympics",
+   "iterative": "1900 Summer Olympics",
+   "iterative_notes": "1900 Summer Olympics",
+   "superset": "1900 Summer Olympics",
+   "superset_notes": "1900 Summer Olympics",
+   "superset_fallback": "1900 Summer Olympics",
+   "select": "1900 Summer Olympics",
+   "select_how": "agree",
+   "f1_select": 0.3333333333333333,
+   "iterative_fallback": "1900 Summer Olympics",
+   "f1_iterative_fallback": 0.3333333333333333,
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.3333333333333333,
+   "f1_iterative": 0.3333333333333333,
+   "f1_iterative_notes": 0.3333333333333333,
+   "f1_superset": 0.3333333333333333,
+   "f1_superset_notes": 0.3333333333333333,
+   "f1_superset_fallback": 0.3333333333333333,
+   "trace": [
+    [
+     "Which Olympic games were held before medals began being awarded?",
+     "1896 Summer Olympic Games",
+     ""
+    ],
+    [
+     "Did 1896 Summer Olympic Games feature boules?",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Olympic games were held before medals began being awarded?",
+     "1896",
+     ""
+    ],
+    [
+     "Did 1896 feature boules?",
+     "No",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 18,
+   "q": "Which movie is a documentary about \"Beowulf & Grendel\", between My Kid Could Paint That and Wrath of Gods?",
+   "gold": [
+    "Wrath of Gods"
+   ],
+   "tag": "NA",
+   "key": "publisher of brother of Lightning ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Wrath of Gods",
+   "chain": "Wrath of Gods",
+   "retrieval": "Wrath of Gods",
+   "iterative": "Wrath of Gods",
+   "iterative_notes": "Wrath of Gods",
+   "superset": "Wrath of Gods",
+   "superset_notes": "Wrath of Gods",
+   "superset_fallback": "Wrath of Gods",
+   "select": "Wrath of Gods",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Wrath of Gods",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Wrath of Gods",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 19,
+   "q": "What award won by only twelve people has a man who Ted Kooshian has performed with won?",
+   "gold": [
+    "EGOT"
+   ],
+   "tag": "H1: Which man who Ted Kooshian has performed with won an award given to only twelve people? | H2: NA",
+   "key": "leader of producer of Nobody's Child ?",
+   "hops": [
+    [
+     "free",
+     "Which man who Ted Kooshian has performed with won an award given to only twelve people?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "EGOT",
+   "chain": "Marvin Hamlisch",
+   "retrieval": "EGOT",
+   "iterative": "EGOT",
+   "iterative_notes": "EGOT",
+   "superset": "EGOT",
+   "superset_notes": "Academy Award for Best Film Editing",
+   "superset_fallback": "EGOT",
+   "select": "EGOT",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "EGOT",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which man who Ted Kooshian has performed with won an award given to only twelve people?",
+     "Marvin Hamlisch",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which man who Ted Kooshian has performed with won an award given to only twelve people?",
+     "Marvin Hamlisch",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 20,
+   "q": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of Australia from 2010 to when",
+   "gold": [
+    "2013"
+   ],
+   "tag": "H1: Who was Tim Mathieson's partner? | H2: Which prime minister was #1 the 27th PM of Australia?",
+   "key": "owner of publisher of Whatever Happened to... Robot Jones? ?",
+   "hops": [
+    [
+     "free",
+     "Who was Tim Mathieson's partner?"
+    ],
+    [
+     "free",
+     "Which prime minister was #1 the 27th PM of Australia?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Phil Lloyd played Tim Mathieson, the partner of prime minister Julia Gillard, who was the 27th",
+   "chain": "Julia Gillard",
+   "retrieval": "Julia Gillard",
+   "iterative": "Phil Lloyd played Tim Mathieson, the partner of prime minister Julia Gillard, who was the 27th",
+   "iterative_notes": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of",
+   "superset": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of",
+   "superset_notes": "Julia Gillard",
+   "superset_fallback": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of",
+   "select": "Phil Lloyd played Tim Mathieson, the partner of prime minister Julia Gillard, who was the 27th",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Phil Lloyd played Tim Mathieson, the partner of prime minister Julia Gillard, who was the 27th",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who was Tim Mathieson's partner?",
+     "Julia Gillard",
+     ""
+    ],
+    [
+     "Which prime minister was Julia Gillard the 27th PM of Australia?",
+     "Julia Gillard",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who was Tim Mathieson's partner?",
+     "Phil Lloyd",
+     ""
+    ],
+    [
+     "Which prime minister was Phil Lloyd the 27th PM of Australia?",
+     "Phil Lloyd was the 27th PM of Australia.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 21,
+   "q": "What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",
+   "gold": [
+    "Charles Bronson"
+   ],
+   "tag": "H1: Which actor's birth name was Charles Dennis Buchinsky? | H2: Was #1 part of the Leslie Nielsen comedy?",
+   "key": "home of home of Kellyville Ridge ?",
+   "hops": [
+    [
+     "free",
+     "Which actor's birth name was Charles Dennis Buchinsky?"
+    ],
+    [
+     "free",
+     "Was #1 part of the Leslie Nielsen comedy?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Charles Bronson",
+   "chain": "No",
+   "retrieval": "Allan A. Goldstein",
+   "iterative": "Charles Bronson",
+   "iterative_notes": "None",
+   "superset": "Allan A. Goldstein",
+   "superset_notes": "None",
+   "superset_fallback": "Allan A. Goldstein",
+   "select": "Charles Bronson",
+   "select_how": "undecided->sp",
+   "f1_select": 1.0,
+   "iterative_fallback": "Charles Bronson",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which actor's birth name was Charles Dennis Buchinsky?",
+     "Charles Bronson",
+     ""
+    ],
+    [
+     "Was Charles Bronson part of the Leslie Nielsen comedy?",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which actor's birth name was Charles Dennis Buchinsky?",
+     "Charles Bronson",
+     ""
+    ],
+    [
+     "Was Charles Bronson part of the Leslie Nielsen comedy?",
+     "No",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 22,
+   "q": "Romans stars which Tamil and Telugu actress?",
+   "gold": [
+    "Nivetha Thomas"
+   ],
+   "tag": "H1: Which Roman (film) stars a Tamil actress? | H2: Does #1 also star a Telugu actress?",
+   "key": "home of Oak Beach ?",
+   "hops": [
+    [
+     "free",
+     "Which Roman (film) stars a Tamil actress?"
+    ],
+    [
+     "free",
+     "Does #1 also star a Telugu actress?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Bhumika Chawla",
+   "chain": "Bhumika Chawla",
+   "retrieval": "Bhumika Chawla, Harshvardhan Rane",
+   "iterative": "Harshvardhan Rane, Haripriya",
+   "iterative_notes": "Haripriya,Bhumika Chawla",
+   "superset": "Harshvardhan Rane, Haripriya",
+   "superset_notes": "Haripriya,Bhumika Chawla",
+   "superset_fallback": "Harshvardhan Rane, Haripriya",
+   "select": "Harshvardhan Rane, Haripriya",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Harshvardhan Rane, Haripriya",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which Roman (film) stars a Tamil actress?",
+     "Haripriya",
+     ""
+    ],
+    [
+     "Does Haripriya also star a Telugu actress?",
+     "Bhumika Chawla",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Roman (film) stars a Tamil actress?",
+     "Haripriya",
+     ""
+    ],
+    [
+     "Does Haripriya also star a Telugu actress?",
+     "Bhumika Chawla",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 23,
+   "q": "Which magazine was founded first, Diva or Elle?",
+   "gold": [
+    "Elle"
+   ],
+   "tag": "NA",
+   "key": "attribute of South Park ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Elle",
+   "chain": "Elle",
+   "retrieval": "Elle",
+   "iterative": "Elle",
+   "iterative_notes": "Elle",
+   "superset": "Elle",
+   "superset_notes": "Elle",
+   "superset_fallback": "Elle",
+   "select": "Elle",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Elle",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Elle",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 24,
+   "q": "Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",
+   "gold": [
+    "Guardians of the Galaxy Vol. 2"
+   ],
+   "tag": "H1: Which movie directed by James Gunn features a fictional character named Ego? | H2: Does #1 portray Ego as a living planet?",
+   "key": "employer of Robbie Tucker ?",
+   "hops": [
+    [
+     "free",
+     "Which movie directed by James Gunn features a fictional character named Ego?"
+    ],
+    [
+     "free",
+     "Does #1 portray Ego as a living planet?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ego the Living Planet is portrayed in \"Guardians of the Galaxy Vol. 2\" directed by James Gunn.",
+   "chain": "no",
+   "retrieval": "Guardians of the Galaxy Vol. 2",
+   "iterative": "Ego the Living Planet is not portrayed in any movie directed by James Gunn. Kurt Russell voiced the character in \"Guard",
+   "iterative_notes": "Guardians of the Galaxy Vol. 2",
+   "superset": "Ego the Living Planet portrayed in \"Guardians of the Galaxy Vol. 2\" directed by James Gunn",
+   "superset_notes": "Guardians of the Galaxy Vol. 2",
+   "superset_fallback": "Ego the Living Planet portrayed in \"Guardians of the Galaxy Vol. 2\" directed by James Gunn",
+   "select": "Ego the Living Planet is portrayed in \"Guardians of the Galaxy Vol. 2\" directed by James Gunn.",
+   "select_how": "undecided->sp",
+   "f1_select": 0.5,
+   "iterative_fallback": "Ego the Living Planet is not portrayed in any movie directed by James Gunn. Kurt Russell voiced the character in \"Guard",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.5,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.5263157894736842,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.5263157894736842,
+   "trace": [
+    [
+     "Which movie directed by James Gunn features a fictional character named Ego?",
+     "Guardians of the Galaxy Vol. 2",
+     ""
+    ],
+    [
+     "Does Guardians of the Galaxy Vol. 2 portray Ego as a living planet?",
+     "no",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which movie directed by James Gunn features a fictional character named Ego?",
+     "Guardians of the Galaxy Vol. 2",
+     ""
+    ],
+    [
+     "Does Guardians of the Galaxy Vol. 2 portray Ego as a living planet?",
+     "no",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 25,
+   "q": "Do both Korematsu v. United States and Chaplinsky v. New Hampshire cases regard the rights of U. S. citizens?",
+   "gold": [
+    "yes"
+   ],
+   "tag": "NA",
+   "key": "attribute of home of High School Confidential ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "yes",
+   "chain": "yes",
+   "retrieval": "yes",
+   "iterative": "yes",
+   "iterative_notes": "yes",
+   "superset": "yes",
+   "superset_notes": "yes",
+   "superset_fallback": "yes",
+   "select": "yes",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "yes",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "yes",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 26,
+   "q": "Where do both the New Jersey Devils and the Seton Hall Pirates play?",
+   "gold": [
+    "Prudential Center"
+   ],
+   "tag": "H1: Where does the Seton Hall Pirates football team play? | H2: NA",
+   "key": "attribute of large subunit and small subunit ?",
+   "hops": [
+    [
+     "free",
+     "Where does the Seton Hall Pirates football team play?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Prudential Center",
+   "chain": "",
+   "retrieval": "Prudential Center",
+   "iterative": "Prudential Center",
+   "iterative_notes": "Prudential Center",
+   "superset": "Prudential Center",
+   "superset_notes": "Prudential Center",
+   "superset_fallback": "Prudential Center",
+   "select": "Prudential Center",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Prudential Center",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Where does the Seton Hall Pirates football team play?",
+     "none",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where does the Seton Hall Pirates football team play?",
+     "None of the provided passages mention the Seton Hall Pirates football team or their playing venues.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 27,
+   "q": "Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?",
+   "gold": [
+    "The Ones Who Walk Away from Omelas"
+   ],
+   "tag": "H1: In which The Wind's Twelve Quarters story is there a summer festival in the utopian city of Omelas? | H2: Which story by Ursula K. Le Guin does #1 depict?",
+   "key": "NA",
+   "hops": [
+    [
+     "free",
+     "In which The Wind's Twelve Quarters story is there a summer festival in the utopian city of Omelas?"
+    ],
+    [
+     "free",
+     "Which story by Ursula K. Le Guin does #1 depict?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "The Ones Who Walk Away from Omelas",
+   "chain": "The Ones Who Walk Away from Omelas",
+   "retrieval": "The Ones Who Walk Away from Omelas",
+   "iterative": "The Ones Who Walk Away from Omelas",
+   "iterative_notes": "The Ones Who Walk Away from Omelas",
+   "superset": "The Ones Who Walk Away from Omelas",
+   "superset_notes": "The Ones Who Walk Away from Omelas",
+   "superset_fallback": "The Ones Who Walk Away from Omelas",
+   "select": "The Ones Who Walk Away from Omelas",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "The Ones Who Walk Away from Omelas",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "In which The Wind's Twelve Quarters story is there a summer festival in the utopian city of Omelas?",
+     "The Ones Who Walk Away from Omelas",
+     ""
+    ],
+    [
+     "Which story by Ursula K. Le Guin does The Ones Who Walk Away from Omelas depict?",
+     "The Ones Who Walk Away from Omelas",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "In which The Wind's Twelve Quarters story is there a summer festival in the utopian city of Omelas?",
+     "The Ones Who Walk Away from Omelas",
+     ""
+    ],
+    [
+     "Which story by Ursula K. Le Guin does The Ones Who Walk Away from Omelas depict?",
+     "The Ones Who Walk Away from Omelas depicts Omelas.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 28,
+   "q": "Who was the producer of the 1994 American animated epic musical film which Mel Shaw animated?",
+   "gold": [
+    "Don Hahn"
+   ],
+   "tag": "H1: Which 1994 American animated epic musical film did Mel Shaw animate? | H2: Who produced #1?",
+   "key": "home of Band-e-Amir Dragons ?",
+   "hops": [
+    [
+     "free",
+     "Which 1994 American animated epic musical film did Mel Shaw animate?"
+    ],
+    [
+     "free",
+     "Who produced #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Diane Eskenazi",
+   "chain": "Walt Disney Pictures",
+   "retrieval": "Don Hahn",
+   "iterative": "Diane Eskenazi",
+   "iterative_notes": "Walt Disney Pictures",
+   "superset": "Diane Eskenazi",
+   "superset_notes": "Walt Disney Pictures",
+   "superset_fallback": "Diane Eskenazi",
+   "select": "Diane Eskenazi",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Diane Eskenazi",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which 1994 American animated epic musical film did Mel Shaw animate?",
+     "The Lion King",
+     ""
+    ],
+    [
+     "Who produced The Lion King?",
+     "Walt Disney Pictures",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which 1994 American animated epic musical film did Mel Shaw animate?",
+     "The Lion King",
+     ""
+    ],
+    [
+     "Who produced The Lion King?",
+     "Walt Disney Pictures",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 29,
+   "q": "Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?",
+   "gold": [
+    "Kenneth John \"Kenny\" Ortega (born April 18, 1950) is an American producer, director, and choreographer."
+   ],
+   "tag": "NA",
+   "key": "owner of home of 1958 Pro Bowl ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Kenny Ortega",
+   "chain": "Kenny Ortega",
+   "retrieval": "Kenny Ortega",
+   "iterative": "Kenny Ortega",
+   "iterative_notes": "Kenny Ortega",
+   "superset": "Kenny Ortega",
+   "superset_notes": "Kenny Ortega",
+   "superset_fallback": "Kenny Ortega",
+   "select": "Kenny Ortega",
+   "select_how": "single-pass",
+   "f1_select": 0.25,
+   "iterative_fallback": "Kenny Ortega",
+   "f1_iterative_fallback": 0.25,
+   "f1_sp": 0.25,
+   "f1_chain": 0.25,
+   "f1_retrieval": 0.25,
+   "f1_iterative": 0.25,
+   "f1_iterative_notes": 0.25,
+   "f1_superset": 0.25,
+   "f1_superset_notes": 0.25,
+   "f1_superset_fallback": 0.25,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Kenny Ortega",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 30,
+   "q": "Which of the two came out first, The Wind in the Willows or The Bears and I?",
+   "gold": [
+    "The Wind in the Willows"
+   ],
+   "tag": "NA",
+   "key": "attribute of home of Yau Ma Tei North ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "The Wind in the Willows",
+   "chain": "The Wind in the Willows",
+   "retrieval": "The Wind in the Willows",
+   "iterative": "The Wind in the Willows",
+   "iterative_notes": "The Wind in the Willows",
+   "superset": "The Wind in the Willows",
+   "superset_notes": "The Wind in the Willows",
+   "superset_fallback": "The Wind in the Willows",
+   "select": "The Wind in the Willows",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "The Wind in the Willows",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "The Wind in the Willows",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 31,
+   "q": "Which film director is younger, Robert Z. Leonard or Sinclair Hill?",
+   "gold": [
+    "Sinclair Hill"
+   ],
+   "tag": "NA",
+   "key": "employer of founder of Spider9 ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Sinclair Hill",
+   "chain": "Sinclair Hill",
+   "retrieval": "Sinclair Hill",
+   "iterative": "Sinclair Hill",
+   "iterative_notes": "Sinclair Hill",
+   "superset": "Sinclair Hill",
+   "superset_notes": "Sinclair Hill",
+   "superset_fallback": "Sinclair Hill",
+   "select": "Sinclair Hill",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Sinclair Hill",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Sinclair Hill",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 32,
+   "q": "Why I Write was penned by which English novelist and critic?",
+   "gold": [
+    "Eric Arthur Blair"
+   ],
+   "tag": "H1: Which English novelist and critic wrote Why I Write? | H2: NA",
+   "key": "attribute of home of WLLZ-LP ?",
+   "hops": [
+    [
+     "free",
+     "Which English novelist and critic wrote Why I Write?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ford Madox Ford",
+   "chain": "George Orwell",
+   "retrieval": "George Orwell",
+   "iterative": "George Orwell",
+   "iterative_notes": "George Orwell",
+   "superset": "George Orwell",
+   "superset_notes": "George Orwell",
+   "superset_fallback": "George Orwell",
+   "select": "George Orwell",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "George Orwell",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which English novelist and critic wrote Why I Write?",
+     "George Orwell",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which English novelist and critic wrote Why I Write?",
+     "George Orwell",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 33,
+   "q": "What party does the person that represents Stoke Newington Central belong to?",
+   "gold": [
+    "British Labour Party"
+   ],
+   "tag": "H1: Who represents Stoke Newington Central? | H2: What party does #1 belong to?",
+   "key": "attribute of Charles Haughey ?",
+   "hops": [
+    [
+     "free",
+     "Who represents Stoke Newington Central?"
+    ],
+    [
+     "free",
+     "What party does #1 belong to?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Labour Party",
+   "chain": "Labour Party",
+   "retrieval": "Labour Party",
+   "iterative": "Labour Party",
+   "iterative_notes": "Labour Party",
+   "superset": "Labour Party",
+   "superset_notes": "Labour Party",
+   "superset_fallback": "Labour Party",
+   "select": "Labour Party",
+   "select_how": "agree",
+   "f1_select": 0.8,
+   "iterative_fallback": "Labour Party",
+   "f1_iterative_fallback": 0.8,
+   "f1_sp": 0.8,
+   "f1_chain": 0.8,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "f1_superset": 0.8,
+   "f1_superset_notes": 0.8,
+   "f1_superset_fallback": 0.8,
+   "trace": [
+    [
+     "Who represents Stoke Newington Central?",
+     "Diane Abbott",
+     ""
+    ],
+    [
+     "What party does Diane Abbott belong to?",
+     "Labour Party",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who represents Stoke Newington Central?",
+     "Diane Abbott MP",
+     ""
+    ],
+    [
+     "What party does Diane Abbott MP belong to?",
+     "Labour Party",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 34,
+   "q": "What song by the American rapper Coolio is on his greatest hits album \"Fantiastic Voyage\" and samples from a Stevie Wonder song?",
+   "gold": [
+    "Gangsta's Paradise"
+   ],
+   "tag": "H1: Which song by Coolio is on his greatest hits album \"Fantastic Voyage\"? | H2: Does #1 sample a Stevie Wonder song?",
+   "key": "home of Vegepet ?",
+   "hops": [
+    [
+     "free",
+     "Which song by Coolio is on his greatest hits album \"Fantastic Voyage\"?"
+    ],
+    [
+     "free",
+     "Does #1 sample a Stevie Wonder song?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Fantastic Voyage",
+   "chain": "No",
+   "retrieval": "\"Fantastic Voyage\"",
+   "iterative": "Fantastic Voyage",
+   "iterative_notes": "There is no song by the American rapper Coolio on his greatest hits album \"Fantastic Voyage\" that samples from a Ste",
+   "superset": "Fantastic Voyage",
+   "superset_notes": "There is no song by the American rapper Coolio on his greatest hits album \"Fantastic Voyage\" that samples from a Ste",
+   "superset_fallback": "Fantastic Voyage",
+   "select": "Fantastic Voyage",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Fantastic Voyage",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which song by Coolio is on his greatest hits album \"Fantastic Voyage\"?",
+     "\"Aw Here it Goes\"",
+     ""
+    ],
+    [
+     "Does \"Aw Here it Goes\" sample a Stevie Wonder song?",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which song by Coolio is on his greatest hits album \"Fantastic Voyage\"?",
+     "\"Fantastic Voyage\"",
+     ""
+    ],
+    [
+     "Does \"Fantastic Voyage\" sample a Stevie Wonder song?",
+     "\"No\"",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 35,
+   "q": "The  Actaea genus is native to what continent that the Onoclea genus is not?",
+   "gold": [
+    "Europe"
+   ],
+   "tag": "NA",
+   "key": "leader of McLaren MP4/11 [ retired ] ?",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Europe",
+   "chain": "Europe",
+   "retrieval": "Europe",
+   "iterative": "Europe",
+   "iterative_notes": "Europe",
+   "superset": "Europe",
+   "superset_notes": "Europe",
+   "superset_fallback": "Europe",
+   "select": "Europe",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Europe",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Europe",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 36,
+   "q": "What is the colloquial name of the professional football team in which striker Frederico Chaves Guedos played? ",
+   "gold": [
+    "Rooster"
+   ],
+   "tag": "H1: Which professional football team did striker Frederico Chaves Guedos play for? | H2: What is the colloquial name of #1?",
+   "key": "producer of Rich Lee ?",
+   "hops": [
+    [
+     "free",
+     "Which professional football team did striker Frederico Chaves Guedos play for?"
+    ],
+    [
+     "free",
+     "What is the colloquial name of #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Wide Right II",
+   "chain": "Galo",
+   "retrieval": "Atl\u00e9tico Mineiro",
+   "iterative": "Gal\u00f5",
+   "iterative_notes": "Galo",
+   "superset": "Alta Atl\u00e9tico Mineiro",
+   "superset_notes": "Galo",
+   "superset_fallback": "Alta Atl\u00e9tico Mineiro",
+   "select": "Wide Right II",
+   "select_how": "undecided->sp",
+   "f1_select": 0.0,
+   "iterative_fallback": "Gal\u00f5",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which professional football team did striker Frederico Chaves Guedos play for?",
+     "Atl\u00e9tico Mineiro",
+     ""
+    ],
+    [
+     "What is the colloquial name of Atl\u00e9tico Mineiro?",
+     "Galo",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which professional football team did striker Frederico Chaves Guedos play for?",
+     "Atl\u00e9tico Mineiro",
+     ""
+    ],
+    [
+     "What is the colloquial name of Atl\u00e9tico Mineiro?",
+     "Galo",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 37,
+   "q": "TimeCamp enables what type of commercial documents from a seller to a buyer?",
+   "gold": [
+    "invoice"
+   ],
+   "tag": "H1: What type of commercial documents does TimeCamp enable? | H2: NA",
+   "key": "leader of leader of Nutcracker ?",
+   "hops": [
+    [
+     "free",
+     "What type of commercial documents does TimeCamp enable?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Invoice",
+   "chain": "time tracking software",
+   "retrieval": "documentary collection",
+   "iterative": "documentary collection",
+   "iterative_notes": "documentary collection",
+   "superset": "invoice",
+   "superset_notes": "invoice",
+   "superset_fallback": "invoice",
+   "select": "Invoice",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "documentary collection",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "What type of commercial documents does TimeCamp enable?",
+     "time tracking software",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What type of commercial documents does TimeCamp enable?",
+     "TimeCamp enables commercial documents through time tracking software.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 38,
+   "q": "James Leal Greenleaf worked on a monument located where? ",
+   "gold": [
+    "National Mall"
+   ],
+   "tag": "H1: Where was James Leal Greenleaf working on a monument? | H2: NA",
+   "key": "employer of Alfred A. Marcus ?",
+   "hops": [
+    [
+     "free",
+     "Where was James Leal Greenleaf working on a monument?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Atlanta, Georgia",
+   "chain": "Lackland Air Force Base",
+   "retrieval": "Atlanta, Georgia",
+   "iterative": "Atlanta, Georgia",
+   "iterative_notes": "Atlanta, Georgia",
+   "superset": "Atlanta",
+   "superset_notes": "Atlanta, Georgia",
+   "superset_fallback": "Atlanta",
+   "select": "Atlanta, Georgia",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Atlanta, Georgia",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Where was James Leal Greenleaf working on a monument?",
+     "Lackland Air Force Base",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where was James Leal Greenleaf working on a monument?",
+     "Atlanta, Georgia",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 39,
+   "q": "Which was released first, Hot Girls Wanted or China Blue?",
+   "gold": [
+    "China Blue"
+   ],
+   "tag": "NA",
+   "key": "NA",
+   "hops": null,
+   "entity": "",
+   "single_pass": "Hot Girls Wanted",
+   "chain": "Hot Girls Wanted",
+   "retrieval": "Hot Girls Wanted",
+   "iterative": "Hot Girls Wanted",
+   "iterative_notes": "Hot Girls Wanted",
+   "superset": "Hot Girls Wanted",
+   "superset_notes": "Hot Girls Wanted",
+   "superset_fallback": "Hot Girls Wanted",
+   "select": "Hot Girls Wanted",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "Hot Girls Wanted",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Hot Girls Wanted",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 40,
+   "q": "Oscar is what type of animal with black fur that may be a mixed or specific breed?",
+   "gold": [
+    "black cat"
+   ],
+   "tag": "H1: Which type of animal with black fur might Oscar be? | H2: Is #1 a mixed or specific breed?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which type of animal with black fur might Oscar be?"
+    ],
+    [
+     "free",
+     "Is #1 a mixed or specific breed?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Black cat",
+   "chain": "Black cat",
+   "retrieval": "cat",
+   "iterative": "cat",
+   "iterative_notes": "Black cat",
+   "superset": "cat",
+   "superset_notes": "Black cat",
+   "superset_fallback": "cat",
+   "select": "Black cat",
+   "select_how": "judge",
+   "f1_select": 1.0,
+   "iterative_fallback": "cat",
+   "f1_iterative_fallback": 0.6666666666666666,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Which type of animal with black fur might Oscar be?",
+     "cat",
+     ""
+    ],
+    [
+     "Is cat a mixed or specific breed?",
+     "Black cat",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which type of animal with black fur might Oscar be?",
+     "cat",
+     ""
+    ],
+    [
+     "Is cat a mixed or specific breed?",
+     "Black cat",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 41,
+   "q": "Chandamama and Kajal Aggarwal are both associated with which Indian film industries?",
+   "gold": [
+    "Telugu and Tamil"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Telugu",
+   "chain": "Telugu",
+   "retrieval": "Telugu",
+   "iterative": "Telugu",
+   "iterative_notes": "Telugu",
+   "superset": "Telugu",
+   "superset_notes": "Telugu",
+   "superset_fallback": "Telugu",
+   "select": "Telugu",
+   "select_how": "single-pass",
+   "f1_select": 0.5,
+   "iterative_fallback": "Telugu",
+   "f1_iterative_fallback": 0.5,
+   "f1_sp": 0.5,
+   "f1_chain": 0.5,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.5,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.5,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Telugu",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 42,
+   "q": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+   "gold": [
+    "2013"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "1980",
+   "chain": "1980",
+   "retrieval": "1980",
+   "iterative": "1980",
+   "iterative_notes": "1980",
+   "superset": "1980",
+   "superset_notes": "1980",
+   "superset_fallback": "1980",
+   "select": "1980",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "1980",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "1980",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 43,
+   "q": "Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"",
+   "gold": [
+    "Leontes"
+   ],
+   "tag": "H1: Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Hermione",
+   "chain": "Hermione",
+   "retrieval": "Perdita",
+   "iterative": "Perdita",
+   "iterative_notes": "Perdita",
+   "superset": "Hermione",
+   "superset_notes": "Hermione",
+   "superset_fallback": "Hermione",
+   "select": "Hermione",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Perdita",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"?",
+     "Hermione",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"?",
+     "none",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 44,
+   "q": " Chun Woo-hee's notable films include a South Korean horror film about  a policeman who investigates a series of mysterious killings and what?",
+   "gold": [
+    "illnesses"
+   ],
+   "tag": "H1: Which South Korean horror film by Chun Woo-hee involves a policeman investigating a series of mysterious killings? | H2: What other notable film by Chun Woo-hee does #1 also involve?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which South Korean horror film by Chun Woo-hee involves a policeman investigating a series of mysterious killings?"
+    ],
+    [
+     "free",
+     "What other notable film by Chun Woo-hee does #1 also involve?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "The Wailing",
+   "chain": "The Beauty Inside",
+   "retrieval": "The Wailing",
+   "iterative": "The Wailing",
+   "iterative_notes": "The Wailing",
+   "superset": "The Wailing",
+   "superset_notes": "The Wailing",
+   "superset_fallback": "The Wailing",
+   "select": "The Wailing",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "The Wailing",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which South Korean horror film by Chun Woo-hee involves a policeman investigating a series of mysterious killings?",
+     "The Wailing",
+     ""
+    ],
+    [
+     "What other notable film by Chun Woo-hee does The Wailing also involve?",
+     "The Beauty Inside",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which South Korean horror film by Chun Woo-hee involves a policeman investigating a series of mysterious killings?",
+     "The Wailing",
+     ""
+    ],
+    [
+     "What other notable film by Chun Woo-hee does The Wailing also involve?",
+     "The Beauty Inside",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 45,
+   "q": "In \"Bon Cop, Bad Cop\", Canadian actor Rick Howland played the role of Harry Buttman (a parody of Gary Beltman), who is the current commissioner of what National sports league? ",
+   "gold": [
+    "National Hockey League (NHL)"
+   ],
+   "tag": "H1: Who was the current commissioner of a National sports league in \"Bon Cop, Bad Cop\"? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who was the current commissioner of a National sports league in \"Bon Cop, Bad Cop\"?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "National Hockey League",
+   "chain": "Gary Bettman",
+   "retrieval": "National Hockey League",
+   "iterative": "National Hockey League",
+   "iterative_notes": "Rick Howland",
+   "superset": "National Hockey League",
+   "superset_notes": "Gary Bettman",
+   "superset_fallback": "National Hockey League",
+   "select": "National Hockey League",
+   "select_how": "agree",
+   "f1_select": 0.8571428571428571,
+   "iterative_fallback": "National Hockey League",
+   "f1_iterative_fallback": 0.8571428571428571,
+   "f1_sp": 0.8571428571428571,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.8571428571428571,
+   "f1_iterative": 0.8571428571428571,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.8571428571428571,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.8571428571428571,
+   "trace": [
+    [
+     "Who was the current commissioner of a National sports league in \"Bon Cop, Bad Cop\"?",
+     "Gary Bettman",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who was the current commissioner of a National sports league in \"Bon Cop, Bad Cop\"?",
+     "Gary Bettman",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 46,
+   "q": "Altnahinch is located in a county that has a population density of how many per square mile? ",
+   "gold": [
+    "526"
+   ],
+   "tag": "H1: In which county is Altnahinch? | H2: What is the population density of #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "In which county is Altnahinch?"
+    ],
+    [
+     "free",
+     "What is the population density of #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "County Antrim",
+   "chain": "203 people per square kilometer / 526 people per square mile",
+   "retrieval": "County Antrim 526 people per square mile",
+   "iterative": "603",
+   "iterative_notes": "526 people per square mile",
+   "superset": "603",
+   "superset_notes": "526 people per square mile",
+   "superset_fallback": "603",
+   "select": "County Antrim",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "603",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.18181818181818182,
+   "f1_retrieval": 0.25,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.33333333333333337,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.33333333333333337,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "In which county is Altnahinch?",
+     "County Antrim",
+     ""
+    ],
+    [
+     "What is the population density of County Antrim?",
+     "203 people per square kilometer / 526 people per square mile",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "In which county is Altnahinch?",
+     "County Antrim",
+     ""
+    ],
+    [
+     "What is the population density of County Antrim?",
+     "203 people per square kilometer / 526 people per square mile",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 47,
+   "q": "Are Steve Perry and Leslie West both singers?",
+   "gold": [
+    "yes"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "yes",
+   "chain": "yes",
+   "retrieval": "yes",
+   "iterative": "yes",
+   "iterative_notes": "yes",
+   "superset": "yes",
+   "superset_notes": "yes",
+   "superset_fallback": "yes",
+   "select": "yes",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "yes",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "yes",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 48,
+   "q": "Jos\u00e9 Rubia Barcia  published a great number of books and articles on a Spanish poet, playwright, and what?",
+   "gold": [
+    "theatre director"
+   ],
+   "tag": "H1: Which Spanish poet, playwright did Jos\u00e9 Rubia Barcia publish many books and articles about? | H2: What was #1 besides a poet and playwright?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which Spanish poet, playwright did Jos\u00e9 Rubia Barcia publish many books and articles about?"
+    ],
+    [
+     "free",
+     "What was #1 besides a poet and playwright?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "writers",
+   "chain": "author",
+   "retrieval": "writer",
+   "iterative": "political essays",
+   "iterative_notes": "Spanish poet, playwright, and theatre director.",
+   "superset": "Valle Incl\u00e1n",
+   "superset_notes": "Spanish poet, playwright, and theatre director",
+   "superset_fallback": "Valle Incl\u00e1n",
+   "select": "Valle Incl\u00e1n",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "political essays",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which Spanish poet, playwright did Jos\u00e9 Rubia Barcia publish many books and articles about?",
+     "Valle Incl\u00e1n",
+     ""
+    ],
+    [
+     "What was Valle Incl\u00e1n besides a poet and playwright?",
+     "author",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Spanish poet, playwright did Jos\u00e9 Rubia Barcia publish many books and articles about?",
+     "Valle Incl\u00e1n",
+     ""
+    ],
+    [
+     "What was Valle Incl\u00e1n besides a poet and playwright?",
+     "theatre director",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 49,
+   "q": "What type of mansion was built for the founder of the company marketed the oil engine under the \"Hornsby-Akroyd\" name?",
+   "gold": [
+    "Gothic Revival"
+   ],
+   "tag": "H1: Who founded the company that marketed the oil engine under the \"Hornsby-Akroyd\" name? | H2: What type of mansion was built for #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who founded the company that marketed the oil engine under the \"Hornsby-Akroyd\" name?"
+    ],
+    [
+     "free",
+     "What type of mansion was built for #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "None",
+   "chain": "St Vincents Hall",
+   "retrieval": "St Vincents Hall",
+   "iterative": "St Vincents Hall",
+   "iterative_notes": "St Vincents Hall",
+   "superset": "St Vincents Hall",
+   "superset_notes": "St Vincents Hall",
+   "superset_fallback": "St Vincents Hall",
+   "select": "St Vincents Hall",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "St Vincents Hall",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who founded the company that marketed the oil engine under the \"Hornsby-Akroyd\" name?",
+     "Herbert Akroyd Stuart",
+     ""
+    ],
+    [
+     "What type of mansion was built for Herbert Akroyd Stuart?",
+     "St Vincents Hall",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who founded the company that marketed the oil engine under the \"Hornsby-Akroyd\" name?",
+     "Herbert Akroyd Stuart",
+     ""
+    ],
+    [
+     "What type of mansion was built for Herbert Akroyd Stuart?",
+     "St Vincents Hall",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 50,
+   "q": "Who was the pivotal in the formation of schools catering for the primary and early secondary education of children in remote and outback Australia?",
+   "gold": [
+    "Adelaide Laetitia"
+   ],
+   "tag": "H1: Who founded the first school catering for primary and early secondary education of children in remote and outback Australia? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who founded the first school catering for primary and early secondary education of children in remote and outback Australia?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ugyen Wangchuck",
+   "chain": "",
+   "retrieval": "Ugyen Wangchuck",
+   "iterative": "Ugyen Wangchuck",
+   "iterative_notes": "Ugyen Wangchuck",
+   "superset": "Ugyen Wangchuck",
+   "superset_notes": "Ugyen Wangchuck",
+   "superset_fallback": "Ugyen Wangchuck",
+   "select": "Ugyen Wangchuck",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Ugyen Wangchuck",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who founded the first school catering for primary and early secondary education of children in remote and outback Australia?",
+     "not applicable",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who founded the first school catering for primary and early secondary education of children in remote and outback Australia?",
+     "not applicable",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 51,
+   "q": "What Jurassic Park star was also in the Rainbow Warrior?",
+   "gold": [
+    "Nigel John Dermot Neill"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Sam Neill",
+   "chain": "Sam Neill",
+   "retrieval": "Sam Neill",
+   "iterative": "Sam Neill",
+   "iterative_notes": "Sam Neill",
+   "superset": "Sam Neill",
+   "superset_notes": "Sam Neill",
+   "superset_fallback": "Sam Neill",
+   "select": "Sam Neill",
+   "select_how": "single-pass",
+   "f1_select": 0.3333333333333333,
+   "iterative_fallback": "Sam Neill",
+   "f1_iterative_fallback": 0.3333333333333333,
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.3333333333333333,
+   "f1_retrieval": 0.3333333333333333,
+   "f1_iterative": 0.3333333333333333,
+   "f1_iterative_notes": 0.3333333333333333,
+   "f1_superset": 0.3333333333333333,
+   "f1_superset_notes": 0.3333333333333333,
+   "f1_superset_fallback": 0.3333333333333333,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Sam Neill",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 52,
+   "q": "Which metropolitan  at the south of Moraine, Ohio had a population of 2,114,580 in 2010 U.S. Census?",
+   "gold": [
+    "Cincinnati metropolitan area"
+   ],
+   "tag": "H1: Which metropolitan area is located south of Moraine, Ohio? | H2: Did #1 have a population of 2,114,580 in the 2010 U.S. census?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which metropolitan area is located south of Moraine, Ohio?"
+    ],
+    [
+     "free",
+     "Did #1 have a population of 2,114,580 in the 2010 U.S. census?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Cincinnati metropolitan area",
+   "chain": "yes",
+   "retrieval": "Cincinnati metropolitan area",
+   "iterative": "Cincinnati metropolitan area",
+   "iterative_notes": "Cincinnati metropolitan area",
+   "superset": "Cincinnati metropolitan area",
+   "superset_notes": "Cincinnati metropolitan area",
+   "superset_fallback": "Cincinnati metropolitan area",
+   "select": "Cincinnati metropolitan area",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Cincinnati metropolitan area",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which metropolitan area is located south of Moraine, Ohio?",
+     "Cincinnati metropolitan area",
+     ""
+    ],
+    [
+     "Did Cincinnati metropolitan area have a population of 2,114,580 in the 2010 U.S. census?",
+     "yes",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which metropolitan area is located south of Moraine, Ohio?",
+     "Cincinnati metropolitan area",
+     ""
+    ],
+    [
+     "Did Cincinnati metropolitan area have a population of 2,114,580 in the 2010 U.S. census?",
+     "Yes",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 53,
+   "q": "Are Wilco Melissant and Todd Field both involved in the film industry (e.g. director, filmmaker, actor)?",
+   "gold": [
+    "yes"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "select": "No",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "No",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 54,
+   "q": "The Ameican Jazz saxophonist nicked named the \"Hawk\", once played with what musician who died in 2009 and once played with Johnny Carson during Carson's residency?",
+   "gold": [
+    "Shep Meyers"
+   ],
+   "tag": "H1: Which American jazz saxophonist was nicknamed \"Hawk\"? | H2: Who died in 2009 and once played with #1, who also once played with Johnny Carson?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which American jazz saxophonist was nicknamed \"Hawk\"?"
+    ],
+    [
+     "free",
+     "Who died in 2009 and once played with #1, who also once played with Johnny Carson?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Coleman Hawkins",
+   "chain": "Shep Meyers",
+   "retrieval": "Coleman Hawkins",
+   "iterative": "Coleman Hawkins",
+   "iterative_notes": "Coleman Randolph Hawkins, Shep Meyers",
+   "superset": "Coleman Hawkins, Shep Meyers",
+   "superset_notes": "Coleman Randolph Hawkins, Shep Meyers",
+   "superset_fallback": "Coleman Hawkins, Shep Meyers",
+   "select": "Coleman Hawkins",
+   "select_how": "undecided->sp",
+   "f1_select": 0.0,
+   "iterative_fallback": "Coleman Hawkins",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.5714285714285715,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.5714285714285715,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Which American jazz saxophonist was nicknamed \"Hawk\"?",
+     "Coleman Randolph Hawkins",
+     ""
+    ],
+    [
+     "Who died in 2009 and once played with Coleman Randolph Hawkins, who also once played with Johnny Carson?",
+     "Shep Meyers",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which American jazz saxophonist was nicknamed \"Hawk\"?",
+     "Coleman Randolph Hawkins",
+     ""
+    ],
+    [
+     "Who died in 2009 and once played with Coleman Randolph Hawkins, who also once played with Johnny Carson?",
+     "Shep Meyers",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 55,
+   "q": "What town's geographic feature is the battle James Swan was twice wounded at named for?",
+   "gold": [
+    "Charlestown, Massachusetts"
+   ],
+   "tag": "H1: At which battle did James Swan get wounded twice? | H2: What town has #1 as a geographic feature?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "At which battle did James Swan get wounded twice?"
+    ],
+    [
+     "free",
+     "What town has #1 as a geographic feature?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Boston",
+   "chain": "Boston",
+   "retrieval": "Bunker Hill",
+   "iterative": "Missionary Ridge",
+   "iterative_notes": "Charlestown",
+   "superset": "Bunker Hill",
+   "superset_notes": "Charlestown",
+   "superset_fallback": "Bunker Hill",
+   "select": "Bunker Hill",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Missionary Ridge",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "At which battle did James Swan get wounded twice?",
+     "Battle of Bunker Hill",
+     ""
+    ],
+    [
+     "What town has Battle of Bunker Hill as a geographic feature?",
+     "Boston",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "At which battle did James Swan get wounded twice?",
+     "Battle of Bunker Hill",
+     ""
+    ],
+    [
+     "What town has Battle of Bunker Hill as a geographic feature?",
+     "Charlestown",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 56,
+   "q": "Is Gasherbrum II or Nuptse closest to the tallest mountain in the world?",
+   "gold": [
+    "It lies two kilometres WSW of Mount Everest."
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Gasherbrum II",
+   "chain": "Gasherbrum II",
+   "retrieval": "Gasherbrum II",
+   "iterative": "Gasherbrum II",
+   "iterative_notes": "Gasherbrum II",
+   "superset": "Gasherbrum II",
+   "superset_notes": "Gasherbrum II",
+   "superset_fallback": "Gasherbrum II",
+   "select": "Gasherbrum II",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "Gasherbrum II",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Gasherbrum II",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 57,
+   "q": "Which musician or band is from further north, Matthew Good or Modern Baseball?",
+   "gold": [
+    "Matthew Good"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Matthew Good",
+   "chain": "Matthew Good",
+   "retrieval": "Matthew Good",
+   "iterative": "Matthew Good",
+   "iterative_notes": "Matthew Good",
+   "superset": "Matthew Good",
+   "superset_notes": "Matthew Good",
+   "superset_fallback": "Matthew Good",
+   "select": "Matthew Good",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Matthew Good",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Matthew Good",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 58,
+   "q": "What airport is off National Route A002 and is largest airport in Greater Buenos Aires?",
+   "gold": [
+    "Ministro Pistarini International Airport"
+   ],
+   "tag": "H1: Which airport is the largest in Greater Buenos Aires? | H2: Which airport is off National Route A002 and is #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which airport is the largest in Greater Buenos Aires?"
+    ],
+    [
+     "free",
+     "Which airport is off National Route A002 and is #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ministro Pistarini International Airport",
+   "chain": "Ministro Pistarini International Airport",
+   "retrieval": "Ministro Pistarini International Airport",
+   "iterative": "Ministro Pistarini International Airport",
+   "iterative_notes": "Ministro Pistarini International Airport",
+   "superset": "Ministro Pistarini International Airport",
+   "superset_notes": "Ministro Pistarini International Airport",
+   "superset_fallback": "Ministro Pistarini International Airport",
+   "select": "Ministro Pistarini International Airport",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Ministro Pistarini International Airport",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which airport is the largest in Greater Buenos Aires?",
+     "Ministro Pistarini International Airport",
+     ""
+    ],
+    [
+     "Which airport is off National Route A002 and is Ministro Pistarini International Airport?",
+     "Ministro Pistarini International Airport",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which airport is the largest in Greater Buenos Aires?",
+     "Ministro Pistarini International Airport",
+     ""
+    ],
+    [
+     "Which airport is off National Route A002 and is Ministro Pistarini International Airport?",
+     "Ministro Pistarini International Airport",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 59,
+   "q": "What kind of comedian was Michael Mclntyre's father?",
+   "gold": [
+    "Canadian comedian"
+   ],
+   "tag": "H1: Who was Michael McLntyre's father? | H2: What kind of comedian was #1?",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Ray Cameron",
+   "chain": "Ray Cameron",
+   "retrieval": "Ray Cameron",
+   "iterative": "Ray Cameron",
+   "iterative_notes": "Ray Cameron",
+   "superset": "Ray Cameron",
+   "superset_notes": "Ray Cameron",
+   "superset_fallback": "Ray Cameron",
+   "select": "Ray Cameron",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "Ray Cameron",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Ray Cameron",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 60,
+   "q": "Operation Cold Comfort was a failed raid by a special forces unit founded in what year?",
+   "gold": [
+    "1941"
+   ],
+   "tag": "H1: Which special forces unit carried out Operation Cold Comfort? | H2: In what year was #1 founded?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which special forces unit carried out Operation Cold Comfort?"
+    ],
+    [
+     "free",
+     "In what year was #1 founded?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "1945",
+   "chain": "1945",
+   "retrieval": "1945",
+   "iterative": "1941",
+   "iterative_notes": "1941",
+   "superset": "1945",
+   "superset_notes": "1941",
+   "superset_fallback": "1945",
+   "select": "1945",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "1941",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which special forces unit carried out Operation Cold Comfort?",
+     "Operation Cold Comfort was carried out by SAS (Special Air Service).",
+     ""
+    ],
+    [
+     "In what year was Operation Cold Comfort was carried out by SAS (Special Air Service). founded?",
+     "1945",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which special forces unit carried out Operation Cold Comfort?",
+     "SAS",
+     ""
+    ],
+    [
+     "In what year was SAS founded?",
+     "1941",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 61,
+   "q": "The 2000 ICC KnockOut Trophy was the debut of a Jamaican cricketer who is a right-handed what?",
+   "gold": [
+    "middle order batsman"
+   ],
+   "tag": "H1: Which Jamaican cricketer's debut as captain of Jamaica was in the 2000 ICC Knockout Trophy? | H2: What position does #1 play for England?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which Jamaican cricketer's debut as captain of Jamaica was in the 2000 ICC Knockout Trophy?"
+    ],
+    [
+     "free",
+     "What position does #1 play for England?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "right-handed batsman",
+   "chain": "right-handed batsman",
+   "retrieval": "batsman",
+   "iterative": "batsman",
+   "iterative_notes": "right-handed batsman",
+   "superset": "middle order batsman",
+   "superset_notes": "right-handed batsman",
+   "superset_fallback": "middle order batsman",
+   "select": "middle order batsman",
+   "select_how": "judge",
+   "f1_select": 1.0,
+   "iterative_fallback": "batsman",
+   "f1_iterative_fallback": 0.5,
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.3333333333333333,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.3333333333333333,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 0.3333333333333333,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which Jamaican cricketer's debut as captain of Jamaica was in the 2000 ICC Knockout Trophy?",
+     "Stafanie Taylor",
+     ""
+    ],
+    [
+     "What position does Stafanie Taylor play for England?",
+     "right-handed batsman",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Jamaican cricketer's debut as captain of Jamaica was in the 2000 ICC Knockout Trophy?",
+     "Stafanie Taylor",
+     ""
+    ],
+    [
+     "What position does Stafanie Taylor play for England?",
+     "right-handed batsman",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 62,
+   "q": "When was the actor born who starred in Sugarfoot?",
+   "gold": [
+    "January 23, 1898"
+   ],
+   "tag": "H1: Which actor starred in Sugarfoot? | H2: When was #1 born?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which actor starred in Sugarfoot?"
+    ],
+    [
+     "free",
+     "When was #1 born?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "chain": "May 5, 1930",
+   "retrieval": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "iterative": "Will Hutchins was born on May 5, 1930, and starred in the show Sugarfoot.",
+   "iterative_notes": "May 5, 1930",
+   "superset": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "superset_notes": "May 5, 1930",
+   "superset_fallback": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "select": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Will Hutchins was born on May 5, 1930, and starred in the show Sugarfoot.",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which actor starred in Sugarfoot?",
+     "Will Hutchins",
+     ""
+    ],
+    [
+     "When was Will Hutchins born?",
+     "May 5, 1930",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which actor starred in Sugarfoot?",
+     "Will Hutchins",
+     ""
+    ],
+    [
+     "When was Will Hutchins born?",
+     "May 5, 1930",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 63,
+   "q": "How many movies did the \"Comic Book Villains\" star born on march 20,1970 apprear in since the early 1990s?",
+   "gold": [
+    "over sixty films"
+   ],
+   "tag": "H1: Which actor born on March 20, 1970 starred in comic book villains? | H2: How many movies has #1 appeared in since the early 1990s?",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "16",
+   "chain": "16",
+   "retrieval": "16",
+   "iterative": "16",
+   "iterative_notes": "16",
+   "superset": "16",
+   "superset_notes": "16",
+   "superset_fallback": "16",
+   "select": "16",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "16",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "16",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 64,
+   "q": "Which actress, who debuted in Friday Night Lights also starred in The River Why?",
+   "gold": [
+    "Amber Laura Heard"
+   ],
+   "tag": "H1: Which actress debuted in Friday Night Lights? | H2: Did #1 star in The River Why?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which actress debuted in Friday Night Lights?"
+    ],
+    [
+     "free",
+     "Did #1 star in The River Why?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Amber Heard",
+   "chain": "Yes",
+   "retrieval": "Amber Heard",
+   "iterative": "Amber Heard",
+   "iterative_notes": "Amber Heard",
+   "superset": "Amber Heard",
+   "superset_notes": "Amber Heard",
+   "superset_fallback": "Amber Heard",
+   "select": "Amber Heard",
+   "select_how": "agree",
+   "f1_select": 0.8,
+   "iterative_fallback": "Amber Heard",
+   "f1_iterative_fallback": 0.8,
+   "f1_sp": 0.8,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "f1_superset": 0.8,
+   "f1_superset_notes": 0.8,
+   "f1_superset_fallback": 0.8,
+   "trace": [
+    [
+     "Which actress debuted in Friday Night Lights?",
+     "Amber Heard",
+     ""
+    ],
+    [
+     "Did Amber Heard star in The River Why?",
+     "Yes",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which actress debuted in Friday Night Lights?",
+     "Amber Heard",
+     ""
+    ],
+    [
+     "Did Amber Heard star in The River Why?",
+     "Yes",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 65,
+   "q": "Which magazine is focused more on the adult demographic, Jack and Jill or Paper?",
+   "gold": [
+    "Paper"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Digital Max",
+   "chain": "Digital Max",
+   "retrieval": "Digital Max",
+   "iterative": "Digital Max",
+   "iterative_notes": "Digital Max",
+   "superset": "Digital Max",
+   "superset_notes": "Digital Max",
+   "superset_fallback": "Digital Max",
+   "select": "Digital Max",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "Digital Max",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Digital Max",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 66,
+   "q": "Who created the NBC sitcom that Johnny Pemberton appears in as the character Bo Thompson?",
+   "gold": [
+    "Justin Spitzer"
+   ],
+   "tag": "H1: Which NBC sitcom does Johnny Pemberton appear in as the character Bo Thompson? | H2: Who created #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which NBC sitcom does Johnny Pemberton appear in as the character Bo Thompson?"
+    ],
+    [
+     "free",
+     "Who created #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Lea Thompson",
+   "chain": "Nick Zano",
+   "retrieval": "Justin Spitzer",
+   "iterative": "Peter Reckell",
+   "iterative_notes": "Reed Agnew and Eli Jorn\u00e9",
+   "superset": "Reed Agnew and Eli Jorn\u00e9",
+   "superset_notes": "Reed Agnew and Eli Jorn\u00e9",
+   "superset_fallback": "Reed Agnew and Eli Jorn\u00e9",
+   "select": "Reed Agnew and Eli Jorn\u00e9",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Peter Reckell",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which NBC sitcom does Johnny Pemberton appear in as the character Bo Thompson?",
+     "One Big Happy",
+     ""
+    ],
+    [
+     "Who created One Big Happy?",
+     "Nick Zano",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which NBC sitcom does Johnny Pemberton appear in as the character Bo Thompson?",
+     "Son of Zorn",
+     ""
+    ],
+    [
+     "Who created Son of Zorn?",
+     "Reed Agnew and Eli Jorn\u00e9",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 67,
+   "q": "Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City?",
+   "gold": [
+    "Tumi Holdings, Inc."
+   ],
+   "tag": "H1: Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Tumi Inc.",
+   "chain": "Tumi Inc.",
+   "retrieval": "Forman Mills",
+   "iterative": "Forman Mills",
+   "iterative_notes": "Forman Mills",
+   "superset": "Tumi Inc.",
+   "superset_notes": "Tumi Inc.",
+   "superset_fallback": "Tumi Inc.",
+   "select": "Tumi Inc.",
+   "select_how": "agree",
+   "f1_select": 0.8,
+   "iterative_fallback": "Forman Mills",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.8,
+   "f1_chain": 0.8,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.8,
+   "f1_superset_notes": 0.8,
+   "f1_superset_fallback": 0.8,
+   "trace": [
+    [
+     "Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City?",
+     "Tumi Inc.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City?",
+     "Forman Mills",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 68,
+   "q": "Who was one of the first religious sceptics\u2019 best disciple?",
+   "gold": [
+    "Plato"
+   ],
+   "tag": "H1: Who were the first religious skeptics? | H2: Which of #1's disciples was #1's best disciple?",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Socrates",
+   "chain": "Socrates",
+   "retrieval": "Socrates",
+   "iterative": "Socrates",
+   "iterative_notes": "Socrates",
+   "superset": "Socrates",
+   "superset_notes": "Socrates",
+   "superset_fallback": "Socrates",
+   "select": "Socrates",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "Socrates",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Socrates",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 69,
+   "q": "Which author wrote a play in 2006 and a book on homosexual sex in 1977?",
+   "gold": [
+    "Edmund Valentine White III"
+   ],
+   "tag": "H1: Which author wrote a play in 2006? | H2: Did #1 write a book on homosexual sex in 1977?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which author wrote a play in 2006?"
+    ],
+    [
+     "free",
+     "Did #1 write a book on homosexual sex in 1977?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Joost Schouten",
+   "chain": "Edmund White",
+   "retrieval": "Edmund White",
+   "iterative": "Edmund White",
+   "iterative_notes": "Edmund White",
+   "superset": "Edmund White",
+   "superset_notes": "Edmund White",
+   "superset_fallback": "Edmund White",
+   "select": "Edmund White",
+   "select_how": "judge",
+   "f1_select": 0.6666666666666666,
+   "iterative_fallback": "Edmund White",
+   "f1_iterative_fallback": 0.6666666666666666,
+   "f1_sp": 0.0,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Which author wrote a play in 2006?",
+     "Edmund White",
+     ""
+    ],
+    [
+     "Did Edmund White write a book on homosexual sex in 1977?",
+     "Yes Edmund White wrote a book on homosexual sex in 1977 titled \"The Joy of Gay Sex\" (",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which author wrote a play in 2006?",
+     "Edmund White",
+     ""
+    ],
+    [
+     "Did Edmund White write a book on homosexual sex in 1977?",
+     "Yes Edmund White wrote a book on homosexual sex in 1977 titled \"The Joy of Gay Sex\" (",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 70,
+   "q": "Which country is the firm that owns Babycham located?",
+   "gold": [
+    "Australia"
+   ],
+   "tag": "H1: Which company owns Babycham? | H2: In which country is #1 located?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which company owns Babycham?"
+    ],
+    [
+     "free",
+     "In which country is #1 located?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "United Kingdom",
+   "chain": "Australia",
+   "retrieval": "United Kingdom",
+   "iterative": "Mexico",
+   "iterative_notes": "United Kingdom",
+   "superset": "United Kingdom",
+   "superset_notes": "United Kingdom",
+   "superset_fallback": "United Kingdom",
+   "select": "United Kingdom",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Mexico",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which company owns Babycham?",
+     "Accolade Wines",
+     ""
+    ],
+    [
+     "In which country is Accolade Wines located?",
+     "Australia",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which company owns Babycham?",
+     "None of the companies mentioned own Babycham.",
+     ""
+    ],
+    [
+     "In which country is  located?",
+     "Liberia",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 71,
+   "q": "How often do trains run on the system which has a terminal station located at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan, New York City?",
+   "gold": [
+    "24 hours a day and 7 days a week"
+   ],
+   "tag": "H1: Which subway system has a terminal station at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan? | H2: How often do trains run on #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which subway system has a terminal station at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan?"
+    ],
+    [
+     "free",
+     "How often do trains run on #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "every weekday",
+   "chain": "24 hours a day and 7 days a week",
+   "retrieval": "every 2-7 minutes during rush hour",
+   "iterative": "every 2-7 minutes during rush hour",
+   "iterative_notes": "24 hours a day and 7 days a week",
+   "superset": "every 2\u20137 minutes during rush hour",
+   "superset_notes": "24 hours a day and 7 days a week.",
+   "superset_fallback": "every 2\u20137 minutes during rush hour",
+   "select": "every 2\u20137 minutes during rush hour",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "every 2-7 minutes during rush hour",
+   "f1_iterative_fallback": 0.14285714285714285,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.14285714285714285,
+   "f1_iterative": 0.14285714285714285,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which subway system has a terminal station at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan?",
+     "PATH",
+     ""
+    ],
+    [
+     "How often do trains run on PATH?",
+     "24 hours a day and 7 days a week",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which subway system has a terminal station at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan?",
+     "PATH",
+     ""
+    ],
+    [
+     "How often do trains run on PATH?",
+     "24 hours a day and 7 days a week.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 72,
+   "q": "Are both Jim McBride and Neil Jordan American?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "select": "No",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "No",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 73,
+   "q": "Jayaprakash Narayan was posthumously awarded what highest Indian civilian award?",
+   "gold": [
+    "The Bharat Ratna"
+   ],
+   "tag": "H1: Which highest Indian civilian award was Jayaprakash Narayan posthumously awarded? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which highest Indian civilian award was Jayaprakash Narayan posthumously awarded?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Bharat Ratna",
+   "chain": "Bharat Ratna",
+   "retrieval": "Bharat Ratna",
+   "iterative": "Bharat Ratna",
+   "iterative_notes": "Bharat Ratna",
+   "superset": "Bharat Ratna",
+   "superset_notes": "Bharat Ratna",
+   "superset_fallback": "Bharat Ratna",
+   "select": "Bharat Ratna",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Bharat Ratna",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which highest Indian civilian award was Jayaprakash Narayan posthumously awarded?",
+     "Bharat Ratna",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which highest Indian civilian award was Jayaprakash Narayan posthumously awarded?",
+     "Bharat Ratna",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 74,
+   "q": "What is the birthday of the singer whose songs are remixed in Queen of Clubs Trilogy: Onyx Edition?",
+   "gold": [
+    "3 August 1980"
+   ],
+   "tag": "H1: Which singer's songs are remixed in Queen of Clubs Trilogy: Onyx Edition? | H2: What is the birthday of #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which singer's songs are remixed in Queen of Clubs Trilogy: Onyx Edition?"
+    ],
+    [
+     "free",
+     "What is the birthday of #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Baruch Levine",
+   "chain": "3 August 1980",
+   "retrieval": "Nadia Ali",
+   "iterative": "Nadia Ali (singer)",
+   "iterative_notes": "3 August 1980",
+   "superset": "Nadia Ali (singer)",
+   "superset_notes": "3 August 1980",
+   "superset_fallback": "Nadia Ali (singer)",
+   "select": "Nadia Ali (singer)",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "Nadia Ali (singer)",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which singer's songs are remixed in Queen of Clubs Trilogy: Onyx Edition?",
+     "Nadia Ali",
+     ""
+    ],
+    [
+     "What is the birthday of Nadia Ali?",
+     "3 August 1980",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which singer's songs are remixed in Queen of Clubs Trilogy: Onyx Edition?",
+     "Nadia Ali",
+     ""
+    ],
+    [
+     "What is the birthday of Nadia Ali?",
+     "3 August 1980",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 75,
+   "q": "What profession does 2007 Formula 3 Euro Series and Romain Grosjeanhave in common?",
+   "gold": [
+    "driver"
+   ],
+   "tag": "H1: Which driver had a career in Formula 3? | H2: What profession does #1 have besides Formula 3?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which driver had a career in Formula 3?"
+    ],
+    [
+     "free",
+     "What profession does #1 have besides Formula 3?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "driver",
+   "chain": "racing driver",
+   "retrieval": "racing driver",
+   "iterative": "racing driver",
+   "iterative_notes": "racing driver",
+   "superset": "racing driver",
+   "superset_notes": "racing driver",
+   "superset_fallback": "racing driver",
+   "select": "driver",
+   "select_how": "undecided->sp",
+   "f1_select": 1.0,
+   "iterative_fallback": "racing driver",
+   "f1_iterative_fallback": 0.6666666666666666,
+   "f1_sp": 1.0,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Which driver had a career in Formula 3?",
+     "Jo Zeller",
+     ""
+    ],
+    [
+     "What profession does Jo Zeller have besides Formula 3?",
+     "racing driver",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which driver had a career in Formula 3?",
+     "Jo Zeller",
+     ""
+    ],
+    [
+     "What profession does Jo Zeller have besides Formula 3?",
+     "racing driver",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 76,
+   "q": "In what year was the fantasy and science fiction author of the short story \"Recovery\" born?",
+   "gold": [
+    "1958"
+   ],
+   "tag": "H1: Who wrote the short story \"Recovery\"? | H2: In what year was #1 born?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who wrote the short story \"Recovery\"?"
+    ],
+    [
+     "free",
+     "In what year was #1 born?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "None of the provided passages mention a short story called \"Recovery\". Therefore, no birth year can be determined from the",
+   "chain": "1958",
+   "retrieval": "Sam J. Miller",
+   "iterative": "1958",
+   "iterative_notes": "1958",
+   "superset": "1958",
+   "superset_notes": "1958",
+   "superset_fallback": "1958",
+   "select": "None of the provided passages mention a short story called \"Recovery\". Therefore, no birth year can be determined from the",
+   "select_how": "undecided->sp",
+   "f1_select": 0.0,
+   "iterative_fallback": "1958",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who wrote the short story \"Recovery\"?",
+     "Troy Denning",
+     ""
+    ],
+    [
+     "In what year was Troy Denning born?",
+     "1958",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who wrote the short story \"Recovery\"?",
+     "Troy Denning",
+     ""
+    ],
+    [
+     "In what year was Troy Denning born?",
+     "1958",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 77,
+   "q": "When was the director of an American short slasher film with French-speaking serial killers that was released on October 31, 2011 born?",
+   "gold": [
+    "June 11, 1986"
+   ],
+   "tag": "H1: Who directed the American short slasher film with French-speaking serial killers released on October 31, 2011? | H2: When was #1 born?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Who directed the American short slasher film with French-speaking serial killers released on October 31, 2011?"
+    ],
+    [
+     "free",
+     "When was #1 born?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Shia LaBeouf was born June 11, 1986.",
+   "chain": "June 11, 1986",
+   "retrieval": "Shia LaBeouf",
+   "iterative": "Shia LaBeouf",
+   "iterative_notes": "June 11, 1986",
+   "superset": "Shia LaBeouf",
+   "superset_notes": "June 11, 1986",
+   "superset_fallback": "Shia LaBeouf",
+   "select": "Shia LaBeouf was born June 11, 1986.",
+   "select_how": "undecided->sp",
+   "f1_select": 0.6,
+   "iterative_fallback": "Shia LaBeouf",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.6,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who directed the American short slasher film with French-speaking serial killers released on October 31, 2011?",
+     "Shia LaBeouf",
+     ""
+    ],
+    [
+     "When was Shia LaBeouf born?",
+     "June 11, 1986",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who directed the American short slasher film with French-speaking serial killers released on October 31, 2011?",
+     "Shia LaBeouf",
+     ""
+    ],
+    [
+     "When was Shia LaBeouf born?",
+     "June 11, 1986",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 78,
+   "q": "Of all the teams John Nyskohus played for, which team was known as \"the Black and Whites?\"",
+   "gold": [
+    "Adelaide City"
+   ],
+   "tag": "H1: Which team did John Nystr\u00f6m play for? | H2: Of #1, which team was known as \"the Black and Whites\"?",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "None",
+   "chain": "None",
+   "retrieval": "None",
+   "iterative": "None",
+   "iterative_notes": "None",
+   "superset": "None",
+   "superset_notes": "None",
+   "superset_fallback": "None",
+   "select": "None",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "None",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "None",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 79,
+   "q": "Which American character actor who starred on the television series \"Stargate SG-1\" (1997\u20132007) and appeared in \"Episode 8\" of \"Twin Peaks\" as a guest star?",
+   "gold": [
+    "Don S. Davis"
+   ],
+   "tag": "H1: Which American character actor who starred on the television series \"Stargate SG-1\" also appeared in \"Episode 8\" of \"Twin Peaks\"? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which American character actor who starred on the television series \"Stargate SG-1\" also appeared in \"Episode 8\" of \"Twin Peaks\"?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Don S. Davis",
+   "chain": "Don S. Davis",
+   "retrieval": "Don S. Davis",
+   "iterative": "Don S. Davis",
+   "iterative_notes": "Don S. Davis",
+   "superset": "Don S. Davis",
+   "superset_notes": "Don S. Davis",
+   "superset_fallback": "Don S. Davis",
+   "select": "Don S. Davis",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Don S. Davis",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which American character actor who starred on the television series \"Stargate SG-1\" also appeared in \"Episode 8\" of \"Twin Peaks\"?",
+     "Don S. Davis",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which American character actor who starred on the television series \"Stargate SG-1\" also appeared in \"Episode 8\" of \"Twin Peaks\"?",
+     "Don S. Davis",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 80,
+   "q": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+   "gold": [
+    "IT products and services"
+   ],
+   "tag": "H1: Which company provided products did Bordan Tkachuk serve as CEO of? | H2: What type of products does #1 provide?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which company provided products did Bordan Tkachuk serve as CEO of?"
+    ],
+    [
+     "free",
+     "What type of products does #1 provide?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Viglen products",
+   "chain": "Viglen",
+   "retrieval": "ancillary products",
+   "iterative": "IT products and services",
+   "iterative_notes": "IT products and services",
+   "superset": "IT products and services",
+   "superset_notes": "IT products and services",
+   "superset_fallback": "IT products and services",
+   "select": "IT products and services",
+   "select_how": "judge",
+   "f1_select": 1.0,
+   "iterative_fallback": "IT products and services",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.3333333333333333,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which company provided products did Bordan Tkachuk serve as CEO of?",
+     "Viglen",
+     ""
+    ],
+    [
+     "What type of products does Viglen provide?",
+     "storage systems, servers, workstations and data/voice communications equipment and services.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which company provided products did Bordan Tkachuk serve as CEO of?",
+     "Viglen",
+     ""
+    ],
+    [
+     "What type of products does Viglen provide?",
+     "storage systems, servers, workstations and data/voice communications equipment and services.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 81,
+   "q": "Gabriela Mistral and Alan Sillitoe were both in what profession?",
+   "gold": [
+    "writers"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "writer",
+   "chain": "writer",
+   "retrieval": "writer",
+   "iterative": "writer",
+   "iterative_notes": "writer",
+   "superset": "writer",
+   "superset_notes": "writer",
+   "superset_fallback": "writer",
+   "select": "writer",
+   "select_how": "single-pass",
+   "f1_select": 0.0,
+   "iterative_fallback": "writer",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "writer",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 82,
+   "q": "What is the date of birth of the English inventor that developed the Richard Hornsby & Sons oil engine? ",
+   "gold": [
+    "28 January 1864"
+   ],
+   "tag": "H1: Which English inventor developed the Richard Hornsby & Sons oil engine? | H2: What is the date of birth of #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which English inventor developed the Richard Hornsby & Sons oil engine?"
+    ],
+    [
+     "free",
+     "What is the date of birth of #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "28 January 1864",
+   "chain": "28 January 1864",
+   "retrieval": "4 June 1790",
+   "iterative": "28 January 1864",
+   "iterative_notes": "28 January 1864",
+   "superset": "28 January 1864",
+   "superset_notes": "28 January 1864",
+   "superset_fallback": "28 January 1864",
+   "select": "28 January 1864",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "28 January 1864",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which English inventor developed the Richard Hornsby & Sons oil engine?",
+     "Herbert Akroyd Stuart",
+     ""
+    ],
+    [
+     "What is the date of birth of Herbert Akroyd Stuart?",
+     "28 January 1864",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which English inventor developed the Richard Hornsby & Sons oil engine?",
+     "Herbert Akroyd Stuart",
+     ""
+    ],
+    [
+     "What is the date of birth of Herbert Akroyd Stuart?",
+     "28 January 1864",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 83,
+   "q": "What nationality is the singer who recorded \"Who I Was Born to Be\"?",
+   "gold": [
+    "Scottish"
+   ],
+   "tag": "H1: Which singer recorded \"Who I Was Born to Be\"? | H2: What nationality is #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which singer recorded \"Who I Was Born to Be\"?"
+    ],
+    [
+     "free",
+     "What nationality is #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "British",
+   "chain": "Scottish",
+   "retrieval": "Scottish",
+   "iterative": "British",
+   "iterative_notes": "Scottish",
+   "superset": "British",
+   "superset_notes": "Scottish",
+   "superset_fallback": "British",
+   "select": "British",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "British",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which singer recorded \"Who I Was Born to Be\"?",
+     "Susan Boyle",
+     ""
+    ],
+    [
+     "What nationality is Susan Boyle?",
+     "Scottish",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which singer recorded \"Who I Was Born to Be\"?",
+     "Susan Boyle",
+     ""
+    ],
+    [
+     "What nationality is Susan Boyle?",
+     "Scottish",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 84,
+   "q": "What college did the English conductor, organist and composer widely regarded as Britain's leading conductor of choral works teach at?",
+   "gold": [
+    "Royal College of Music"
+   ],
+   "tag": "H1: Which English conductor, organist and composer was widely regarded as Britain's leading conductor of choral works? | H2: At which college did #1 teach?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which English conductor, organist and composer was widely regarded as Britain's leading conductor of choral works?"
+    ],
+    [
+     "free",
+     "At which college did #1 teach?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "The Royal College of Music",
+   "chain": "Royal College of Music",
+   "retrieval": "Gloucester Cathedral",
+   "iterative": "Royal College of Music",
+   "iterative_notes": "Royal College of Music",
+   "superset": "Royal College of Music",
+   "superset_notes": "Royal College of Music",
+   "superset_fallback": "Royal College of Music",
+   "select": "The Royal College of Music",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Royal College of Music",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which English conductor, organist and composer was widely regarded as Britain's leading conductor of choral works?",
+     "Malcolm Sargent",
+     ""
+    ],
+    [
+     "At which college did Malcolm Sargent teach?",
+     "Royal College of Music",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which English conductor, organist and composer was widely regarded as Britain's leading conductor of choral works?",
+     "Malcolm Sargent",
+     ""
+    ],
+    [
+     "At which college did Malcolm Sargent teach?",
+     "Royal College of Music",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 85,
+   "q": "By how many points did Dion Lewis' team trail by, in the third quarter, of the Super Bowl that they won ? ",
+   "gold": [
+    "25 points"
+   ],
+   "tag": "H1: In which Super Bowl did Dion Lewis' team win? | H2: By how many points did #1 trail in the third quarter?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "In which Super Bowl did Dion Lewis' team win?"
+    ],
+    [
+     "free",
+     "By how many points did #1 trail in the third quarter?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "25",
+   "chain": "8",
+   "retrieval": "25",
+   "iterative": "34",
+   "iterative_notes": "29",
+   "superset": "34",
+   "superset_notes": "29",
+   "superset_fallback": "34",
+   "select": "25",
+   "select_how": "judge",
+   "f1_select": 0.6666666666666666,
+   "iterative_fallback": "34",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "In which Super Bowl did Dion Lewis' team win?",
+     "Super Bowl XLVIII",
+     ""
+    ],
+    [
+     "By how many points did Super Bowl XLVIII trail in the third quarter?",
+     "8",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "In which Super Bowl did Dion Lewis' team win?",
+     "Super Bowl XVIII",
+     ""
+    ],
+    [
+     "By how many points did Super Bowl XVIII trail in the third quarter?",
+     "29",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 86,
+   "q": "Kevin House Jr. played professionally for the team that is in what NFL conference?",
+   "gold": [
+    "National Football Conference (NFC) West"
+   ],
+   "tag": "H1: Which team did Kevin House Jr. play professionally for? | H2: In what NFL conference is #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which team did Kevin House Jr. play professionally for?"
+    ],
+    [
+     "free",
+     "In what NFL conference is #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "National Football Conference (NFC)",
+   "chain": "National Football Conference (NFC)",
+   "retrieval": "National Football Conference (NFC)",
+   "iterative": "San Diego Chargers in the National Football Conference (NFC)",
+   "iterative_notes": "National Football Conference (NFC)",
+   "superset": "National Football Conference (NFC)",
+   "superset_notes": "National Football Conference (NFC)",
+   "superset_fallback": "National Football Conference (NFC)",
+   "select": "National Football Conference (NFC)",
+   "select_how": "agree",
+   "f1_select": 0.888888888888889,
+   "iterative_fallback": "National Football Conference (NFC)",
+   "f1_iterative_fallback": 0.888888888888889,
+   "f1_sp": 0.888888888888889,
+   "f1_chain": 0.888888888888889,
+   "f1_retrieval": 0.888888888888889,
+   "f1_iterative": 0.6153846153846154,
+   "f1_iterative_notes": 0.888888888888889,
+   "f1_superset": 0.888888888888889,
+   "f1_superset_notes": 0.888888888888889,
+   "f1_superset_fallback": 0.888888888888889,
+   "trace": [
+    [
+     "Which team did Kevin House Jr. play professionally for?",
+     "San Diego Chargers and the Seattle Seahawks",
+     ""
+    ],
+    [
+     "In what NFL conference is San Diego Chargers and the Seattle Seahawks?",
+     "National Football Conference (NFC)",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which team did Kevin House Jr. play professionally for?",
+     "San Diego Chargers and the Seattle Seahawks",
+     ""
+    ],
+    [
+     "In what NFL conference is San Diego Chargers and the Seattle Seahawks?",
+     "National Football Conference (NFC)",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 87,
+   "q": "When was the British author who wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based born? ",
+   "gold": [
+    "7 January 1936"
+   ],
+   "tag": "H1: Which British author wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based? | H2: When was #1 born?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which British author wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based?"
+    ],
+    [
+     "free",
+     "When was #1 born?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Hunter Davies",
+   "chain": "7 January 1936",
+   "retrieval": "Hunter Davies",
+   "iterative": "Edward Hunter Davies, OBE (born 7 January 1936)",
+   "iterative_notes": "7 January 1936",
+   "superset": "Edward Hunter Davies, OBE",
+   "superset_notes": "7 January 1936",
+   "superset_fallback": "Edward Hunter Davies, OBE",
+   "select": "Hunter Davies",
+   "select_how": "undecided->sp",
+   "f1_select": 0.0,
+   "iterative_fallback": "Hunter Davies",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.5454545454545454,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which British author wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based?",
+     "Hunter Davies",
+     ""
+    ],
+    [
+     "When was Hunter Davies born?",
+     "7 January 1936",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which British author wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based?",
+     "Hunter Davies",
+     ""
+    ],
+    [
+     "When was Hunter Davies born?",
+     "7 January 1936",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 88,
+   "q": "When was the Indian film actor, producer and playback singer born who debut with the 2000 War film, \"Refugee\" and had lead role in Main Prem Ki Diwani Hoon?",
+   "gold": [
+    "5 February 1976"
+   ],
+   "tag": "H1: Which Indian film actor, producer and playback singer debuted with the 2000 war film \"Refugee\"? | H2: When did #1 have a lead role in Main Prem Ki Diwani Hoon?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which Indian film actor, producer and playback singer debuted with the 2000 war film \"Refugee\"?"
+    ],
+    [
+     "free",
+     "When did #1 have a lead role in Main Prem Ki Diwani Hoon?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Abhishek Bachchan",
+   "chain": "2003",
+   "retrieval": "Abhishek Bachchan",
+   "iterative": "Abhishek Bachchan",
+   "iterative_notes": "Abhishek Bachchan, 5 February 1976",
+   "superset": "Abhishek Bachchan",
+   "superset_notes": "Abhishek Bachchan (born 5 February 1976)",
+   "superset_fallback": "Abhishek Bachchan",
+   "select": "Abhishek Bachchan",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Abhishek Bachchan",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.7499999999999999,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which Indian film actor, producer and playback singer debuted with the 2000 war film \"Refugee\"?",
+     "Abhishek Bachchan",
+     ""
+    ],
+    [
+     "When did Abhishek Bachchan have a lead role in Main Prem Ki Diwani Hoon?",
+     "2003",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which Indian film actor, producer and playback singer debuted with the 2000 war film \"Refugee\"?",
+     "Abhishek Bachchan",
+     ""
+    ],
+    [
+     "When did Abhishek Bachchan have a lead role in Main Prem Ki Diwani Hoon?",
+     "2003",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 89,
+   "q": "Hobart Paving is a single by a band formed in which year ?",
+   "gold": [
+    "1990"
+   ],
+   "tag": "H1: Which band released Hobart Paving? | H2: In what year was #1 formed?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which band released Hobart Paving?"
+    ],
+    [
+     "free",
+     "In what year was #1 formed?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "1993",
+   "chain": "1990",
+   "retrieval": "1999",
+   "iterative": "1993",
+   "iterative_notes": "1990",
+   "superset": "1993",
+   "superset_notes": "1990",
+   "superset_fallback": "1993",
+   "select": "1993",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "1993",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which band released Hobart Paving?",
+     "Saint Etienne",
+     ""
+    ],
+    [
+     "In what year was Saint Etienne formed?",
+     "1990",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which band released Hobart Paving?",
+     "Saint Etienne",
+     ""
+    ],
+    [
+     "In what year was Saint Etienne formed?",
+     "1990",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 90,
+   "q": "The thid episode of the first season of The Simpsons, features which character voiced by Harry Shearer?",
+   "gold": [
+    "Mr. Smithers"
+   ],
+   "tag": "H1: Which character in The Simpsons' first season's third episode was voiced by Harry Shearer? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which character in The Simpsons' first season's third episode was voiced by Harry Shearer?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Ned Flanders",
+   "chain": "Waylon Smithers",
+   "retrieval": "Waylon Smithers",
+   "iterative": "Waylon Smithers",
+   "iterative_notes": "Reverend Timothy \"Tim\" Lovejoy",
+   "superset": "Ned Flanders",
+   "superset_notes": "Reverend Timothy \"Tim\" Lovejoy",
+   "superset_fallback": "Ned Flanders",
+   "select": "Ned Flanders",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Waylon Smithers",
+   "f1_iterative_fallback": 0.5,
+   "f1_sp": 0.0,
+   "f1_chain": 0.5,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Which character in The Simpsons' first season's third episode was voiced by Harry Shearer?",
+     "Waylon Smithers",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which character in The Simpsons' first season's third episode was voiced by Harry Shearer?",
+     "Reverend Timothy \"Tim\" Lovejoy",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 91,
+   "q": "What two ideals are the foundation of Neo-libertarianism?",
+   "gold": [
+    "democracy and personal freedom"
+   ],
+   "tag": "H1: What is Neo-liberalism? | H2: What two ideals are the foundation of #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "What is Neo-liberalism?"
+    ],
+    [
+     "free",
+     "What two ideals are the foundation of #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "None",
+   "chain": "Islamic Foundation Bangladesh, Massoud Foundation",
+   "retrieval": "none",
+   "iterative": "American exceptionalism, Cognitive dissonance",
+   "iterative_notes": "What two ideals are the foundation of ?",
+   "superset": "None of the provided passages discuss Neo-libertarianism or its ideals.",
+   "superset_notes": "What two ideals are the foundation of ?",
+   "superset_fallback": "None",
+   "select": "None",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "American exceptionalism, Cognitive dissonance",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "What is Neo-liberalism?",
+     "None of the entities provided relate to Neo-liberalism.",
+     ""
+    ],
+    [
+     "What two ideals are the foundation of ?",
+     "Islamic Foundation Bangladesh, Massoud Foundation",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is Neo-liberalism?",
+     "None of the entities provided relate to Neo-liberalism.",
+     ""
+    ],
+    [
+     "What two ideals are the foundation of ?",
+     "Massoud Foundation",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 92,
+   "q": "Both Tsai Ming-liang and Giacomo Gentilomo were involved with which profession?",
+   "gold": [
+    "film director"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "film director",
+   "chain": "film director",
+   "retrieval": "film director",
+   "iterative": "film director",
+   "iterative_notes": "film director",
+   "superset": "film director",
+   "superset_notes": "film director",
+   "superset_fallback": "film director",
+   "select": "film director",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "film director",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "film director",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 93,
+   "q": "Petroglyphs on Ingaro isalnd indicate it has been innhabited since an era that lasted until what year?",
+   "gold": [
+    "500 BC"
+   ],
+   "tag": "H1: Until which year did petroglyphs exist on Ingaro Island? | H2: NA",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Until which year did petroglyphs exist on Ingaro Island?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "AD 1",
+   "chain": "Nordic Bronze Age",
+   "retrieval": "Nordic Bronze Age",
+   "iterative": "AD 1",
+   "iterative_notes": "Nordic Bronze Age",
+   "superset": "Nordic Bronze Age",
+   "superset_notes": "Nordic Bronze Age",
+   "superset_fallback": "Nordic Bronze Age",
+   "select": "Nordic Bronze Age",
+   "select_how": "judge",
+   "f1_select": 0.0,
+   "iterative_fallback": "AD 1",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Until which year did petroglyphs exist on Ingaro Island?",
+     "Nordic Bronze Age",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Until which year did petroglyphs exist on Ingaro Island?",
+     "Nordic Bronze Age",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 94,
+   "q": "Which state was the The Laboratory's 60,000 square-foot, shore-based campus located?",
+   "gold": [
+    "Maine, United States"
+   ],
+   "tag": "H1: Where is The Laboratory's 60,000 square-foot, shore-based campus? | H2: Which state is #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Where is The Laboratory's 60,000 square-foot, shore-based campus?"
+    ],
+    [
+     "free",
+     "Which state is #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Maine",
+   "chain": "Maine",
+   "retrieval": "Maine",
+   "iterative": "Maine",
+   "iterative_notes": "Maine",
+   "superset": "Maine",
+   "superset_notes": "Maine",
+   "superset_fallback": "Maine",
+   "select": "Maine",
+   "select_how": "agree",
+   "f1_select": 0.5,
+   "iterative_fallback": "Maine",
+   "f1_iterative_fallback": 0.5,
+   "f1_sp": 0.5,
+   "f1_chain": 0.5,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.5,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.5,
+   "trace": [
+    [
+     "Where is The Laboratory's 60,000 square-foot, shore-based campus?",
+     "East Boothbay, Maine",
+     ""
+    ],
+    [
+     "Which state is East Boothbay, Maine?",
+     "Maine",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is The Laboratory's 60,000 square-foot, shore-based campus?",
+     "East Boothbay, Maine",
+     ""
+    ],
+    [
+     "Which state is East Boothbay, Maine?",
+     "Maine",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 95,
+   "q": "What is the familiar name for the first operation in the Battle of Normandy, also codenamed Operation Overlord?",
+   "gold": [
+    "D-Day"
+   ],
+   "tag": "H1: What was the codename for the first operation in the Battle of Normandy? | H2: What is the familiar name for #1?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "What was the codename for the first operation in the Battle of Normandy?"
+    ],
+    [
+     "free",
+     "What is the familiar name for #1?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Operation Neptune",
+   "chain": "D-Day",
+   "retrieval": "D-Day",
+   "iterative": "Operation Neptune",
+   "iterative_notes": "D-Day",
+   "superset": "Operation Neptune",
+   "superset_notes": "D-Day",
+   "superset_fallback": "Operation Neptune",
+   "select": "Operation Neptune",
+   "select_how": "agree",
+   "f1_select": 0.0,
+   "iterative_fallback": "Operation Neptune",
+   "f1_iterative_fallback": 0.0,
+   "f1_sp": 0.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "What was the codename for the first operation in the Battle of Normandy?",
+     "Operation Overlord",
+     ""
+    ],
+    [
+     "What is the familiar name for Operation Overlord?",
+     "D-Day",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What was the codename for the first operation in the Battle of Normandy?",
+     "Operation Neptune",
+     ""
+    ],
+    [
+     "What is the familiar name for Operation Neptune?",
+     "Normandy landings",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 96,
+   "q": "Are Harry Everett Smith and Vladimir Danilevich both from Russia?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "select": "No",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "No",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 97,
+   "q": "The term snake eyes is used in a particular casino game that uses what game pieces?",
+   "gold": [
+    "a pair of dice"
+   ],
+   "tag": "H1: In which casino game is the term \"snake eyes\" used? | H2: What game pieces does #1 use?",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "dice",
+   "chain": "dice",
+   "retrieval": "dice",
+   "iterative": "dice",
+   "iterative_notes": "dice",
+   "superset": "dice",
+   "superset_notes": "dice",
+   "superset_fallback": "dice",
+   "select": "dice",
+   "select_how": "single-pass",
+   "f1_select": 0.5,
+   "iterative_fallback": "dice",
+   "f1_iterative_fallback": 0.5,
+   "f1_sp": 0.5,
+   "f1_chain": 0.5,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.5,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.5,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "dice",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 98,
+   "q": "Which rapper released the album Big Fish Theory featuring a number of styles of music including Detroit techno?",
+   "gold": [
+    "Vince Staples"
+   ],
+   "tag": "H1: Which rapper released the album Big Fish Theory? | H2: Did #1 feature Detroit techno?",
+   "key": null,
+   "hops": [
+    [
+     "free",
+     "Which rapper released the album Big Fish Theory?"
+    ],
+    [
+     "free",
+     "Did #1 feature Detroit techno?"
+    ]
+   ],
+   "entity": "",
+   "single_pass": "Vince Staples",
+   "chain": "Yes",
+   "retrieval": "Vince Staples",
+   "iterative": "Vince Staples",
+   "iterative_notes": "Vince Staples",
+   "superset": "Vince Staples",
+   "superset_notes": "Vince Staples",
+   "superset_fallback": "Vince Staples",
+   "select": "Vince Staples",
+   "select_how": "agree",
+   "f1_select": 1.0,
+   "iterative_fallback": "Vince Staples",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Which rapper released the album Big Fish Theory?",
+     "Vince Staples",
+     ""
+    ],
+    [
+     "Did Vince Staples feature Detroit techno?",
+     "Yes",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Which rapper released the album Big Fish Theory?",
+     "Vince Staples",
+     ""
+    ],
+    [
+     "Did Vince Staples feature Detroit techno?",
+     "Zack Sekoff",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 99,
+   "q": "Between Greyia and Calibanus, which genus contains more species?",
+   "gold": [
+    "Greyia"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": "",
+   "single_pass": "Greyia",
+   "chain": "Greyia",
+   "retrieval": "Greyia",
+   "iterative": "Greyia",
+   "iterative_notes": "Greyia",
+   "superset": "Greyia",
+   "superset_notes": "Greyia",
+   "superset_fallback": "Greyia",
+   "select": "Greyia",
+   "select_how": "single-pass",
+   "f1_select": 1.0,
+   "iterative_fallback": "Greyia",
+   "f1_iterative_fallback": 1.0,
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Greyia",
+     ""
+    ]
+   ],
+   "itrace": []
+  }
+ ]
+}

@@ -1,0 +1,8 @@
+# <local>/model-training/.venv/Scripts/python.exe scripts/tagger_lora.py --train data/tagger_train_v2.jsonl --extra data/tagger_real_40-69.jsonl --out models/tagger_pregate3_0.5b --limit 3500 --epochs 1  (from <local>/tiny-model)
+trainer: --extra added
+| 20260913-035450-fable-tinymodel-scalecircuit-s6-round3-prereg | fable | action | 20260913-031927-fable-scalecircuit-s5-pregate2-fail-hold | [tinymodel/scalecircuit s6] R3 round 3 = option A: LoRA 0.5B on v2 synthetic + 30 hand-labelled real docs 40-69 (x5); bands unchanged (pre-gate struct>=16/30; full struct>=20 anchor>=24 synth>=0.95); key #6 both legs in comms-loop; pre-gate now, full run after ACK/15 min | OPEN |
+extra real pairs: 30 x 5
+pairs 3200  steps 200
+synthetic held-out exact tag match: 183/200
+real 30: {'n': 30, 'parses': 30, 'na_ok': 30, 'struct': 16, 'anchor': 21, 'relations': 9}
+saved models/tagger_pregate3_0.5b  train 302s

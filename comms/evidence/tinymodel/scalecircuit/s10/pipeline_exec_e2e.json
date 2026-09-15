@@ -1,0 +1,1001 @@
+{
+ "summary": {
+  "f1_sp": 0.3697883597883598,
+  "f1_chain": 0.11833333333333333,
+  "f1_retrieval": 0.40534391534391534,
+  "n": 30,
+  "oracle_union": 0.40534391534391534,
+  "chain_wins": 1,
+  "chain_losses": 11,
+  "retr_wins": 2,
+  "retr_losses": 0
+ },
+ "rows": [
+  {
+   "doc": 3,
+   "q": "Gary L. Bennett was a part of the space missions that have a primary destination of what celestial body?",
+   "gold": [
+    "Sun"
+   ],
+   "tag": "country of employer of Gary L. Bennett ?",
+   "key": "country of employer of Gary L. Bennett ?",
+   "hops": [
+    [
+     "employer",
+     null
+    ],
+    [
+     "country",
+     null
+    ]
+   ],
+   "entity": "Gary L. Bennett",
+   "single_pass": "Mars",
+   "chain": "US",
+   "retrieval": "Jupiter",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Who did Gary L. Bennett work for?",
+     "NASA\nUS Department of Energy",
+     ""
+    ],
+    [
+     "Which country is NASA\nUS Department of Energy in or from?",
+     "US",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 4,
+   "q": "Was Atom Egoyans biggest commercial success on stage or on film?",
+   "gold": [
+    "erotic thriller film"
+   ],
+   "tag": "NA",
+   "key": "country of producer of Atom Egoyan ?",
+   "hops": null,
+   "entity": null,
+   "single_pass": "on film",
+   "chain": "on film",
+   "retrieval": "on film",
+   "f1_sp": 0.4,
+   "f1_chain": 0.4,
+   "f1_retrieval": 0.4,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "on film",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 5,
+   "q": "Celebrity Fifteen to One has had more than one appearance by an English writer and former Conservative Member of what?",
+   "gold": [
+    "Parliament"
+   ],
+   "tag": "publisher of Celebrity Fifteen to One ?",
+   "key": "employer of leader of Celebrity Fifteen to One ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "Celebrity Fifteen to One",
+   "single_pass": "English writer and former Conservative Member of Parliament",
+   "chain": "Channel 4",
+   "retrieval": "English writer and former Conservative Member of Parliament",
+   "f1_sp": 0.2222222222222222,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.2222222222222222,
+   "trace": [
+    [
+     "What channel, album, series or network carries Celebrity Fifteen to One?",
+     "Channel 4",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 7,
+   "q": "Which is a flowering plant, Pueraria or Pleiospilos?",
+   "gold": [
+    "Pleiospilos"
+   ],
+   "tag": "NA",
+   "key": "NA",
+   "hops": null,
+   "entity": null,
+   "single_pass": "Pleiospilos",
+   "chain": "Pleiospilos",
+   "retrieval": "Pleiospilos",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Pleiospilos",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 8,
+   "q": "After Russell D. Moore served at the Southern Baptist Theological Seminary he became the President of The Ethics & Religious Liberty Commission (ERLC) in what year?",
+   "gold": [
+    "2013"
+   ],
+   "tag": "attribute of employer of Russell D. Moore [ president ] ?",
+   "key": "attribute of Russell D. Moore ?",
+   "hops": [
+    [
+     "employer",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ],
+    [
+     "filter",
+     "president"
+    ]
+   ],
+   "entity": "Russell D. Moore",
+   "single_pass": "2013",
+   "chain": "14",
+   "retrieval": "2013",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "Who did Russell D. Moore work for?",
+     "Russell D. Moore worked for Midwestern Seminary, the Ethics & Religious Liberty Commission, and the Southern Baptist The",
+     ""
+    ],
+    [
+     "Which team, school or organisation was Russell D. Moore part of?",
+     "Southern Baptist Theological Seminary",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Southern Baptist Theological Seminary?",
+     "14",
+     ""
+    ],
+    [
+     "filter president",
+     "14",
+     "pass-through"
+    ]
+   ]
+  },
+  {
+   "doc": 9,
+   "q": "For which band, was the female member of Fitz and The Tantrums, the front woman for ten years ?",
+   "gold": [
+    "The Rebirth"
+   ],
+   "tag": "producer of the female member of Fitz and The Tantrums ?",
+   "key": "employer of leader of Fitz and The Tantrums ?",
+   "hops": [
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "the female member of Fitz and The Tantrums",
+   "single_pass": "Fitz and The Tantrums",
+   "chain": "Pickin' Up the Pieces",
+   "retrieval": "Fitz and The Tantrums",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "What work is the female member of Fitz and The Tantrums known for making or appearing in?",
+     "Pickin' Up the Pieces",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 10,
+   "q": "When was the American singer, songwriter, record producer, dancer and actress born who's second studio album is Chapter II?",
+   "gold": [
+    "October 13, 1980"
+   ],
+   "tag": "attribute of the American singer, songwriter, producer, dancer and owner of Chapter II ?",
+   "key": "attribute of writer of Chapter II ?",
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "the American singer, songwriter, producer, dancer and owner of Chapter II",
+   "single_pass": "October 13, 1980",
+   "chain": "326,000",
+   "retrieval": "October 13, 1980",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with the American singer, songwriter, producer, dancer and owner of Chapter II?",
+     "326,000",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 13,
+   "q": "Finally includes the song that peaked at what on the US Hot 100",
+   "gold": [
+    "number five"
+   ],
+   "tag": "attribute of publisher of attribute of US Hot 100 ?",
+   "key": "attribute of leader of Finally ?",
+   "hops": [
+    [
+     "attribute",
+     null
+    ],
+    [
+     "publisher",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "US Hot 100",
+   "single_pass": "number five",
+   "chain": "Finally (CeCe Peniston album)",
+   "retrieval": "number five",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with US Hot 100?",
+     "number 5, January 1992, number 99",
+     ""
+    ],
+    [
+     "What channel, album, series or network carries number 5, January 1992, number 99?",
+     "number 5, January 1992, number 99 refers to the position of \"Finally\" on",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with number 5, January 1992, number 99 refers to the position of \"Finally\" on?",
+     "Finally (CeCe Peniston album)",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 14,
+   "q": "What are some other areas that share a common deer species with the forests of Mara and Mondrem?",
+   "gold": [
+    "New Zealand, Canada, the United States, the Falkland Islands, and Peru."
+   ],
+   "tag": "other home of shared deer species ?",
+   "key": "home of leader of Mara and Mondrem ?",
+   "hops": null,
+   "entity": null,
+   "single_pass": "Cheshire, England",
+   "chain": "Cheshire, England",
+   "retrieval": "Cheshire, England",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Cheshire, England",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 15,
+   "q": "Professional cyclist Sara Symington competed in which Olympic Games held in Sydeney, Australia?",
+   "gold": [
+    "2000 Summer Olympic Games"
+   ],
+   "tag": "attribute of leader of Sara Symington ?",
+   "key": "attribute of Sara Symington ?",
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Sara Symington",
+   "single_pass": "2000 Summer Olympics",
+   "chain": "rank 1",
+   "retrieval": "2000 Summer Olympics",
+   "f1_sp": 0.5714285714285715,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.5714285714285715,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Sara Symington?",
+     "Sara Symington",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Sara Symington?",
+     "rank 1",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 19,
+   "q": "Name a member of a British-American supergroup who recored a version of Nobody's child in 1990",
+   "gold": [
+    "Bob Dylan"
+   ],
+   "tag": "leader of a British-American publisher of child of Nobody ?",
+   "key": "leader of producer of Nobody's Child ?",
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "a British-American publisher of child of Nobody",
+   "single_pass": "Sarah Polley",
+   "chain": "George Harrison",
+   "retrieval": "Dylan",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.6666666666666666,
+   "trace": [
+    [
+     "Who is the leader, member or main person of a British-American publisher of child of Nobody?",
+     "George Harrison",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 20,
+   "q": "What Friday night programming block included what collective series that includes \"Whatever Happened to... Robot Jones?\"?",
+   "gold": [
+    "Cartoon Cartoon Fridays"
+   ],
+   "tag": "publisher of publisher of \"Whatever Happened to... Robot Jones\" ?",
+   "key": "owner of publisher of Whatever Happened to... Robot Jones? ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ],
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "\"Whatever Happened to... Robot Jones\"",
+   "single_pass": "CBS Block Party",
+   "chain": "Cartoon Network",
+   "retrieval": "Cartoon Cartoons",
+   "f1_sp": 0.0,
+   "f1_chain": 0.4,
+   "f1_retrieval": 0.4,
+   "trace": [
+    [
+     "What channel, album, series or network carries \"Whatever Happened to... Robot Jones\"?",
+     "Cartoon Network",
+     ""
+    ],
+    [
+     "What channel, album, series or network carries Cartoon Network?",
+     "Cartoon Network",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 21,
+   "q": "Where does the city situated where Kellyville Ridge is located?",
+   "gold": [
+    "on the Cumberland Plain"
+   ],
+   "tag": "home of home of Kellyville Ridge ?",
+   "key": "home of home of Kellyville Ridge ?",
+   "hops": [
+    [
+     "home",
+     null
+    ],
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "Kellyville Ridge",
+   "single_pass": "City of Blacktown",
+   "chain": "City of Blacktown",
+   "retrieval": "City of Blacktown",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Where is Kellyville Ridge located?",
+     "Kellyville Ridge, New South Wales",
+     ""
+    ],
+    [
+     "Where is Kellyville Ridge, New South Wales located?",
+     "Kellyville Ridge, New South Wales is located 41 kilometres north-west of the Sydney central business district in the local",
+     ""
+    ],
+    [
+     "In what city or place is Kellyville Ridge, New South Wales?",
+     "City of Blacktown",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 22,
+   "q": "Oak Beach, New York and Great South Bay are both situated between what same island?",
+   "gold": [
+    "Long Island"
+   ],
+   "tag": "home of Oak Beach ?",
+   "key": "home of Oak Beach ?",
+   "hops": [
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "Oak Beach",
+   "single_pass": "Jones Beach Island",
+   "chain": "40\u00b038\u203221\u2033N 73\u00b017\u203235\u2033W",
+   "retrieval": "Jones Beach Island",
+   "f1_sp": 0.4,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.4,
+   "trace": [
+    [
+     "Where is Oak Beach located?",
+     "40\u00b038\u203221\u2033N 73\u00b017\u203235\u2033W",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 23,
+   "q": "Who is a guest in the final two episodes of season eighteen of South Park?",
+   "gold": [
+    "PewDiePie"
+   ],
+   "tag": "leader of the final two episodes of season eighteen of South Park ?",
+   "key": "attribute of South Park ?",
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "the final two episodes of season eighteen of South Park",
+   "single_pass": "PewDiePie",
+   "chain": "Tebby",
+   "retrieval": "PewDiePie",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of the final two episodes of season eighteen of South Park?",
+     "Tebby",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 24,
+   "q": "Robbie Tucker plays in what series that follows a group of friends who run an Irish bar?",
+   "gold": [
+    "It's Always Sunny in Philadelphia"
+   ],
+   "tag": "publisher of Robbie Tucker ?",
+   "key": "employer of Robbie Tucker ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "Robbie Tucker",
+   "single_pass": "It's Always Sunny in Philadelphia",
+   "chain": "CBS, Tuck Everlasting, FlashForward, It's Always Sunny in Philadelphia",
+   "retrieval": "It's Always Sunny in Philadelphia",
+   "f1_sp": 1.0,
+   "f1_chain": 0.7499999999999999,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries Robbie Tucker?",
+     "CBS, Tuck Everlasting, FlashForward, It's Always Sunny in Philadelphia",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 25,
+   "q": "High School Confidential, an eight part documentary followed twelve high school teenagers from a high school in Overland Park, Kansas that ranked what in the 2009 Newsweek ranking of the top 1,500 high schools in the United States?",
+   "gold": [
+    "#364"
+   ],
+   "tag": "publisher of High School Confidential ?",
+   "key": "attribute of home of High School Confidential ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "High School Confidential",
+   "single_pass": "Lake Brantley High School",
+   "chain": "WE TV",
+   "retrieval": "Blue Valley West High School",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries High School Confidential?",
+     "WE TV",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 26,
+   "q": "The large subunit and small subunit that use two types of RNA are major components that make up what?",
+   "gold": [
+    "Ribosomes"
+   ],
+   "tag": "major component of the large subunit and small subunit ?",
+   "key": "attribute of large subunit and small subunit ?",
+   "hops": null,
+   "entity": null,
+   "single_pass": "ribosome",
+   "chain": "ribosome",
+   "retrieval": "ribosome",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "ribosome",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 27,
+   "q": "Whiich genus has more species, Dracula or Pistacia?",
+   "gold": [
+    "Dracula"
+   ],
+   "tag": "NA",
+   "key": "NA",
+   "hops": null,
+   "entity": null,
+   "single_pass": "Pistacia",
+   "chain": "Pistacia",
+   "retrieval": "Pistacia",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Pistacia",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 28,
+   "q": "Band-e-Amir Dragons is named after the lakes in which Afghan national park?",
+   "gold": [
+    "Band-e Amir National Park"
+   ],
+   "tag": "publisher of Band-e-Amir Dragons ?",
+   "key": "home of Band-e-Amir Dragons ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "Band-e-Amir Dragons",
+   "single_pass": "Band-e-Amir National Park",
+   "chain": "Afghanistan Premier League",
+   "retrieval": "Band-e Amir National Park",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries Band-e-Amir Dragons?",
+     "Afghanistan Premier League",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 30,
+   "q": "Yau Ma Tei North is a district of a city with how many citizens?",
+   "gold": [
+    "7.2 million"
+   ],
+   "tag": "attribute of Yau Ma Tei North ?",
+   "key": "attribute of home of Yau Ma Tei North ?",
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Yau Ma Tei North",
+   "single_pass": "12,817",
+   "chain": "12,817",
+   "retrieval": "12,817",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Yau Ma Tei North?",
+     "12,817",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 31,
+   "q": "Spider9 was founded in 2011 by the head of which subsidiary of Wanxiang Group?",
+   "gold": [
+    "A123 Systems, LLC"
+   ],
+   "tag": "employer of founder of Spider9 ?",
+   "key": "employer of founder of Spider9 ?",
+   "hops": [
+    [
+     "founder",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Spider9",
+   "single_pass": "Copterline Oy",
+   "chain": "Spider9 Inc.",
+   "retrieval": "Spider9 was founded in 2011 by the head of Wangxiang Qiaochao, the automotive",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Who founded Spider9?",
+     "Glynne Townsend (A123 Systems), Dave Park (former Vice President of Production at Wave Crest Energy Systems",
+     ""
+    ],
+    [
+     "Who was the founder of Spider9?",
+     "Glynne Townsend",
+     ""
+    ],
+    [
+     "Who did Glynne Townsend work for?",
+     "Spider9 Inc.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 32,
+   "q": "What is the population of the city at which the transmitter of WLLZ-LP was placed? ",
+   "gold": [
+    "143,372"
+   ],
+   "tag": "attribute of home of publisher of WLLZ-LP ?",
+   "key": "attribute of home of WLLZ-LP ?",
+   "hops": [
+    [
+     "publisher",
+     null
+    ],
+    [
+     "home",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "WLLZ-LP",
+   "single_pass": "White House, Tennessee",
+   "chain": "12",
+   "retrieval": "Traverse City",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries WLLZ-LP?",
+     "MyNetworkTV",
+     ""
+    ],
+    [
+     "Where is MyNetworkTV located?",
+     "Cedar",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Cedar?",
+     "12",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 33,
+   "q": "Charles Haughey held what position when he dissolved the list of members who were elected to the lower house of the Oireachtas of Ireland on 25 May 1989?",
+   "gold": [
+    "Taoiseach of Ireland"
+   ],
+   "tag": "attribute of Charles Haughey ?",
+   "key": "attribute of Charles Haughey ?",
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Charles Haughey",
+   "single_pass": "Taoiseach",
+   "chain": "44",
+   "retrieval": "Taoiseach",
+   "f1_sp": 0.5,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.5,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Charles Haughey?",
+     "44",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 34,
+   "q": "What city, located in Lincoln County, Montana, United States, is Vegepet based in?",
+   "gold": [
+    "Troy, Montana"
+   ],
+   "tag": "home of Vegepet ?",
+   "key": "home of Vegepet ?",
+   "hops": [
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "Vegepet",
+   "single_pass": "None of the provided passages mention Vegepet or its location.",
+   "chain": "Vegepet is not mentioned in the provided passages.",
+   "retrieval": "None of the provided passages mention Vegepet or its location.",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Where is Vegepet located?",
+     "Vegepet is not mentioned in the provided passages.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 35,
+   "q": "McLaren MP4/11 was driven by what Finnish former professional racing driver",
+   "gold": [
+    "Mika H\u00e4kkinen"
+   ],
+   "tag": "leader of McLaren MP4/11 ?",
+   "key": "leader of McLaren MP4/11 [ retired ] ?",
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "McLaren MP4/11",
+   "single_pass": "Mika H\u00e4kkinen",
+   "chain": "Mika H\u00e4kkinen",
+   "retrieval": "Mika H\u00e4kkinen",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of McLaren MP4/11?",
+     "Mika H\u00e4kkinen",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 36,
+   "q": "Which of the movie which has Rich Lee 3-D previsualizations was directed by Francis Lawrence?",
+   "gold": [
+    "Constantine"
+   ],
+   "tag": "director of producer of Rich Lee ?",
+   "key": "producer of Rich Lee ?",
+   "hops": [
+    [
+     "producer",
+     null
+    ],
+    [
+     "director",
+     null
+    ]
+   ],
+   "entity": "Rich Lee",
+   "single_pass": "Constantine",
+   "chain": "Rich Lee",
+   "retrieval": "Constantine",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "trace": [
+    [
+     "What work is Rich Lee known for making or appearing in?",
+     "music videos",
+     ""
+    ],
+    [
+     "Who directed music videos?",
+     "Rich Lee",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 37,
+   "q": "Who choreographed one who is said to be the last muse for the choreographer and starred in the Nutcracker?",
+   "gold": [
+    "George Balanchine"
+   ],
+   "tag": "leader of leader of leader of Nutcracker ?",
+   "key": "leader of leader of Nutcracker ?",
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "leader",
+     null
+    ],
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Nutcracker",
+   "single_pass": "Darci Kistler",
+   "chain": "Marius Petipa",
+   "retrieval": "Darci Kistler",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Nutcracker?",
+     "Marius Petipa",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Marius Petipa?",
+     "Lev Ivanov",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Lev Ivanov?",
+     "Marius Petipa",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 38,
+   "q": "Which utility holding company did Alfred A. Marcus work as a consultant?",
+   "gold": [
+    "Xcel Energy Inc."
+   ],
+   "tag": "employer of Alfred A. Marcus ?",
+   "key": "employer of Alfred A. Marcus ?",
+   "hops": [
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Alfred A. Marcus",
+   "single_pass": "North American Light and Power Company",
+   "chain": "University of Minnesota",
+   "retrieval": "Southern Company",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "Who did Alfred A. Marcus work for?",
+     "Alfred Allen Marcus worked for the University of Minnesota, Technological Leadership Institute, 3M, Corning Inc.,",
+     ""
+    ],
+    [
+     "Which team, school or organisation was Alfred A. Marcus part of?",
+     "University of Minnesota",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 39,
+   "q": "Which film was released first, Summer Magic or Around the World in 80 Days?",
+   "gold": [
+    "Summer Magic"
+   ],
+   "tag": "NA",
+   "key": "NA",
+   "hops": null,
+   "entity": null,
+   "single_pass": "Around the World in 80 Days",
+   "chain": "Around the World in 80 Days",
+   "retrieval": "Around the World in 80 Days",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Around the World in 80 Days",
+     ""
+    ]
+   ]
+  }
+ ]
+}

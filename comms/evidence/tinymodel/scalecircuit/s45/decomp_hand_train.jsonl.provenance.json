@@ -1,0 +1,12 @@
+{
+ "file": "data/decomp_hand_train.jsonl",
+ "sha256": "0badd8134997ed16ca28162ec096af54c00189c6efeb526b0cc15239812f395c",
+ "verdict": "SUSPECT",
+ "utc": "2026-09-14T04:01:52Z",
+ "checker": "scripts/decomp_data_check.py",
+ "leg4_share": 0.3879598662207358,
+ "leg4_null_mean": 0.33838350055741356,
+ "leg4_null_p95": 0.38461538461538464,
+ "leg4_null_p99": 0.3979933110367893,
+ "leg4_excess": 0.04957636566332224
+}

@@ -1,0 +1,7 @@
+{
+ "file": "data/tagger_train_v4.jsonl",
+ "sha256": "4a1947c0d8b58df3368424b9835946542b44ebc863b8ad733bab7699f43f815c",
+ "verdict": "CLEAN",
+ "utc": "2026-09-13T19:30:43Z",
+ "checker": "scripts/tagger_data_check.py"
+}

@@ -1,0 +1,8 @@
+restate vs plain prompt on DEV2, n=100 (same decomposer adapter; every arm gets the restated prompt)
+  sp               plain 0.469 -> restate 0.434  delta -0.035  CI [-0.098, +0.025]  up 6 / down 11
+  superset_notes   plain 0.561 -> restate 0.528  delta -0.033  CI [-0.105, +0.036]  up 9 / down 14
+  iterative_notes  plain 0.552 -> restate 0.522  delta -0.030  CI [-0.112, +0.052]  up 12 / down 16
+  superset         plain 0.463 -> restate 0.501  delta +0.038  CI [-0.043, +0.120]  up 17 / down 13
+  chain            plain 0.462 -> restate 0.434  delta -0.028  CI [-0.110, +0.053]  up 10 / down 14
+  bridge copies (superset+notes, two-hop, wrong, answer == hop-1 note), plain: 10 of 53
+  bridge copies (superset+notes, two-hop, wrong, answer == hop-1 note), restate: 9 of 53

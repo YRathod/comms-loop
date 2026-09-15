@@ -1,0 +1,5 @@
+n=30 single_pass=0.370 chain=0.118 retrieval=0.405 best_wiring=0.405 band=0.420 -> FAIL
+chain: wins 1 [(20, 0.4)] | losses 11 [(5, -0.22), (8, -1.0), (10, -1.0), (13, -1.0), (15, -0.57), (22, -0.4), (23, -1.0), (24, -0.25), (28, -1.0), (33, -0.5), (36, -1.0)]
+retrieval: wins 2 [(19, 0.67), (20, 0.4)] | losses 0 []
+oracle union (D2 complementarity): 0.405  (+0.036 over single-pass)
+file summary: {"f1_sp": 0.3697883597883598, "f1_chain": 0.11833333333333333, "f1_retrieval": 0.40534391534391534, "n": 30, "oracle_union": 0.40534391534391534, "chain_wins": 1, "chain_losses": 11, "retr_wins": 2, "retr_losses": 0}

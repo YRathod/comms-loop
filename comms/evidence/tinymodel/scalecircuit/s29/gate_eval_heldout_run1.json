@@ -1,0 +1,11 @@
+{
+ "adapter": "models/tagger_v4clean_0.5b",
+ "base": "Qwen/Qwen2.5-0.5B-Instruct",
+ "lstm": "checkpoints/compare/decomp_filter_lstm.pt",
+ "docs": "0-99",
+ "out": "scale/results/pipeline_exec_heldout_v1_run1.json",
+ "data": "data/hotpot_heldout_v1.jsonl",
+ "budget_tokens": 3000,
+ "retrieve_k": 6,
+ "wiring_k": 4
+}

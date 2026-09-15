@@ -1,0 +1,10 @@
+leg 1 FIRST: 0 of 89 in eval questions []
+leg 1 LAST: 0 of 91 in eval questions []
+leg 1 ADJ: 0 of 10 in eval questions []
+leg 1 NOUN: 0 of 10 in eval questions []
+leg 1 DESCRIPTORS: 0 of 10 in eval questions []
+leg 1 OOV_MODIFIERS: 0 of 12 in eval questions []
+leg 2 templates sharing a content 3-gram with an eval question: 0 []
+leg 3 eval anchors in training questions: 0 []
+leg 4 distribution: 0.01% of training questions share a content 3-gram with an eval question (FAIL > 2%, SUSPECT > 0.5%)
+PROVENANCE CHECK: CLEAN

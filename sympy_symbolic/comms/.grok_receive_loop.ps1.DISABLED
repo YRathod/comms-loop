@@ -1,0 +1,16 @@
+﻿$pending = "<local>/model-training\sympy_symbolic\comms\PENDING.md"
+$state = "<local>/model-training\sympy_symbolic\comms\.grok_loop_state.json"
+$last = ""
+if (Test-Path $state) { $last = (Get-Content $state -Raw) }
+while ($true) {
+  Start-Sleep -Seconds 60
+  if (-not (Test-Path $pending)) { continue }
+  $txt = Get-Content $pending -Raw
+  if ($txt -match '## inbox_grok[^\n]*\n(?:_empty_|- `([^`]+)`)') {
+    $item = if ($Matches[1]) { $Matches[1] } else { "" }
+    if ($item -and $item -ne $last) {
+      Set-Content -Path $state -Value $item -NoNewline
+      Write-Output ('AGENT_LOOP_WAKE_sympy_grok {"prompt":"sympy_symbolic/comms: new mail in inbox_grok — read oldest first, attack/tooling review, reply to inbox_kimi, archive processed copy, update LEDGER.md","mail":"' + $item + '"}')
+    }
+  }
+}

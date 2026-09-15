@@ -1,0 +1,2086 @@
+{
+ "summary": {
+  "f1_sp": 0.43859126984126984,
+  "f1_chain": 0.20125,
+  "f1_retrieval": 0.4411818495514147,
+  "f1_iterative": 0.4854080400276052,
+  "f1_iterative_notes": 0.46859126984126986,
+  "f1_superset": 0.45331739675275146,
+  "f1_superset_notes": 0.47035894660894656,
+  "f1_superset_fallback": 0.49354296066252584,
+  "n": 40,
+  "oracle_union": 0.5902579365079366,
+  "chain_wins": 3,
+  "chain_losses": 16,
+  "retrieval_wins": 3,
+  "retrieval_losses": 4,
+  "iterative_wins": 5,
+  "iterative_losses": 4,
+  "iterative_notes_wins": 4,
+  "iterative_notes_losses": 5,
+  "superset_wins": 3,
+  "superset_losses": 4,
+  "superset_notes_wins": 4,
+  "superset_notes_losses": 5,
+  "superset_fallback_wins": 3,
+  "superset_fallback_losses": 2
+ },
+ "args": {
+  "adapter": "models/tagger_loop/round2",
+  "base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "lstm": "checkpoints/compare/decomp_filter_lstm.pt",
+  "docs": "160-199",
+  "out": "scale/results/pipeline_dev_160-199_v3_r2.json",
+  "budget_tokens": 3000,
+  "retrieve_k": 6,
+  "wiring_k": 4
+ },
+ "rows": [
+  {
+   "doc": 160,
+   "q": "What is the day of the horse race of which ESPN covers both the post position draw and the undercard races?",
+   "gold": [
+    "Saturday"
+   ],
+   "tag": "attribute of leader of ESPN ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "ESPN",
+   "single_pass": "May 15",
+   "chain": "rank 2",
+   "retrieval": "May 15",
+   "iterative": "May 15",
+   "iterative_notes": "May 15",
+   "superset": "May 15",
+   "superset_notes": "May 15",
+   "superset_fallback": "May 15",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of ESPN?",
+     "None of the entities mentioned are leaders, members, or main persons of ESPN based on the given passage.",
+     ""
+    ],
+    [
+     "Who played for or performed in ESPN?",
+     "Chris Lincoln, Chris Fowler, Joe Tessitore, Kenny Mayne, Charlsie Cantey, Dave Johnson, Bob",
+     ""
+    ],
+    [
+     "Who is the person behind ESPN?",
+     "None of the entities mentioned in the passage are identified as the person behind ESPN.",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with ESPN?",
+     "rank 2",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of ESPN?",
+     "ESPN",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with ESPN?",
+     "rank 2",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 161,
+   "q": "Kevin Yorn an American entertainment attorney who represents an Australian actor who  played the role of Josh Taylor in what soap opera?",
+   "gold": [
+    "Neighbours"
+   ],
+   "tag": "employer of employer of Kevin Yorn ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Kevin Yorn",
+   "single_pass": "Neighbours",
+   "chain": "Yorn",
+   "retrieval": "Days of Our Lives",
+   "iterative": "Josh Taylor played the role of Roman Brady in the soap opera Days of Our Lives. Kevin Yorn is an American entertainment",
+   "iterative_notes": "Josh Taylor played the role of Roman Brady in the soap opera Days of Our Lives.",
+   "superset": "Josh Taylor played the role of Josh Taylor in the soap opera Neighbours. Kevin Yorn is an American entertainment attorney who",
+   "superset_notes": "Josh Taylor played the role of Josh Taylor in the soap opera Neighbours. Kevin Yorn represented an Australian actor, Stefan",
+   "superset_fallback": "Neighbours",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.10526315789473684,
+   "f1_superset_notes": 0.1111111111111111,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who did Kevin Yorn work for?",
+     "L.A. County",
+     ""
+    ],
+    [
+     "Who did L.A. County work for?",
+     "Yorn",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Kevin Yorn work for?",
+     "Yorn Barnes Levine",
+     ""
+    ],
+    [
+     "Who did Yorn Barnes Levine work for?",
+     "Yorn Barnes Levine worked for Kevin Yorn",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 162,
+   "q": "What stagecoach robber did Frederick John Fulton prosecute?",
+   "gold": [
+    "Bill Miner"
+   ],
+   "tag": "leader of Frederick John Fulton ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Frederick John Fulton",
+   "single_pass": "Bill Miner",
+   "chain": "Frederick John Fulton",
+   "retrieval": "Bill Miner",
+   "iterative": "Bill Miner",
+   "iterative_notes": "Bill Miner",
+   "superset": "Bill Miner",
+   "superset_notes": "Bill Miner",
+   "superset_fallback": "Bill Miner",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Frederick John Fulton?",
+     "Frederick John Fulton",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Frederick John Fulton?",
+     "Frederick John Fulton",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 163,
+   "q": "H-63 is a highway that runs near the county seat of what Michigan county?",
+   "gold": [
+    "Chippewa County"
+   ],
+   "tag": "home of H-63 ?",
+   "key": null,
+   "hops": [
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "H-63",
+   "single_pass": "Chippewa County",
+   "chain": "H-63 is located in Sault Ste. Marie, Michigan.",
+   "retrieval": "Chippewa County",
+   "iterative": "H-63 is a highway that runs near the county seat of Chippewa County.",
+   "iterative_notes": "H-63 is a highway that runs near the county seat of Chippewa County, Michigan.",
+   "superset": "H-63 is a highway that runs near the county seat of Chippewa County.",
+   "superset_notes": "H-63 is a highway that runs near the county seat of Chippewa County, Michigan.",
+   "superset_fallback": "Chippewa County",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.2857142857142857,
+   "f1_iterative_notes": 0.2666666666666667,
+   "f1_superset": 0.2857142857142857,
+   "f1_superset_notes": 0.2666666666666667,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Where is H-63 located?",
+     "H-63 is located in Sault Ste. Marie, Michigan.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is H-63 located?",
+     "H-63 is located in Sault Ste. Marie, Michigan.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 164,
+   "q": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+   "gold": [
+    "3,677 seated"
+   ],
+   "tag": "attribute of employer of Lewiston Maineiacs ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Lewiston Maineiacs",
+   "single_pass": "1,400",
+   "chain": "43",
+   "retrieval": "Androscoggin Bank Colis\u00e9e can seat up to 1,400 people.",
+   "iterative": "7,201",
+   "iterative_notes": "7,201",
+   "superset": "550",
+   "superset_notes": "550",
+   "superset_fallback": "550",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who did Lewiston Maineiacs work for?",
+     "Quebec Major Junior Hockey League",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Quebec Major Junior Hockey League?",
+     "43",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Lewiston Maineiacs work for?",
+     "QMJHL",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with QMJHL?",
+     "rank 2",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 165,
+   "q": "Which ocean would the ingredients likely come from for the She-crab soup?",
+   "gold": [
+    "Atlantic Ocean"
+   ],
+   "tag": "birthplace of attribute of the She-crab soup ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ],
+    [
+     "birthplace",
+     null
+    ]
+   ],
+   "entity": "the She-crab soup",
+   "single_pass": "Atlantic",
+   "chain": "South Carolina Lowcountry",
+   "retrieval": "Atlantic",
+   "iterative": "Atlantic",
+   "iterative_notes": "Atlantic",
+   "superset": "Atlantic",
+   "superset_notes": "Atlantic",
+   "superset_fallback": "Atlantic",
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with the She-crab soup?",
+     "none",
+     ""
+    ],
+    [
+     "When or how much for the She-crab soup?",
+     "traditionally, crab roe, milk or heavy cream, crab or fish stock",
+     ""
+    ],
+    [
+     "Where was traditionally, crab roe, milk or heavy cream, crab or fish stock born?",
+     "South Carolina Lowcountry",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with the She-crab soup?",
+     "none",
+     ""
+    ],
+    [
+     "Where was the She-crab soup born?",
+     "South Carolina Lowcountry",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 166,
+   "q": "What profession do Raj Kapoor and Mike Cahill share?",
+   "gold": [
+    "director"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "None",
+   "chain": "None",
+   "retrieval": "None",
+   "iterative": "None",
+   "iterative_notes": "None",
+   "superset": "None",
+   "superset_notes": "None",
+   "superset_fallback": "None",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "None",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 167,
+   "q": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+   "gold": [
+    "IK Start"
+   ],
+   "tag": "employer of leader of 2011 La Manga Cup ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "2011 La Manga Cup",
+   "single_pass": "Viking",
+   "chain": "Start",
+   "retrieval": "Viking\nStart",
+   "iterative": "Start",
+   "iterative_notes": "Start",
+   "superset": "Start",
+   "superset_notes": "Start",
+   "superset_fallback": "Start",
+   "f1_sp": 0.0,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "Who is the leader, member or main person of 2011 La Manga Cup?",
+     "none",
+     ""
+    ],
+    [
+     "Who played for or performed in 2011 La Manga Cup?",
+     "none",
+     ""
+    ],
+    [
+     "Who is the person behind 2011 La Manga Cup?",
+     "None",
+     ""
+    ],
+    [
+     "Who did 2011 La Manga Cup work for?",
+     "The 2011 La Manga Cup does not have any information provided about the winner or participating teams.",
+     ""
+    ],
+    [
+     "Which team, school or organisation was 2011 La Manga Cup part of?",
+     "Start",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of 2011 La Manga Cup?",
+     "none",
+     ""
+    ],
+    [
+     "Who did 2011 La Manga Cup work for?",
+     "none",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 168,
+   "q": "What colors are worn by the Oregon Duck, mascot of the University of Oregon athletic teams?",
+   "gold": [
+    "green and yellow"
+   ],
+   "tag": "attribute of leader of Oregon Duck ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Oregon Duck",
+   "single_pass": "green and yellow",
+   "chain": "20 years",
+   "retrieval": "green and yellow",
+   "iterative": "green and yellow",
+   "iterative_notes": "green and yellow",
+   "superset": "green and yellow",
+   "superset_notes": "green and yellow",
+   "superset_fallback": "green and yellow",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Oregon Duck?",
+     "Leo Harris",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Leo Harris?",
+     "20 years",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Oregon Duck?",
+     "Leo Harris",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Leo Harris?",
+     "20",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 169,
+   "q": "What is the character of fictional character Claire Fraser in a British-American television drama series developed by Ronald D. Moore ?",
+   "gold": [
+    "Claire is a married World War II nurse"
+   ],
+   "tag": "owner of producer of Ronald D. Moore ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ],
+    [
+     "owner",
+     null
+    ]
+   ],
+   "entity": "Ronald D. Moore",
+   "single_pass": "Claire Fraser",
+   "chain": "Simon Woods",
+   "retrieval": "Claire Fraser",
+   "iterative": "Claire Fraser",
+   "iterative_notes": "Sam Heughan",
+   "superset": "Jamie Fraser",
+   "superset_notes": "Jamie Fraser",
+   "superset_fallback": "Jamie Fraser",
+   "f1_sp": 0.22222222222222224,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.22222222222222224,
+   "f1_iterative": 0.22222222222222224,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "What work is Ronald D. Moore known for making or appearing in?",
+     "Rome",
+     ""
+    ],
+    [
+     "Who owns or holds Rome?",
+     "Simon Woods",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is Ronald D. Moore known for making or appearing in?",
+     "Rome",
+     ""
+    ],
+    [
+     "Who owns or holds Rome?",
+     "Christopher Nolan",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 170,
+   "q": "For what ogranization does a commentator of Press TV serve as associate director?",
+   "gold": [
+    "Henry Jackson Society"
+   ],
+   "tag": "employer of leader of Press TV ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Press TV",
+   "single_pass": "The Spectator",
+   "chain": "Mohammad Sarafraz worked for Press TV.",
+   "retrieval": "Islamic Republic of Iran Broadcasting (IRIB)",
+   "iterative": "Henry Jackson Society",
+   "iterative_notes": "Henry Jackson Society",
+   "superset": "J. M. Dawson Institute of Church-State Studies",
+   "superset_notes": "Baylor University",
+   "superset_fallback": "The Spectator",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Press TV?",
+     "Mohammad Sarafraz",
+     ""
+    ],
+    [
+     "Who did Mohammad Sarafraz work for?",
+     "Mohammad Sarafraz worked for Press TV.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Press TV?",
+     "Ayatollah Ali Khamenei",
+     ""
+    ],
+    [
+     "Who did Ayatollah Ali Khamenei work for?",
+     "Ayatollah Ali Khamenei works for IRIB, the only organisation legally able to transmit radio and television broadcasts",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 171,
+   "q": "What else was Baghdad known as during the Abbasid Caliphate?",
+   "gold": [
+    "the City of Peace"
+   ],
+   "tag": "attribute of Baghdad ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Baghdad",
+   "single_pass": "Baghdad was known as the city of the caliphs.",
+   "chain": "amir al-umara",
+   "retrieval": "Baghdad was also known as the Dar al-Sultan",
+   "iterative": "Baghdad was known as a great city during the Abbasid Caliphate.",
+   "iterative_notes": "Baghdad was known as the capital city",
+   "superset": "Baghdad was known as the city of the caliphs.",
+   "superset_notes": "Baghdad was known as the capital of the Abbasid Caliphate.",
+   "superset_fallback": "Baghdad was known as the city of the caliphs.",
+   "f1_sp": 0.4,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.16666666666666666,
+   "f1_iterative_notes": 0.2222222222222222,
+   "f1_superset": 0.4,
+   "f1_superset_notes": 0.18181818181818182,
+   "f1_superset_fallback": 0.4,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Baghdad?",
+     "amir al-umara",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Baghdad?",
+     "amir al-umara",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 172,
+   "q": "Leonard Logsdail had a cameo role in the biographical film directed by whom?",
+   "gold": [
+    "Martin Scorsese"
+   ],
+   "tag": "director of producer of Leonard Logsdail ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ],
+    [
+     "director",
+     null
+    ]
+   ],
+   "entity": "Leonard Logsdail",
+   "single_pass": "William Dieterle",
+   "chain": "Leonard Logsdail",
+   "retrieval": "Steven Spielberg",
+   "iterative": "Steven Spielberg",
+   "iterative_notes": "None of the above mentioned directors",
+   "superset": "Peter Jackson",
+   "superset_notes": "Martin Scorsese",
+   "superset_fallback": "Peter Jackson",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "What work is Leonard Logsdail known for making or appearing in?",
+     "Savile Row tailoring\nhigh-end suits\nHermes silk scarves\ncameo acting role",
+     ""
+    ],
+    [
+     "Who directed Savile Row tailoring\nhigh-end suits\nHermes silk scarves\ncameo acting role?",
+     "Leonard Logsdail",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is Leonard Logsdail known for making or appearing in?",
+     "Suits",
+     ""
+    ],
+    [
+     "Who directed Suits?",
+     "None",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 173,
+   "q": "Which composer was wrote his music most recently, Michael Tippett or Luigi Cherubini?",
+   "gold": [
+    "Michael Kemp Tippett"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Michael Tippett",
+   "chain": "Michael Tippett",
+   "retrieval": "Michael Tippett",
+   "iterative": "Michael Tippett",
+   "iterative_notes": "Michael Tippett",
+   "superset": "Michael Tippett",
+   "superset_notes": "Michael Tippett",
+   "superset_fallback": "Michael Tippett",
+   "f1_sp": 0.8,
+   "f1_chain": 0.8,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "f1_superset": 0.8,
+   "f1_superset_notes": 0.8,
+   "f1_superset_fallback": 0.8,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Michael Tippett",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 174,
+   "q": "The Panel with striding lion  was one of many that lined the way north of the gate to the inner city of what location?",
+   "gold": [
+    "Babylon"
+   ],
+   "tag": "home of leader of Panel of Striding Lion ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "Panel of Striding Lion",
+   "single_pass": "Ishtar Gate",
+   "chain": "Germany",
+   "retrieval": "Babylon",
+   "iterative": "Ishtar Gate",
+   "iterative_notes": "Ishtar Gate",
+   "superset": "Ishtar Gate",
+   "superset_notes": "Ishtar Gate",
+   "superset_fallback": "Ishtar Gate",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Panel of Striding Lion?",
+     "R. Koldewey",
+     ""
+    ],
+    [
+     "Where is R. Koldewey located?",
+     "Germany",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Panel of Striding Lion?",
+     "R. Koldewey",
+     ""
+    ],
+    [
+     "Where is R. Koldewey located?",
+     "Germany",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 175,
+   "q": "What Lithuanian producer is best known for a song that was one of the most popular songs in Ibiza in 2014?",
+   "gold": [
+    "Ten Walls"
+   ],
+   "tag": "producer of one of the most popular songs in Ibiza ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "one of the most popular songs in Ibiza",
+   "single_pass": "Ten Walls",
+   "chain": "\"Walking with Elephants\"",
+   "retrieval": "Ten Walls",
+   "iterative": "Ten Walls",
+   "iterative_notes": "Ten Walls",
+   "superset": "Ten Walls",
+   "superset_notes": "Ten Walls",
+   "superset_fallback": "Ten Walls",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "What work is one of the most popular songs in Ibiza known for making or appearing in?",
+     "\"Walking with Elephants\"",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is one of the most popular songs in Ibiza known for making or appearing in?",
+     "\"Walking with Elephants\"",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 176,
+   "q": "John Paesano wrote which film for DreamWorks Dragons?",
+   "gold": [
+    "Dragons: Riders of Berk"
+   ],
+   "tag": "producer of John Paesano ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "John Paesano",
+   "single_pass": "Gift of the Night Fury",
+   "chain": "The Maze Runner",
+   "retrieval": "none",
+   "iterative": "Gift of the Night Fury",
+   "iterative_notes": "Gift of the Night Fury",
+   "superset": "Gift of the Night Fury",
+   "superset_notes": "Gift of the Night Fury",
+   "superset_fallback": "Gift of the Night Fury",
+   "f1_sp": 0.25,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.25,
+   "f1_iterative_notes": 0.25,
+   "f1_superset": 0.25,
+   "f1_superset_notes": 0.25,
+   "f1_superset_fallback": 0.25,
+   "trace": [
+    [
+     "What work is John Paesano known for making or appearing in?",
+     "The Maze Runner",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is John Paesano known for making or appearing in?",
+     "The Maze Runner",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 177,
+   "q": "The player who laid motionless for ten minutes in the Todd Bertuzzi\u2013Steve Moore incident was born in which year ?",
+   "gold": [
+    "1978"
+   ],
+   "tag": "attribute of leader of Todd Bertuzzi\u2013Steve Moore ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Todd Bertuzzi\u2013Steve Moore",
+   "single_pass": "1978",
+   "chain": "rank: 53",
+   "retrieval": "1978",
+   "iterative": "1978",
+   "iterative_notes": "1978",
+   "superset": "1978",
+   "superset_notes": "1978",
+   "superset_fallback": "1978",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Todd Bertuzzi\u2013Steve Moore?",
+     "Todd Bertuzzi, Steve Moore",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Todd Bertuzzi, Steve Moore?",
+     "rank: 53",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Todd Bertuzzi\u2013Steve Moore?",
+     "Todd Bertuzzi, Steve Moore",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Todd Bertuzzi, Steve Moore?",
+     "53",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 178,
+   "q": "Who had the lowest vocal range in Cosmos?",
+   "gold": [
+    "J\u0101nis Strazdi\u0146\u0161"
+   ],
+   "tag": "leader of Cosmos ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Cosmos",
+   "single_pass": "none",
+   "chain": "Antonio Mantegazza,J\u0101nis \u0160ipk\u0113vics,Andris S\u0113j\u0101ns",
+   "retrieval": "J\u0101nis Ozols",
+   "iterative": "J\u0101nis Strazdi\u0146\u0161",
+   "iterative_notes": "J\u0101nis Strazdi\u0146\u0161",
+   "superset": "J\u0101nis Strazdi\u0146\u0161",
+   "superset_notes": "J\u0101nis Strazdi\u0146\u0161",
+   "superset_fallback": "J\u0101nis Strazdi\u0146\u0161",
+   "f1_sp": 0.0,
+   "f1_chain": 0.25,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Cosmos?",
+     "Antonio Mantegazza,J\u0101nis \u0160ipk\u0113vics,Andris S\u0113j\u0101ns",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Cosmos?",
+     "J\u0101nis \u0160ipk\u0113vics",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 179,
+   "q": "Havelock Ellis and Arnold Bennett were both what?",
+   "gold": [
+    "writer"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "author",
+   "chain": "author",
+   "retrieval": "author",
+   "iterative": "author",
+   "iterative_notes": "author",
+   "superset": "author",
+   "superset_notes": "author",
+   "superset_fallback": "author",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "author",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 180,
+   "q": "In 135 BC, a second campaign was sent to intervene in a war between Minyue and another ancient kingdom established at the collapse of whom?",
+   "gold": [
+    "the Qin dynasty"
+   ],
+   "tag": "leader of brother of Minyue ?",
+   "key": null,
+   "hops": [
+    [
+     "brother",
+     null
+    ],
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Minyue",
+   "single_pass": "Nanyue",
+   "chain": "Zhao Tuo",
+   "retrieval": "Nanyue",
+   "iterative": "Nanyue",
+   "iterative_notes": "Nanyue",
+   "superset": "Nanyue",
+   "superset_notes": "Nanyue",
+   "superset_fallback": "Nanyue",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "What came just before Minyue?",
+     "Nanyue",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Nanyue?",
+     "Zhao Tuo",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What came just before Minyue?",
+     "Nanyue",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Nanyue?",
+     "Zhao Tuo",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 181,
+   "q": "What title did the author of Det norske Theater's first production hold ? ",
+   "gold": [
+    "Baron of Holberg"
+   ],
+   "tag": "attribute of writer of Det norske Theater ?",
+   "key": null,
+   "hops": [
+    [
+     "writer",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Det norske Theater",
+   "single_pass": "Henrik Ibsen",
+   "chain": "1850",
+   "retrieval": "Ole Bull",
+   "iterative": "Ludvig Holberg",
+   "iterative_notes": "Ole Bull",
+   "superset": "Henrik Ibsen",
+   "superset_notes": "violinist",
+   "superset_fallback": "Henrik Ibsen",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.4,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who wrote Det norske Theater?",
+     "Ole Bull",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Ole Bull?",
+     "1850",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who wrote Det norske Theater?",
+     "Ole Bull",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Ole Bull?",
+     "primus motor",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 182,
+   "q": "Where did the punter for the Dallas Cowboys in the 1980s play college football?",
+   "gold": [
+    "Arizona State University"
+   ],
+   "tag": "home of leader of Dallas Cowboys ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "Dallas Cowboys",
+   "single_pass": "University of Mississippi",
+   "chain": "Mississippi",
+   "retrieval": "University of Mississippi",
+   "iterative": "University of Mississippi",
+   "iterative_notes": "University of Mississippi",
+   "superset": "University of Mississippi",
+   "superset_notes": "University of Mississippi",
+   "superset_fallback": "University of Mississippi",
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.3333333333333333,
+   "f1_iterative": 0.3333333333333333,
+   "f1_iterative_notes": 0.3333333333333333,
+   "f1_superset": 0.3333333333333333,
+   "f1_superset_notes": 0.3333333333333333,
+   "f1_superset_fallback": 0.3333333333333333,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Dallas Cowboys?",
+     "Jim Miller\nJerry Tubbs\nTodd Lowber",
+     ""
+    ],
+    [
+     "Where is Jim Miller\nJerry Tubbs\nTodd Lowber located?",
+     "Mississippi",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Dallas Cowboys?",
+     "Jim Miller\nDallas Cowboys",
+     ""
+    ],
+    [
+     "Where is Jim Miller\nDallas Cowboys located?",
+     "Dallas Cowboys",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 183,
+   "q": "Are Dutch Smoushond and Sussex Spaniel's both dog breeds?",
+   "gold": [
+    "yes"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Yes",
+   "chain": "Yes",
+   "retrieval": "Yes",
+   "iterative": "Yes",
+   "iterative_notes": "Yes",
+   "superset": "Yes",
+   "superset_notes": "Yes",
+   "superset_fallback": "Yes",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Yes",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 184,
+   "q": "Which band, Matthew Good Band or Switchfoot is still together?",
+   "gold": [
+    "Switchfoot"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Matthew Good Band",
+   "chain": "Matthew Good Band",
+   "retrieval": "Matthew Good Band",
+   "iterative": "Matthew Good Band",
+   "iterative_notes": "Matthew Good Band",
+   "superset": "Matthew Good Band",
+   "superset_notes": "Matthew Good Band",
+   "superset_fallback": "Matthew Good Band",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Matthew Good Band",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 185,
+   "q": "Are Portland International Airport and Gerald R. Ford International Airport both located in Oregon?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 186,
+   "q": "Who won more awards, Brothers Quay or Jake Kasdan?",
+   "gold": [
+    "Brothers Quay"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Brothers Quay",
+   "chain": "Brothers Quay",
+   "retrieval": "Brothers Quay",
+   "iterative": "Brothers Quay",
+   "iterative_notes": "Brothers Quay",
+   "superset": "Brothers Quay",
+   "superset_notes": "Brothers Quay",
+   "superset_fallback": "Brothers Quay",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Brothers Quay",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 187,
+   "q": "How long is the river The Atherton Bridge spans?",
+   "gold": [
+    "37.5"
+   ],
+   "tag": "attribute of parent of The Atherton Bridge ?",
+   "key": null,
+   "hops": [
+    [
+     "parent",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "The Atherton Bridge",
+   "single_pass": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "chain": "65 metres (213 ft)",
+   "retrieval": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "iterative": "90 feet",
+   "iterative_notes": "90 feet",
+   "superset": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "superset_notes": "72 feet (22 m)",
+   "superset_fallback": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who are the parents of The Atherton Bridge?",
+     "J. H. Cofrode & Co.",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with J. H. Cofrode & Co.?",
+     "65 metres (213 ft)",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who are the parents of The Atherton Bridge?",
+     "J. H. Cofrode & Co.",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with J. H. Cofrode & Co.?",
+     "1870",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 188,
+   "q": "Why is Bangor Daily News talkin about Sawin Millett?",
+   "gold": [
+    "Commissioner by the Maine Senate"
+   ],
+   "tag": "attribute of Bangor Daily News ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Bangor Daily News",
+   "single_pass": "Bangor Daily News is talking about Sawin Millett because he was unanimously approved as Commissioner by the Maine Senate in January",
+   "chain": "rank of 9",
+   "retrieval": "Because Sawin Millett Jr. was mentioned as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "iterative": "Because Howard Sawin Millett Jr. served as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "iterative_notes": "Bangor Daily News talks about Sawin Millett as it is the newspaper's name mentioned in the passage.",
+   "superset": "Because Howard Sawin Millett Jr. served as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "superset_notes": "Bangor Daily News talks about Sawin Millett as it is the newspaper's name mentioned in the passage.",
+   "superset_fallback": "Because Howard Sawin Millett Jr. served as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "f1_sp": 0.33333333333333337,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.08695652173913043,
+   "f1_iterative": 0.08695652173913043,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.08695652173913043,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.08695652173913043,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Bangor Daily News?",
+     "rank of 9",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Bangor Daily News?",
+     "68",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 189,
+   "q": "Who did the actor that plays Sean Tully defeat in a dancing contest?",
+   "gold": [
+    "Jodie Prenger"
+   ],
+   "tag": "leader of leader of Sean Tully ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Sean Tully",
+   "single_pass": "Warrington Wolves",
+   "chain": "Antony Cotton",
+   "retrieval": "Antony Cotton",
+   "iterative": "Grant Mitchell",
+   "iterative_notes": "Antony Cotton (who plays Sean Tully) did not participate in a dancing contest mentioned in the passage.",
+   "superset": "Antony Cotton",
+   "superset_notes": "Antony Cotton",
+   "superset_fallback": "Antony Cotton",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Sean Tully?",
+     "Antony Cotton",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Antony Cotton?",
+     "Antony Cotton",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Sean Tully?",
+     "Antony Cotton",
+     ""
+    ],
+    [
+     "Who is the leader, member or main person of Antony Cotton?",
+     "Sean Tully",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 190,
+   "q": "What river does Waterloo Bridge and London Eye have in common?",
+   "gold": [
+    "Thames"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "River Thames",
+   "chain": "River Thames",
+   "retrieval": "River Thames",
+   "iterative": "River Thames",
+   "iterative_notes": "River Thames",
+   "superset": "River Thames",
+   "superset_notes": "River Thames",
+   "superset_fallback": "River Thames",
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "f1_superset": 0.6666666666666666,
+   "f1_superset_notes": 0.6666666666666666,
+   "f1_superset_fallback": 0.6666666666666666,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "River Thames",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 191,
+   "q": "Which is a beauty magazine, Allure or Claudia?",
+   "gold": [
+    "Allure"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Allure",
+   "chain": "Allure",
+   "retrieval": "Allure",
+   "iterative": "Allure",
+   "iterative_notes": "Allure",
+   "superset": "Allure",
+   "superset_notes": "Allure",
+   "superset_fallback": "Allure",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Allure",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 192,
+   "q": "Which American actor portray Steve Urkel in \"Family Matters\"",
+   "gold": [
+    "Jaleel Ahmad White"
+   ],
+   "tag": "producer of Steve Urkel ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "Steve Urkel",
+   "single_pass": "Jaleel White",
+   "chain": "Sonic the Hedgehog",
+   "retrieval": "Jaleel White",
+   "iterative": "Jaleel White",
+   "iterative_notes": "Jaleel White",
+   "superset": "Jaleel White",
+   "superset_notes": "Jaleel White",
+   "superset_fallback": "Jaleel White",
+   "f1_sp": 0.8,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "f1_superset": 0.8,
+   "f1_superset_notes": 0.8,
+   "f1_superset_fallback": 0.8,
+   "trace": [
+    [
+     "What work is Steve Urkel known for making or appearing in?",
+     "Steve Urkel is known for making or appearing in merchandise, including a fruit flavored cereal known as Urkel-Os and",
+     ""
+    ],
+    [
+     "What film or show did Steve Urkel make?",
+     "Sonic the Hedgehog",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is Steve Urkel known for making or appearing in?",
+     "Property damage and/or personal injury resulting from of his inventions going awry or his outright clumsiness.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 193,
+   "q": "What lake in Australia is named after a Scottish Knight?",
+   "gold": [
+    "Lake Wallace"
+   ],
+   "tag": "publisher of a Scottish Knight ?",
+   "key": null,
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "a Scottish Knight",
+   "single_pass": "Lake Wallace",
+   "chain": "War of Scottish Independence",
+   "retrieval": "Lake Wallace",
+   "iterative": "Lake Wallace",
+   "iterative_notes": "Lake Wallace",
+   "superset": "Lake Wallace",
+   "superset_notes": "Lake Wallace",
+   "superset_fallback": "Lake Wallace",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries a Scottish Knight?",
+     "None",
+     ""
+    ],
+    [
+     "What is a Scottish Knight part of?",
+     "War of Scottish Independence",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What channel, album, series or network carries a Scottish Knight?",
+     "None",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 194,
+   "q": "How many records did the singer who sang \"Four Seasons of Love\" sell worldwide?",
+   "gold": [
+    "140 million"
+   ],
+   "tag": "attribute of leader of \"Four Seasons of Love\" ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "\"Four Seasons of Love\"",
+   "single_pass": "100 million",
+   "chain": "#29",
+   "retrieval": "100 million",
+   "iterative": "100 million",
+   "iterative_notes": "100 million",
+   "superset": "100 million",
+   "superset_notes": "100 million",
+   "superset_fallback": "100 million",
+   "f1_sp": 0.5,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.5,
+   "f1_superset": 0.5,
+   "f1_superset_notes": 0.5,
+   "f1_superset_fallback": 0.5,
+   "trace": [
+    [
+     "Who is the leader, member or main person of \"Four Seasons of Love\"?",
+     "Donna Summer",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Donna Summer?",
+     "#29",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of \"Four Seasons of Love\"?",
+     "Donna Summer",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Donna Summer?",
+     "#29",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 195,
+   "q": "what is the group called that Dianne Morgan and Joe Wilkinson a part of in the BBC comedy \"Two Episodes of Mash\"",
+   "gold": [
+    "the deadpan sketch group"
+   ],
+   "tag": "employer of Dianne Morgan ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Dianne Morgan",
+   "single_pass": "Two Episodes of Mash",
+   "chain": "Two Episodes of Mash",
+   "retrieval": "Two Episodes of Mash",
+   "iterative": "Two Episodes of Mash",
+   "iterative_notes": "Two Episodes of Mash",
+   "superset": "Two Episodes of Mash",
+   "superset_notes": "Two Episodes of Mash",
+   "superset_fallback": "Two Episodes of Mash",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Who did Dianne Morgan work for?",
+     "Two Episodes of Mash",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Dianne Morgan work for?",
+     "Dianne Morgan worked for BBC Two.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 196,
+   "q": "The 53rd National Hockey League All-Star Game took place at the indoor arena that was completed in what year?",
+   "gold": [
+    "1998"
+   ],
+   "tag": "attribute of home of 53th National Hockey League All-Star Game ?",
+   "key": null,
+   "hops": [
+    [
+     "home",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "53th National Hockey League All-Star Game",
+   "single_pass": "2003",
+   "chain": "April 7, 2010",
+   "retrieval": "2003 Office Depot Center",
+   "iterative": "2003",
+   "iterative_notes": "2009",
+   "superset": "2003",
+   "superset_notes": "2009",
+   "superset_fallback": "2003",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "f1_superset": 0.0,
+   "f1_superset_notes": 0.0,
+   "f1_superset_fallback": 0.0,
+   "trace": [
+    [
+     "Where is 53th National Hockey League All-Star Game located?",
+     "Raleigh",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Raleigh?",
+     "none",
+     ""
+    ],
+    [
+     "When or how much for Raleigh?",
+     "April 7, 2010",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is 53th National Hockey League All-Star Game located?",
+     "Raleigh",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Raleigh?",
+     "none",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 197,
+   "q": "What is the first name of the author who wrote the play in which R\u00f8nnaug Alten made her stage debut at Den Nationale Scene in 1930 as \"Viola\"?",
+   "gold": [
+    "William"
+   ],
+   "tag": "writer of producer of R\u00f8nnaug Alten ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ],
+    [
+     "writer",
+     null
+    ]
+   ],
+   "entity": "R\u00f8nnaug Alten",
+   "single_pass": "P\u00e4r",
+   "chain": "William Shakespeare",
+   "retrieval": "Sunniva",
+   "iterative": "William",
+   "iterative_notes": "William",
+   "superset": "William",
+   "superset_notes": "William",
+   "superset_fallback": "William",
+   "f1_sp": 0.0,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "What work is R\u00f8nnaug Alten known for making or appearing in?",
+     "stage debut at Den Nationale Scene in 1930 as \"Viola\" in Shakespeare's play Twelfth",
+     ""
+    ],
+    [
+     "What film or show did R\u00f8nnaug Alten make?",
+     "Twelfth Night (1910), Twelfth Night (1937), Twelfth Night (19",
+     ""
+    ],
+    [
+     "Who wrote Twelfth Night (1910), Twelfth Night (1937), Twelfth Night (19?",
+     "William Shakespeare",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is R\u00f8nnaug Alten known for making or appearing in?",
+     "Twelfth Night",
+     ""
+    ],
+    [
+     "Who wrote Twelfth Night?",
+     "William Shakespeare",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 198,
+   "q": "Which artist is known for his work on Marvel Team-Up and Batman: Son of the Demon?",
+   "gold": [
+    "Gerald \"Jerry\" Joseph Bingham, Jr."
+   ],
+   "tag": "leader of Marvel Team-Up ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ]
+   ],
+   "entity": "Marvel Team-Up",
+   "single_pass": "Jerry Bingham",
+   "chain": "John Byrne",
+   "retrieval": "Jerry Bingham",
+   "iterative": "Jerry Bingham",
+   "iterative_notes": "Jerry Bingham",
+   "superset": "Jerry Bingham",
+   "superset_notes": "Jerry Bingham",
+   "superset_fallback": "Jerry Bingham",
+   "f1_sp": 0.5714285714285715,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.5714285714285715,
+   "f1_iterative": 0.5714285714285715,
+   "f1_iterative_notes": 0.5714285714285715,
+   "f1_superset": 0.5714285714285715,
+   "f1_superset_notes": 0.5714285714285715,
+   "f1_superset_fallback": 0.5714285714285715,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Marvel Team-Up?",
+     "John Byrne",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Marvel Team-Up?",
+     "Chris Claremont",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 199,
+   "q": "Are both Kaiping and Pingxiang, Guangxi located in Guandong Province?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "superset": "No",
+   "superset_notes": "No",
+   "superset_fallback": "No",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "f1_superset": 1.0,
+   "f1_superset_notes": 1.0,
+   "f1_superset_fallback": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  }
+ ]
+}

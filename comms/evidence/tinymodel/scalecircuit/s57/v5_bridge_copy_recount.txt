@@ -1,0 +1,11 @@
+v5 (eval, spent): two-hop decompositions 213; superset+notes wrong (F1=0) 57: = hop-1 note (TRUE bridge copy) 18; = hop-2 note (reader adopted the chain's own final answer, which was wrong) 27; neither 12
+   for scale: gold equals the hop-2 note on 113 of 213 two-hop docs (the chain's final answer is often right and the reader rightly uses it)
+   true bridge copy: doc 28 | Q Frankenweenie featured the voice of a Canadian American actr | note1 'Julie Fulton' | read "Catherine O'Hara, Julie F" | gold 'Waiting for Guffman'
+   true bridge copy: doc 29 | Q What was the name of the hill that was the seat of an estate | note1 'Columb John' | read 'Columb John' | gold 'Chiltern Hills'
+   true bridge copy: doc 57 | Q Who wrote The Devils, and was an eninent English theater, op | note1 'John Whiting' | read 'John Whiting' | gold 'Peter Hall'
+   true bridge copy: doc 76 | Q Grammy winner for song of the year, also put out a 1971 albu | note1 'A Whole New World' | read 'A Whole New World' | gold 'A Star Is Born'
+   true bridge copy: doc 132 | Q who is a British physicist  and also a  British government's | note1 'Frederick Lindemann, 1st ' | read 'David J. C. MacKay' | gold 'Frederick Alexander'
+   true bridge copy: doc 155 | Q Who directed the black comedy in 1984 that started the Ameri | note1 'Bill Paxton' | read 'Bill Paxton directed the ' | gold 'Bruce R. Cook'
+DEV2: two-hop decompositions 53; superset+notes wrong (F1=0) 13: = hop-1 note (TRUE bridge copy) 1; = hop-2 note (reader adopted the chain's own final answer, which was wrong) 9; neither 3
+   for scale: gold equals the hop-2 note on 24 of 53 two-hop docs (the chain's final answer is often right and the reader rightly uses it)
+   true bridge copy: doc 44 | Q  Chun Woo-hee's notable films include a South Korean horror  | note1 'The Wailing' | read 'The Wailing' | gold 'illnesses'

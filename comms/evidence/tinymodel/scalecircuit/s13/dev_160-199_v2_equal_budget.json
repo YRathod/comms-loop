@@ -1,0 +1,1690 @@
+{
+ "summary": {
+  "f1_sp": 0.43859126984126984,
+  "f1_chain": 0.19817460317460317,
+  "f1_retrieval": 0.45118184955141477,
+  "f1_iterative": 0.4880396189749737,
+  "f1_iterative_notes": 0.4741468253968254,
+  "n": 40,
+  "oracle_union": 0.5652579365079365,
+  "chain_wins": 1,
+  "chain_losses": 14,
+  "retrieval_wins": 2,
+  "retrieval_losses": 3,
+  "iterative_wins": 5,
+  "iterative_losses": 4,
+  "iterative_notes_wins": 3,
+  "iterative_notes_losses": 3
+ },
+ "rows": [
+  {
+   "doc": 160,
+   "q": "What is the day of the horse race of which ESPN covers both the post position draw and the undercard races?",
+   "gold": [
+    "Saturday"
+   ],
+   "tag": "attribute of leader of which ESPN covers both attribute of post position draw and undercard races ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "which ESPN covers both attribute of post position draw and undercard races",
+   "single_pass": "May 15",
+   "chain": "rank 2",
+   "retrieval": "May 15",
+   "iterative": "May 15",
+   "iterative_notes": "May 15",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of which ESPN covers both attribute of post position draw and undercard races?",
+     "ESPN",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with ESPN?",
+     "rank 2",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of which ESPN covers both attribute of post position draw and undercard races?",
+     "ESPN",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with ESPN?",
+     "rank 2",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 161,
+   "q": "Kevin Yorn an American entertainment attorney who represents an Australian actor who  played the role of Josh Taylor in what soap opera?",
+   "gold": [
+    "Neighbours"
+   ],
+   "tag": "publisher of Kevin Yorn ?",
+   "key": null,
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "Kevin Yorn",
+   "single_pass": "Neighbours",
+   "chain": "Yorn Barnes Levine",
+   "retrieval": "Neighbours",
+   "iterative": "Josh Taylor played the role of Josh Taylor in the soap opera Neighbours. Kevin Yorn represents an Australian actor who played",
+   "iterative_notes": "Neighbours",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.10526315789473684,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries Kevin Yorn?",
+     "Hulu, YouTube, Yahoo, CBS Corporation, NBC, ABC Entertainment, HBO, CBS, The CW, ABC,",
+     ""
+    ],
+    [
+     "What is Kevin Yorn part of?",
+     "Yorn Barnes Levine",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What channel, album, series or network carries Kevin Yorn?",
+     "Hulu",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 162,
+   "q": "What stagecoach robber did Frederick John Fulton prosecute?",
+   "gold": [
+    "Bill Miner"
+   ],
+   "tag": "employer of Frederick John Fulton ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Frederick John Fulton",
+   "single_pass": "Bill Miner",
+   "chain": "Prime Minister Borden's Unionist party",
+   "retrieval": "Bill Miner",
+   "iterative": "Bill Miner",
+   "iterative_notes": "Bill Miner",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "Who did Frederick John Fulton work for?",
+     "Prime Minister Borden's Unionist party",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Frederick John Fulton work for?",
+     "Prime Minister Borden",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 163,
+   "q": "H-63 is a highway that runs near the county seat of what Michigan county?",
+   "gold": [
+    "Chippewa County"
+   ],
+   "tag": "home of H-63 ?",
+   "key": null,
+   "hops": [
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "H-63",
+   "single_pass": "Chippewa County",
+   "chain": "H-63 is located in Sault Ste. Marie, Michigan.",
+   "retrieval": "Chippewa County",
+   "iterative": "H-63 is a highway that runs near the county seat of Chippewa County.",
+   "iterative_notes": "H-63 is a highway that runs near the county seat of Chippewa County, Michigan.",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.2857142857142857,
+   "f1_iterative_notes": 0.2666666666666667,
+   "trace": [
+    [
+     "Where is H-63 located?",
+     "H-63 is located in Sault Ste. Marie, Michigan.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is H-63 located?",
+     "H-63 is located in Sault Ste. Marie, Michigan.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 164,
+   "q": "The arena where the Lewiston Maineiacs played their home games can seat how many people?",
+   "gold": [
+    "3,677 seated"
+   ],
+   "tag": "attribute of home of Lewiston Maineiacs ?",
+   "key": null,
+   "hops": [
+    [
+     "home",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Lewiston Maineiacs",
+   "single_pass": "1,400",
+   "chain": "rank 1",
+   "retrieval": "200 x 85 ft. and pro shop on Niagara University's campus in Lewiston, New York,",
+   "iterative": "Androscoggin Bank Colis\u00e9e",
+   "iterative_notes": "1,400",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Where is Lewiston Maineiacs located?",
+     "Lewiston",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Lewiston?",
+     "rank 1",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is Lewiston Maineiacs located?",
+     "Lewiston",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Lewiston?",
+     "rank 1",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 165,
+   "q": "Which ocean would the ingredients likely come from for the She-crab soup?",
+   "gold": [
+    "Atlantic Ocean"
+   ],
+   "tag": "home of attribute of She-crab soup ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ],
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "She-crab soup",
+   "single_pass": "Atlantic",
+   "chain": "South Carolina Lowcountry",
+   "retrieval": "Atlantic",
+   "iterative": "Atlantic",
+   "iterative_notes": "Atlantic",
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with She-crab soup?",
+     "none",
+     ""
+    ],
+    [
+     "When or how much for She-crab soup?",
+     "traditionally; small amount",
+     ""
+    ],
+    [
+     "Where is traditionally; small amount located?",
+     "South Carolina Lowcountry",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with She-crab soup?",
+     "none",
+     ""
+    ],
+    [
+     "Where is She-crab soup located?",
+     "Charleston, South Carolina and Savannah, Georgia",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 166,
+   "q": "What profession do Raj Kapoor and Mike Cahill share?",
+   "gold": [
+    "director"
+   ],
+   "tag": "attribute of Raj Kapoor ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Raj Kapoor",
+   "single_pass": "None",
+   "chain": "90",
+   "retrieval": "director",
+   "iterative": "None",
+   "iterative_notes": "None",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Raj Kapoor?",
+     "90",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Raj Kapoor?",
+     "1955, 1970, youngest film director",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 167,
+   "q": "The 2011 La Manga Cup was won by Viking, who beat which Norwegian football club from the town of Kristiansand, currently playing in Tippeligaen having been promoted from Adeccoligaen in 2012?",
+   "gold": [
+    "IK Start"
+   ],
+   "tag": "employer of Viking ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Viking",
+   "single_pass": "Viking",
+   "chain": "Viking worked for Tippeligaen.",
+   "retrieval": "Viking",
+   "iterative": "Start",
+   "iterative_notes": "Start",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "trace": [
+    [
+     "Who did Viking work for?",
+     "Viking worked for Tippeligaen.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Viking work for?",
+     "Viking worked for Tippeligaen",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 168,
+   "q": "What colors are worn by the Oregon Duck, mascot of the University of Oregon athletic teams?",
+   "gold": [
+    "green and yellow"
+   ],
+   "tag": "attribute of the Oregon Duck ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "the Oregon Duck",
+   "single_pass": "green and yellow",
+   "chain": "1932",
+   "retrieval": "green and yellow",
+   "iterative": "green and yellow",
+   "iterative_notes": "green and yellow",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with the Oregon Duck?",
+     "1932",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with the Oregon Duck?",
+     "1940s",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 169,
+   "q": "What is the character of fictional character Claire Fraser in a British-American television drama series developed by Ronald D. Moore ?",
+   "gold": [
+    "Claire is a married World War II nurse"
+   ],
+   "tag": "character of Claire Fraser ?",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Claire Fraser",
+   "chain": "Claire Fraser",
+   "retrieval": "Claire Fraser",
+   "iterative": "Claire Fraser",
+   "iterative_notes": "Claire Fraser",
+   "f1_sp": 0.22222222222222224,
+   "f1_chain": 0.22222222222222224,
+   "f1_retrieval": 0.22222222222222224,
+   "f1_iterative": 0.22222222222222224,
+   "f1_iterative_notes": 0.22222222222222224,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Claire Fraser",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 170,
+   "q": "For what ogranization does a commentator of Press TV serve as associate director?",
+   "gold": [
+    "Henry Jackson Society"
+   ],
+   "tag": "employer of leader of Press TV ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Press TV",
+   "single_pass": "The Spectator",
+   "chain": "Mohammad Sarafraz worked for Press TV.",
+   "retrieval": "Islamic Republic of Iran Broadcasting (IRIB)",
+   "iterative": "Henry Jackson Society",
+   "iterative_notes": "Henry Jackson Society",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Press TV?",
+     "Mohammad Sarafraz",
+     ""
+    ],
+    [
+     "Who did Mohammad Sarafraz work for?",
+     "Mohammad Sarafraz worked for Press TV.",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Press TV?",
+     "Ayatollah Ali Khamenei",
+     ""
+    ],
+    [
+     "Who did Ayatollah Ali Khamenei work for?",
+     "Ayatollah Ali Khamenei works for IRIB, the only organisation legally able to transmit radio and television broadcasts",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 171,
+   "q": "What else was Baghdad known as during the Abbasid Caliphate?",
+   "gold": [
+    "the City of Peace"
+   ],
+   "tag": "attribute of Baghdad ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Baghdad",
+   "single_pass": "Baghdad was known as the city of the caliphs.",
+   "chain": "amir al-umara",
+   "retrieval": "Baghdad was also known as the Dar al-Sultan",
+   "iterative": "Baghdad was known as a great city during the Abbasid Caliphate.",
+   "iterative_notes": "Baghdad was known as the capital city",
+   "f1_sp": 0.4,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.16666666666666666,
+   "f1_iterative_notes": 0.2222222222222222,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Baghdad?",
+     "amir al-umara",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Baghdad?",
+     "amir al-umara",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 172,
+   "q": "Leonard Logsdail had a cameo role in the biographical film directed by whom?",
+   "gold": [
+    "Martin Scorsese"
+   ],
+   "tag": "director of Leonard Logsdail ?",
+   "key": null,
+   "hops": [
+    [
+     "director",
+     null
+    ]
+   ],
+   "entity": "Leonard Logsdail",
+   "single_pass": "William Dieterle",
+   "chain": "Leonard Logsdail",
+   "retrieval": "Steven Spielberg",
+   "iterative": "Richard Donner",
+   "iterative_notes": "Allen Wolf",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who directed Leonard Logsdail?",
+     "None",
+     ""
+    ],
+    [
+     "Who was the director of Leonard Logsdail?",
+     "Leonard Logsdail",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who directed Leonard Logsdail?",
+     "Allen Wolf",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 173,
+   "q": "Which composer was wrote his music most recently, Michael Tippett or Luigi Cherubini?",
+   "gold": [
+    "Michael Kemp Tippett"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Michael Tippett",
+   "chain": "Michael Tippett",
+   "retrieval": "Michael Tippett",
+   "iterative": "Michael Tippett",
+   "iterative_notes": "Michael Tippett",
+   "f1_sp": 0.8,
+   "f1_chain": 0.8,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Michael Tippett",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 174,
+   "q": "The Panel with striding lion  was one of many that lined the way north of the gate to the inner city of what location?",
+   "gold": [
+    "Babylon"
+   ],
+   "tag": "home of leader of striding lion ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "home",
+     null
+    ]
+   ],
+   "entity": "striding lion",
+   "single_pass": "Ishtar Gate",
+   "chain": "Berlin",
+   "retrieval": "the inner city of Babylon",
+   "iterative": "Babylon",
+   "iterative_notes": "Ishtar Gate",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.4,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of striding lion?",
+     "Robert Koldewey",
+     ""
+    ],
+    [
+     "Where is Robert Koldewey located?",
+     "Berlin",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of striding lion?",
+     "Robert Koldewey",
+     ""
+    ],
+    [
+     "Where is Robert Koldewey located?",
+     "Berlin",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 175,
+   "q": "What Lithuanian producer is best known for a song that was one of the most popular songs in Ibiza in 2014?",
+   "gold": [
+    "Ten Walls"
+   ],
+   "tag": "producer of attribute of Ibiza ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ],
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "Ibiza",
+   "single_pass": "Ten Walls",
+   "chain": "I Hate Everything About You",
+   "retrieval": "Ten Walls",
+   "iterative": "Ten Walls",
+   "iterative_notes": "Ten Walls",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Ibiza?",
+     "number one",
+     ""
+    ],
+    [
+     "What work is number one known for making or appearing in?",
+     "I Hate Everything About You",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Ibiza?",
+     "number one",
+     ""
+    ],
+    [
+     "What work is number one known for making or appearing in?",
+     "Ten Walls",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 176,
+   "q": "John Paesano wrote which film for DreamWorks Dragons?",
+   "gold": [
+    "Dragons: Riders of Berk"
+   ],
+   "tag": "producer of John Paesano ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ]
+   ],
+   "entity": "John Paesano",
+   "single_pass": "Gift of the Night Fury",
+   "chain": "The Maze Runner",
+   "retrieval": "none",
+   "iterative": "Gift of the Night Fury",
+   "iterative_notes": "Gift of the Night Fury",
+   "f1_sp": 0.25,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.25,
+   "f1_iterative_notes": 0.25,
+   "trace": [
+    [
+     "What work is John Paesano known for making or appearing in?",
+     "The Maze Runner",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is John Paesano known for making or appearing in?",
+     "The Maze Runner",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 177,
+   "q": "The player who laid motionless for ten minutes in the Todd Bertuzzi\u2013Steve Moore incident was born in which year ?",
+   "gold": [
+    "1978"
+   ],
+   "tag": "attribute of leader of motionless for ten minutes ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "motionless for ten minutes",
+   "single_pass": "1978",
+   "chain": "rank 41",
+   "retrieval": "1978",
+   "iterative": "1978",
+   "iterative_notes": "1978",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of motionless for ten minutes?",
+     "Steve Moore",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Steve Moore?",
+     "rank 41",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of motionless for ten minutes?",
+     "Todd Bertuzzi",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Todd Bertuzzi?",
+     "rank 41",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 178,
+   "q": "Who had the lowest vocal range in Cosmos?",
+   "gold": [
+    "J\u0101nis Strazdi\u0146\u0161"
+   ],
+   "tag": "had the lowest vocal range in Cosmos ?",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "none",
+   "chain": "none",
+   "retrieval": "none",
+   "iterative": "none",
+   "iterative_notes": "none",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "none",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 179,
+   "q": "Havelock Ellis and Arnold Bennett were both what?",
+   "gold": [
+    "writer"
+   ],
+   "tag": "both Havelock Ellis ?",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "author",
+   "chain": "author",
+   "retrieval": "author",
+   "iterative": "author",
+   "iterative_notes": "author",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "author",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 180,
+   "q": "In 135 BC, a second campaign was sent to intervene in a war between Minyue and another ancient kingdom established at the collapse of whom?",
+   "gold": [
+    "the Qin dynasty"
+   ],
+   "tag": "establishment of Minyue ?",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Nanyue",
+   "chain": "Nanyue",
+   "retrieval": "Nanyue",
+   "iterative": "Nanyue",
+   "iterative_notes": "Nanyue",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Nanyue",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 181,
+   "q": "What title did the author of Det norske Theater's first production hold ? ",
+   "gold": [
+    "Baron of Holberg"
+   ],
+   "tag": "attribute of writer of Det norske Theater ?",
+   "key": null,
+   "hops": [
+    [
+     "writer",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Det norske Theater",
+   "single_pass": "Henrik Ibsen",
+   "chain": "1850",
+   "retrieval": "Ole Bull",
+   "iterative": "Ludvig Holberg",
+   "iterative_notes": "Ole Bull",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.4,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who wrote Det norske Theater?",
+     "Ole Bull",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Ole Bull?",
+     "1850",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who wrote Det norske Theater?",
+     "Ole Bull",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Ole Bull?",
+     "primus motor",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 182,
+   "q": "Where did the punter for the Dallas Cowboys in the 1980s play college football?",
+   "gold": [
+    "Arizona State University"
+   ],
+   "tag": "employer of leader of Dallas Cowboys ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Dallas Cowboys",
+   "single_pass": "University of Mississippi",
+   "chain": "San Francisco 49ers",
+   "retrieval": "University of Mississippi",
+   "iterative": "University of Mississippi",
+   "iterative_notes": "University of Mississippi",
+   "f1_sp": 0.3333333333333333,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.3333333333333333,
+   "f1_iterative": 0.3333333333333333,
+   "f1_iterative_notes": 0.3333333333333333,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Dallas Cowboys?",
+     "Jim Miller\nJerry Tubbs\nTodd Lowber",
+     ""
+    ],
+    [
+     "Who did Jim Miller\nJerry Tubbs\nTodd Lowber work for?",
+     "Todd Lowber worked for the Toronto Argonauts of the Canadian Football League (CFL). Jim Miller played for the",
+     ""
+    ],
+    [
+     "Which team, school or organisation was Jim Miller\nJerry Tubbs\nTodd Lowber part of?",
+     "San Francisco 49ers",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Dallas Cowboys?",
+     "Jim Miller\nDallas Cowboys",
+     ""
+    ],
+    [
+     "Who did Jim Miller\nDallas Cowboys work for?",
+     "Jim Miller worked for Dallas Cowboys as a punter in the National Football League (NFL).",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 183,
+   "q": "Are Dutch Smoushond and Sussex Spaniel's both dog breeds?",
+   "gold": [
+    "yes"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Yes",
+   "chain": "Yes",
+   "retrieval": "Yes",
+   "iterative": "Yes",
+   "iterative_notes": "Yes",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Yes",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 184,
+   "q": "Which band, Matthew Good Band or Switchfoot is still together?",
+   "gold": [
+    "Switchfoot"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Matthew Good Band",
+   "chain": "Matthew Good Band",
+   "retrieval": "Matthew Good Band",
+   "iterative": "Matthew Good Band",
+   "iterative_notes": "Matthew Good Band",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Matthew Good Band",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 185,
+   "q": "Are Portland International Airport and Gerald R. Ford International Airport both located in Oregon?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 186,
+   "q": "Who won more awards, Brothers Quay or Jake Kasdan?",
+   "gold": [
+    "Brothers Quay"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Brothers Quay",
+   "chain": "Brothers Quay",
+   "retrieval": "Brothers Quay",
+   "iterative": "Brothers Quay",
+   "iterative_notes": "Brothers Quay",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Brothers Quay",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 187,
+   "q": "How long is the river The Atherton Bridge spans?",
+   "gold": [
+    "37.5"
+   ],
+   "tag": "attribute of river The Atherton Bridge ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "river The Atherton Bridge",
+   "single_pass": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "chain": "1652",
+   "retrieval": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "iterative": "The Atherton Bridge spans the South Branch of the Nashua River.",
+   "iterative_notes": "1040 ft",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with river The Atherton Bridge?",
+     "1652",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with river The Atherton Bridge?",
+     "1870",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 188,
+   "q": "Why is Bangor Daily News talkin about Sawin Millett?",
+   "gold": [
+    "Commissioner by the Maine Senate"
+   ],
+   "tag": "attribute of Bangor Daily News ?",
+   "key": null,
+   "hops": [
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "Bangor Daily News",
+   "single_pass": "Bangor Daily News is talking about Sawin Millett because he was unanimously approved as Commissioner by the Maine Senate in January",
+   "chain": "rank of 9",
+   "retrieval": "Because Sawin Millett Jr. was mentioned as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "iterative": "Because Howard Sawin Millett Jr. served as the Commissioner of Administrative and Financial Services in the administration of Governor Paul Le",
+   "iterative_notes": "Bangor Daily News talks about Sawin Millett as it is the newspaper's name mentioned in the passage.",
+   "f1_sp": 0.33333333333333337,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.08695652173913043,
+   "f1_iterative": 0.08695652173913043,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "What is the notable number, date, rank or position associated with Bangor Daily News?",
+     "rank of 9",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What is the notable number, date, rank or position associated with Bangor Daily News?",
+     "68",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 189,
+   "q": "Who did the actor that plays Sean Tully defeat in a dancing contest?",
+   "gold": [
+    "Jodie Prenger"
+   ],
+   "tag": "employer of leader of Sean Tully ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Sean Tully",
+   "single_pass": "Warrington Wolves",
+   "chain": "Coronation Street",
+   "retrieval": "Christian 'kiss-my-guns' Clarke",
+   "iterative": "Christian 'kiss-my-guns' Clarke",
+   "iterative_notes": "Christian 'kiss-my-guns' Clarke",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who is the leader, member or main person of Sean Tully?",
+     "Antony Cotton",
+     ""
+    ],
+    [
+     "Who did Antony Cotton work for?",
+     "Coronation Street",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of Sean Tully?",
+     "Antony Cotton",
+     ""
+    ],
+    [
+     "Who did Antony Cotton work for?",
+     "Coronation Street",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 190,
+   "q": "What river does Waterloo Bridge and London Eye have in common?",
+   "gold": [
+    "Thames"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "River Thames",
+   "chain": "River Thames",
+   "retrieval": "River Thames",
+   "iterative": "River Thames",
+   "iterative_notes": "River Thames",
+   "f1_sp": 0.6666666666666666,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.6666666666666666,
+   "f1_iterative": 0.6666666666666666,
+   "f1_iterative_notes": 0.6666666666666666,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "River Thames",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 191,
+   "q": "Which is a beauty magazine, Allure or Claudia?",
+   "gold": [
+    "Allure"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Allure",
+   "chain": "Allure",
+   "retrieval": "Allure",
+   "iterative": "Allure",
+   "iterative_notes": "Allure",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Allure",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 192,
+   "q": "Which American actor portray Steve Urkel in \"Family Matters\"",
+   "gold": [
+    "Jaleel Ahmad White"
+   ],
+   "tag": "owner of Steve Urkel ?",
+   "key": null,
+   "hops": [
+    [
+     "owner",
+     null
+    ]
+   ],
+   "entity": "Steve Urkel",
+   "single_pass": "Jaleel White",
+   "chain": "Uncle Ernie",
+   "retrieval": "Jaleel White",
+   "iterative": "Jaleel White",
+   "iterative_notes": "Jaleel White",
+   "f1_sp": 0.8,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.8,
+   "f1_iterative": 0.8,
+   "f1_iterative_notes": 0.8,
+   "trace": [
+    [
+     "Who owns or holds Steve Urkel?",
+     "Uncle Ernie",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who owns or holds Steve Urkel?",
+     "Uncle Ernie",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 193,
+   "q": "What lake in Australia is named after a Scottish Knight?",
+   "gold": [
+    "Lake Wallace"
+   ],
+   "tag": "publisher of a Scottish Knight ?",
+   "key": null,
+   "hops": [
+    [
+     "publisher",
+     null
+    ]
+   ],
+   "entity": "a Scottish Knight",
+   "single_pass": "Lake Wallace",
+   "chain": "War of Scottish Independence",
+   "retrieval": "Lake Wallace",
+   "iterative": "Lake Wallace",
+   "iterative_notes": "Lake Wallace",
+   "f1_sp": 1.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "What channel, album, series or network carries a Scottish Knight?",
+     "None",
+     ""
+    ],
+    [
+     "What is a Scottish Knight part of?",
+     "War of Scottish Independence",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What channel, album, series or network carries a Scottish Knight?",
+     "None",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 194,
+   "q": "How many records did the singer who sang \"Four Seasons of Love\" sell worldwide?",
+   "gold": [
+    "140 million"
+   ],
+   "tag": "attribute of leader of \"Four Seasons of Love\" ?",
+   "key": null,
+   "hops": [
+    [
+     "leader",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "\"Four Seasons of Love\"",
+   "single_pass": "100 million",
+   "chain": "#29",
+   "retrieval": "100 million",
+   "iterative": "100 million",
+   "iterative_notes": "100 million",
+   "f1_sp": 0.5,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.5,
+   "f1_iterative": 0.5,
+   "f1_iterative_notes": 0.5,
+   "trace": [
+    [
+     "Who is the leader, member or main person of \"Four Seasons of Love\"?",
+     "Donna Summer",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Donna Summer?",
+     "#29",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who is the leader, member or main person of \"Four Seasons of Love\"?",
+     "Donna Summer",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Donna Summer?",
+     "#29",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 195,
+   "q": "what is the group called that Dianne Morgan and Joe Wilkinson a part of in the BBC comedy \"Two Episodes of Mash\"",
+   "gold": [
+    "the deadpan sketch group"
+   ],
+   "tag": "employer of Dianne Morgan ?",
+   "key": null,
+   "hops": [
+    [
+     "employer",
+     null
+    ]
+   ],
+   "entity": "Dianne Morgan",
+   "single_pass": "Two Episodes of Mash",
+   "chain": "Two Episodes of Mash",
+   "retrieval": "Two Episodes of Mash",
+   "iterative": "Two Episodes of Mash",
+   "iterative_notes": "Two Episodes of Mash",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Who did Dianne Morgan work for?",
+     "Two Episodes of Mash",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Who did Dianne Morgan work for?",
+     "Dianne Morgan worked for BBC Two.",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 196,
+   "q": "The 53rd National Hockey League All-Star Game took place at the indoor arena that was completed in what year?",
+   "gold": [
+    "1998"
+   ],
+   "tag": "attribute of home of the 53rd National Hockey League All-Star Game ?",
+   "key": null,
+   "hops": [
+    [
+     "home",
+     null
+    ],
+    [
+     "attribute",
+     null
+    ]
+   ],
+   "entity": "the 53rd National Hockey League All-Star Game",
+   "single_pass": "2003",
+   "chain": "53rd National Hockey League All-Star Game",
+   "retrieval": "2003",
+   "iterative": "2003",
+   "iterative_notes": "2003",
+   "f1_sp": 0.0,
+   "f1_chain": 0.0,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 0.0,
+   "f1_iterative_notes": 0.0,
+   "trace": [
+    [
+     "Where is the 53rd National Hockey League All-Star Game located?",
+     "Sunrise",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Sunrise?",
+     "53rd National Hockey League All-Star Game",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "Where is the 53rd National Hockey League All-Star Game located?",
+     "Sunrise",
+     ""
+    ],
+    [
+     "What is the notable number, date, rank or position associated with Sunrise?",
+     "53rd National Hockey League All-Star Game",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 197,
+   "q": "What is the first name of the author who wrote the play in which R\u00f8nnaug Alten made her stage debut at Den Nationale Scene in 1930 as \"Viola\"?",
+   "gold": [
+    "William"
+   ],
+   "tag": "writer of producer of R\u00f8nnaug Alten ?",
+   "key": null,
+   "hops": [
+    [
+     "producer",
+     null
+    ],
+    [
+     "writer",
+     null
+    ]
+   ],
+   "entity": "R\u00f8nnaug Alten",
+   "single_pass": "P\u00e4r",
+   "chain": "William Shakespeare",
+   "retrieval": "Sunniva",
+   "iterative": "William",
+   "iterative_notes": "William",
+   "f1_sp": 0.0,
+   "f1_chain": 0.6666666666666666,
+   "f1_retrieval": 0.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "What work is R\u00f8nnaug Alten known for making or appearing in?",
+     "stage debut at Den Nationale Scene in 1930 as \"Viola\" in Shakespeare's play Twelfth",
+     ""
+    ],
+    [
+     "What film or show did R\u00f8nnaug Alten make?",
+     "Twelfth Night (1910), Twelfth Night (1937), Twelfth Night (19",
+     ""
+    ],
+    [
+     "Who wrote Twelfth Night (1910), Twelfth Night (1937), Twelfth Night (19?",
+     "William Shakespeare",
+     ""
+    ]
+   ],
+   "itrace": [
+    [
+     "What work is R\u00f8nnaug Alten known for making or appearing in?",
+     "Twelfth Night",
+     ""
+    ],
+    [
+     "Who wrote Twelfth Night?",
+     "William Shakespeare",
+     ""
+    ]
+   ]
+  },
+  {
+   "doc": 198,
+   "q": "Which artist is known for his work on Marvel Team-Up and Batman: Son of the Demon?",
+   "gold": [
+    "Gerald \"Jerry\" Joseph Bingham, Jr."
+   ],
+   "tag": "artist of producer of Marvel Team-Up ?",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "Jerry Bingham",
+   "chain": "Jerry Bingham",
+   "retrieval": "Jerry Bingham",
+   "iterative": "Jerry Bingham",
+   "iterative_notes": "Jerry Bingham",
+   "f1_sp": 0.5714285714285715,
+   "f1_chain": 0.5714285714285715,
+   "f1_retrieval": 0.5714285714285715,
+   "f1_iterative": 0.5714285714285715,
+   "f1_iterative_notes": 0.5714285714285715,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "Jerry Bingham",
+     ""
+    ]
+   ],
+   "itrace": []
+  },
+  {
+   "doc": 199,
+   "q": "Are both Kaiping and Pingxiang, Guangxi located in Guandong Province?",
+   "gold": [
+    "no"
+   ],
+   "tag": "NA",
+   "key": null,
+   "hops": null,
+   "entity": null,
+   "single_pass": "No",
+   "chain": "No",
+   "retrieval": "No",
+   "iterative": "No",
+   "iterative_notes": "No",
+   "f1_sp": 1.0,
+   "f1_chain": 1.0,
+   "f1_retrieval": 1.0,
+   "f1_iterative": 1.0,
+   "f1_iterative_notes": 1.0,
+   "trace": [
+    [
+     "single-pass fallback (NA or unusable tag)",
+     "No",
+     ""
+    ]
+   ],
+   "itrace": []
+  }
+ ]
+}

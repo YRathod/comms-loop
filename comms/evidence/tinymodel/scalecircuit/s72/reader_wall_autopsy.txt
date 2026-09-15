@@ -1,0 +1,12 @@
+DEV2 C9-stack rows (n=100): {'yes/no or exact': 43, 'wrong/partial span INSIDE a gold paragraph': 39, 'answer from a DISTRACTOR paragraph': 15, 'answer ungrounded (not in any paragraph)': 3}
+   right-paragraph-wrong-span ex: ("Which became a Cathedral first St Chad's Cathedral, Birmingh", "St Chad's Cathedral, Birmingham", 'Metropolitan Cathedral Church ')
+   right-paragraph-wrong-span ex: (' Heaven starred what Australian actress who portrayed Kathar', 'Cate Blanchett', 'Catherine Elise Blanchett')
+   right-paragraph-wrong-span ex: ("The Rhymers' Club met at Ye Olde Cheshire Cheese listed as w", 'public house', 'public')
+   right-paragraph-wrong-span ex: ('The 1978 NBA World Championship Series had as MVP which Hall', 'Wes Unseld', 'Westley Sissel Unseld')
+   right-paragraph-wrong-span ex: ('Carlo Buccirosso had a role in a movie that premiered at wha', 'Dallas International Film Festival', 'Cannes Film Festival')
+DEV3 C9-stack rows (n=100): {'wrong/partial span INSIDE a gold paragraph': 32, 'yes/no or exact': 47, 'answer ungrounded (not in any paragraph)': 6, 'answer from a DISTRACTOR paragraph': 15}
+   right-paragraph-wrong-span ex: ('What is the nationality of the composer of the Opera "Iphigé', 'German', 'Italian')
+   right-paragraph-wrong-span ex: ('What organization does Rosyth Dockyard and Queen Elizabeth-c', 'Royal Navy', 'Navy')
+   right-paragraph-wrong-span ex: ('Which scientist at the University of Alabama in Huntsville c', 'John Raymond Christy', 'Roy Spencer')
+   right-paragraph-wrong-span ex: ('Renáta Tomanová and Larisa Neiland are former professional a', 'tennis', 'professional tennis')
+   right-paragraph-wrong-span ex: ('Does the band God Lives Underwater or the band The Dear Hunt', 'Pennsylvania', 'God Lives Underwater')

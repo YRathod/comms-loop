@@ -1,0 +1,14 @@
+{
+ "decomposer": "models/decomp_full_1.5b",
+ "decomposer_base": "Qwen/Qwen2.5-1.5B-Instruct",
+ "adapter": "models/tagger_v4clean_0.5b",
+ "base": "Qwen/Qwen2.5-0.5B-Instruct",
+ "lstm": "checkpoints/compare/decomp_filter_lstm.pt",
+ "docs": "0-399",
+ "out": "scale/results/pipeline_exec_heldout_v4_run1.json",
+ "data": "data/hotpot_heldout_v4.jsonl",
+ "max_seconds": 18000,
+ "budget_tokens": 3000,
+ "retrieve_k": 6,
+ "wiring_k": 4
+}

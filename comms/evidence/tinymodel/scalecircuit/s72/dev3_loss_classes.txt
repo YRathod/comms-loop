@@ -1,0 +1,5 @@
+DEV3 type bridge      n= 83 sp 0.440 sup+n 0.529
+DEV3 type comparison  n= 17 sp 0.525 sup+n 0.525
+DEV3 yes/no gold n=6 sp 0.833 sup+n 0.833
+DEV3 loss classes (sup+n): {'wrong_span': 38, 'exact': 43, 'over_long': 9, 'truncated': 5, 'partial_other': 4, 'yesno_wrong': 1}
+recoverable F1 points: {'wrong_span': 0.38, 'over_long': 0.047, 'truncated': 0.019, 'partial_other': 0.016, 'yesno_wrong': 0.01}

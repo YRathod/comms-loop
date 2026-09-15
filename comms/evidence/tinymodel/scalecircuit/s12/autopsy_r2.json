@@ -1,0 +1,109 @@
+{
+ "round": 2,
+ "batch": "data/tagger_real_100-129.jsonl",
+ "counts": {
+  "hops_dropped": 1,
+  "anchor": 5,
+  "relation": 4,
+  "hops_extra": 3,
+  "na_wrong": 3
+ },
+ "failures": [
+  {
+   "question": "Bill Bryson grew up in a city that is the seat of which county ?",
+   "pred": "home of Bill Bryson ?",
+   "truth": "home of home of Bill Bryson ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "Who was the last monarch of England to be overthrown before The English General Election, 1690?",
+   "pred": "leader of England ?",
+   "truth": "leader of English General Election, 1690 ?",
+   "class": "anchor"
+  },
+  {
+   "question": "What song from the fourth studio album made by The Who reached No.4 on the UK charts and No. 19 o nthe U.S. \"Billboard\" Hot 100?",
+   "pred": "producer of producer of The Who ?",
+   "truth": "leader of producer of The Who ?",
+   "class": "relation"
+  },
+  {
+   "question": "Migene Gonz\u00e1lez-Wippler is leading expert on a religion that developed among which ethnic group ?",
+   "pred": "attribute of leader of publisher of Migene Gonz\u00e1lez-Wippler ?",
+   "truth": "attribute of producer of Migene Gonz\u00e1lez-Wippler ?",
+   "class": "hops_extra"
+  },
+  {
+   "question": "Henry Roth and Lewis Mumford are both this nationality?",
+   "pred": "country of Henry Roth ?",
+   "truth": "NA",
+   "class": "na_wrong"
+  },
+  {
+   "question": "Who did Fredric Rieders tesify agains who had killed as many as 60 patients and recieved three consecutive life terms to be served in Florence Colorado?",
+   "pred": "employer of Fredric Rieders ?",
+   "truth": "owner of Fredric Rieders ?",
+   "class": "relation"
+  },
+  {
+   "question": "Where is the company that created Doravirine ( from?",
+   "pred": "home of employer of Doravirine ?",
+   "truth": "home of founder of Doravirine ?",
+   "class": "relation"
+  },
+  {
+   "question": "On May 25, 2017 Greg Gianforte won the special election following the resignation of a politican that current holds what position?",
+   "pred": "attribute of leader of May 25 ?",
+   "truth": "attribute of brother of Greg Gianforte ?",
+   "class": "anchor"
+  },
+  {
+   "question": "The Red Queen's Race is a science fiction short story that uses the Red Queen's race from a novel by Lewis Carroll that is the sequel to what?",
+   "pred": "publisher of leader of The Red Queen's Race ?",
+   "truth": "parent of parent of The Red Queen's Race ?",
+   "class": "relation"
+  },
+  {
+   "question": "What was the home city of the author of the famous novel tracing the life of a male roe deer from his birth onward?",
+   "pred": "home of writer of publisher of attribute of a male roe deer ?",
+   "truth": "home of writer of the famous novel tracing the life of a male roe deer ?",
+   "class": "hops_extra"
+  },
+  {
+   "question": "Sarah Price and Rob Schneider are both what profession? ",
+   "pred": "attribute of Sarah Price ?",
+   "truth": "NA",
+   "class": "na_wrong"
+  },
+  {
+   "question": "What rule-class city of 26,595 contains the neighborhood Plainview?",
+   "pred": "home of 26,595 ?",
+   "truth": "home of Plainview ?",
+   "class": "anchor"
+  },
+  {
+   "question": "Hardley Flood is an area of lagoons that support populations of the waterfowl that are a medium sized version of what animal?",
+   "pred": "attribute of home of lagoons ?",
+   "truth": "attribute of leader of Hardley Flood ?",
+   "class": "anchor"
+  },
+  {
+   "question": "Who stars in the title role of a Netflix show co-created by Robert Carlock?",
+   "pred": "owner of attribute of producer of Robert Carlock ?",
+   "truth": "owner of producer of Robert Carlock ?",
+   "class": "hops_extra"
+  },
+  {
+   "question": "What is the name of this suburb within the Central Coast Council local government area, where Tessa, of Microwave Jenny, grew up?",
+   "pred": "home of Tessa ?",
+   "truth": "birthplace of leader of Microwave Jenny ?",
+   "class": "anchor"
+  },
+  {
+   "question": "What organization does Sandra Pizzarello and Doctorate have in common?",
+   "pred": "attribute of Sandra Pizzarello ?",
+   "truth": "NA",
+   "class": "na_wrong"
+  }
+ ]
+}

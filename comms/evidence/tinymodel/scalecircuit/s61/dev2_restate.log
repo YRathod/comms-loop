@@ -1,0 +1,145 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 4507.86it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+W0914 16:19:48.557000 41812 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|##########| 338/338 [00:00<00:00, 3708.06it/s]
+Loading weights:   0%|          | 0/434 [00:00<?, ?it/s]Loading weights: 100%|##########| 434/434 [00:00<00:00, 6232.95it/s]
+doc   0 sp 1.00 chain 0.00 retr 1.00 iter 1.00 iter+n 0.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which collaboration with D' | 'Grandmasters' / 'Grandmasters' | gold 'Grandmasters'
+doc   1 sp 0.25 chain 0.25 retr 0.25 iter 0.25 iter+n 0.25 sup 0.25 sup+n 0.25 sup+fb 0.25 sel 0.25(singl) ITF 0.25 | tag 'NA' | "St Chad's Cathedral," / "St Chad's Cathedral," | gold 'Metropolitan Cathedr'
+doc   2 sp 0.40 chain 0.40 retr 0.40 iter 0.40 iter+n 0.40 sup 0.40 sup+n 0.40 sup+fb 0.40 sel 0.40(agree) ITF 0.40 | tag 'H1: Which Australian actress p' | 'Cate Blanchett' / 'Cate Blanchett' | gold 'Catherine Elise Blan'
+doc   3 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which rapper released a so' | 'double platinum' / 'double platinum' | gold 'double platinum'
+doc   4 sp 0.67 chain 1.00 retr 0.67 iter 0.67 iter+n 1.00 sup 0.67 sup+n 1.00 sup+fb 0.67 sel 0.67(agree) ITF 0.67 | tag 'H1: Who founded The Internatio' | 'northern Newfoundlan' / 'northern Newfoundlan' | gold 'Newfoundland and Lab'
+doc   5 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which band covered "If You' | 'Love and Theft' / 'Love and Theft' | gold 'Love and Theft'
+doc   6 sp 0.40 chain 0.00 retr 0.40 iter 0.40 iter+n 0.40 sup 0.40 sup+n 0.40 sup+fb 0.40 sel 0.40(agree) ITF 0.40 | tag 'H1: Who coached a team with th' | 'Bowers Stadium' / 'Bowers Stadium' | gold 'Cameron Indoor Stadi'
+doc   7 sp 0.67 chain 0.67 retr 0.67 iter 0.67 iter+n 0.00 sup 0.33 sup+n 0.00 sup+fb 0.33 sel 0.33(judge) ITF 0.67 | tag 'H1: At which type of house did' | 'public house' / 'Grade II listed publ' | gold 'public'
+doc   8 sp 0.40 chain 0.00 retr 0.40 iter 0.40 iter+n 0.40 sup 0.40 sup+n 0.40 sup+fb 0.40 sel 0.40(agree) ITF 0.40 | tag 'H1: Which Hall of Fame class m' | 'Wes Unseld' / 'Wes Unseld' | gold 'Westley Sissel Unsel'
+doc   9 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'No' / 'No' | gold 'no'
+doc  10 sp 0.50 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 0.50 sup+n 1.00 sup+fb 0.50 sel 0.50(agree) ITF 1.00 | tag 'H1: Which composer was a cruci' | 'Beethoven' / 'Beethoven' | gold 'Ludwig van Beethoven'
+doc  11 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'R. G. Springsteen' / 'R. G. Springsteen' | gold 'Robert Florey'
+doc  12 sp 1.00 chain 0.57 retr 1.00 iter 0.67 iter+n 0.57 sup 0.67 sup+n 0.57 sup+fb 0.67 sel 0.67(judge) ITF 0.67 | tag 'H1: Which movie did Carlo Bucc' | 'Cannes Film Festival' / 'Breckenridge Film Fe' | gold 'Cannes Film Festival'
+doc  13 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which roller coaster at Sk' | 'Skyscraper' / 'Skyscraper' | gold 'Skyscraper'
+doc  14 sp 0.14 chain 0.67 retr 0.12 iter 0.18 iter+n 0.67 sup 0.14 sup+n 0.67 sup+fb 0.14 sel 0.14(agree) ITF 0.18 | tag 'H1: Who was Iftikhar Ali Khan ' | 'Tiger Pataudi was re' / 'Tiger Pataudi was re' | gold 'His son'
+doc  15 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'Sierra Nevada Nation' / 'Sierra Nevada Nation' | gold 'Sierra Nevada Nation'
+doc  16 sp 0.00 chain 0.50 retr 0.00 iter 1.00 iter+n 0.50 sup 1.00 sup+n 0.50 sup+fb 1.00 sel 1.00(judge) ITF 1.00 | tag 'H1: Who was the incumbent Demo' | 'term-limit' / 'filibuster' | gold 'filibuster'
+doc  17 sp 0.33 chain 0.00 retr 0.33 iter 0.33 iter+n 0.00 sup 0.33 sup+n 0.00 sup+fb 0.33 sel 0.33(agree) ITF 0.33 | tag 'H1: Which Olympic games were h' | '1900 Summer Olympics' / '1900 Summer Olympics' | gold 'The Summer Olympic G'
+doc  18 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'Wrath of Gods' / 'Wrath of Gods' | gold 'Wrath of Gods'
+doc  19 sp 1.00 chain 0.00 retr 1.00 iter 1.00 iter+n 0.00 sup 1.00 sup+n 0.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which man who Ted Kooshian' | 'EGOT' / 'EGOT' | gold 'EGOT'
+doc  20 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag "H1: Who was Tim Mathieson's pa" | 'Julia Gillard' / 'Julia Gillard' | gold '2013'
+doc  21 sp 1.00 chain 0.00 retr 0.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 0.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag "H1: Which actor's birth name w" | 'Charles Bronson' / 'Charles Bronson' | gold 'Charles Bronson'
+doc  22 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 1.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which Roman (film) stars a' | 'Bhumika Chawla' / 'Bhumika Chawla' | gold 'Nivetha Thomas'
+doc  23 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'Elle' / 'Elle' | gold 'Elle'
+doc  24 sp 1.00 chain 0.00 retr 1.00 iter 1.00 iter+n 1.00 sup 0.77 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which movie directed by Ja' | 'Guardians of the Gal' / 'Ego the Living Plane' | gold 'Guardians of the Gal'
+doc  25 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'no' / 'no' | gold 'yes'
+doc  26 sp 1.00 chain 0.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Where does the Seton Hall ' | 'Prudential Center' / 'Prudential Center' | gold 'Prudential Center'
+doc  27 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag "H1: In which The Wind's Twelve" | 'The Ones Who Walk Aw' / 'The Ones Who Walk Aw' | gold 'The Ones Who Walk Aw'
+doc  28 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 1.00 sup 0.00 sup+n 1.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which 1994 American animat' | 'Mel Shaw' / 'Mel Shaw' | gold 'Don Hahn'
+doc  29 sp 0.25 chain 0.25 retr 0.25 iter 0.25 iter+n 0.25 sup 0.25 sup+n 0.25 sup+fb 0.25 sel 0.25(singl) ITF 0.25 | tag 'NA' | 'Kenny Ortega' / 'Kenny Ortega' | gold 'Kenneth John "Kenny"'
+doc  30 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'The Wind in the Will' / 'The Wind in the Will' | gold 'The Wind in the Will'
+doc  31 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Robert Z. Leonard' / 'Robert Z. Leonard' | gold 'Sinclair Hill'
+doc  32 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(judge) ITF 0.00 | tag 'H1: Which English novelist and' | 'Ford Madox Ford' / 'George Orwell' | gold 'Eric Arthur Blair'
+doc  33 sp 0.80 chain 0.80 retr 0.80 iter 0.80 iter+n 0.80 sup 0.80 sup+n 0.80 sup+fb 0.80 sel 0.80(agree) ITF 0.80 | tag 'H1: Who represents Stoke Newin' | 'Labour Party' / 'Labour Party' | gold 'British Labour Party'
+doc  34 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.22 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which song by Coolio is on' | 'Fantastic Voyage' / 'Fantastic Voyage' | gold "Gangsta's Paradise"
+doc  35 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'North America' / 'North America' | gold 'Europe'
+doc  36 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(judge) ITF 0.00 | tag 'H1: Which professional footbal' | 'Wide Right II' / 'Galo' | gold 'Rooster'
+doc  37 sp 1.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 0.00 | tag 'H1: What type of commercial do' | 'invoice' / 'invoice' | gold 'invoice'
+doc  38 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Where was James Leal Green' | 'Atlanta, Georgia' / 'Atlanta, Georgia' | gold 'National Mall'
+doc  39 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Hot Girls Wanted' / 'Hot Girls Wanted' | gold 'China Blue'
+doc  40 sp 1.00 chain 0.00 retr 0.67 iter 0.67 iter+n 0.67 sup 0.67 sup+n 0.67 sup+fb 0.67 sel 1.00(judge) ITF 0.67 | tag 'H1: Which type of animal with ' | 'Black cat' / 'cat' | gold 'black cat'
+doc  41 sp 0.50 chain 0.50 retr 0.50 iter 0.50 iter+n 0.50 sup 0.50 sup+n 0.50 sup+fb 0.50 sel 0.50(singl) ITF 0.50 | tag 'NA' | 'Telugu' / 'Telugu' | gold 'Telugu and Tamil'
+doc  42 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | '2015' / '2015' | gold '2013'
+doc  43 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Who is the mother of Mary ' | 'Hermione' / 'Hermione' | gold 'Leontes'
+doc  44 sp 0.20 chain 0.00 retr 0.20 iter 0.20 iter+n 0.40 sup 0.20 sup+n 0.40 sup+fb 0.20 sel 0.20(agree) ITF 0.20 | tag 'H1: Which South Korean horror ' | 'a policeman who inve' / 'a policeman who inve' | gold 'illnesses'
+doc  45 sp 0.86 chain 0.00 retr 0.86 iter 0.86 iter+n 0.86 sup 0.86 sup+n 0.86 sup+fb 0.86 sel 0.86(agree) ITF 0.86 | tag 'H1: Who was the current commis' | 'National Hockey Leag' / 'National Hockey Leag' | gold 'National Hockey Leag'
+doc  46 sp 0.00 chain 0.18 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 0.00(undec) ITF 1.00 | tag 'H1: In which county is Altnahi' | '203' / '526' | gold '526'
+doc  47 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Steve Perry' / 'Steve Perry' | gold 'yes'
+doc  48 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which Spanish poet, playwr' | 'author' / 'author' | gold 'theatre director'
+doc  49 sp 0.00 chain 0.80 retr 0.00 iter 0.80 iter+n 0.80 sup 0.80 sup+n 0.80 sup+fb 0.80 sel 0.80(judge) ITF 0.80 | tag 'H1: Who founded the company th' | 'none' / 'Gothic Revival mansi' | gold 'Gothic Revival'
+doc  50 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Who founded the first scho' | 'Not applicable' / 'Not applicable' | gold 'Adelaide Laetitia'
+doc  51 sp 0.33 chain 0.33 retr 0.33 iter 0.33 iter+n 0.33 sup 0.33 sup+n 0.33 sup+fb 0.33 sel 0.33(singl) ITF 0.33 | tag 'NA' | 'Sam Neill' / 'Sam Neill' | gold 'Nigel John Dermot Ne'
+doc  52 sp 1.00 chain 0.43 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which metropolitan area is' | 'Cincinnati metropoli' / 'Cincinnati metropoli' | gold 'Cincinnati metropoli'
+doc  53 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'no' / 'no' | gold 'yes'
+doc  54 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 1.00 sup 0.00 sup+n 1.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which American jazz saxoph' | 'Coleman Hawkins' / 'Coleman Hawkins' | gold 'Shep Meyers'
+doc  55 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.67 sup 0.00 sup+n 0.67 sup+fb 0.00 sel 0.00(judge) ITF 0.00 | tag 'H1: At which battle did James ' | 'Boston' / 'Bass Harbor' | gold 'Charlestown, Massach'
+doc  56 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Gasherbrum II' / 'Gasherbrum II' | gold 'It lies two kilometr'
+doc  57 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'Matthew Good' / 'Matthew Good' | gold 'Matthew Good'
+doc  58 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which airport is the large' | 'Ministro Pistarini I' / 'Ministro Pistarini I' | gold 'Ministro Pistarini I'
+doc  59 sp 0.67 chain 0.67 retr 0.67 iter 0.67 iter+n 0.67 sup 0.67 sup+n 0.67 sup+fb 0.67 sel 0.67(singl) ITF 0.67 | tag "H1: Who was Michael McLntyre's" | 'Canadian' / 'Canadian' | gold 'Canadian comedian'
+doc  60 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 1.00 sup 0.00 sup+n 1.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which special forces unit ' | '1945' / '1945' | gold '1941'
+doc  61 sp 0.33 chain 0.33 retr 0.33 iter 0.33 iter+n 0.33 sup 0.33 sup+n 0.33 sup+fb 0.33 sel 0.33(agree) ITF 0.33 | tag "H1: Which Jamaican cricketer's" | 'right-handed batsman' / 'right-handed batsman' | gold 'middle order batsman'
+doc  62 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which actor starred in Sug' | 'May 5, 1930' / 'May 5, 1930' | gold 'January 23, 1898'
+doc  63 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'H1: Which actor born on March ' | '6' / '6' | gold 'over sixty films'
+doc  64 sp 0.80 chain 0.00 retr 0.80 iter 0.80 iter+n 0.80 sup 0.80 sup+n 0.80 sup+fb 0.80 sel 0.80(agree) ITF 0.80 | tag 'H1: Which actress debuted in F' | 'Amber Heard' / 'Amber Heard' | gold 'Amber Laura Heard'
+doc  65 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Digital Max' / 'Digital Max' | gold 'Paper'
+doc  66 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 0.00(undec) ITF 0.00 | tag 'H1: Which NBC sitcom does John' | 'Reed Agnew' / 'Justin Spitzer' | gold 'Justin Spitzer'
+doc  67 sp 0.80 chain 0.80 retr 0.00 iter 0.00 iter+n 0.00 sup 0.80 sup+n 0.80 sup+fb 0.80 sel 0.80(agree) ITF 0.00 | tag 'H1: Which New Jersey-based man' | 'Tumi Inc.' / 'Tumi Inc.' | gold 'Tumi Holdings, Inc.'
+doc  68 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'H1: Who were the first religio' | 'Socrates' / 'Socrates' | gold 'Plato'
+doc  69 sp 0.00 chain 0.00 retr 0.67 iter 0.67 iter+n 0.67 sup 0.67 sup+n 0.67 sup+fb 0.67 sel 0.67(judge) ITF 0.67 | tag 'H1: Which author wrote a play ' | 'Clarence Arthur Trip' / 'Edmund White' | gold 'Edmund Valentine Whi'
+doc  70 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(judge) ITF 0.00 | tag 'H1: Which company owns Babycha' | 'United Kingdom' / 'Spain' | gold 'Australia'
+doc  71 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(judge) ITF 0.00 | tag 'H1: Which subway system has a ' | 'weekdays' / 'PATH' | gold '24 hours a day and 7'
+doc  72 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'No' / 'No' | gold 'no'
+doc  73 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which highest Indian civil' | 'Bharat Ratna' / 'Bharat Ratna' | gold 'The Bharat Ratna'
+doc  74 sp 0.00 chain 1.00 retr 0.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(judge) ITF 1.00 | tag "H1: Which singer's songs are r" | 'October 28, 1977' / '3 August 1980' | gold '3 August 1980'
+doc  75 sp 0.67 chain 0.67 retr 0.67 iter 0.67 iter+n 0.67 sup 0.67 sup+n 0.67 sup+fb 0.67 sel 0.67(agree) ITF 0.67 | tag 'H1: Which driver had a career ' | 'Racing driver' / 'Racing driver' | gold 'driver'
+doc  76 sp 0.00 chain 1.00 retr 0.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(judge) ITF 1.00 | tag 'H1: Who wrote the short story ' | '1947' / '1958' | gold '1958'
+doc  77 sp 0.50 chain 1.00 retr 0.50 iter 0.50 iter+n 1.00 sup 0.50 sup+n 1.00 sup+fb 0.50 sel 0.50(agree) ITF 0.50 | tag 'H1: Who directed the American ' | '1986' / '1986' | gold 'June 11, 1986'
+doc  78 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'H1: Which team did John Nyströ' | 'None' / 'None' | gold 'Adelaide City'
+doc  79 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which American character a' | 'Don S. Davis' / 'Don S. Davis' | gold 'Don S. Davis'
+doc  80 sp 0.33 chain 1.00 retr 0.33 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 0.33(undec) ITF 1.00 | tag 'H1: Which company provided pro' | 'healthcare products' / 'IT products and serv' | gold 'IT products and serv'
+doc  81 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'writer' / 'writer' | gold 'writers'
+doc  82 sp 1.00 chain 1.00 retr 0.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which English inventor dev' | '28 January 1864' / '28 January 1864' | gold '28 January 1864'
+doc  83 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which singer recorded "Who' | 'Scottish' / 'Scottish' | gold 'Scottish'
+doc  84 sp 1.00 chain 0.00 retr 0.80 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which English conductor, o' | 'Royal College of Mus' / 'Royal College of Mus' | gold 'Royal College of Mus'
+doc  85 sp 0.67 chain 0.67 retr 0.67 iter 0.67 iter+n 0.00 sup 0.67 sup+n 0.00 sup+fb 0.67 sel 0.67(agree) ITF 0.67 | tag 'H1: In which Super Bowl did Di' | '25' / '25' | gold '25 points'
+doc  86 sp 0.89 chain 0.89 retr 0.89 iter 0.89 iter+n 0.89 sup 0.89 sup+n 0.89 sup+fb 0.89 sel 0.89(agree) ITF 0.89 | tag 'H1: Which team did Kevin House' | 'National Football Co' / 'National Football Co' | gold 'National Football Co'
+doc  87 sp 0.00 chain 0.50 retr 0.00 iter 0.50 iter+n 0.50 sup 0.50 sup+n 0.50 sup+fb 0.50 sel 0.50(judge) ITF 0.50 | tag 'H1: Which British author wrote' | '1939' / '1936' | gold '7 January 1936'
+doc  88 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which Indian film actor, p' | '2000' / '2000' | gold '5 February 1976'
+doc  89 sp 0.00 chain 1.00 retr 0.00 iter 0.00 iter+n 1.00 sup 0.00 sup+n 1.00 sup+fb 0.00 sel 0.00(agree) ITF 0.00 | tag 'H1: Which band released Hobart' | '1993' / '1993' | gold '1990'
+doc  90 sp 0.00 chain 0.50 retr 0.50 iter 0.50 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(agree) ITF 0.50 | tag 'H1: Which character in The Sim' | 'Kent Brockman' / 'Kent Brockman' | gold 'Mr. Smithers'
+doc  91 sp 0.00 chain 0.00 retr 0.33 iter 1.00 iter+n 0.00 sup 0.33 sup+n 0.00 sup+fb 0.33 sel 0.00(judge) ITF 1.00 | tag 'H1: What is Neo-liberalism? | ' | 'None' / 'freedom liberty' | gold 'democracy and person'
+doc  92 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'film director' / 'film director' | gold 'film director'
+doc  93 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(undec) ITF 0.00 | tag 'H1: Until which year did petro' | '1 CE' / 'AD 1' | gold '500 BC'
+doc  94 sp 0.50 chain 0.50 retr 0.50 iter 0.50 iter+n 0.50 sup 0.50 sup+n 0.50 sup+fb 0.50 sel 0.50(agree) ITF 0.50 | tag "H1: Where is The Laboratory's " | 'Maine' / 'Maine' | gold 'Maine, United States'
+doc  95 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: What was the codename for ' | 'D-Day' / 'D-Day' | gold 'D-Day'
+doc  96 sp 1.00 chain 1.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(singl) ITF 1.00 | tag 'NA' | 'No' / 'No' | gold 'no'
+doc  97 sp 0.50 chain 0.50 retr 0.50 iter 0.50 iter+n 0.50 sup 0.50 sup+n 0.50 sup+fb 0.50 sel 0.50(singl) ITF 0.50 | tag 'H1: In which casino game is th' | 'dice' / 'dice' | gold 'a pair of dice'
+doc  98 sp 1.00 chain 0.00 retr 1.00 iter 1.00 iter+n 1.00 sup 1.00 sup+n 1.00 sup+fb 1.00 sel 1.00(agree) ITF 1.00 | tag 'H1: Which rapper released the ' | 'Vince Staples' / 'Vince Staples' | gold 'Vince Staples'
+doc  99 sp 0.00 chain 0.00 retr 0.00 iter 0.00 iter+n 0.00 sup 0.00 sup+n 0.00 sup+fb 0.00 sel 0.00(singl) ITF 0.00 | tag 'NA' | 'Calibanus' / 'Calibanus' | gold 'Greyia'
+{
+ "f1_sp": 0.4335555555555555,
+ "f1_chain": 0.4337070707070707,
+ "f1_retrieval": 0.4200436507936508,
+ "f1_iterative": 0.4956118326118326,
+ "f1_iterative_notes": 0.5220634920634921,
+ "f1_superset": 0.5009145299145299,
+ "f1_superset_notes": 0.5278412698412699,
+ "f1_superset_fallback": 0.5032222222222222,
+ "f1_select": 0.47655555555555557,
+ "f1_iterative_fallback": 0.4956118326118326,
+ "f1_sp_verify": 0.4335555555555555,
+ "f1_superset_notes_verify": 0.5278412698412699,
+ "n": 100,
+ "oracle_union": 0.6243492063492063,
+ "chain_wins": 18,
+ "chain_losses": 17,
+ "retrieval_wins": 5,
+ "retrieval_losses": 7,
+ "iterative_wins": 12,
+ "iterative_losses": 4,
+ "iterative_notes_wins": 21,
+ "iterative_notes_losses": 9,
+ "superset_wins": 10,
+ "superset_losses": 4,
+ "superset_notes_wins": 19,
+ "superset_notes_losses": 7,
+ "superset_fallback_wins": 10,
+ "superset_fallback_losses": 3,
+ "select_wins": 6,
+ "select_losses": 2,
+ "iterative_fallback_wins": 12,
+ "iterative_fallback_losses": 4,
+ "sp_verify_wins": 0,
+ "sp_verify_losses": 0,
+ "superset_notes_verify_wins": 19,
+ "superset_notes_verify_losses": 7
+}

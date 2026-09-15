@@ -1,0 +1,4 @@
+scale/results/pipeline_dev2_verify.json: n=100, base arm superset_notes
+  C3 vote                0.561 -> 0.565  delta +0.004  CI [-0.026, +0.034]  up 2 / down 1
+  C4 length-norm         0.561 -> 0.571  delta +0.010  CI [+0.000, +0.028]  up 2 / down 0
+  C4 then C3             0.561 -> 0.571  delta +0.010  CI [-0.020, +0.043]  up 3 / down 1

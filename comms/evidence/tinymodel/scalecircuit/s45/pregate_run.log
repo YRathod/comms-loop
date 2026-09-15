@@ -1,0 +1,13 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|##########| 338/338 [00:00<00:00, 5402.23it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+provenance stamp SUSPECT 2026-09-14T04:01:52Z
+W0914 00:56:22.486000 54880 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 18,464,768 || all params: 1,562,179,072 || trainable%: 1.1820
+pairs 1495 steps 94
+step 25/94 loss 0.3201 ema 0.5592 134s
+step 50/94 loss 0.0890 ema 0.2499 241s
+step 75/94 loss 0.0097 ema 0.1550 354s
+dev: {'n': 40, 'parses': 40, 'anchor_kept': 40, 'na_agree': 0}
+saved models/decomp_pregate_1.5b 520s

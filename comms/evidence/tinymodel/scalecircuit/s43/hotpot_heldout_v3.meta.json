@@ -1,0 +1,24 @@
+{
+ "file": "data/hotpot_heldout_v3.jsonl",
+ "sha256": "df617bc4d0622753d443c98ef565e54130eeec7dca92d9b13c939032a2e7fc0c",
+ "n": 400,
+ "seed": 20260916,
+ "raw_rows": 7405,
+ "pool_after_exclusions": 6605,
+ "excluded": {
+  "longbench_0-199": 200,
+  "slice_v1": 100,
+  "dev2": 100,
+  "slice_v2": 400
+ },
+ "overlap_with_used_ids": 0,
+ "types": {
+  "bridge": 322,
+  "comparison": 78
+ },
+ "context_chars_median": 50842,
+ "context_chars_min": 39206,
+ "context_chars_max": 64948,
+ "built_utc": "2026-09-13T23:41:10Z",
+ "key": "KEYS.md #9"
+}

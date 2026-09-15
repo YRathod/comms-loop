@@ -1,0 +1,333 @@
+{
+ "synth_heldout": 0.985,
+ "real": {
+  "n": 30,
+  "parses": 29,
+  "na_ok": 28,
+  "struct": 19,
+  "anchor": 23,
+  "relations": 10
+ },
+ "rows": [
+  [
+   3,
+   "attribute of leader of Gary L. Bennett ?",
+   "country of employer of Gary L. Bennett ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   4,
+   "NA",
+   "country of producer of Atom Egoyan ?",
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  [
+   5,
+   "employer of owner of Celebrity Fifteen to One ?",
+   "employer of leader of Celebrity Fifteen to One ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   7,
+   "NA",
+   "NA",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   8,
+   "attribute of leader of Russell D. Moore [ president ] ?",
+   "attribute of Russell D. Moore ?",
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  [
+   9,
+   "publisher of female member of Fitz ?",
+   "employer of leader of Fitz and The Tantrums ?",
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  [
+   10,
+   "attribute of American singer, songwriter, record producer, dancer and actress ?",
+   "attribute of writer of Chapter II ?",
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  [
+   13,
+   "attribute of publisher of Finally ?",
+   "attribute of leader of Finally ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   14,
+   "home of leader of Mara ?",
+   "home of leader of Mara and Mondrem ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   15,
+   "employer of Sara Symington ?",
+   "attribute of Sara Symington ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   19,
+   "leader of British-American supergroup ?",
+   "leader of producer of Nobody's Child ?",
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  [
+   20,
+   "publisher of producer of \"Whatever Happened to... Robot Jones\" ?",
+   "owner of publisher of Whatever Happened to... Robot Jones? ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   21,
+   "home of home of Kellyville Ridge ?",
+   "home of home of Kellyville Ridge ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   22,
+   "NA",
+   "home of Oak Beach ?",
+   true,
+   false,
+   false,
+   false,
+   false
+  ],
+  [
+   23,
+   "leader of the last two episodes of season eighteen of South Park ?",
+   "attribute of South Park ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   24,
+   "publisher of leader of friend of Robbie Tucker ?",
+   "employer of Robbie Tucker ?",
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  [
+   25,
+   "attribute of producer of High School Confidential ?",
+   "attribute of home of High School Confidential ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   26,
+   "attribute of leader of the large subunit ?",
+   "attribute of large subunit and small subunit ?",
+   true,
+   true,
+   false,
+   false,
+   false
+  ],
+  [
+   27,
+   "NA",
+   "NA",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   28,
+   "parent of Lake of Band-e-Amir Dragons ?",
+   "home of Band-e-Amir Dragons ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   30,
+   "attribute of home of Yau Ma Tei North ?",
+   "attribute of home of Yau Ma Tei North ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   31,
+   "founder of leader of Spider9 ?",
+   "employer of founder of Spider9 ?",
+   true,
+   true,
+   true,
+   true,
+   false
+  ],
+  [
+   32,
+   "attribute of home of transmitter of WLLZ-LP ?",
+   "attribute of home of WLLZ-LP ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   33,
+   "attribute of Charles Haughey ?",
+   "attribute of Charles Haughey ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   34,
+   "home of Vegepet ?",
+   "home of Vegepet ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   35,
+   "driver of McLain MP4/11 ?",
+   "leader of McLaren MP4/11 [ retired ] ?",
+   false,
+   true,
+   false,
+   false,
+   false
+  ],
+  [
+   36,
+   "director of producer of Rich Lee 3-D ?",
+   "producer of Rich Lee ?",
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  [
+   37,
+   "composer of leader of composer of leader of Nutcracker ?",
+   "leader of leader of Nutcracker ?",
+   true,
+   true,
+   false,
+   true,
+   false
+  ],
+  [
+   38,
+   "employer of Alfred A. Marcus ?",
+   "employer of Alfred A. Marcus ?",
+   true,
+   true,
+   true,
+   true,
+   true
+  ],
+  [
+   39,
+   "NA",
+   "NA",
+   true,
+   true,
+   true,
+   true,
+   true
+  ]
+ ],
+ "args": {
+  "base": "Qwen/Qwen2.5-0.5B-Instruct",
+  "train": "data/tagger_train_v5.jsonl",
+  "out": "models/tagger_v5hold_0.5b",
+  "epochs": 2.0,
+  "bs": 4,
+  "accum": 4,
+  "lr": 0.0002,
+  "rank": 16,
+  "limit": 0,
+  "extra": "data/tagger_real_40-129.jsonl",
+  "extra_rep": 5,
+  "eval_only": false,
+  "init_adapter": null,
+  "seed": 0,
+  "sanity": "50:1.0,100:0.4,200:0.15",
+  "abort_on_drift": false,
+  "mini_eval_every": 0
+ },
+ "train_seconds": 1919.290934085846
+}

@@ -1,0 +1,331 @@
+{
+ "adapter": "models/decomp_v2_1.5b",
+ "n": 40,
+ "parses": 40,
+ "anchor_kept": 38,
+ "one_hop": 0,
+ "na": 4,
+ "decision": "pre-gate (full outputs, models/decomp_v2_1.5b): parses 40/40 (>=36), anchor_kept 38/40 (>=30), one-hop 0/40 (>=5), NA 4/40 -> FAIL: eval uses the declared fallback models/decomp_pregate_1.5b",
+ "outputs": [
+  {
+   "question": "What collaboration with DJ Muggs did Gary Grice participate do in 2005?",
+   "output": "H1: What collaboration with DJ Muggs did Gary Grice participate in?\nH2: In what year was #1 performed?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which became a Cathedral first St Chad's Cathedral, Birmingham or Chelmsford Cathedral?",
+   "output": "H1: Which became a Cathedral first, St Chad's Cathedral in Birmingham or Chelmsford Cathedral?\nH2: What cathedral was #1 before becoming a Cathedral?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": " Heaven starred what Australian actress who portrayed Katharine Hepburn in the 2004 film \"The Aviator?\"",
+   "output": "H1: What Australian actress starred in the 2004 film \"The Aviator\"?\nH2: In which movie did #1 portray Katharine Hepburn?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": " \"JK Wedding Entrance Dance\" is a viral video that uses a song by a rapper whose first album was certified what?",
+   "output": "H1: Which rapper's first album was certified what?\nH2: What certification did #1 receive for their first album?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": false
+  },
+  {
+   "question": "Where does the founder of The International Grenfell Association act as a missionary to?",
+   "output": "H1: Who founded The International Grenfell Association?\nH2: Where does #1 act as a missionary to?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": " If You Ever Get Lonely was covered by what Lyric Street Records-affiliated band?",
+   "output": "H1: What Lyric Street Records-affiliated band covered If You Ever Get Lonely?\nH2: Which band did #1 cover?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Where does the team coached by someone with the nickname \"Coach K\" play?",
+   "output": "H1: Who has the nickname \"Coach K\"?\nH2: Where does the team coached by #1 play?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "The Rhymers' Club met at Ye Olde Cheshire Cheese listed as what type of house?",
+   "output": "H1: What type of house was Ye Olde Cheshire Cheese?\nH2: Where did The Rhymers' Club meet, according to #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "The 1978 NBA World Championship Series had as MVP which Hall of Fame class member of 1988?",
+   "output": "H1: Who was the MVP of the 1978 NBA World Championship Series?\nH2: Which Hall of Fame class member of 1988 did #1 represent?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+   "output": "NA",
+   "parsed": true,
+   "na": true,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which composer, who was a crucial figure in the transition between the Classical and Romantic eras in Western art music, wrote Piano Sonata No. 16 ?",
+   "output": "H1: Which composer wrote Piano Sonata No. 16?\nH2: Who did #1 belong to?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Who is affiliated with more countries as a director, Robert Florey and R. G. Springsteen?",
+   "output": "H1: How many countries are affiliated with by Robert Florey?\nH2: How many countries are affiliated with by R. G. Springsteen?\nH3: What is the affiliation of #1?\nH4: What is the affiliation of #2?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Carlo Buccirosso had a role in a movie that premiered at what film festival?",
+   "output": "H1: Which movie did Carlo Buccirosso have a role in?\nH2: At which film festival did #1 premiere?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Skyplex has which roller coaster that will become the tallest in the world when it opens in 2020?",
+   "output": "H1: Which roller coaster at Skyplex will open in 2020?\nH2: What roller coaster at Skyplex, #1, will be the tallest in the world when it opens?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "How was Tiger Pataudi related to Iftikhar Ali Khan Pataudi?",
+   "output": "H1: Who is the father of Iftikhar Ali Khan Pataudi?\nH2: How is #1 related to Tiger Pataudi?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which park is larger, Timanfaya National Park or Sierra Nevada National Park?",
+   "output": "NA",
+   "parsed": true,
+   "na": true,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": " The 1919 Mississippi gubernatorial election Incumbent Democrat was a master of what?",
+   "output": "H1: Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election?\nH2: What did #1 master?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which Olympic game featured Boules and happened right before medals started to be awarded?",
+   "output": "H1: Which Olympic games featured boules?\nH2: What was the year of #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which movie is a documentary about \"Beowulf & Grendel\", between My Kid Could Paint That and Wrath of Gods?",
+   "output": "H1: Which movie is a documentary about \"Beowulf & Grendel\"?\nH2: Is #1 My Kid Could Paint That?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "What award won by only twelve people has a man who Ted Kooshian has performed with won?",
+   "output": "H1: What award has been won by only twelve people?\nH2: Who did #1 have perform with?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of Australia from 2010 to when",
+   "output": "H1: Who was the 27th Prime Minister of Australia from 2010 to?\nH2: What position did Phil Lloyd play in the movie that had #1 as a character?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",
+   "output": "H1: Which actor's birth name was Charles Dennis Buchinsky?\nH2: Was #1 part of the Leslie Nielsen comedy?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Romans stars which Tamil and Telugu actress?",
+   "output": "H1: Which Tamil and Telugu actress starred in the Roman?\nH2: In what movie did #1 star?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which magazine was founded first, Diva or Elle?",
+   "output": "H1: Which magazine was founded first, Diva or Elle?\nH2: What is the founding year of #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",
+   "output": "H1: Which movies were directed by James Gunn?\nH2: In which of #1 did the character Ego the Living Planet appear?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Do both Korematsu v. United States and Chaplinsky v. New Hampshire cases regard the rights of U. S. citizens?",
+   "output": "NA",
+   "parsed": true,
+   "na": true,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Where do both the New Jersey Devils and the Seton Hall Pirates play?",
+   "output": "H1: Where does the New Jersey Devils play?\nH2: Where does #1 play?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?",
+   "output": "H1: Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?\nH2: In which The Wind's Twelve Quarters story #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Who was the producer of the 1994 American animated epic musical film which Mel Shaw animated?",
+   "output": "H1: What was the name of the 1994 American animated epic musical film that Mel Shaw animated?\nH2: Who produced #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?",
+   "output": "H1: Which American Director was both a director and a choreographer?\nH2: Was #1 Stanley Kubrick or Kenny Ortega?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which of the two came out first, The Wind in the Willows or The Bears and I?",
+   "output": "NA",
+   "parsed": true,
+   "na": true,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which film director is younger, Robert Z. Leonard or Sinclair Hill?",
+   "output": "H1: What is the age of Robert Z. Leonard?\nH2: What is the age of #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Why I Write was penned by which English novelist and critic?",
+   "output": "H1: Which English novelist and critic wrote Why I Write?\nH2: What is the name of #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "What party does the person that represents Stoke Newington Central belong to?",
+   "output": "H1: What political party does the representative of Stoke Newington Central belong to?\nH2: Who do #1 represent?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "What song by the American rapper Coolio is on his greatest hits album \"Fantiastic Voyage\" and samples from a Stevie Wonder song?",
+   "output": "H1: What song by Coolio is on his greatest hits album \"Fantiastic Voyage\"?\nH2: Which song by #1 samples from a Stevie Wonder song?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "The  Actaea genus is native to what continent that the Onoclea genus is not?",
+   "output": "H1: What continent is the Actaea genus native to?\nH2: Is the Onoclea genus native to the same continent as #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": false
+  },
+  {
+   "question": "What is the colloquial name of the professional football team in which striker Frederico Chaves Guedos played? ",
+   "output": "H1: What is the colloquial name of the professional football team that striker Frederico Chaves Guedos played for?\nH2: In what team did #1 play as a striker?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "TimeCamp enables what type of commercial documents from a seller to a buyer?",
+   "output": "H1: What type of commercial documents does TimeCamp enable?\nH2: From a seller to a buyer, #1 enables what type of document?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "James Leal Greenleaf worked on a monument located where? ",
+   "output": "H1: Where was James Leal Greenleaf's work on a monument located?\nH2: What location did #1 work on a monument in?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  },
+  {
+   "question": "Which was released first, Hot Girls Wanted or China Blue?",
+   "output": "H1: Which movie was released first, Hot Girls Wanted or China Blue?\nH2: What is the release date of #1?",
+   "parsed": true,
+   "na": false,
+   "one_hop": false,
+   "anchor_ok": true
+  }
+ ]
+}

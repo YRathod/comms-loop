@@ -1,0 +1,12 @@
+{
+ "file": "data/decomp_train_full.jsonl",
+ "sha256": "d3006112b24de4ec0d275be8b57ba4577fd1e5f737ef913ff27be8dc0bcdf417",
+ "verdict": "CLEAN",
+ "utc": "2026-09-14T05:06:24Z",
+ "checker": "scripts/decomp_data_check.py",
+ "leg4_share": 0.3434603501544799,
+ "leg4_null_mean": 0.34221421215242015,
+ "leg4_null_p95": 0.3630278063851699,
+ "leg4_null_p99": 0.3681771369721936,
+ "leg4_excess": 0.001246138002059749
+}

@@ -1,0 +1,8 @@
+EVAL clean (s21) n=30: delta vs single-pass, bootstrap 95% CI over docs, P(delta >= +0.05)
+   iterative_fallback   +0.036  CI [+0.000, +0.093]  P(>=+0.05)=0.23
+   retrieval            +0.051  CI [-0.075, +0.185]  P(>=+0.05)=0.51
+   iterative            +0.036  CI [+0.000, +0.093]  P(>=+0.05)=0.23
+DEV clean n=40: delta vs single-pass, bootstrap 95% CI over docs, P(delta >= +0.05)
+   iterative_fallback   +0.079  CI [+0.000, +0.177]  P(>=+0.05)=0.72
+   retrieval            -0.023  CI [-0.097, +0.052]  P(>=+0.05)=0.03
+   iterative            +0.054  CI [-0.046, +0.162]  P(>=+0.05)=0.52

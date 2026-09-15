@@ -1,0 +1,30 @@
+{
+ "file": "data/decomp_teacher_train.jsonl",
+ "rows_in": 1645,
+ "rows_kept": 1643,
+ "rows_dropped": 2,
+ "counts": {
+  "email": 0,
+  "phone": 0,
+  "ssn_like": 0,
+  "card_like": 0,
+  "street_address": 2,
+  "harm_instruction": 0,
+  "sexual_minor": 0,
+  "slur_or_abuse": 0
+ },
+ "dropped": [
+  {
+   "id": "5a9078d255429916514e74d2",
+   "hits": [
+    "street_address"
+   ]
+  },
+  {
+   "id": "5a74cbd655429974ef308c69",
+   "hits": [
+    "street_address"
+   ]
+  }
+ ]
+}

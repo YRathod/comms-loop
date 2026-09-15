@@ -1,0 +1,19 @@
+{
+ "base": "Qwen/Qwen2.5-0.5B-Instruct",
+ "epochs": 2.0,
+ "bs": 4,
+ "accum": 4,
+ "lr": 0.0002,
+ "rank": 16,
+ "limit": 0,
+ "extra_rep": 5,
+ "eval_only": false,
+ "init_adapter": null,
+ "seed": 0,
+ "sanity": "50:1.0,100:0.4,200:0.15",
+ "abort_on_drift": false,
+ "mini_eval_every": 0,
+ "train": "data/tagger_train_v4.jsonl",
+ "extra": "data/tagger_real_40-129.jsonl",
+ "out": "models/tagger_v4hold_0.5b"
+}

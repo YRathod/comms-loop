@@ -1,0 +1,1 @@
+DEV2 (pregate adapter) n=100: chain-freeform -0.007 (16/17); superset-freeform -0.006 (7/8); superset+notes-freeform +0.092 (20/8); abstained 30/100 -> CLAIM = superset+notes-freeform

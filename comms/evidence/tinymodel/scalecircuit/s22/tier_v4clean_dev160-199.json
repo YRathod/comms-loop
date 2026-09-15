@@ -1,0 +1,414 @@
+{
+ "summary": {
+  "n": 40,
+  "parses": 39,
+  "na_ok": 40,
+  "struct": 32,
+  "anchor": 35,
+  "relations": 22,
+  "adapter": "models/tagger_v4clean_0.5b",
+  "labels": "data/tagger_real_160-199.jsonl"
+ },
+ "rows": [
+  {
+   "doc": 160,
+   "pred": "attribute of publisher of attribute of the post position draw ?",
+   "key": "attribute of producer of ESPN ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 161,
+   "pred": "employer of Kevin Yorn ?",
+   "key": "publisher of leader of Kevin Yorn ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 162,
+   "pred": "leader of Frederick John Fulton ?",
+   "key": "owner of Frederick John Fulton ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 163,
+   "pred": "home of home of H-63 ?",
+   "key": "home of home of H-63 ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 164,
+   "pred": "attribute of home of Lewiston Maineiacs ?",
+   "key": "attribute of home of Lewiston Maineiacs ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 165,
+   "pred": "home of ingredient of She-crab soup ?",
+   "key": "attribute of She-crab soup ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 166,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 167,
+   "pred": "employer of Viking ?",
+   "key": "leader of Kristiansand ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 168,
+   "pred": "attribute of attribute of employer of Oregon Duck ?",
+   "key": "attribute of Oregon Duck ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 169,
+   "pred": "owner of fictional owner of Claire Fraser ?",
+   "key": "attribute of Claire Fraser ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 170,
+   "pred": "employer of leader of Press TV ?",
+   "key": "employer of leader of Press TV ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 171,
+   "pred": "attribute of Baghdad ?",
+   "key": "attribute of Baghdad ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 172,
+   "pred": "director of producer of Leonard Logsdail ?",
+   "key": "director of producer of Leonard Logsdail ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 173,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 174,
+   "pred": "home of home of Striding Lion ?",
+   "key": "home of Panel with striding lion ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 175,
+   "pred": "producer of attribute of Ibiza ?",
+   "key": "leader of the most popular songs in Ibiza in 2014 ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 176,
+   "pred": "producer of John Paesano ?",
+   "key": "producer of John Paesano ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 177,
+   "pred": "attribute of leader of Todd Bertuzzi\u2013Steve Moore ?",
+   "key": "attribute of leader of Todd Bertuzzi\u2013Steve Moore incident ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 178,
+   "pred": "lowest vocal range in Cosmos ?",
+   "key": "leader of Cosmos ?",
+   "parses": false,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 179,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 180,
+   "pred": "founder of brother of Minyue ?",
+   "key": "parent of brother of Minyue ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 181,
+   "pred": "attribute of writer of Det norske Theater's first production ?",
+   "key": "attribute of writer of producer of Det norske Theater ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 182,
+   "pred": "home of leader of Dallas Cowboys ?",
+   "key": "employer of leader of Dallas Cowboys ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 183,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 184,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 185,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 186,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 187,
+   "pred": "attribute of parent of The Atherton Bridge ?",
+   "key": "attribute of home of The Atherton Bridge ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 188,
+   "pred": "attribute of Bangor Daily News ?",
+   "key": "attribute of Sawin Millett ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": false,
+   "rel": true
+  },
+  {
+   "doc": 189,
+   "pred": "owner of leader of Sean Tully ?",
+   "key": "owner of leader of Sean Tully ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 190,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 191,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 192,
+   "pred": "owner of Steve Urkel ?",
+   "key": "leader of Steve Urkel ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 193,
+   "pred": "leader of Scotland Knight ?",
+   "key": "publisher of a Scottish Knight ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 194,
+   "pred": "attribute of leader of \"Four Seasons of Love\" ?",
+   "key": "attribute of leader of Four Seasons of Love ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 195,
+   "pred": "employer of Dianne Morgan ?",
+   "key": "employer of Dianne Morgan ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 196,
+   "pred": "attribute of home of the 53rd National Hockey League All-Star Game ?",
+   "key": "attribute of home of 53rd National Hockey League All-Star Game ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 197,
+   "pred": "writer of producer of R\u00f8nnaug Alten ?",
+   "key": "attribute of writer of producer of R\u00f8nnaug Alten ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 198,
+   "pred": "producer of Marvel Team-Up ?",
+   "key": "leader of Marvel Team-Up ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 199,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  }
+ ]
+}

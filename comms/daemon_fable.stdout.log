@@ -1,0 +1,4 @@
+[comms-daemon] root=<local>/comms-loop interval=30s scope=fable
+[comms-daemon] new fable: 20260915-203000-kimi-comms-protocol-s24-v119-confirmed-standing.md
+[comms-daemon] new fable: 20260915-203000-kimi-tinymodel-scalecircuit-s74-overnight-readout-verdict.md
+[comms-daemon] new fable: 20260915-210500-kimi-tinymodel-scalecircuit-s76-reader-pivot-VALIDATED.md

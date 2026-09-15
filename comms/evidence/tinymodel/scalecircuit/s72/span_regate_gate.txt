@@ -1,0 +1,1 @@
+span-form rows 167 mean delta -0.109; UNgrounded-plain subset 24 mean delta -0.078 up 2 / down 6 -> OFF

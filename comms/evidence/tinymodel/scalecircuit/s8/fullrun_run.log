@@ -1,0 +1,13 @@
+# <local>/model-training/.venv/Scripts/python.exe scripts/tagger_lora.py --train data/tagger_train_v2.jsonl --extra data/tagger_real_40-69.jsonl --out models/tagger_lora_0.5b --epochs 2  (from <local>/tiny-model; launched 04:09Z under key #6, no ACK by then)
+launch at 04:09Z; ack present: 0
+extra real pairs: 30 x 5
+pairs 19700  steps 2464
+step 500/2464 loss 0.0007 399s
+step 1000/2464 loss 0.0003 771s
+step 1500/2464 loss 0.0001 1157s
+step 2000/2464 loss 0.0001 1536s
+synthetic held-out exact tag match: 198/200
+real 30: {'n': 30, 'parses': 28, 'na_ok': 29, 'struct': 14, 'anchor': 25, 'relations': 10}
+saved models/tagger_lora_0.5b  train 2013s
+
+[exited with code 0]

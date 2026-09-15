@@ -1,0 +1,19 @@
+{
+ "base": "Qwen/Qwen2.5-0.5B-Instruct",
+ "train": "models/tagger_loop\train_r2.jsonl",
+ "out": "models/tagger_loop\round2",
+ "epochs": 1.0,
+ "bs": 4,
+ "accum": 4,
+ "lr": 0.0002,
+ "rank": 16,
+ "limit": 0,
+ "extra": "models/tagger_loop\real_r2.jsonl",
+ "extra_rep": 5,
+ "eval_only": false,
+ "init_adapter": "models/tagger_loop\round1",
+ "seed": 0,
+ "sanity": "50:1.0,100:0.4,200:0.15",
+ "abort_on_drift": false,
+ "mini_eval_every": 0
+}

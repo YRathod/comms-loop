@@ -1,0 +1,25 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|##########| 338/338 [00:00<00:00, 10381.26it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+provenance stamp CLEAN 2026-09-14T05:06:24Z
+W0914 01:07:30.010000 13044 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 18,464,768 || all params: 1,562,179,072 || trainable%: 1.1820
+pairs 3138 steps 394
+step 25/394 loss 0.4151 ema 0.5674 194s
+step 50/394 loss 0.2614 ema 0.4515 363s
+step 75/394 loss 0.2240 ema 0.3341 545s
+step 100/394 loss 0.2417 ema 0.2733 713s
+step 125/394 loss 0.3494 ema 0.3196 903s
+step 150/394 loss 0.4792 ema 0.2892 1097s
+step 175/394 loss 0.1656 ema 0.3070 1271s
+step 200/394 loss 0.1392 ema 0.2127 1456s
+step 225/394 loss 0.0894 ema 0.2010 1651s
+step 250/394 loss 0.0368 ema 0.2048 1827s
+step 275/394 loss 0.3115 ema 0.1875 2012s
+step 300/394 loss 0.1015 ema 0.1223 2204s
+step 325/394 loss 0.2991 ema 0.1924 2398s
+step 350/394 loss 0.2254 ema 0.1476 2566s
+step 375/394 loss 0.2057 ema 0.1655 2747s
+dev: {'n': 40, 'parses': 40, 'anchor_kept': 36, 'na_agree': 0}
+saved models/decomp_full_1.5b 2981s

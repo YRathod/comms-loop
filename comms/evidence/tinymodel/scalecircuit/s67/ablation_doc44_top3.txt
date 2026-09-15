@@ -1,0 +1,6 @@
+doc 44 | gold 'illnesses' | hop-1 note 'The Wailing'
+  no ablation            -> 'The Wailing'
+  silence [(29, 1), (30, 3), (29, 4)]       -> 'The Wailing'
+  silence random [(24, 13), (2, 8), (32, 15)] -> 'The Wailing'
+  silence random [(25, 9), (30, 11), (13, 4)] -> 'South Korean horror film about a policeman who investigates a series of mysterious killings and illnesses'
+  silence random [(18, 4), (6, 8), (34, 4)] -> 'The Wailing'

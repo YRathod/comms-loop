@@ -1,0 +1,141 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 10419.56it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+extra real pairs: 90 x 5
+W0913 04:28:37.958000 35884 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 8,798,208 || all params: 502,830,976 || trainable%: 1.7497
+pairs 20000  steps 2500
+step 25/2500 loss 0.6742 ema 1.6750 21s
+step 50/2500 loss 0.5026 ema 0.5565 41s
+step 75/2500 loss 0.0539 ema 0.1969 60s
+step 100/2500 loss 0.0949 ema 0.0972 78s
+step 125/2500 loss 0.0680 ema 0.0656 96s
+step 150/2500 loss 0.0898 ema 0.0484 114s
+step 175/2500 loss 0.0027 ema 0.0915 132s
+step 200/2500 loss 0.0041 ema 0.0469 151s
+step 225/2500 loss 0.0021 ema 0.0183 169s
+step 250/2500 loss 0.0021 ema 0.0462 187s
+step 275/2500 loss 0.0033 ema 0.0135 205s
+step 300/2500 loss 0.0006 ema 0.0144 223s
+step 325/2500 loss 0.1034 ema 0.0476 241s
+step 350/2500 loss 0.0011 ema 0.0295 259s
+step 375/2500 loss 0.0041 ema 0.0684 277s
+step 400/2500 loss 0.0006 ema 0.0255 294s
+step 425/2500 loss 0.0089 ema 0.0318 312s
+step 450/2500 loss 0.2495 ema 0.0453 330s
+step 475/2500 loss 0.0101 ema 0.0167 347s
+step 500/2500 loss 0.0043 ema 0.0069 365s
+step 525/2500 loss 0.0019 ema 0.0152 383s
+step 550/2500 loss 0.0391 ema 0.0257 401s
+step 575/2500 loss 0.0010 ema 0.0220 419s
+step 600/2500 loss 0.0005 ema 0.0164 437s
+step 625/2500 loss 0.0003 ema 0.0151 454s
+step 650/2500 loss 0.0002 ema 0.0084 472s
+step 675/2500 loss 0.0202 ema 0.0087 490s
+step 700/2500 loss 0.0351 ema 0.0112 508s
+step 725/2500 loss 0.0003 ema 0.0013 526s
+step 750/2500 loss 0.0071 ema 0.0177 543s
+step 775/2500 loss 0.0005 ema 0.0210 561s
+step 800/2500 loss 0.0131 ema 0.0132 579s
+step 825/2500 loss 0.0083 ema 0.0082 597s
+step 850/2500 loss 0.0689 ema 0.0105 614s
+step 875/2500 loss 0.0002 ema 0.0096 632s
+step 900/2500 loss 0.0001 ema 0.0057 650s
+step 925/2500 loss 0.0685 ema 0.0085 669s
+step 950/2500 loss 0.0004 ema 0.0048 687s
+step 975/2500 loss 0.0003 ema 0.0070 705s
+step 1000/2500 loss 0.0002 ema 0.0069 722s
+step 1025/2500 loss 0.0003 ema 0.0042 741s
+step 1050/2500 loss 0.0003 ema 0.0090 759s
+step 1075/2500 loss 0.0002 ema 0.0027 777s
+step 1100/2500 loss 0.0001 ema 0.0009 795s
+step 1125/2500 loss 0.0001 ema 0.0113 813s
+step 1150/2500 loss 0.0001 ema 0.0086 831s
+step 1175/2500 loss 0.0257 ema 0.0082 848s
+step 1200/2500 loss 0.0002 ema 0.0018 867s
+step 1225/2500 loss 0.0873 ema 0.0156 884s
+step 1250/2500 loss 0.0053 ema 0.0043 902s
+step 1275/2500 loss 0.0001 ema 0.0022 920s
+step 1300/2500 loss 0.0004 ema 0.0022 937s
+step 1325/2500 loss 0.0001 ema 0.0005 955s
+step 1350/2500 loss 0.0002 ema 0.0040 973s
+step 1375/2500 loss 0.0010 ema 0.0007 990s
+step 1400/2500 loss 0.0015 ema 0.0026 1008s
+step 1425/2500 loss 0.0001 ema 0.0055 1026s
+step 1450/2500 loss 0.0001 ema 0.0018 1044s
+step 1475/2500 loss 0.0001 ema 0.0046 1061s
+step 1500/2500 loss 0.0001 ema 0.0010 1079s
+step 1525/2500 loss 0.0001 ema 0.0030 1097s
+step 1550/2500 loss 0.0002 ema 0.0019 1114s
+step 1575/2500 loss 0.0011 ema 0.0023 1132s
+step 1600/2500 loss 0.0001 ema 0.0005 1150s
+step 1625/2500 loss 0.0001 ema 0.0038 1167s
+step 1650/2500 loss 0.0002 ema 0.0009 1185s
+step 1675/2500 loss 0.0002 ema 0.0047 1202s
+step 1700/2500 loss 0.0001 ema 0.0009 1220s
+step 1725/2500 loss 0.0009 ema 0.0075 1238s
+step 1750/2500 loss 0.0008 ema 0.0022 1256s
+step 1775/2500 loss 0.0002 ema 0.0047 1273s
+step 1800/2500 loss 0.0002 ema 0.0112 1291s
+step 1825/2500 loss 0.0001 ema 0.0041 1309s
+step 1850/2500 loss 0.0001 ema 0.0011 1327s
+step 1875/2500 loss 0.0001 ema 0.0002 1345s
+step 1900/2500 loss 0.0001 ema 0.0013 1362s
+step 1925/2500 loss 0.0001 ema 0.0019 1380s
+step 1950/2500 loss 0.0001 ema 0.0003 1397s
+step 1975/2500 loss 0.0002 ema 0.0024 1415s
+step 2000/2500 loss 0.0001 ema 0.0004 1432s
+step 2025/2500 loss 0.0001 ema 0.0014 1451s
+step 2050/2500 loss 0.0000 ema 0.0009 1468s
+step 2075/2500 loss 0.0002 ema 0.0005 1486s
+step 2100/2500 loss 0.0000 ema 0.0004 1503s
+step 2125/2500 loss 0.0001 ema 0.0007 1521s
+step 2150/2500 loss 0.0000 ema 0.0020 1539s
+step 2175/2500 loss 0.0001 ema 0.0004 1557s
+step 2200/2500 loss 0.0001 ema 0.0046 1575s
+step 2225/2500 loss 0.0001 ema 0.0014 1592s
+step 2250/2500 loss 0.0001 ema 0.0008 1610s
+step 2275/2500 loss 0.0000 ema 0.0013 1628s
+step 2300/2500 loss 0.0001 ema 0.0008 1646s
+step 2325/2500 loss 0.0264 ema 0.0088 1663s
+step 2350/2500 loss 0.0000 ema 0.0021 1681s
+step 2375/2500 loss 0.0004 ema 0.0013 1699s
+step 2400/2500 loss 0.0001 ema 0.0006 1717s
+step 2425/2500 loss 0.0001 ema 0.0022 1735s
+step 2450/2500 loss 0.0003 ema 0.0002 1753s
+step 2475/2500 loss 0.0000 ema 0.0003 1771s
+step 2500/2500 loss 0.0000 ema 0.0065 1789s
+synthetic held-out exact tag match: 197/200
+  doc  3 | attribute of leader of Gary L. Bennett ?                   | key country of employer of Gary L. Bennett ?           | struct 1 ent 1 rel 0
+  doc  4 | NA                                                         | key country of producer of Atom Egoyan ?               | struct 0 ent 0 rel 0
+  doc  5 | employer of owner of Celebrity Fifteen to One ?            | key employer of leader of Celebrity Fifteen to One ?   | struct 1 ent 1 rel 0
+  doc  7 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+  doc  8 | attribute of leader of Russell D. Moore [ president ] ?    | key attribute of Russell D. Moore ?                    | struct 0 ent 1 rel 0
+  doc  9 | publisher of female member of Fitz ?                       | key employer of leader of Fitz and The Tantrums ?      | struct 0 ent 0 rel 0
+  doc 10 | attribute of American singer, songwriter, record producer, dancer and actress ? | key attribute of writer of Chapter II ?                | struct 0 ent 0 rel 0
+  doc 13 | attribute of publisher of Finally ?                        | key attribute of leader of Finally ?                   | struct 1 ent 1 rel 0
+  doc 14 | home of leader of Mara ?                                   | key home of leader of Mara and Mondrem ?               | struct 1 ent 1 rel 1
+  doc 15 | employer of Sara Symington ?                               | key attribute of Sara Symington ?                      | struct 1 ent 1 rel 0
+  doc 19 | leader of British-American supergroup ?                    | key leader of producer of Nobody's Child ?             | struct 0 ent 0 rel 0
+  doc 20 | publisher of producer of "Whatever Happened to... Robot Jones" ? | key owner of publisher of Whatever Happened to... Robot Jones? ? | struct 1 ent 1 rel 0
+  doc 21 | home of home of Kellyville Ridge ?                         | key home of home of Kellyville Ridge ?                 | struct 1 ent 1 rel 1
+  doc 22 | NA                                                         | key home of Oak Beach ?                                | struct 0 ent 0 rel 0
+  doc 23 | leader of the last two episodes of season eighteen of South Park ? | key attribute of South Park ?                          | struct 1 ent 1 rel 0
+  doc 24 | publisher of leader of friend of Robbie Tucker ?           | key employer of Robbie Tucker ?                        | struct 0 ent 1 rel 0
+  doc 25 | attribute of producer of High School Confidential ?        | key attribute of home of High School Confidential ?    | struct 1 ent 1 rel 0
+  doc 26 | attribute of leader of the large subunit ?                 | key attribute of large subunit and small subunit ?     | struct 0 ent 0 rel 0
+  doc 27 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+  doc 28 | parent of Lake of Band-e-Amir Dragons ?                    | key home of Band-e-Amir Dragons ?                      | struct 1 ent 1 rel 0
+  doc 30 | attribute of home of Yau Ma Tei North ?                    | key attribute of home of Yau Ma Tei North ?            | struct 1 ent 1 rel 1
+  doc 31 | founder of leader of Spider9 ?                             | key employer of founder of Spider9 ?                   | struct 1 ent 1 rel 0
+  doc 32 | attribute of home of transmitter of WLLZ-LP ?              | key attribute of home of WLLZ-LP ?                     | struct 1 ent 1 rel 1
+  doc 33 | attribute of Charles Haughey ?                             | key attribute of Charles Haughey ?                     | struct 1 ent 1 rel 1
+  doc 34 | home of Vegepet ?                                          | key home of Vegepet ?                                  | struct 1 ent 1 rel 1
+  doc 35 | driver of McLain MP4/11 ?                                  | key leader of McLaren MP4/11 [ retired ] ?             | struct 0 ent 0 rel 0
+  doc 36 | director of producer of Rich Lee 3-D ?                     | key producer of Rich Lee ?                             | struct 0 ent 1 rel 0
+  doc 37 | composer of leader of composer of leader of Nutcracker ?   | key leader of leader of Nutcracker ?                   | struct 0 ent 1 rel 0
+  doc 38 | employer of Alfred A. Marcus ?                             | key employer of Alfred A. Marcus ?                     | struct 1 ent 1 rel 1
+  doc 39 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+real 30: {'n': 30, 'parses': 29, 'na_ok': 28, 'struct': 19, 'anchor': 23, 'relations': 10}
+saved models/tagger_v5hold_0.5b  train 1919s

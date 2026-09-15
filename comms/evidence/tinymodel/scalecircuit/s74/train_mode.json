@@ -1,0 +1,23 @@
+{
+ "mode": "qlora-4bit",
+ "rows": 1903,
+ "steps": 238,
+ "args": {
+  "base": "Qwen/Qwen2.5-3B-Instruct",
+  "train": "data/reader_sft_train_clean.jsonl",
+  "out": "models/reader_lora_3b",
+  "epochs": 1,
+  "accum": 8,
+  "lr": 0.0001,
+  "rank": 16,
+  "seed": 20260915,
+  "max_len": 3072,
+  "max_seconds": 10800,
+  "qlora": true,
+  "allow_suspect": false,
+  "sanity": "50:3.0,200:2.0",
+  "log_micro": 3,
+  "save_on_cap": true
+ },
+ "utc": "2026-09-15T16:53:24Z"
+}

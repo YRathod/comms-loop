@@ -1,0 +1,23 @@
+{
+ "file": "data/hotpot_heldout_v4.jsonl",
+ "sha256": "e4de21dee1fff90ee0d73b12ecb5ecaef0932e54286e635b39322623c5df46a4",
+ "n": 400,
+ "seed": 20260917,
+ "pool_after_exclusions": 6205,
+ "excluded": {
+  "longbench_0-199": 200,
+  "slice_v1": 100,
+  "dev2": 100,
+  "slice_v2": 400,
+  "slice_v3": 400
+ },
+ "overlap_with_used_ids": 0,
+ "types": {
+  "comparison": 83,
+  "bridge": 317
+ },
+ "context_chars_median": 51060,
+ "built_utc": "2026-09-14T04:02:59Z",
+ "key": "KEYS.md #10",
+ "note": "built before any model of this cycle exists; no model reads it until the one eval run"
+}

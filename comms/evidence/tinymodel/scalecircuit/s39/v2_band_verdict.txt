@@ -1,0 +1,1 @@
+n=400 claimed=iterative+notes mean_delta=+0.0383 CI95=[+0.0059, +0.0709] P(delta>=0.05)=0.24 | mean>=+0.05: False | CI excludes zero: True | PINNED BAND VERDICT: NOT PASSED | prediction band +0.03..+0.08: HIT | falsifier (<=+0.02): not fired

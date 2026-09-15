@@ -1,0 +1,28 @@
+{
+ "dev": {
+  "n": 40,
+  "parses": 40,
+  "anchor_kept": 38,
+  "na_agree": 0
+ },
+ "args": {
+  "base": "Qwen/Qwen2.5-1.5B-Instruct",
+  "train": "data/decomp_train_v2.jsonl",
+  "dev": "data/decomp_dev40.jsonl",
+  "out": "models/decomp_v2_1.5b",
+  "epochs": 2.0,
+  "bs": 4,
+  "accum": 4,
+  "lr": 0.0002,
+  "rank": 16,
+  "rep_hand": 5,
+  "seed": 0,
+  "sanity": "50:2.0,100:1.0,200:0.6",
+  "eval_only": false,
+  "eval_verbose": true,
+  "allow_unstamped": false,
+  "max_seconds": 14400,
+  "allow_suspect": true
+ },
+ "train_seconds": 3671.7486674785614
+}

@@ -1,0 +1,88 @@
+[
+ {
+  "round": 1,
+  "adapter_in": "models/tagger_lora_0.5b",
+  "eval_ok_before": 14,
+  "batch": "data/tagger_real_70-99.jsonl",
+  "batch_ok": 19,
+  "batch_fail": 11,
+  "buckets": {
+   "hops_dropped": 5,
+   "anchor": 3,
+   "unparseable": 1,
+   "relation": 3,
+   "na_wrong": 1,
+   "filter": 1
+  },
+  "batch_profile": {
+   "n": 30,
+   "na_frac": 0.267,
+   "mean_depth": 1.82,
+   "filter_frac": 0.0
+  },
+  "accumulated_profile": {
+   "n": 30,
+   "na_frac": 0.2,
+   "mean_depth": 1.62,
+   "filter_frac": 0.083
+  },
+  "drift_flags": [],
+  "autopsy": "models/tagger_loop\\autopsy_r1.json",
+  "route": "hops_dropped",
+  "why": "models/tagger_loop\\why_r1.md",
+  "adapter_out": "models/tagger_loop\\round1",
+  "eval_ok_after": 13,
+  "eval_buckets_after": {
+   "na_wrong": 1,
+   "anchor": 3,
+   "filter": 3,
+   "hops_dropped": 4,
+   "unparseable": 2,
+   "hops_extra": 4,
+   "relation": 2
+  }
+ },
+ {
+  "round": 2,
+  "adapter_in": "models/tagger_loop/round1",
+  "eval_ok_before": 13,
+  "batch": "data/tagger_real_100-129.jsonl",
+  "batch_ok": 18,
+  "batch_fail": 12,
+  "buckets": {
+   "hops_dropped": 1,
+   "anchor": 5,
+   "relation": 4,
+   "hops_extra": 3,
+   "na_wrong": 3
+  },
+  "batch_profile": {
+   "n": 30,
+   "na_frac": 0.3,
+   "mean_depth": 1.67,
+   "filter_frac": 0.0
+  },
+  "accumulated_profile": {
+   "n": 60,
+   "na_frac": 0.233,
+   "mean_depth": 1.72,
+   "filter_frac": 0.043
+  },
+  "drift_flags": [],
+  "autopsy": "models/tagger_loop\\autopsy_r2.json",
+  "route": "anchor",
+  "why": "models/tagger_loop\\why_r2.md",
+  "adapter_out": "models/tagger_loop\\round2",
+  "eval_ok_after": 13,
+  "eval_buckets_after": {
+   "na_wrong": 2,
+   "anchor": 4,
+   "hops_extra": 6,
+   "hops_dropped": 2,
+   "unparseable": 1,
+   "relation": 5,
+   "filter": 2
+  },
+  "stop": "converged: < 1 point change for 2 rounds"
+ }
+]

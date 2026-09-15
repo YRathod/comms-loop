@@ -1,0 +1,21 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 5040.94it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+W0913 01:26:53.456000 27724 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 10625.91it/s]
+{"round": 1, "adapter_in": "models/tagger_lora_0.5b", "eval_ok_before": 14, "batch": "data/tagger_real_70-99.jsonl", "batch_ok": 19, "batch_fail": 11, "buckets": {"hops_dropped": 5, "anchor": 3, "unparseable": 1, "relation": 3, "na_wrong": 1, "filter": 1}, "batch_profile": {"n": 30, "na_frac": 0.267, "mean_depth": 1.82, "filter_frac": 0.0}, "accumulated_profile": {"n": 30, "na_frac": 0.2, "mean_depth": 1.62, "filter_frac": 0.083}, "drift_flags": []}
+wrote 12000 pairs to models/tagger_loop\synth_r1.jsonl
+wrote 1200 pairs to models/tagger_loop\replay_r1.jsonl
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 11414.68it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+extra real pairs: 60 x 5
+W0913 01:27:34.788000 27708 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 8,798,208 || all params: 502,830,976 || trainable%: 1.7497
+pairs 13050  steps 816
+step 25/816 loss 0.0743 ema 0.1322 18s
+step 50/816 loss 0.0265 ema 0.0390 35s
+step 75/816 loss 0.0229 ema 0.0342 52s
+step 100/816 loss 0.0007 ema 0.0086 69s

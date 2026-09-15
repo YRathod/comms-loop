@@ -1,0 +1,6 @@
+leg 1 rows not from the train split: 0
+leg 2 training questions equal to a held-out question: 0
+leg 3 held-out anchors present in training text: 0 []
+leg 4 distribution (questions, n=299): training 38.80%; null mean 33.84% (p95 38.46%, p99 39.80%); excess +4.96%; SUSPECT. decompositions sharing a 3-gram with a held-out question: 22.41% (informational)
+PROVENANCE CHECK: SUSPECT
+stamp written (verdict SUSPECT)

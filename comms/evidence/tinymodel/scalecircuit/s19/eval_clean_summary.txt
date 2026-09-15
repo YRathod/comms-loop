@@ -1,0 +1,16 @@
+n=30 single_pass=0.370 band=0.420
+chain                0.138 (-0.232) wins 1 losses 9
+retrieval            0.421 (+0.051) wins 3 losses 3
+iterative            0.405 (+0.036) wins 2 losses 0
+iterative_notes      0.354 (-0.016) wins 0 losses 1
+superset             0.410 (+0.040) wins 2 losses 0
+superset_notes       0.356 (-0.013) wins 1 losses 3
+superset_fallback    0.410 (+0.040) wins 2 losses 0
+select               0.396 (+0.027) wins 1 losses 0
+iterative_fallback   0.405 (+0.036) wins 2 losses 0  <== CLAIMED
+   wins: [(20, 0.4), (34, 0.67)]
+   losses: []
+   verdict: FAIL (claimed 0.405 vs band 0.420, delta -0.014)
+oracle union 0.519 (+0.149)
+select_how: Counter({'agree': 18, 'single-pass': 6, 'judge': 5, 'undecided->sp': 1})
+fallback fired on: []

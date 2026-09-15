@@ -1,0 +1,1 @@
+pre-gate (full outputs, models/decomp_v2_1.5b): parses 40/40 (>=36), anchor_kept 38/40 (>=30), one-hop 0/40 (>=5), NA 4/40 -> FAIL: eval uses the declared fallback models/decomp_pregate_1.5b

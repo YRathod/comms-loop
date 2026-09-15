@@ -1,0 +1,6 @@
+{
+ "train_seconds": 4714.632760286331,
+ "final_ema_loss": 0.38626876968100976,
+ "steps": 238,
+ "mode": "qlora-4bit"
+}

@@ -1,0 +1,8 @@
+notes-mode variants vs plain on DEV2, n=100 (same decomposer adapter, same docs; only the notes arms can differ by construction)
+  plain: superset+notes 0.561, true bridge copies 1/53
+  variant notes-mode=anon (scale/results/pipeline_dev2_anon.json):
+     superset_notes   0.561 -> 0.545  delta -0.015  CI [-0.045, +0.009]  up 3 / down 5
+     iterative_notes  0.552 -> 0.542  delta -0.010  CI [-0.046, +0.025]  up 3 / down 4
+     sp               0.469 -> 0.469  delta +0.000  CI [+0.000, +0.000]  up 0 / down 0
+     superset         0.463 -> 0.463  delta +0.000  CI [+0.000, +0.000]  up 0 / down 0
+     true bridge copies (superset+notes): 2/53

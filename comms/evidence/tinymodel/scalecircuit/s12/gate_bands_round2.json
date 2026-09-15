@@ -1,0 +1,24 @@
+{
+ "cycle": "tinymodel/scalecircuit loop round 2 (pre-registered in s12, generator v3)",
+ "eval_slice": "docs 3-39 minus FEWSHOT [0,1,2,6,11,12,16,17,18,29] (n=30), tagger3b.KEY, never trained on",
+ "train_files": [
+  "models/tagger_loop/train_r2.jsonl (12000 v3 synthetic seed 102 + 1200 replay seed 202)",
+  "models/tagger_loop/real_r2.jsonl (= data/tagger_real_40-69 + 70-99 + 100-129, 90 labels x5)"
+ ],
+ "generator_knobs_round2": {
+  "TAGGER_DESC_FRAC": "0.25",
+  "TAGGER_LEADIN_FRAC": "0.30",
+  "CLAUSE_FRAC": "0.35 default",
+  "NA": "0.12 default + NA_V3 forms"
+ },
+ "prediction_bands": {
+  "struct": "15-18 (from 14)",
+  "anchor": "24-26 (from 24)",
+  "na_ok": "29-30",
+  "synth": ">=0.95"
+ },
+ "falsifier": "struct 14 again -> loop stops by its own rule (<1 pt twice); plateau reported as the 0.5B ceiling on this grammar",
+ "stop_rules": "cap 3 rounds; >2 pt eval regression keeps round1 adapter",
+ "key": "KEYS.md #6, expires 2026-09-14T00:00:00Z",
+ "pinned_utc": "2026-09-13T05:16Z, before round 2 trains (GPU busy with the DEV wiring run until it frees)"
+}

@@ -1,0 +1,11 @@
+right->wrong under verify (superset+notes arm), first 6:
+ doc 0 | c=['2005']/None | Q: What collaboration with DJ Muggs did Gary Grice participate do in 2005?
+   before: 'Grandmasters' -> after: 'Pain Language' (rejected(quote does not cover 2005),filtered-retry) | gold 'Grandmasters'
+ doc 80 | c=[]/ceo | Q: Bordan Tkachuk was the CEO of a company that provides what sort of products?
+   before: 'IT products and services' -> after: 'Ancillary products' (rejected(quote lacks the role noun 'ceo'),filtered-retry) | gold 'IT products and services'
+ doc 88 | c=['2000']/None | Q: When was the Indian film actor, producer and playback singer born who debut with
+   before: 'Abhishek Bachchan (born 5 February 1976)' -> after: '2000' (rejected(quote does not cover 2000),filtered-retry) | gold '5 February 1976'
+
+wrong->right under verify (superset+notes arm), first 4:
+ doc 54 | c=['2009']/None | Q: The Ameican Jazz saxophonist nicked named the "Hawk", once played with what musi
+   before: 'Coleman Randolph Hawkins, Shep Meyers' -> after: 'Shep Meyers' (rejected(quote does not cover 2009),filtered-retry) | gold 'Shep Meyers'

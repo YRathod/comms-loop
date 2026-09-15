@@ -1,0 +1,314 @@
+{
+ "summary": {
+  "n": 30,
+  "parses": 29,
+  "na_ok": 30,
+  "struct": 18,
+  "anchor": 26,
+  "relations": 15,
+  "adapter": "models/tagger_v5hold_0.5b",
+  "labels": "data/tagger_real_130-159.jsonl"
+ },
+ "rows": [
+  {
+   "doc": 130,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 131,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 132,
+   "pred": "country of leader of attribute of dimensionless number ?",
+   "key": "attribute of founder of dimensionless number ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 133,
+   "pred": "publisher of Santa Bring My Baby Back ?",
+   "key": "publisher of Santa Bring My Baby Back ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 134,
+   "pred": "attribute of leader of Camp Courtney ?",
+   "key": "attribute of leader of Camp Courtney ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 135,
+   "pred": "capital of home of Baraki Barak District ?",
+   "key": "capital of home of Baraki Barak District ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 136,
+   "pred": "leader of 2013 6 Hours of Silverstone ?",
+   "key": "employer of leader of 2013 6 Hours of Silverstone ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 137,
+   "pred": "writer of publisher of \"The 50th Law\" ?",
+   "key": "writer of leader of The 50th Law ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 138,
+   "pred": "home of host of The Island ?",
+   "key": "birthplace of leader of The Island ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 139,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 140,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 141,
+   "pred": "director of creator of Le R\u00eave ?",
+   "key": "producer of director of Le R\u00eave ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 142,
+   "pred": "home of employer of Joe Odom ?",
+   "key": "home of employer of Joe Odom ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 143,
+   "pred": "attribute of Roger Stuart Woolhouse ?",
+   "key": "attribute of producer of Roger Stuart Woolhouse ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 144,
+   "pred": "attribute of National Firearms Agreement ?",
+   "key": "attribute of parent of National Firearms Agreement ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 145,
+   "pred": "publisher of parent of El Ardiente Secreto ?",
+   "key": "attribute of parent of El Ardiente Secreto ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 146,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 147,
+   "pred": "attribute of producer of BBC Films ?",
+   "key": "attribute of producer of BBC Films ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 148,
+   "pred": "home of home of FIBT World Championships 1960 ?",
+   "key": "home of home of FIBT World Championships 1960 ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 149,
+   "pred": "attribute of employer of Adam  Johnson ?",
+   "key": "attribute of employer of Adam Johnson ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 150,
+   "pred": "owner of country of Kingdom of Syria ?",
+   "key": "owner of the kingdom that lasted for only four months ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 151,
+   "pred": "employer of teacher of leader of 1874 ?",
+   "key": "employer of writer of an Austrian prodigy born in 1874 ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 152,
+   "pred": "leader of New Dramatists Organization [ male ] ?",
+   "key": "leader of New Dramatists Organization ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 153,
+   "pred": "employer of producer of Tina Fey ?",
+   "key": "employer of 3 Arts Entertainment ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 154,
+   "pred": "NA",
+   "key": "NA",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 155,
+   "pred": "home of Broadbent Arena ?",
+   "key": "home of Broadbent Arena ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 156,
+   "pred": "publisher of Christian Whitehead ?",
+   "key": "producer of Christian Whitehead ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": false
+  },
+  {
+   "doc": 157,
+   "pred": "driver of 1971 Canadian Grand Prix ?",
+   "key": "leader of 1971 Canadian Grand Prix ?",
+   "parses": false,
+   "na_ok": true,
+   "struct": false,
+   "anchor": false,
+   "rel": false
+  },
+  {
+   "doc": 158,
+   "pred": "attribute of Brandon James Routh ?",
+   "key": "attribute of Brandon James Routh ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": true,
+   "anchor": true,
+   "rel": true
+  },
+  {
+   "doc": 159,
+   "pred": "producer of composer of parent of Udhayam NH4 ?",
+   "key": "producer of composer of Udhayam NH4 ?",
+   "parses": true,
+   "na_ok": true,
+   "struct": false,
+   "anchor": true,
+   "rel": false
+  }
+ ]
+}

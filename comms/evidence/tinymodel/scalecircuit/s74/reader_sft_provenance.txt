@@ -1,0 +1,22 @@
+{
+ "1_split": {
+  "bad": 0,
+  "n": 2000
+ },
+ "2_exact_question": {
+  "bad": 0
+ },
+ "3_content_3gram": {
+  "share": 0.04150419916016797,
+  "null_mean": 0.04473844720547114,
+  "p95": 0.04660462970083827,
+  "p99": 0.04680175119135253,
+  "verdict": "PASS"
+ },
+ "4_answer_leak": {
+  "rows_with_anchor_and_answer": 97,
+  "anchors_checked": 2077
+ }
+}
+verdict FAIL (97)
+stamp written (verdict FAIL (97))

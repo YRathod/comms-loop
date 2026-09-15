@@ -1,0 +1,16 @@
+{
+ "decomposer": "models/decomp_v2_1.5b if the pinned pre-gate passes, else models/decomp_pregate_1.5b (declared fallback)",
+ "decomposer_base": "Qwen/Qwen2.5-1.5B-Instruct",
+ "adapter": "models/tagger_v4clean_0.5b",
+ "base": "Qwen/Qwen2.5-0.5B-Instruct",
+ "lstm": "checkpoints/compare/decomp_filter_lstm.pt",
+ "docs": "0-399",
+ "out": "scale/results/pipeline_exec_heldout_v5_run1.json",
+ "data": "data/hotpot_heldout_v5.jsonl",
+ "max_seconds": 18000,
+ "budget_tokens": 3000,
+ "retrieve_k": 6,
+ "wiring_k": 4,
+ "claim": "f1_superset_notes",
+ "band": "mean delta >= +0.05 AND 95pct bootstrap CI (20000, seed 0) excludes zero"
+}

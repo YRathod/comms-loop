@@ -1,0 +1,36 @@
+DEV2 free-form decomposer diagnostic (n=100)
+abstained: 24 by type: Counter({'comparison': 16, 'bridge': 8}) | decomposed: 76 by type: Counter({'bridge': 70, 'comparison': 6})
+on decomposed docs only: single-pass 0.447 chain 0.293 superset 0.450 superset+notes 0.564 iterative 0.422
+hop counts: Counter({2: 75, 1: 1})
+
+chain losses where single-pass was right (first 6):
+ doc 0 | Q: What collaboration with DJ Muggs did Gary Grice participate do in 2005?
+   decomp: H1: What collaboration with DJ Muggs did Gary Grice participate in? | H2: In which year was #1 performed?
+   hop: 'What collaboration with DJ Muggs did Gary Grice participate in?' -> 'Grandmasters'
+   hop: 'In which year was Grandmasters performed?' -> '2005'
+   chain: '2005' | sp: 'Grandmasters' | gold: 'Grandmasters'
+ doc 5 | Q:  If You Ever Get Lonely was covered by what Lyric Street Records-affiliated band?
+   decomp: H1: Which band covered "If You Ever Get Lonely"? | H2: What label did #1 belong to?
+   hop: 'Which band covered "If You Ever Get Lonely"?' -> 'Love and Theft'
+   hop: 'What label did Love and Theft belong to?' -> 'Lyric Street Records'
+   chain: 'Lyric Street Records' | sp: 'Love and Theft' | gold: 'Love and Theft'
+ doc 7 | Q: The Rhymers' Club met at Ye Olde Cheshire Cheese listed as what type of house?
+   decomp: H1: What type of establishment is Ye Olde Cheshire Cheese? | H2: Where did The Rhymers' Club meet, according to #1?
+   hop: 'What type of establishment is Ye Olde Cheshire Cheese?' -> 'public house'
+   hop: "Where did The Rhymers' Club meet, according to public house?" -> 'Ye Olde Cheshire Cheese'
+   chain: 'Ye Olde Cheshire Cheese' | sp: 'public house' | gold: 'public'
+ doc 11 | Q: Who is affiliated with more countries as a director, Robert Florey and R. G. Springsteen?
+   decomp: H1: Who directed films for which Robert Florey was affiliated? | H2: How many countries were #1 associated with as a director?
+   hop: 'Who directed films for which Robert Florey was affiliated?' -> 'Robert Florey'
+   hop: 'How many countries were Robert Florey associated with as a director?' -> 'France\nUnited States'
+   chain: 'France\nUnited States' | sp: 'Robert Florey' | gold: 'Robert Florey'
+ doc 21 | Q: What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?
+   decomp: H1: Which actor had the birth name Charles Dennis Buchinsky? | H2: Was #1 part of the Leslie Nielsen comedy?
+   hop: 'Which actor had the birth name Charles Dennis Buchinsky?' -> 'Charles Bronson'
+   hop: 'Was Charles Bronson part of the Leslie Nielsen comedy?' -> 'No'
+   chain: 'No' | sp: 'Charles Bronson' | gold: 'Charles Bronson'
+ doc 30 | Q: Which of the two came out first, The Wind in the Willows or The Bears and I?
+   decomp: H1: Which book came out first, The Wind in the Willows or The Bears and I? | H2: What is the publication date of #1?
+   hop: 'Which book came out first, The Wind in the Willows or The Bears and I?' -> 'The Wind in the Willows'
+   hop: 'What is the publication date of The Wind in the Willows?' -> '1908'
+   chain: '1908' | sp: 'The Wind in the Willows' | gold: 'The Wind in the Willows'

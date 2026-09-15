@@ -1,0 +1,17 @@
+{
+ "cycle": "overnight 2026-09-15 stacked wiring, key #14 conditional (void unused)",
+ "base": "Qwen/Qwen2.5-3B-Instruct",
+ "decomposer_base": "Qwen/Qwen2.5-1.5B-Instruct",
+ "decomposer": "models/decomp_pregate_1.5b",
+ "docs": "0-99",
+ "retriever": "llm",
+ "length_norm": true,
+ "budget_tokens": 3000,
+ "retrieve_k": 6,
+ "seed_dev3": 20260921,
+ "stack_flags": "--length-norm --retriever llm",
+ "key14_gate": "FAIL | dev2 f1_stacked 0.622 n=100; dev3 f1_stacked 0.523 n=100",
+ "eval_slice_read": false,
+ "training": false,
+ "note": "gate json written 07:30Z from frozen artifacts AFTER the dev result (06:57Z); the mechanical stack decision itself is stack_flags.txt (05:55Z) and key14_gate.txt (06:57Z)"
+}

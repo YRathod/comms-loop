@@ -1,0 +1,13 @@
+{
+ "sha256": "3fd1aa51d9bd687698e9ba4718681202429ce025fa6b11f63e9dda9827cd3fed",
+ "n": 100,
+ "seed": 20260913,
+ "raw_sha256_prefix": "5d149d8b8476e325",
+ "raw_rows": 7405,
+ "excluded": 200,
+ "context_chars_median": 51111,
+ "types": {
+  "bridge": 80,
+  "comparison": 20
+ }
+}

@@ -1,0 +1,8 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+  return self._apply(lambda t: t.cuda(device))
+scale/results/pipeline_dev2_verify.json gold-string recall of the superset passage (non-yes/no rows n=94):
+  overlap  0.851
+  llm      0.947
+  C8       0.883
+  C9       0.957
+  vs overlap: rows LOST {'llm': 2, 'C8': 1, 'C9': 2} / rows WON {'llm': 11, 'C8': 4, 'C9': 12}

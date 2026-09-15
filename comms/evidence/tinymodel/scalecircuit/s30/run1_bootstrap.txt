@@ -1,0 +1,9 @@
+held-out slice v1 run 1, n=100: delta vs single-pass, bootstrap 95% CI over docs, P(delta >= +0.05)
+   iterative_fallback   +0.032  CI [-0.030, +0.096]  P(>=+0.05)=0.29
+   iterative_notes      +0.064  CI [-0.005, +0.137]  P(>=+0.05)=0.65
+   superset_notes       +0.062  CI [-0.011, +0.137]  P(>=+0.05)=0.62
+   select               +0.043  CI [+0.004, +0.090]  P(>=+0.05)=0.37
+   superset             +0.043  CI [-0.025, +0.112]  P(>=+0.05)=0.42
+   retrieval            +0.012  CI [-0.051, +0.077]  P(>=+0.05)=0.13
+   iterative            +0.029  CI [-0.037, +0.097]  P(>=+0.05)=0.26
+   type ?: n=100 sp=0.454 claimed=0.485 notes=0.517 NA-tags=21

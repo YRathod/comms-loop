@@ -1,0 +1,8 @@
+n=100 arm=superset_notes; gold paragraphs from supporting_facts where titles align, else gold string
+  overlap(current)   sp: both-gold-paras 0.72  gold-string 0.72 | superset: both-gold-paras 0.82  gold-string 0.82
+  idf                sp: both-gold-paras 0.78  gold-string 0.78 | superset: both-gold-paras 0.87  gold-string 0.87
+  idf+title          sp: both-gold-paras 0.82  gold-string 0.82 | superset: both-gold-paras 0.90  gold-string 0.90
+wrong rows (f1=0) n=39: superset passage had both gold paras under current retriever: 22; under idf+title: 30
+  retrieval misses among wrong rows (current): 17 docs [2, 11, 12, 25, 28, 30, 33, 36, 40, 49, 52, 53, 75, 78, 87, 90, 91]
+  of those, idf+title retrieves both gold paras: 8 docs [2, 12, 25, 40, 53, 75, 78, 87]
+  rows where idf+title LOSES a gold para the current retriever had: 0 docs []

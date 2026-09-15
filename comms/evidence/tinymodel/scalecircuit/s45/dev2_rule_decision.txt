@@ -1,0 +1,1 @@
+DEV2 n=100: chain-freeform -0.117 (9/23), superset-freeform +0.003 (8/8), abstained (single-pass) 24/100 -> CLAIM = NONE (both <= +0.02: the fix does not transfer; no eval run)

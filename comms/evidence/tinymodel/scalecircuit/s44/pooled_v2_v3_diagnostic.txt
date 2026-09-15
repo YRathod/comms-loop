@@ -1,0 +1,9 @@
+POOLED DIAGNOSTIC (not a claim; arms listed in a fixed order, all shown): slices v2+v3, n=800, single-pass 0.413
+   iterative_fallback   +0.035  CI [+0.014, +0.057]  P(>=+0.05)=0.09
+   iterative_notes      +0.039  CI [+0.016, +0.063]  P(>=+0.05)=0.19
+   superset             +0.053  CI [+0.034, +0.073]  P(>=+0.05)=0.63
+   superset_notes       +0.058  CI [+0.036, +0.080]  P(>=+0.05)=0.76
+   superset_fallback    +0.051  CI [+0.033, +0.070]  P(>=+0.05)=0.54
+   iterative            +0.036  CI [+0.014, +0.058]  P(>=+0.05)=0.10
+   retrieval            -0.004  CI [-0.026, +0.017]  P(>=+0.05)=0.00
+   select               +0.026  CI [+0.013, +0.039]  P(>=+0.05)=0.00

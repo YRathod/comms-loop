@@ -1,0 +1,1 @@
+d(notes)=+0.054 d(fallback)=+0.028 notes wins/losses=15/8 -> claim = iterative + notes

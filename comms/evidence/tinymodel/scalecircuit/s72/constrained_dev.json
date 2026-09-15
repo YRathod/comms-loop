@@ -1,0 +1,2634 @@
+{
+ "summary": {
+  "n": 200,
+  "f1_plain": 0.4613859473859474,
+  "f1_constrained": 0.3617635507767087,
+  "wins": 6,
+  "losses": 34,
+  "by_form": {
+   "yes_no": {
+    "n": 15,
+    "f1_plain": 0.7333333333333333,
+    "f1_constrained": 0.6666666666666666,
+    "wins": 0,
+    "losses": 1
+   },
+   "numeric": {
+    "n": 18,
+    "f1_plain": 0.16011396011396012,
+    "f1_constrained": 0.12037037037037036,
+    "wins": 0,
+    "losses": 2
+   },
+   "span": {
+    "n": 167,
+    "f1_plain": 0.4694319652403485,
+    "f1_constrained": 0.3603954699920663,
+    "wins": 6,
+    "losses": 31
+   }
+  }
+ },
+ "rows": [
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 0,
+   "q": "What collaboration with DJ Muggs did Gary Grice participate do in 2005?",
+   "gold": [
+    "Grandmasters"
+   ],
+   "form": "span",
+   "plain": "Grandmasters",
+   "constrained": "Grandmasters",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 1,
+   "q": "Which became a Cathedral first St Chad's Cathedral, Birmingham or Chelmsford Cathedral?",
+   "gold": [
+    "Metropolitan Cathedral Church and Basilica of Saint Chad"
+   ],
+   "form": "span",
+   "plain": "St Chad's Cathedral, Birmingham",
+   "constrained": "St Chad's Cathedral, Birmingham",
+   "f1_plain": 0.3076923076923077,
+   "f1_constrained": 0.3076923076923077
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 2,
+   "q": " Heaven starred what Australian actress who portrayed Katharine Hepburn in the 2004 film \"The Aviator?\"",
+   "gold": [
+    "Catherine Elise Blanchett"
+   ],
+   "form": "span",
+   "plain": "Cate Blanchett",
+   "constrained": "Cate Blanchett",
+   "f1_plain": 0.4,
+   "f1_constrained": 0.4
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 3,
+   "q": " \"JK Wedding Entrance Dance\" is a viral video that uses a song by a rapper whose first album was certified what?",
+   "gold": [
+    "double platinum"
+   ],
+   "form": "span",
+   "plain": "Chris Brown's first album was certified double platinum.",
+   "constrained": "Chris Brown\nChristopher Maurice Brown (born May 5, 1989) is an American singer, songwriter",
+   "f1_plain": 0.3636363636363636,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 4,
+   "q": "Where does the founder of The International Grenfell Association act as a missionary to?",
+   "gold": [
+    "Newfoundland and Labrador"
+   ],
+   "form": "span",
+   "plain": "northern Newfoundland and the coast of Labrador",
+   "constrained": "The International Grenfell Association (IGA) is an organization founded by Sir Wilfred Grenfell to provide health care,",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 5,
+   "q": " If You Ever Get Lonely was covered by what Lyric Street Records-affiliated band?",
+   "gold": [
+    "Love and Theft"
+   ],
+   "form": "span",
+   "plain": "Love and Theft",
+   "constrained": "Love and Theft",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 6,
+   "q": "Where does the team coached by someone with the nickname \"Coach K\" play?",
+   "gold": [
+    "Cameron Indoor Stadium"
+   ],
+   "form": "span",
+   "plain": "Bowers Stadium",
+   "constrained": "The 2016 Sam Houston State Bearkats football team represented Sam Houston State University in the 20",
+   "f1_plain": 0.4,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 7,
+   "q": "The Rhymers' Club met at Ye Olde Cheshire Cheese listed as what type of house?",
+   "gold": [
+    "public"
+   ],
+   "form": "span",
+   "plain": "public house",
+   "constrained": "Ye Olde Cheshire Cheese is a Grade II listed public house",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.18181818181818182
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 8,
+   "q": "The 1978 NBA World Championship Series had as MVP which Hall of Fame class member of 1988?",
+   "gold": [
+    "Westley Sissel Unseld"
+   ],
+   "form": "span",
+   "plain": "Wes Unseld",
+   "constrained": "The 1978 NBA World Championship Series was the championship round of the National Basketball Association (NBA)'s",
+   "f1_plain": 0.4,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 9,
+   "q": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 10,
+   "q": "Which composer, who was a crucial figure in the transition between the Classical and Romantic eras in Western art music, wrote Piano Sonata No. 16 ?",
+   "gold": [
+    "Ludwig van Beethoven"
+   ],
+   "form": "span",
+   "plain": "Ludwig van Beethoven",
+   "constrained": "Ludwig van Beethoven",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 11,
+   "q": "Who is affiliated with more countries as a director, Robert Florey and R. G. Springsteen?",
+   "gold": [
+    "Robert Florey"
+   ],
+   "form": "span",
+   "plain": "Robert Florey",
+   "constrained": "Robert Florey",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 12,
+   "q": "Carlo Buccirosso had a role in a movie that premiered at what film festival?",
+   "gold": [
+    "Cannes Film Festival"
+   ],
+   "form": "span",
+   "plain": "Cannes Film Festival",
+   "constrained": "The Great Beauty",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 13,
+   "q": "Skyplex has which roller coaster that will become the tallest in the world when it opens in 2020?",
+   "gold": [
+    "Skyscraper"
+   ],
+   "form": "span",
+   "plain": "Skyscraper",
+   "constrained": "Skyscraper",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 14,
+   "q": "How was Tiger Pataudi related to Iftikhar Ali Khan Pataudi?",
+   "gold": [
+    "His son"
+   ],
+   "form": "span",
+   "plain": "son",
+   "constrained": "Mansoor Ali Khan Pataudi\nMansoor Ali Khan",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 15,
+   "q": "Which park is larger, Timanfaya National Park or Sierra Nevada National Park?",
+   "gold": [
+    "Sierra Nevada National Park"
+   ],
+   "form": "span",
+   "plain": "Sierra Nevada National Park",
+   "constrained": "Sierra Nevada National Park",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 16,
+   "q": " The 1919 Mississippi gubernatorial election Incumbent Democrat was a master of what?",
+   "gold": [
+    "filibuster"
+   ],
+   "form": "span",
+   "plain": "term-limit",
+   "constrained": "The 1919 Mississippi gubernatorial election took place on November 4, 1919, in",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 17,
+   "q": "Which Olympic game featured Boules and happened right before medals started to be awarded?",
+   "gold": [
+    "The Summer Olympic Games"
+   ],
+   "form": "span",
+   "plain": "1900 Summer Olympics",
+   "constrained": "1900 Summer Olympics",
+   "f1_plain": 0.3333333333333333,
+   "f1_constrained": 0.3333333333333333
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 18,
+   "q": "Which movie is a documentary about \"Beowulf & Grendel\", between My Kid Could Paint That and Wrath of Gods?",
+   "gold": [
+    "Wrath of Gods"
+   ],
+   "form": "span",
+   "plain": "Wrath of Gods",
+   "constrained": "Wrath of Gods",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 19,
+   "q": "What award won by only twelve people has a man who Ted Kooshian has performed with won?",
+   "gold": [
+    "EGOT"
+   ],
+   "form": "span",
+   "plain": "EGOT",
+   "constrained": "EGOT",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 20,
+   "q": "Phil Lloyd played Tim Mathieson, the partner of this prime minister who was the 27th Prime Minister of Australia from 2010 to when",
+   "gold": [
+    "2013"
+   ],
+   "form": "span",
+   "plain": "Phil Lloyd played Tim Mathieson, the partner of prime minister Julia Gillard, who was the 27th",
+   "constrained": "Phil Lloyd (actor)\nPhil Lloyd is an Australian actor and scriptwriter and partner in the production company Jungleboys. He",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 21,
+   "q": "What Actor whose birth name was Charles Dennis Buchinsky, was part of the Leslie Nielsen comedy?",
+   "gold": [
+    "Charles Bronson"
+   ],
+   "form": "span",
+   "plain": "Charles Bronson",
+   "constrained": "Charles Bronson",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 22,
+   "q": "Romans stars which Tamil and Telugu actress?",
+   "gold": [
+    "Nivetha Thomas"
+   ],
+   "form": "span",
+   "plain": "Bhumika Chawla",
+   "constrained": "Thakita Thakita",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 23,
+   "q": "Which magazine was founded first, Diva or Elle?",
+   "gold": [
+    "Elle"
+   ],
+   "form": "span",
+   "plain": "Elle",
+   "constrained": "Elle",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 24,
+   "q": "Which movie directed by James Gunn portrayed the fictional character, Ego the Living Planet?",
+   "gold": [
+    "Guardians of the Galaxy Vol. 2"
+   ],
+   "form": "span",
+   "plain": "Ego the Living Planet is portrayed in \"Guardians of the Galaxy Vol. 2\" directed by James Gunn.",
+   "constrained": "Ego the Living Planet is a fictional character appearing in American comic books published by Marvel Comics. The character first appeared in",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 25,
+   "q": "Do both Korematsu v. United States and Chaplinsky v. New Hampshire cases regard the rights of U. S. citizens?",
+   "gold": [
+    "yes"
+   ],
+   "form": "yes_no",
+   "plain": "yes",
+   "constrained": "yes",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 26,
+   "q": "Where do both the New Jersey Devils and the Seton Hall Pirates play?",
+   "gold": [
+    "Prudential Center"
+   ],
+   "form": "span",
+   "plain": "Prudential Center",
+   "constrained": "Prudential Center",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 27,
+   "q": "Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city of Omelas?",
+   "gold": [
+    "The Ones Who Walk Away from Omelas"
+   ],
+   "form": "span",
+   "plain": "The Ones Who Walk Away from Omelas",
+   "constrained": "The Ones Who Walk Away from Omelas",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 28,
+   "q": "Who was the producer of the 1994 American animated epic musical film which Mel Shaw animated?",
+   "gold": [
+    "Don Hahn"
+   ],
+   "form": "span",
+   "plain": "Diane Eskenazi",
+   "constrained": "Mel Shaw",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 29,
+   "q": "Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?",
+   "gold": [
+    "Kenneth John \"Kenny\" Ortega (born April 18, 1950) is an American producer, director, and choreographer."
+   ],
+   "form": "span",
+   "plain": "Kenny Ortega",
+   "constrained": "Kenny Ortega",
+   "f1_plain": 0.25,
+   "f1_constrained": 0.25
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 30,
+   "q": "Which of the two came out first, The Wind in the Willows or The Bears and I?",
+   "gold": [
+    "The Wind in the Willows"
+   ],
+   "form": "span",
+   "plain": "The Wind in the Willows",
+   "constrained": "The Wind in the Willows",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 31,
+   "q": "Which film director is younger, Robert Z. Leonard or Sinclair Hill?",
+   "gold": [
+    "Sinclair Hill"
+   ],
+   "form": "span",
+   "plain": "Sinclair Hill",
+   "constrained": "Sinclair Hill",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 32,
+   "q": "Why I Write was penned by which English novelist and critic?",
+   "gold": [
+    "Eric Arthur Blair"
+   ],
+   "form": "span",
+   "plain": "Ford Madox Ford",
+   "constrained": "Ford Madox Ford",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 33,
+   "q": "What party does the person that represents Stoke Newington Central belong to?",
+   "gold": [
+    "British Labour Party"
+   ],
+   "form": "span",
+   "plain": "Labour Party",
+   "constrained": "The Rose and Crown is a Grade II listed public house at 199 Stoke Newington Church Street, Stoke New",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 34,
+   "q": "What song by the American rapper Coolio is on his greatest hits album \"Fantiastic Voyage\" and samples from a Stevie Wonder song?",
+   "gold": [
+    "Gangsta's Paradise"
+   ],
+   "form": "span",
+   "plain": "Fantastic Voyage",
+   "constrained": "Fantastic Voyage",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 35,
+   "q": "The  Actaea genus is native to what continent that the Onoclea genus is not?",
+   "gold": [
+    "Europe"
+   ],
+   "form": "span",
+   "plain": "Europe",
+   "constrained": "Actaea spicata\nActaea spicata (baneberry, Eurasian baneberry, or herb Christopher",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 36,
+   "q": "What is the colloquial name of the professional football team in which striker Frederico Chaves Guedos played? ",
+   "gold": [
+    "Rooster"
+   ],
+   "form": "span",
+   "plain": "Wide Right II",
+   "constrained": "Wide Right II",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 37,
+   "q": "TimeCamp enables what type of commercial documents from a seller to a buyer?",
+   "gold": [
+    "invoice"
+   ],
+   "form": "span",
+   "plain": "Invoice",
+   "constrained": "Invoice",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 38,
+   "q": "James Leal Greenleaf worked on a monument located where? ",
+   "gold": [
+    "National Mall"
+   ],
+   "form": "span",
+   "plain": "Atlanta, Georgia",
+   "constrained": "Dante",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 39,
+   "q": "Which was released first, Hot Girls Wanted or China Blue?",
+   "gold": [
+    "China Blue"
+   ],
+   "form": "span",
+   "plain": "Hot Girls Wanted",
+   "constrained": "Hot Girls Wanted",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 40,
+   "q": "Oscar is what type of animal with black fur that may be a mixed or specific breed?",
+   "gold": [
+    "black cat"
+   ],
+   "form": "span",
+   "plain": "Black cat",
+   "constrained": "Black cat",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 41,
+   "q": "Chandamama and Kajal Aggarwal are both associated with which Indian film industries?",
+   "gold": [
+    "Telugu and Tamil"
+   ],
+   "form": "span",
+   "plain": "Telugu",
+   "constrained": "Telugu",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.5
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 42,
+   "q": "What is the year of the event that occured first, Making Today a Perfect Day was produced, or Frozen was produced?",
+   "gold": [
+    "2013"
+   ],
+   "form": "span",
+   "plain": "1980",
+   "constrained": "1980",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 43,
+   "q": "Who is the mother of Mary Robinson in Shakespeare's \"The Winter's Tale\"",
+   "gold": [
+    "Leontes"
+   ],
+   "form": "span",
+   "plain": "Hermione",
+   "constrained": "Mary Robinson McConnell Gish",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 44,
+   "q": " Chun Woo-hee's notable films include a South Korean horror film about  a policeman who investigates a series of mysterious killings and what?",
+   "gold": [
+    "illnesses"
+   ],
+   "form": "span",
+   "plain": "The Wailing",
+   "constrained": "The Wailing",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 45,
+   "q": "In \"Bon Cop, Bad Cop\", Canadian actor Rick Howland played the role of Harry Buttman (a parody of Gary Beltman), who is the current commissioner of what National sports league? ",
+   "gold": [
+    "National Hockey League (NHL)"
+   ],
+   "form": "span",
+   "plain": "National Hockey League",
+   "constrained": "Canadian",
+   "f1_plain": 0.8571428571428571,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 46,
+   "q": "Altnahinch is located in a county that has a population density of how many per square mile? ",
+   "gold": [
+    "526"
+   ],
+   "form": "numeric",
+   "plain": "County Antrim",
+   "constrained": "3046",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 47,
+   "q": "Are Steve Perry and Leslie West both singers?",
+   "gold": [
+    "yes"
+   ],
+   "form": "yes_no",
+   "plain": "yes",
+   "constrained": "yes",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 48,
+   "q": "José Rubia Barcia  published a great number of books and articles on a Spanish poet, playwright, and what?",
+   "gold": [
+    "theatre director"
+   ],
+   "form": "span",
+   "plain": "writers",
+   "constrained": "a. He wrote articles for \"La epoca\", \"La illustración\" and \"El correo\".\n\nZorrilla",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 49,
+   "q": "What type of mansion was built for the founder of the company marketed the oil engine under the \"Hornsby-Akroyd\" name?",
+   "gold": [
+    "Gothic Revival"
+   ],
+   "form": "span",
+   "plain": "None",
+   "constrained": "The Hornsby-Akroyd oil engine was the first successful design of internal combustion engine using \"heavy oil\"",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 50,
+   "q": "Who was the pivotal in the formation of schools catering for the primary and early secondary education of children in remote and outback Australia?",
+   "gold": [
+    "Adelaide Laetitia"
+   ],
+   "form": "span",
+   "plain": "Ugyen Wangchuck",
+   "constrained": "School of the Air",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 51,
+   "q": "What Jurassic Park star was also in the Rainbow Warrior?",
+   "gold": [
+    "Nigel John Dermot Neill"
+   ],
+   "form": "span",
+   "plain": "Sam Neill",
+   "constrained": "Sam Neill",
+   "f1_plain": 0.3333333333333333,
+   "f1_constrained": 0.3333333333333333
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 52,
+   "q": "Which metropolitan  at the south of Moraine, Ohio had a population of 2,114,580 in 2010 U.S. Census?",
+   "gold": [
+    "Cincinnati metropolitan area"
+   ],
+   "form": "span",
+   "plain": "Cincinnati metropolitan area",
+   "constrained": "Cincinnati metropolitan area",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 53,
+   "q": "Are Wilco Melissant and Todd Field both involved in the film industry (e.g. director, filmmaker, actor)?",
+   "gold": [
+    "yes"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 54,
+   "q": "The Ameican Jazz saxophonist nicked named the \"Hawk\", once played with what musician who died in 2009 and once played with Johnny Carson during Carson's residency?",
+   "gold": [
+    "Shep Meyers"
+   ],
+   "form": "span",
+   "plain": "Coleman Hawkins",
+   "constrained": "Coleman Hawkins",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 55,
+   "q": "What town's geographic feature is the battle James Swan was twice wounded at named for?",
+   "gold": [
+    "Charlestown, Massachusetts"
+   ],
+   "form": "span",
+   "plain": "Boston",
+   "constrained": "Missionary Ridge",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 56,
+   "q": "Is Gasherbrum II or Nuptse closest to the tallest mountain in the world?",
+   "gold": [
+    "It lies two kilometres WSW of Mount Everest."
+   ],
+   "form": "yes_no",
+   "plain": "Gasherbrum II",
+   "constrained": "No",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 57,
+   "q": "Which musician or band is from further north, Matthew Good or Modern Baseball?",
+   "gold": [
+    "Matthew Good"
+   ],
+   "form": "span",
+   "plain": "Matthew Good",
+   "constrained": "Matthew Good",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 58,
+   "q": "What airport is off National Route A002 and is largest airport in Greater Buenos Aires?",
+   "gold": [
+    "Ministro Pistarini International Airport"
+   ],
+   "form": "span",
+   "plain": "Ministro Pistarini International Airport",
+   "constrained": "Ministro Pistarini International Airport",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 59,
+   "q": "What kind of comedian was Michael Mclntyre's father?",
+   "gold": [
+    "Canadian comedian"
+   ],
+   "form": "span",
+   "plain": "Ray Cameron",
+   "constrained": "Ray Cameron",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 60,
+   "q": "Operation Cold Comfort was a failed raid by a special forces unit founded in what year?",
+   "gold": [
+    "1941"
+   ],
+   "form": "numeric",
+   "plain": "1945",
+   "constrained": "1945",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 61,
+   "q": "The 2000 ICC KnockOut Trophy was the debut of a Jamaican cricketer who is a right-handed what?",
+   "gold": [
+    "middle order batsman"
+   ],
+   "form": "span",
+   "plain": "right-handed batsman",
+   "constrained": "cricketer",
+   "f1_plain": 0.3333333333333333,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 62,
+   "q": "When was the actor born who starred in Sugarfoot?",
+   "gold": [
+    "January 23, 1898"
+   ],
+   "form": "numeric",
+   "plain": "Will Hutchins was born on May 5, 1930, and starred in the show \"Sugarfoot",
+   "constrained": "May 5, 193",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 63,
+   "q": "How many movies did the \"Comic Book Villains\" star born on march 20,1970 apprear in since the early 1990s?",
+   "gold": [
+    "over sixty films"
+   ],
+   "form": "numeric",
+   "plain": "16",
+   "constrained": "16",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 64,
+   "q": "Which actress, who debuted in Friday Night Lights also starred in The River Why?",
+   "gold": [
+    "Amber Laura Heard"
+   ],
+   "form": "span",
+   "plain": "Amber Heard",
+   "constrained": "Amber Heard",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 65,
+   "q": "Which magazine is focused more on the adult demographic, Jack and Jill or Paper?",
+   "gold": [
+    "Paper"
+   ],
+   "form": "span",
+   "plain": "Digital Max",
+   "constrained": "Digital Max",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 66,
+   "q": "Who created the NBC sitcom that Johnny Pemberton appears in as the character Bo Thompson?",
+   "gold": [
+    "Justin Spitzer"
+   ],
+   "form": "span",
+   "plain": "Lea Thompson",
+   "constrained": "Lea Thompson",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 67,
+   "q": "Which New Jersey-based manufacturer of suitcases and bags for travel is located in the Shops at Columbus Circle in New York City?",
+   "gold": [
+    "Tumi Holdings, Inc."
+   ],
+   "form": "span",
+   "plain": "Tumi Inc.",
+   "constrained": "Tumi Inc",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 68,
+   "q": "Who was one of the first religious sceptics’ best disciple?",
+   "gold": [
+    "Plato"
+   ],
+   "form": "span",
+   "plain": "Socrates",
+   "constrained": "Samfälligheten för Nordisk Sed",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 69,
+   "q": "Which author wrote a play in 2006 and a book on homosexual sex in 1977?",
+   "gold": [
+    "Edmund Valentine White III"
+   ],
+   "form": "span",
+   "plain": "Joost Schouten",
+   "constrained": "Joost Schouten",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 70,
+   "q": "Which country is the firm that owns Babycham located?",
+   "gold": [
+    "Australia"
+   ],
+   "form": "span",
+   "plain": "United Kingdom",
+   "constrained": "The Liberia Cement Corporation, also known as Cemenco, is a major company in the economy of the Republic of Liberia",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 71,
+   "q": "How often do trains run on the system which has a terminal station located at the intersection of 32nd Street and Sixth Avenue in the Herald Square neighborhood of Manhattan, New York City?",
+   "gold": [
+    "24 hours a day and 7 days a week"
+   ],
+   "form": "span",
+   "plain": "every weekday",
+   "constrained": "33rd Street station (PATH)\n33rd Street",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 72,
+   "q": "Are both Jim McBride and Neil Jordan American?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 73,
+   "q": "Jayaprakash Narayan was posthumously awarded what highest Indian civilian award?",
+   "gold": [
+    "The Bharat Ratna"
+   ],
+   "form": "span",
+   "plain": "Bharat Ratna",
+   "constrained": "Bharat Ratna",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 74,
+   "q": "What is the birthday of the singer whose songs are remixed in Queen of Clubs Trilogy: Onyx Edition?",
+   "gold": [
+    "3 August 1980"
+   ],
+   "form": "span",
+   "plain": "Baruch Levine",
+   "constrained": "Baruch Levine",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 75,
+   "q": "What profession does 2007 Formula 3 Euro Series and Romain Grosjeanhave in common?",
+   "gold": [
+    "driver"
+   ],
+   "form": "span",
+   "plain": "driver",
+   "constrained": "driver",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 76,
+   "q": "In what year was the fantasy and science fiction author of the short story \"Recovery\" born?",
+   "gold": [
+    "1958"
+   ],
+   "form": "numeric",
+   "plain": "None of the provided passages mention a short story called \"Recovery\". Therefore, no birth year can be determined from the",
+   "constrained": "1947",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 77,
+   "q": "When was the director of an American short slasher film with French-speaking serial killers that was released on October 31, 2011 born?",
+   "gold": [
+    "June 11, 1986"
+   ],
+   "form": "numeric",
+   "plain": "Shia LaBeouf was born June 11, 1986.",
+   "constrained": "1986",
+   "f1_plain": 0.6,
+   "f1_constrained": 0.5
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 78,
+   "q": "Of all the teams John Nyskohus played for, which team was known as \"the Black and Whites?\"",
+   "gold": [
+    "Adelaide City"
+   ],
+   "form": "span",
+   "plain": "None",
+   "constrained": "Sigma II-64 war game",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 79,
+   "q": "Which American character actor who starred on the television series \"Stargate SG-1\" (1997–2007) and appeared in \"Episode 8\" of \"Twin Peaks\" as a guest star?",
+   "gold": [
+    "Don S. Davis"
+   ],
+   "form": "span",
+   "plain": "Don S. Davis",
+   "constrained": "Don S. Davis",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 80,
+   "q": "Bordan Tkachuk was the CEO of a company that provides what sort of products?",
+   "gold": [
+    "IT products and services"
+   ],
+   "form": "span",
+   "plain": "Viglen products",
+   "constrained": "Bordan Tkachuk ( ) is a British business executive, the former CEO of Viglen",
+   "f1_plain": 0.3333333333333333,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 81,
+   "q": "Gabriela Mistral and Alan Sillitoe were both in what profession?",
+   "gold": [
+    "writers"
+   ],
+   "form": "span",
+   "plain": "writer",
+   "constrained": "writers",
+   "f1_plain": 0.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 82,
+   "q": "What is the date of birth of the English inventor that developed the Richard Hornsby & Sons oil engine? ",
+   "gold": [
+    "28 January 1864"
+   ],
+   "form": "span",
+   "plain": "28 January 1864",
+   "constrained": "28 January 1864",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 83,
+   "q": "What nationality is the singer who recorded \"Who I Was Born to Be\"?",
+   "gold": [
+    "Scottish"
+   ],
+   "form": "span",
+   "plain": "British",
+   "constrained": "The Big Time: Pop Singer",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 84,
+   "q": "What college did the English conductor, organist and composer widely regarded as Britain's leading conductor of choral works teach at?",
+   "gold": [
+    "Royal College of Music"
+   ],
+   "form": "span",
+   "plain": "The Royal College of Music",
+   "constrained": "The Canadian Infantryman",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 85,
+   "q": "By how many points did Dion Lewis' team trail by, in the third quarter, of the Super Bowl that they won ? ",
+   "gold": [
+    "25 points"
+   ],
+   "form": "numeric",
+   "plain": "25",
+   "constrained": "25",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.6666666666666666
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 86,
+   "q": "Kevin House Jr. played professionally for the team that is in what NFL conference?",
+   "gold": [
+    "National Football Conference (NFC) West"
+   ],
+   "form": "span",
+   "plain": "National Football Conference (NFC)",
+   "constrained": "Seattle Seahawks",
+   "f1_plain": 0.888888888888889,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 87,
+   "q": "When was the British author who wrote the novel on which \"Here We Go Round the Mulberry Bush\" was based born? ",
+   "gold": [
+    "7 January 1936"
+   ],
+   "form": "numeric",
+   "plain": "Hunter Davies",
+   "constrained": "1926",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 88,
+   "q": "When was the Indian film actor, producer and playback singer born who debut with the 2000 War film, \"Refugee\" and had lead role in Main Prem Ki Diwani Hoon?",
+   "gold": [
+    "5 February 1976"
+   ],
+   "form": "numeric",
+   "plain": "Abhishek Bachchan",
+   "constrained": "2000",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 89,
+   "q": "Hobart Paving is a single by a band formed in which year ?",
+   "gold": [
+    "1990"
+   ],
+   "form": "numeric",
+   "plain": "1993",
+   "constrained": "1993",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 90,
+   "q": "The thid episode of the first season of The Simpsons, features which character voiced by Harry Shearer?",
+   "gold": [
+    "Mr. Smithers"
+   ],
+   "form": "span",
+   "plain": "Ned Flanders",
+   "constrained": "Ned Flanders",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 91,
+   "q": "What two ideals are the foundation of Neo-libertarianism?",
+   "gold": [
+    "democracy and personal freedom"
+   ],
+   "form": "span",
+   "plain": "None",
+   "constrained": "Massoud Foundation",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 92,
+   "q": "Both Tsai Ming-liang and Giacomo Gentilomo were involved with which profession?",
+   "gold": [
+    "film director"
+   ],
+   "form": "span",
+   "plain": "film director",
+   "constrained": "film director",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 93,
+   "q": "Petroglyphs on Ingaro isalnd indicate it has been innhabited since an era that lasted until what year?",
+   "gold": [
+    "500 BC"
+   ],
+   "form": "numeric",
+   "plain": "AD 1",
+   "constrained": "82",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 94,
+   "q": "Which state was the The Laboratory's 60,000 square-foot, shore-based campus located?",
+   "gold": [
+    "Maine, United States"
+   ],
+   "form": "span",
+   "plain": "Maine",
+   "constrained": "Maine",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.5
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 95,
+   "q": "What is the familiar name for the first operation in the Battle of Normandy, also codenamed Operation Overlord?",
+   "gold": [
+    "D-Day"
+   ],
+   "form": "span",
+   "plain": "Operation Neptune",
+   "constrained": "Operation Neptune",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 96,
+   "q": "Are Harry Everett Smith and Vladimir Danilevich both from Russia?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 97,
+   "q": "The term snake eyes is used in a particular casino game that uses what game pieces?",
+   "gold": [
+    "a pair of dice"
+   ],
+   "form": "span",
+   "plain": "dice",
+   "constrained": "Snake eyes\nIn gambling in general and the game of Craps in particular",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.13333333333333333
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 98,
+   "q": "Which rapper released the album Big Fish Theory featuring a number of styles of music including Detroit techno?",
+   "gold": [
+    "Vince Staples"
+   ],
+   "form": "span",
+   "plain": "Vince Staples",
+   "constrained": "Vince Staples",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 99,
+   "q": "Between Greyia and Calibanus, which genus contains more species?",
+   "gold": [
+    "Greyia"
+   ],
+   "form": "span",
+   "plain": "Greyia",
+   "constrained": "Greyia",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 0,
+   "q": "What is the nationality of the composer of the Opera \"Iphigénie en Aulide\" ?",
+   "gold": [
+    "Italian"
+   ],
+   "form": "span",
+   "plain": "French",
+   "constrained": "François-Louis Gand Le Bland Du Roullet",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 1,
+   "q": "Which fantasy film from 1971 featured the song \"The Age of Not Believing\"?",
+   "gold": [
+    "Bedknobs and Broomsticks"
+   ],
+   "form": "span",
+   "plain": "Bedknobs and Broomsticks",
+   "constrained": "Bedknobs and Broomsticks",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 2,
+   "q": "Which English crime writer wrote the 2005 psychological thriller \"The Devil's Feather\"?",
+   "gold": [
+    "Minette Walters"
+   ],
+   "form": "span",
+   "plain": "None of the provided passages mention \"The Devil's Feather\" or any 2005 psychological thriller.",
+   "constrained": "Rendell",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 3,
+   "q": "What organization does Rosyth Dockyard and Queen Elizabeth-class aircraft carrier have in common?",
+   "gold": [
+    "Navy"
+   ],
+   "form": "span",
+   "plain": "Royal Navy",
+   "constrained": "The \"Queen Elizabeth\" class",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 4,
+   "q": "The Azad Hind Dal was created by an Indian nationalist whose defiant patriotism made him a hero in India, but whose attempt to rid India of British rule during what war left a troubled legacy?",
+   "gold": [
+    "World War II"
+   ],
+   "form": "span",
+   "plain": "Subhas Chandra Bose World War II",
+   "constrained": "Subhas Chandra Bose",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 5,
+   "q": "At what frequency an academic journal publishes which covers numerical and computational techniques to reduce any substantial losses or gains suffered by an individual or an organization?",
+   "gold": [
+    "quarterly"
+   ],
+   "form": "span",
+   "plain": "quarterly",
+   "constrained": "Hedge (finance)\nA hedge is an investment position intended to offset potential losses or gains that may be incurred by a",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 6,
+   "q": "Arrêtez-moi is a film in which film genre, known for suspense and anxiety?",
+   "gold": [
+    "Thriller"
+   ],
+   "form": "span",
+   "plain": "thriller",
+   "constrained": "Thriller",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 7,
+   "q": "Where is the University of North Carolina at Wilmington, population 112,067 located?",
+   "gold": [
+    "Wilmington, North Carolina"
+   ],
+   "form": "span",
+   "plain": "Wilmington, North Carolina",
+   "constrained": "Wilmington, North Carolina",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 8,
+   "q": "Which scientist at the University of Alabama in Huntsville co-developed a satellite temperature record with John Christy?",
+   "gold": [
+    "Roy Spencer"
+   ],
+   "form": "span",
+   "plain": "Carl Mears",
+   "constrained": "Carl Mears",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 9,
+   "q": "Renáta Tomanová and Larisa Neiland are former professional athletes for what sport?",
+   "gold": [
+    "professional tennis"
+   ],
+   "form": "span",
+   "plain": "tennis",
+   "constrained": "tennis",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.6666666666666666
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 10,
+   "q": "Does the band God Lives Underwater or the band The Dear Hunter come from a larger state?",
+   "gold": [
+    "God Lives Underwater"
+   ],
+   "form": "yes_no",
+   "plain": "Pennsylvania",
+   "constrained": "no",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 11,
+   "q": "when does the role William Vere Reeve King-Fane change?",
+   "gold": [
+    "The High Sheriff changes every March."
+   ],
+   "form": "span",
+   "plain": "Vice-Chairman of Kesteven County Council",
+   "constrained": "1868 – 5 November 1943",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 12,
+   "q": "What was Muammar Mohammed Abu Minyar Gaddafi's title during the Libyan Civil War?",
+   "gold": [
+    "\"Brotherly Leader\" of the Great Socialist People's Libyan Arab Jamahiriya"
+   ],
+   "form": "span",
+   "plain": "Oil Minister",
+   "constrained": "LIA",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 13,
+   "q": "What crossroads is the town located 10 km north of the Charcoal Tank Nature Reserve located?",
+   "gold": [
+    "Newell Highway"
+   ],
+   "form": "span",
+   "plain": "West Wyalong",
+   "constrained": "West Wyalong",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 14,
+   "q": "The producer of the Eric Church album \"The Outsiders\" was a member of what band in the 1980's?",
+   "gold": [
+    "In Pursuit"
+   ],
+   "form": "span",
+   "plain": "Jay Joyce",
+   "constrained": "Jay Joyce",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 15,
+   "q": "Dawn Lake described the star of \"I Love Lucy\" as what?",
+   "gold": [
+    "our greatest comedienne"
+   ],
+   "form": "span",
+   "plain": "greatest comedienne - Australia's Lucille Ball",
+   "constrained": "our greatest comedienne - Australia's Lucille Ball",
+   "f1_plain": 0.4444444444444444,
+   "f1_constrained": 0.6
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 16,
+   "q": "Which of the university at which Jack M. Guttentag  is a professor emeritus of finance was established in 1881 through a donation?",
+   "gold": [
+    "Wharton School of the University"
+   ],
+   "form": "span",
+   "plain": "Wharton School of the University of Pennsylvania",
+   "constrained": "Wharton School of the University of Pennsylvania",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 17,
+   "q": "Name the 500 year-old-republic that Florentius was a praetorian prefect for. ",
+   "gold": [
+    "Roman Empire"
+   ],
+   "form": "span",
+   "plain": "Roman Empire",
+   "constrained": "361",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 18,
+   "q": "Did Franki Valli sing with Hellogoodbye or The Four Seasons?",
+   "gold": [
+    "The Four Seasons"
+   ],
+   "form": "yes_no",
+   "plain": "The Four Seasons",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 19,
+   "q": "What type of industry does Tony Bill and Flyboys have in common?",
+   "gold": [
+    "film"
+   ],
+   "form": "span",
+   "plain": "film",
+   "constrained": "film",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 20,
+   "q": "To what team was the 2014 NBA Rookie of the Year traded in October 2016? ",
+   "gold": [
+    "Chicago Bulls"
+   ],
+   "form": "span",
+   "plain": "Charlotte Hornets",
+   "constrained": "Michael Carter-Williams",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 21,
+   "q": "SS Ionic was built by the industrial company based in what city?",
+   "gold": [
+    "Belfast, Northern Ireland"
+   ],
+   "form": "span",
+   "plain": "Belfast",
+   "constrained": "Belfast",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.5
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 22,
+   "q": "At which rank did the American author, military historian, illustrator and painter, born in 1913, who survived the surprise military strike by the Imperial Japanese Navy Air Service against the United States finally retire?",
+   "gold": [
+    "Colonel"
+   ],
+   "form": "span",
+   "plain": "Colonel",
+   "constrained": "Colonel",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 23,
+   "q": "Which of the case was held in a higher ranking court, South Dakota v. Dole or Rogers v. Okin?",
+   "gold": [
+    "South Dakota v. Dole"
+   ],
+   "form": "span",
+   "plain": "South Dakota v. Dole",
+   "constrained": "South Dakota v. Dole",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 24,
+   "q": "When was the medieval fortress abandoned that is to the north of Yellowcraig?",
+   "gold": [
+    "end of the 17th century"
+   ],
+   "form": "numeric",
+   "plain": "Dirleton Castle was abandoned by the end of the 17th century.",
+   "constrained": "1700",
+   "f1_plain": 0.6153846153846153,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 25,
+   "q": "What insurance company sponsored the Curling Skins Game in 2014?",
+   "gold": [
+    "Travelers"
+   ],
+   "form": "span",
+   "plain": "None",
+   "constrained": "The TSN Curling Skins Game is an annual curling bonspiel hosted by The Sports Network.",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 26,
+   "q": "What country does Ogwini Comprehensive Technical High School and Durban have in common?",
+   "gold": [
+    "South Africa"
+   ],
+   "form": "span",
+   "plain": "South Africa",
+   "constrained": "Ogwini Comprehensive Technical High School\nOgwini Comprehensive Technical High School is located at Umlazi, Kwa",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 27,
+   "q": "Were Cinderella and The Emperor's New Groove released by the same picture company?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 28,
+   "q": "ICI House is now named after the company that provides what type of item?",
+   "gold": [
+    "explosives"
+   ],
+   "form": "span",
+   "plain": "Crimplene fibre",
+   "constrained": "ICI Laboratory",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 29,
+   "q": "How many novels are there in the series of novels of which Shadows in Flight is the tenth novel ?",
+   "gold": [
+    "fifteen"
+   ],
+   "form": "numeric",
+   "plain": "10",
+   "constrained": "10",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 30,
+   "q": "When did the husband of William Roper bornj who was also the father of  Margaret Roper?",
+   "gold": [
+    "7 February 14786"
+   ],
+   "form": "numeric",
+   "plain": "1496",
+   "constrained": "1496",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 31,
+   "q": "Where is the animation studio that produced Mary and the Witch's Flower based in?",
+   "gold": [
+    "Tokyo"
+   ],
+   "form": "span",
+   "plain": "Musashino, Tokyo, Japan",
+   "constrained": "Studio Ponoc",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 32,
+   "q": "What country of origin does The Late Late Show and Craig Kilborn have in common?",
+   "gold": [
+    "American"
+   ],
+   "form": "span",
+   "plain": "United States",
+   "constrained": "The Late Late Show (U.S. TV series)\nThe Late Late Show is an American late-night television talk and variety",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.10526315789473684
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 33,
+   "q": "Bobby Arora is the trading director of a retail chain that was formed in what year?",
+   "gold": [
+    "1978"
+   ],
+   "form": "numeric",
+   "plain": "2000",
+   "constrained": "2000",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 34,
+   "q": "Which interviewee featured in The History of Sex also hosted the radio show \"Sexually Speaking\"?",
+   "gold": [
+    "Dr. Ruth Westheimer"
+   ],
+   "form": "span",
+   "plain": "Ruth Westheimer",
+   "constrained": "Ruth Westheimer",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 35,
+   "q": "In between Anaïs Nin and Odysseas Elytis who was awarded the Nobel Prize in Literature?",
+   "gold": [
+    "Odysseas Elytis"
+   ],
+   "form": "span",
+   "plain": "Odysseas Elytis",
+   "constrained": "Odysseas Elytis",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 36,
+   "q": "When is the election held for the position former policy director Krishanti \"Krish\" Vignarajah is running in?",
+   "gold": [
+    "November 6, 2018"
+   ],
+   "form": "span",
+   "plain": "August 9, 2017",
+   "constrained": "2018",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.5
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 37,
+   "q": "Which footballer who is an attacking midfielder for Premier League club Stoke City, has Jim Cassell developed?",
+   "gold": [
+    "Stephen James Ireland"
+   ],
+   "form": "span",
+   "plain": "Stephen Ireland",
+   "constrained": "Stephen Ireland",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 38,
+   "q": "Who's fifth album and debut single are Startin' Fires and Austin respectively?",
+   "gold": [
+    "Blake Tollison Shelton"
+   ],
+   "form": "span",
+   "plain": "Blake Shelton",
+   "constrained": "Jake Owen",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 39,
+   "q": "Ist das Ihr Fahrrad Mr O’Brien? is a German biographical radio play about life, works and legacy of an Irish novelist whose many satrical columns were written under what name?",
+   "gold": [
+    "Myles na gCopaleen"
+   ],
+   "form": "span",
+   "plain": "Myles na gCopaleen",
+   "constrained": "Brian O'Nolan",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 40,
+   "q": "Which band was formed in a country closer to England, Kodaline or Rivermaya ?",
+   "gold": [
+    "Kodaline"
+   ],
+   "form": "span",
+   "plain": "Rivermaya",
+   "constrained": "Kid Confucius",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 41,
+   "q": "Which band formed first, Duran Duran or The Fratellis?",
+   "gold": [
+    "Duran Duran"
+   ],
+   "form": "span",
+   "plain": "The Fratellis",
+   "constrained": "The Fratellis",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 42,
+   "q": "What is the name of the town linked by rail to Kendal, named after a lake of the same name?",
+   "gold": [
+    "Windermere, Cumbria"
+   ],
+   "form": "span",
+   "plain": "Windermere",
+   "constrained": "Windermere",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.6666666666666666
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 43,
+   "q": "Are David O. Russell and Tony Gatlif from the same country?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 44,
+   "q": "In what town is Suffolk county hamlet that was served by the Suffolk Traction Company?",
+   "gold": [
+    "Town of Islip"
+   ],
+   "form": "span",
+   "plain": "Patchogue",
+   "constrained": "Blue Point",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 45,
+   "q": "The Death of Cook depicts the death of James Cook at a bay on what coast?",
+   "gold": [
+    "Kona coast"
+   ],
+   "form": "span",
+   "plain": "Kealakekua Bay is on the Kona coast.",
+   "constrained": "Kealakekua Bay is located on the Kona coast of the island of Hawaiʻ i",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.2857142857142857
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 46,
+   "q": "What Canadian actress was on the cover of Saturday Night Magazine?",
+   "gold": [
+    "Shenae Grimes-Beech"
+   ],
+   "form": "span",
+   "plain": "Shenae Grimes",
+   "constrained": "Shenae Grimes",
+   "f1_plain": 0.8,
+   "f1_constrained": 0.8
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 47,
+   "q": "Both the 2010–11 UEFA Champions League knockout phase  and 011 UEFA Champions League Final were held at what London stadium?",
+   "gold": [
+    "Wembley"
+   ],
+   "form": "span",
+   "plain": "Wembley Stadium",
+   "constrained": "The 2011 UEFA Champions League Final was a football match played on 28 May 201",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 48,
+   "q": "Along side Thomas Alan, which singer's first three albums were recorded at The Boarding House?",
+   "gold": [
+    "Steve Martin"
+   ],
+   "form": "span",
+   "plain": "Steve Martin",
+   "constrained": "Steve Martin",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 49,
+   "q": "What genre is the novel from which the fast-food restaurant specializing in seafood derives its name?",
+   "gold": [
+    "an adventure novel"
+   ],
+   "form": "span",
+   "plain": "fiction",
+   "constrained": "The Crab Cooker",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 50,
+   "q": "What country of origin does Traveling Wilburys and Tom Petty have in common?",
+   "gold": [
+    "American"
+   ],
+   "form": "span",
+   "plain": "American",
+   "constrained": "American",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 51,
+   "q": "After he was contracted by the team that is headquartered in Affalterbach, Baden-Württemberg, Germany, Dario Franchitti competed in what series?",
+   "gold": [
+    "DTM"
+   ],
+   "form": "span",
+   "plain": "IndyCar Series",
+   "constrained": "IndyCar Series",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 52,
+   "q": "Are the movies \"Monsters, Inc.\" and \"Mary Poppins\" both by the same company?",
+   "gold": [
+    "yes"
+   ],
+   "form": "yes_no",
+   "plain": "no",
+   "constrained": "no",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 53,
+   "q": "\"The Fixer\" is a song from an album produced by who ?",
+   "gold": [
+    "Brendan O'Brien"
+   ],
+   "form": "span",
+   "plain": "Jun Maeda",
+   "constrained": "Marit Larsen",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 54,
+   "q": "Which as more species Cassiope or Deutzia?",
+   "gold": [
+    "Deutzia"
+   ],
+   "form": "span",
+   "plain": "Cassiope",
+   "constrained": "Cassiope",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 55,
+   "q": "What English stand-up comedian has a style of comedy full of \"stream-of-conscious banter\"?",
+   "gold": [
+    "Eddie Izzard"
+   ],
+   "form": "span",
+   "plain": "Eddie Izzard",
+   "constrained": "Eddie Izzard",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 56,
+   "q": "The song Justice was used for a WWE event that took place on what day ?",
+   "gold": [
+    "May 1, 2011"
+   ],
+   "form": "span",
+   "plain": "None of the events mentioned use the song Justice.",
+   "constrained": "The Beast in the East",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 57,
+   "q": "What is 25 miles south of Groom Lake?",
+   "gold": [
+    "Rachel, Nevada"
+   ],
+   "form": "span",
+   "plain": "Rachel, Nevada",
+   "constrained": "Groom Range",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 58,
+   "q": "Which of the bands, Hot Snakes or UB40, has more band members?",
+   "gold": [
+    "UB40"
+   ],
+   "form": "span",
+   "plain": "Hot Snakes\n\nUB40 has more band members.",
+   "constrained": "Hot Snakes",
+   "f1_plain": 0.25,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 59,
+   "q": "The Carnaval del Pueblo is Eurpoe's largest celebration of what expression of the people of Latin America?",
+   "gold": [
+    "Latin American culture"
+   ],
+   "form": "span",
+   "plain": "Latin American culture",
+   "constrained": "Latin American culture",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 60,
+   "q": "Which American politician who served as United States Senator from 1971 to 1989 was Governor of Florida before Buddy MacKay?",
+   "gold": [
+    "Lawton Chiles"
+   ],
+   "form": "span",
+   "plain": "Lawton Chiles",
+   "constrained": "Lawton Chiles",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 61,
+   "q": "Blinding Edge Pictures produced which 2000 film starring Bruce Willis?",
+   "gold": [
+    "Unbreakable"
+   ],
+   "form": "span",
+   "plain": "Unbreakable",
+   "constrained": "Unbreakable",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 62,
+   "q": "Meomi Design works include The Octonauts book series, how did the adaptations of the series continue? ",
+   "gold": [
+    "a British children's television series"
+   ],
+   "form": "span",
+   "plain": "Brown Bag Films adapted the series",
+   "constrained": "The Octonauts\nThe Octonauts is a British children's television series, produced by Silvergate Media for the",
+   "f1_plain": 0.20000000000000004,
+   "f1_constrained": 0.5555555555555556
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 63,
+   "q": "In what New York town did Glenn Martin Hughes attend high school?",
+   "gold": [
+    "Mineola, New York"
+   ],
+   "form": "span",
+   "plain": "Mineola",
+   "constrained": "Glenn Martin Hughes (July 18, 1950 – March 4, 200",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 64,
+   "q": "Who narrates the documentary television series that features the largest airline in the United Kingdom based on fleet size? ",
+   "gold": [
+    "Stephen Mangan"
+   ],
+   "form": "span",
+   "plain": "None of the entities mentioned in the passage narrate a documentary television series about the largest airline in the United Kingdom based on",
+   "constrained": "Arthur (Besson book series)\nThe \"Arthur\" series refers to a series of fantasy novels for children written by Luc",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 65,
+   "q": "In what month is the annual documentary film festival, that is presented by the fortnightly published British journal of literary essays, held? ",
+   "gold": [
+    "March and April"
+   ],
+   "form": "span",
+   "plain": "March and April",
+   "constrained": "The London International Documentary Festival (or LIDF) is an annual documentary film festival that takes place in the months of",
+   "f1_plain": 1.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 66,
+   "q": "Seven Brief Lessons on Physics was written by an Italian physicist that has worked in France since what year?",
+   "gold": [
+    "2000"
+   ],
+   "form": "numeric",
+   "plain": "2000",
+   "constrained": "2000",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 67,
+   "q": "What location under Charing Cross railway station did G-A-Y move to?",
+   "gold": [
+    "venue Heaven"
+   ],
+   "form": "span",
+   "plain": "Heaven (nightclub)",
+   "constrained": "Heaven (nightclub)\nHeaven",
+   "f1_plain": 0.5,
+   "f1_constrained": 0.4
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 68,
+   "q": "Shaqtin' a Fool has included which television personality who worked for 8 yearst at ESPN?",
+   "gold": [
+    "Matthew Ward Winer"
+   ],
+   "form": "span",
+   "plain": "Matt Winer",
+   "constrained": "Matt Winer",
+   "f1_plain": 0.4,
+   "f1_constrained": 0.4
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 69,
+   "q": "Which gaming console was both Yakuza Kiwami and Yakuza 0 released on?",
+   "gold": [
+    "PlayStation 4"
+   ],
+   "form": "span",
+   "plain": "PlayStation 4",
+   "constrained": "PlayStation 4",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 70,
+   "q": "The Ronkonkama railroad station and the town of Islip, New York are near?",
+   "gold": [
+    "Long Island"
+   ],
+   "form": "span",
+   "plain": "Ronkonkoma, New York is near the town of Islip, New York.",
+   "constrained": "Ronkonkoma, New York",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 71,
+   "q": "What is the name of the company manged by Joseph Reiser based in Biel/Bienne, Switzerland?",
+   "gold": [
+    "Omega SA"
+   ],
+   "form": "span",
+   "plain": "Omega SA",
+   "constrained": "Omega SA",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 72,
+   "q": "When was the younger brother of Farshid Karimi born ?",
+   "gold": [
+    "8 November 1978"
+   ],
+   "form": "numeric",
+   "plain": "February 6, 1992",
+   "constrained": "February 6, 199",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 73,
+   "q": "Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "no",
+   "constrained": "no",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 74,
+   "q": "Kieran Crichlow is a footballer from what island in the Lesser Antilles?",
+   "gold": [
+    "Barbados"
+   ],
+   "form": "span",
+   "plain": "Barbados",
+   "constrained": "Barbados",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 75,
+   "q": "The Whitehead Light is located in what town with a population of 2,591 during the 2010 census?",
+   "gold": [
+    "St.George"
+   ],
+   "form": "span",
+   "plain": "Newburgh, Indiana",
+   "constrained": "Newburgh, Indiana",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 76,
+   "q": "Are Hanafuda and Okey both card games?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 77,
+   "q": "Where is Hawthornden Castle located relative to a castle 9 miles south of Edinburgh?",
+   "gold": [
+    "downstream"
+   ],
+   "form": "span",
+   "plain": "Hawthornden Castle is located a mile to the east of Roslin Castle, which is 9 miles",
+   "constrained": "Hawthornden Castle is located on the River North Esk in Midlothian, Scotland.",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 78,
+   "q": "Who was born first out of Nick Grinde and Karel Reisz?",
+   "gold": [
+    "Nick Grindé"
+   ],
+   "form": "span",
+   "plain": "Karel Reisz",
+   "constrained": "k Savaard",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 79,
+   "q": "The Lucy Maud Montgomery novel about the character Anne Shirley was first translated into Japanese by what woman?",
+   "gold": [
+    "Hanako Muraoka"
+   ],
+   "form": "span",
+   "plain": "None",
+   "constrained": "The Blythes Are Quoted",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 80,
+   "q": "In which city is the parent company of Sterlite Industries headquartered?",
+   "gold": [
+    "London"
+   ],
+   "form": "span",
+   "plain": "Mumbai",
+   "constrained": "Mumbai",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 81,
+   "q": "Which character did this Australian-American actress who appeared in the movie \"Felony\" play in the Australian soap opera \"Home and Away?\"",
+   "gold": [
+    "Angel Parrish"
+   ],
+   "form": "span",
+   "plain": "Evelyn MacGuire",
+   "constrained": "Evelyn MacGuire",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 82,
+   "q": "In Ancient Egyptian religion how would a citizen be weighted to decide if they where worthy of damnation and would face the torment in the lake of fire ?",
+   "gold": [
+    "against the feather of truth"
+   ],
+   "form": "span",
+   "plain": "heart",
+   "constrained": "Ancient Egyptian religion",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 83,
+   "q": "Which light rail system would one use to visit the museum that explores the impact of modern conflicts on people and society?",
+   "gold": [
+    "Greater Manchester's Metrolink"
+   ],
+   "form": "span",
+   "plain": "Imperial War Museum North",
+   "constrained": "Imperial War Museum North",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 84,
+   "q": "Inserra Supermarkets is a supermarket chain that is a member of what cooperative that was founded in 1946 and based in Keasbey, New Jersey?",
+   "gold": [
+    "Wakefern Food Corporation"
+   ],
+   "form": "span",
+   "plain": "Wakefern Food Corporation",
+   "constrained": "Wakefern Food Corporation",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 85,
+   "q": "What class of instrument does Apatim Majumdar play?",
+   "gold": [
+    "strings"
+   ],
+   "form": "span",
+   "plain": "keyboard glockenspiel",
+   "constrained": "Keyboard glockenspiel",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 86,
+   "q": "Are both Leycesteria and Anigozanthos native to Australia?",
+   "gold": [
+    "no"
+   ],
+   "form": "yes_no",
+   "plain": "No",
+   "constrained": "No",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 87,
+   "q": "Zakk Wylde and Damon Albarn are both what?",
+   "gold": [
+    "singer, songwriter, and multi-instrumentalist"
+   ],
+   "form": "span",
+   "plain": "rhythm guitarist",
+   "constrained": "Ravenous (soundtrack)\nRavenous is the score for the film of the same name. It was written and performed",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.1
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 88,
+   "q": "What major truck road is located in Backford Cross?",
+   "gold": [
+    "The A41"
+   ],
+   "form": "span",
+   "plain": "A5117 road",
+   "constrained": "A5117 road",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 89,
+   "q": "What station is 3 miles away from the railway station that was used in the film \"Brief Encounter\"?",
+   "gold": [
+    "Borwick railway station"
+   ],
+   "form": "span",
+   "plain": "Carnforth railway station",
+   "constrained": "Carnforth railway station",
+   "f1_plain": 0.6666666666666666,
+   "f1_constrained": 0.6666666666666666
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 90,
+   "q": "The 22nd AVN Awards took place in what Nevada county?",
+   "gold": [
+    "Clark County"
+   ],
+   "form": "span",
+   "plain": "Paradise",
+   "constrained": "N presented AVN Awards in 68 categories. The ceremony, televised by Playboy TV, was produced by Gary Miller",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 91,
+   "q": "What is the English translation of the noodle similar to Taglierini that is not tagliatelle?",
+   "gold": [
+    "little hairs"
+   ],
+   "form": "span",
+   "plain": "Taglierini",
+   "constrained": "Taglierini",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 92,
+   "q": "Which show that premiered in May 2011 is hosted by someone with the birth name Richard Kirschner?",
+   "gold": [
+    "My Cat from Hell"
+   ],
+   "form": "span",
+   "plain": "Jackson Galaxy",
+   "constrained": "Jackson Galaxy",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 93,
+   "q": "What kind of subgenre of a dark wave music, developed in 1980s in the UK, is using the musical duo from Melbourne, Australia?",
+   "gold": [
+    "Ethereal"
+   ],
+   "form": "span",
+   "plain": "Dandelion Wine (band)",
+   "constrained": "Dandelion Wine (band)\nDandelion Wine",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 94,
+   "q": "The composer of the album \"Nightbook\" received his training at what school?",
+   "gold": [
+    "Conservatorio Verdi"
+   ],
+   "form": "span",
+   "plain": "United Belarusian Military School",
+   "constrained": "United Belarusian Military School",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 95,
+   "q": "Who voices the character that stars in Baseball Bugs?",
+   "gold": [
+    "Mel Blanc"
+   ],
+   "form": "span",
+   "plain": "Mel Blanc",
+   "constrained": "Mel Blanc",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 96,
+   "q": "What was the name of the person that was interviewed and later written about by John G. Neihardt?",
+   "gold": [
+    "Black Elk"
+   ],
+   "form": "span",
+   "plain": "Black Elk",
+   "constrained": "Black Elk",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 97,
+   "q": "Whom was the cofounder of Orange County Choppers and appeared with Paul Teutul Sr on American Chopper?",
+   "gold": [
+    "Paul Teutul Jr."
+   ],
+   "form": "span",
+   "plain": "Paul Teutul Jr.",
+   "constrained": "Paul Teutul Jr",
+   "f1_plain": 1.0,
+   "f1_constrained": 1.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 98,
+   "q": "A writer for The Kenyon Review won a Pulitzer Prize in what year?",
+   "gold": [
+    "1947"
+   ],
+   "form": "numeric",
+   "plain": "1958",
+   "constrained": "1958",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 99,
+   "q": "What country of origin does Witness and Pamela Wallace have in common?",
+   "gold": [
+    "American"
+   ],
+   "form": "span",
+   "plain": "United States",
+   "constrained": "Pamela Wallace",
+   "f1_plain": 0.0,
+   "f1_constrained": 0.0
+  }
+ ]
+}

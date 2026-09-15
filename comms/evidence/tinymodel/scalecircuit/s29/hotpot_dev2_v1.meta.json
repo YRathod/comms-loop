@@ -1,0 +1,6 @@
+{
+ "sha256": "6efe2391de7d9191baca88bc2fc0d3def1f325ab01bc3861bf880b0e7d9df44e",
+ "n": 100,
+ "seed": 20260914,
+ "role": "DEV2: wiring development only; disjoint from hotpot_heldout_v1 (slice) and LongBench 0-199; may be hand-labelled (train-side)"
+}

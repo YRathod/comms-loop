@@ -1,0 +1,86 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 11174.84it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+W0913 01:29:33.454000 41836 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 11316.24it/s]
+{"round": 2, "adapter_in": "models/tagger_loop/round1", "eval_ok_before": 13, "batch": "data/tagger_real_100-129.jsonl", "batch_ok": 18, "batch_fail": 12, "buckets": {"hops_dropped": 1, "anchor": 5, "relation": 4, "hops_extra": 3, "na_wrong": 3}, "batch_profile": {"n": 30, "na_frac": 0.3, "mean_depth": 1.67, "filter_frac": 0.0}, "accumulated_profile": {"n": 60, "na_frac": 0.233, "mean_depth": 1.72, "filter_frac": 0.043}, "drift_flags": []}
+wrote 12000 pairs to models/tagger_loop\synth_r2.jsonl
+wrote 1200 pairs to models/tagger_loop\replay_r2.jsonl
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 11598.08it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1369: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return t.to(
+extra real pairs: 90 x 5
+W0913 01:30:15.171000 7484 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 8,798,208 || all params: 502,830,976 || trainable%: 1.7497
+pairs 13200  steps 825
+step 25/825 loss 0.0613 ema 0.0967 18s
+step 50/825 loss 0.0405 ema 0.0222 35s
+step 75/825 loss 0.0007 ema 0.0195 52s
+step 100/825 loss 0.0039 ema 0.0082 69s
+step 125/825 loss 0.0001 ema 0.0067 85s
+step 150/825 loss 0.9113 ema 0.1002 102s
+step 175/825 loss 0.0001 ema 0.0136 119s
+step 200/825 loss 0.0001 ema 0.0124 136s
+step 225/825 loss 0.0002 ema 0.0147 153s
+step 250/825 loss 0.0551 ema 0.0122 170s
+step 275/825 loss 0.0054 ema 0.0049 188s
+step 300/825 loss 0.0053 ema 0.0128 206s
+step 325/825 loss 0.0378 ema 0.0214 223s
+step 350/825 loss 0.0007 ema 0.0025 239s
+step 375/825 loss 0.0001 ema 0.0040 256s
+step 400/825 loss 0.0002 ema 0.0040 273s
+step 425/825 loss 0.0001 ema 0.0232 290s
+step 450/825 loss 0.0001 ema 0.0029 307s
+step 475/825 loss 0.0001 ema 0.0038 323s
+step 500/825 loss 0.0002 ema 0.0014 340s
+step 525/825 loss 0.0008 ema 0.0031 356s
+step 550/825 loss 0.0002 ema 0.0031 373s
+step 575/825 loss 0.0001 ema 0.0015 390s
+step 600/825 loss 0.0001 ema 0.0051 406s
+step 625/825 loss 0.0001 ema 0.0015 422s
+step 650/825 loss 0.0007 ema 0.0004 439s
+step 675/825 loss 0.0007 ema 0.0011 455s
+step 700/825 loss 0.0001 ema 0.0022 471s
+step 725/825 loss 0.0001 ema 0.0004 487s
+step 750/825 loss 0.0001 ema 0.0004 504s
+step 775/825 loss 0.0001 ema 0.0003 520s
+step 800/825 loss 0.0001 ema 0.0064 537s
+step 825/825 loss 0.0000 ema 0.0042 555s
+synthetic held-out exact tag match: 195/200
+  doc  3 | country of employer of Gary L. Bennett ?                   | key country of employer of Gary L. Bennett ?           | struct 1 ent 1 rel 1
+  doc  4 | NA                                                         | key country of producer of Atom Egoyan ?               | struct 0 ent 0 rel 0
+  doc  5 | country of publisher of English writer of Fiveteen to One ? | key employer of leader of Celebrity Fifteen to One ?   | struct 1 ent 0 rel 0
+  doc  7 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+  doc  8 | attribute of employer of Russell D. Moore [ male ] ?       | key attribute of Russell D. Moore ?                    | struct 0 ent 1 rel 0
+  doc  9 | publisher of the female member of Fitz and The Tantrums ?  | key employer of leader of Fitz and The Tantrums ?      | struct 0 ent 1 rel 0
+  doc 10 | attribute of the American singer, songwriter, producer, dancer and owner of Chapter II ? | key attribute of writer of Chapter II ?                | struct 0 ent 1 rel 0
+  doc 13 | attribute of leader of US Hot 100 ?                        | key attribute of leader of Finally ?                   | struct 1 ent 0 rel 1
+  doc 14 | share of leader of Mara ?                                  | key home of leader of Mara and Mondrem ?               | struct 0 ent 0 rel 0
+  doc 15 | attribute of employer of Sara Symington ?                  | key attribute of Sara Symington ?                      | struct 0 ent 1 rel 0
+  doc 19 | leader of a British-American supergroup ?                  | key leader of producer of Nobody's Child ?             | struct 0 ent 0 rel 0
+  doc 20 | publisher of publisher of "Whatever Happened to... Robot Jones" ? | key owner of publisher of Whatever Happened to... Robot Jones? ? | struct 1 ent 1 rel 0
+  doc 21 | home of home of Kellyville Ridge ?                         | key home of home of Kellyville Ridge ?                 | struct 1 ent 1 rel 1
+  doc 22 | NA                                                         | key home of Oak Beach ?                                | struct 0 ent 0 rel 0
+  doc 23 | leader of the last two episodes of season eighteen of South Park ? | key attribute of South Park ?                          | struct 1 ent 1 rel 0
+  doc 24 | publisher of leader of friend of Robbie Tucker ?           | key employer of Robbie Tucker ?                        | struct 0 ent 1 rel 0
+  doc 25 | attribute of employer of High School Confidential ?        | key attribute of home of High School Confidential ?    | struct 1 ent 1 rel 0
+  doc 26 | leader of the large subunit and small subunit ?            | key attribute of large subunit and small subunit ?     | struct 1 ent 1 rel 0
+  doc 27 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+  doc 28 | publisher of Band-e-Amir Dragons ?                         | key home of Band-e-Amir Dragons ?                      | struct 1 ent 1 rel 0
+  doc 30 | attribute of home of Yau Ma Tei North ?                    | key attribute of home of Yau Ma Tei North ?            | struct 1 ent 1 rel 1
+  doc 31 | founder of leader of Wanxiang Group ?                      | key employer of founder of Spider9 ?                   | struct 1 ent 0 rel 0
+  doc 32 | attribute of home of leader of WLLZ-LP ?                   | key attribute of home of WLLZ-LP ?                     | struct 0 ent 1 rel 0
+  doc 33 | attribute of Charles Haughey [ male ] ?                    | key attribute of Charles Haughey ?                     | struct 0 ent 1 rel 0
+  doc 34 | home of Vegepet ?                                          | key home of Vegepet ?                                  | struct 1 ent 1 rel 1
+  doc 35 | leader of McLaren MP4/11 ?                                 | key leader of McLaren MP4/11 [ retired ] ?             | struct 0 ent 1 rel 0
+  doc 36 | director of producer of Rich Lee ?                         | key producer of Rich Lee ?                             | struct 0 ent 1 rel 0
+  doc 37 | composer of leader of leader of Nutcracker ?               | key leader of leader of Nutcracker ?                   | struct 0 ent 1 rel 0
+  doc 38 | employer of Alfred A. Marcus ?                             | key employer of Alfred A. Marcus ?                     | struct 1 ent 1 rel 1
+  doc 39 | NA                                                         | key NA                                                 | struct 1 ent 1 rel 1
+real 30: {'n': 30, 'parses': 29, 'na_ok': 28, 'struct': 16, 'anchor': 23, 'relations': 9}
+saved models/tagger_loop\round2  train 689s
+Loading weights:   0%|          | 0/290 [00:00<?, ?it/s]Loading weights: 100%|##########| 290/290 [00:00<00:00, 11573.69it/s]
+{"round": 2, "adapter_in": "models/tagger_loop/round1", "eval_ok_before": 13, "batch": "data/tagger_real_100-129.jsonl", "batch_ok": 18, "batch_fail": 12, "buckets": {"hops_dropped": 1, "anchor": 5, "relation": 4, "hops_extra": 3, "na_wrong": 3}, "batch_profile": {"n": 30, "na_frac": 0.3, "mean_depth": 1.67, "filter_frac": 0.0}, "accumulated_profile": {"n": 60, "na_frac": 0.233, "mean_depth": 1.72, "filter_frac": 0.043}, "drift_flags": [], "autopsy": "models/tagger_loop\\autopsy_r2.json", "route": "anchor", "why": "models/tagger_loop\\why_r2.md", "adapter_out": "models/tagger_loop\\round2", "eval_ok_after": 13, "eval_buckets_after": {"na_wrong": 2, "anchor": 4, "hops_extra": 6, "hops_dropped": 2, "unparseable": 1, "relation": 5, "filter": 2}}
+final adapter: models/tagger_loop\round2

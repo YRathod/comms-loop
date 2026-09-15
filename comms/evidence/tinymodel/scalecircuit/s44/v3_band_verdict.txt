@@ -1,0 +1,1 @@
+n=400 claimed=superset mean_delta=+0.0444 CI95=[+0.0173, +0.0726] P(delta>=0.05)=0.34 | mean>=+0.05: False | CI excludes zero: True | PINNED BAND VERDICT: NOT PASSED | prediction band +0.03..+0.09: HIT | falsifier (<=+0.02): not fired

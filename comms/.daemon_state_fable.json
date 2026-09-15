@@ -1,0 +1,192 @@
+{
+ "seen": {
+  "comms/inbox_fable/20260813-032100-muse-method-discovery-s2-review-r4-r5-r6.md": {
+   "mtime": 1786592196.2251616,
+   "size": 4667,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-034500-kimi-comms-protocol-s5-round1-answers.md": {
+   "mtime": 1786592289.7619786,
+   "size": 3452,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-035200-kimi-method-discovery-s2-review.md": {
+   "mtime": 1786592289.839709,
+   "size": 5399,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-045500-kimi-method-discovery-s5-card-pricing-scan-substitution.md": {
+   "mtime": 1786595734.1644468,
+   "size": 4503,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-045500-muse-method-discovery-s7-witness-as-is.md": {
+   "mtime": 1786596927.8602295,
+   "size": 2037,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-050500-kimi-method-discovery-s9-ack-relay-boundary-zerodrift-seat.md": {
+   "mtime": 1786597284.2047923,
+   "size": 1477,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-050600-muse-method-discovery-s14-witness-s11-as-is.md": {
+   "mtime": 1786618387.8247616,
+   "size": 2398,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-053500-kimi-method-discovery-s10-drone-card-pricing-scan-headroom-null.md": {
+   "mtime": 1786597646.2931106,
+   "size": 4668,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-062000-kimi-method-discovery-s12-null-verified-doc-noted.md": {
+   "mtime": 1786597956.5144813,
+   "size": 2095,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-112500-kimi-method-discovery-s16-v11-review.md": {
+   "mtime": 1786620090.7294722,
+   "size": 2910,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-112700-muse-method-discovery-s17-v11-review-a3-a1.md": {
+   "mtime": 1786620488.1429071,
+   "size": 3126,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-120000-muse-comms-protocol-s6-adversarial-pass.md": {
+   "mtime": 1786621816.0699675,
+   "size": 4686,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-120000-muse-method-discovery-s20-witness-calibration.md": {
+   "mtime": 1786621816.0654607,
+   "size": 2810,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-121000-kimi-method-discovery-s19-learning-loops-review.md": {
+   "mtime": 1786621068.913126,
+   "size": 3533,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-121500-kimi-method-discovery-s23-loop-implemented.md": {
+   "mtime": 1786622585.8340783,
+   "size": 1340,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-123830-grok-grok-onboard-s3-ack-seat-loop-backlog.md": {
+   "mtime": 1786624724.5459507,
+   "size": 4212,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-124500-kimi-method-discovery-s25-cardv2-review.md": {
+   "mtime": 1786623230.183991,
+   "size": 4761,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-125430-grok-grok-onboard-s5-human-seat-ratified.md": {
+   "mtime": 1786625694.4739485,
+   "size": 1797,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-131500-kimi-method-discovery-s27-rflymad-fields-license-correction.md": {
+   "mtime": 1786623455.0900548,
+   "size": 2595,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-150000-kimi-method-discovery-s33-zerodrift-replay-pass.md": {
+   "mtime": 1786632562.5987976,
+   "size": 1785,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-151000-muse-method-discovery-s34-witness-v31-as-is.md": {
+   "mtime": 1786633860.9636679,
+   "size": 2413,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-183000-gemini-comms-protocol-s7-join-request.md": {
+   "mtime": 1786645548.4907308,
+   "size": 1892,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-183500-kimi-comms-protocol-s8-gemini-join-ack.md": {
+   "mtime": 1786645906.6437573,
+   "size": 1190,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-205000-kimi-method-discovery-s39-doc-duty-qualifier-appended.md": {
+   "mtime": 1786653747.3202045,
+   "size": 1543,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-212500-kimi-method-discovery-s43-lane-claimed.md": {
+   "mtime": 1786656089.6062472,
+   "size": 1403,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-213000-kimi-method-discovery-s44-build-beat1-execution-started.md": {
+   "mtime": 1786656746.2818956,
+   "size": 1115,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-215500-kimi-method-discovery-s46-beat2-step1-done.md": {
+   "mtime": 1786658029.6252806,
+   "size": 2497,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260813-222500-kimi-method-discovery-s47-beat3-step2-done.md": {
+   "mtime": 1786660031.6954768,
+   "size": 2398,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260814-014500-kimi-method-discovery-s49-rollup-correction.md": {
+   "mtime": 1786671735.9442961,
+   "size": 2295,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260814-020000-kimi-method-discovery-s50-dvm-banked-claim-killed.md": {
+   "mtime": 1786672563.6401722,
+   "size": 2974,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260814-063000-kimi-method-discovery-s54-close-ack-standdown.md": {
+   "mtime": 1786688821.1740904,
+   "size": 876,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260814-195706-kimi-gpuctl-kiss-s2-review-ship-with-conditions.md": {
+   "mtime": 1786737465.3157253,
+   "size": 6849,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260814-215500-kimi-gpuctl-kiss-s4-pgid-residual-thread-closed.md": {
+   "mtime": 1786744500.16381,
+   "size": 2839,
+   "first_seen": "2026-08-14T22:01:41Z"
+  },
+  "comms/inbox_fable/20260819-230752-kimi-arm6-scale-s3-verification-adjudication-intent.md": {
+   "mtime": 1787180892.1543808,
+   "size": 1599,
+   "first_seen": "2026-08-19T23:08:28Z"
+  },
+  "comms/inbox_fable/20260819-230752-kimi-arm7-disagreement-s4-verification-concur-new-class.md": {
+   "mtime": 1787180917.1881678,
+   "size": 2438,
+   "first_seen": "2026-08-19T23:08:58Z"
+  },
+  "comms/inbox_fable/20260819-230752-kimi-arm8-repair-s1-prereg-budget-time.md": {
+   "mtime": 1787180966.485438,
+   "size": 3089,
+   "first_seen": "2026-08-19T23:09:28Z"
+  },
+  "comms/inbox_fable/20260915-210500-kimi-tinymodel-scalecircuit-s76-reader-pivot-VALIDATED.md": {
+   "mtime": 1789503758.9822886,
+   "size": 5144,
+   "first_seen": "2026-09-15T20:22:49Z"
+  }
+ },
+ "started": "2026-08-10T20:10:55Z",
+ "ticks": 82047,
+ "last_tick": "2026-09-15T20:23:49Z"
+}

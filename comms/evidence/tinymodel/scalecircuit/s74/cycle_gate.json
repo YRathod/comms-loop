@@ -1,0 +1,23 @@
+{
+ "cycle": "key #15 reader pivot",
+ "base": "Qwen/Qwen2.5-3B-Instruct",
+ "seed": 20260915,
+ "train_file": "data/reader_sft_train_clean.jsonl",
+ "train_rows": 1903,
+ "train_steps": 238,
+ "lora_rank": 16,
+ "lr": 0.0001,
+ "epochs": 1,
+ "max_len": 3072,
+ "mode": "qlora-4bit",
+ "adapter": "models/reader_lora_3b",
+ "docs": "0-399",
+ "slice": "data/hotpot_heldout_v7.jsonl",
+ "slice_sha256": "b5830085312090204214e437d77b7b2fec4cf943ef2824757e0d9091015853e4",
+ "slice_seed": 20260923,
+ "pregate": "PASS | dev2 superset+notes delta +0.102 up 24 / down 11; dev3 superset+notes delta +0.055 up 21 / down 14",
+ "retriever": "overlap",
+ "budget_tokens": 3000,
+ "claim": "f1_superset_notes >= f1_sp + 0.05 AND 95pct CI excludes zero; secondary absolute >= 0.65",
+ "utc": "2026-09-15T18:51:14Z"
+}

@@ -1,0 +1,24 @@
+v5 reader-miss taxonomy (claimed wiring, gold present in the 3000-token passage), docs:
+   50  wrong: returned the bridge entity (hop-1 answer) as the final answer
+        e.g. doc 0: answer 'Bobby Howard Byrd' | gold 'Gospel Starlighters'
+        e.g. doc 1: answer 'New York City and Miami' | gold 'Jacksonville station'
+    6  wrong: another entity from the passage (mention/recency bias)
+        e.g. doc 63: answer 'Bowie, Maryland' | gold "Prince George's County"
+        e.g. doc 118: answer 'Islamic mysticism' | gold 'Sufism'
+    2  wrong: answer type mismatch (date/number vs name)
+        e.g. doc 127: answer '2014 Winter Olympics' | gold 'Curling'
+        e.g. doc 205: answer '2004' | gold '1974'
+    1  wrong: answer not in the passage (hallucinated or paraphrased)
+        e.g. doc 98: answer 'Georg Joseph Vogler ended the career of ' | gold 'hand injury'
+   30  partial: truncated (subset of gold)
+        e.g. doc 8: answer 'André 3000' | gold 'is a song written and produced by André '
+        e.g. doc 33: answer 'guitar' | gold 'rhythm guitar'
+   21  partial: gold + extra words (over-long span)
+        e.g. doc 11: answer 'Hachette Filipacchi Media U.S.' | gold 'Hachette Filipacchi'
+        e.g. doc 52: answer '2007 and 2008' | gold '2007'
+   15  partial: overlapping but different span
+        e.g. doc 26: answer 'Northern Ireland' | gold 'Northern Irish'
+        e.g. doc 31: answer 'Tsavo Conservation Area' | gold 'Tsavo East National Park'
+    1  partial: date/number formatted differently
+        e.g. doc 193: answer 'The transnational lottery referred is Eu' | gold '13 February 2004'
+totals: wrong 59, partial 67

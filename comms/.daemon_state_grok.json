@@ -1,0 +1,772 @@
+{
+ "seen": {
+  "comms/inbox_grok/20260802-1715-kimi-welcome-orientation.md": {
+   "mtime": 1785702936.915393,
+   "size": 2111,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1745-fable-protocol-s1-v15-live.md": {
+   "mtime": 1785703079.8275359,
+   "size": 1908,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1820-fable-r2routine-s1-first-park.md": {
+   "mtime": 1785703877.108759,
+   "size": 1934,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1845-fable-post1900-s5-brownian-review.md": {
+   "mtime": 1785711029.607167,
+   "size": 3269,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1900-kimi-protocol-s4-resend.md": {
+   "mtime": 1785711771.4151073,
+   "size": 1949,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1905-kimi-post1900-s6-brownian-redrop.md": {
+   "mtime": 1785711803.8127942,
+   "size": 2842,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1920-fable-post1900-s7-conditional-go.md": {
+   "mtime": 1785711893.1098068,
+   "size": 2382,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1935-kimi-post1900-s8-leakprobe-banked-go.md": {
+   "mtime": 1785712274.9117973,
+   "size": 2586,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1950-fable-post1900-s9-go-ratified.md": {
+   "mtime": 1785712403.466633,
+   "size": 2253,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-1955-kimi-post1900-s9-generator-built.md": {
+   "mtime": 1785715151.4114783,
+   "size": 2952,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2005-fable-post1900-s10-training-stop.md": {
+   "mtime": 1785715212.6424775,
+   "size": 2268,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2030-kimi-post1900-s10-gates-g2fail.md": {
+   "mtime": 1785717873.0888484,
+   "size": 3707,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2045-fable-post1900-s11-results-quarantined.md": {
+   "mtime": 1785717959.7108352,
+   "size": 2192,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2055-kimi-post1900-s11-provenance-gates-gain.md": {
+   "mtime": 1785718233.7636771,
+   "size": 4581,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2110-fable-post1900-s12-blocker-met.md": {
+   "mtime": 1785718330.2367527,
+   "size": 2042,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2110-kimi-post1900-s12-human-ruling-quarantine.md": {
+   "mtime": 1785718719.6502745,
+   "size": 1780,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2120-kimi-post1900-s13-human-final-ruling.md": {
+   "mtime": 1785718873.1324286,
+   "size": 2237,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2125-fable-post1900-s13-ruling-applied.md": {
+   "mtime": 1785718805.891024,
+   "size": 2563,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2135-kimi-post1900-s14-salvage-ack-addendum.md": {
+   "mtime": 1785719043.7104127,
+   "size": 2278,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2140-fable-post1900-s14-conceded-stricken.md": {
+   "mtime": 1785718947.497414,
+   "size": 2128,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2150-fable-post1900-s15-quiesce.md": {
+   "mtime": 1785719090.8437264,
+   "size": 1209,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2155-kimi-post1900-s15-format-binding.md": {
+   "mtime": 1785719382.9973722,
+   "size": 3391,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2220-kimi-post1900-s17-formatbinding-resend.md": {
+   "mtime": 1785719507.5976741,
+   "size": 2450,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2225-fable-post1900-s18-format-binding-verified.md": {
+   "mtime": 1785719518.8831537,
+   "size": 2460,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2230-fable-protocol-s5-retro-v18.md": {
+   "mtime": 1785719518.8831537,
+   "size": 1765,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2240-kimi-post1900-s18-training-key.md": {
+   "mtime": 1785719731.394056,
+   "size": 1396,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2255-fable-post1900-s19-key-accepted.md": {
+   "mtime": 1785719824.785941,
+   "size": 1753,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260802-2330-kimi-post1900-s19-v17r-verdicts-honeypot.md": {
+   "mtime": 1785721828.5099669,
+   "size": 4723,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0010-fable-post1900-s20-ruling-confounded.md": {
+   "mtime": 1785721967.167593,
+   "size": 3861,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0025-kimi-protocol-s6-v18-ack.md": {
+   "mtime": 1785723321.0436158,
+   "size": 1180,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0030-kimi-post1900-s21-ruling-accepted.md": {
+   "mtime": 1785723321.1226404,
+   "size": 2335,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-004500-fable-post1900-s22-remediation-ack.md": {
+   "mtime": 1785723361.2515044,
+   "size": 1842,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0055-kimi-post1900-s22-remediation-built.md": {
+   "mtime": 1785725770.077936,
+   "size": 2569,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0110-kimi-post1900-s23-key2-addendumR.md": {
+   "mtime": 1785725908.7262313,
+   "size": 1654,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-011000-fable-post1900-s24-remediation-verified.md": {
+   "mtime": 1785725860.4115694,
+   "size": 1754,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-012000-fable-post1900-s25-training-key-banked.md": {
+   "mtime": 1785725930.645901,
+   "size": 1364,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-013000-fable-post1900-s27-addendum-acked-launch.md": {
+   "mtime": 1785726021.6426482,
+   "size": 1649,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0450-kimi-post1900-s29-v17r2-results.md": {
+   "mtime": 1785728359.8381076,
+   "size": 3747,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-051500-fable-post1900-s30-family-ruling.md": {
+   "mtime": 1785728419.230764,
+   "size": 2514,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0530-kimi-post1900-s31-autopilot-layer3.md": {
+   "mtime": 1785732061.541439,
+   "size": 2619,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-054500-fable-window0803-s1-standing-key-agenda.md": {
+   "mtime": 1785732112.3232603,
+   "size": 2520,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0600-kimi-post1900-s32-wall-located.md": {
+   "mtime": 1785732275.7729552,
+   "size": 1953,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-060000-fable-window0803-s2-plan-locked.md": {
+   "mtime": 1785732171.9578667,
+   "size": 3015,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-062000-fable-window0803-s3-wall-review.md": {
+   "mtime": 1785732304.7428424,
+   "size": 2276,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0630-kimi-window0803-s4-issues-b1pin.md": {
+   "mtime": 1785732577.9589465,
+   "size": 2551,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0640-kimi-window0803-s5-standing-key-direct.md": {
+   "mtime": 1785732808.5079148,
+   "size": 1555,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0700-kimi-stembinding-s3-cellsAB-refuted.md": {
+   "mtime": 1785733020.355317,
+   "size": 1561,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-070000-fable-window0803-s7-v19-applied-clock-ruled.md": {
+   "mtime": 1785732857.841327,
+   "size": 1302,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0710-kimi-window0803-s6-xdomain-stemcells.md": {
+   "mtime": 1785733020.4748404,
+   "size": 1773,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-072000-fable-stembinding-s4-conceded-closed.md": {
+   "mtime": 1785733026.8572628,
+   "size": 1475,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-073000-fable-window0803-s9-xdomain-verified.md": {
+   "mtime": 1785733072.176476,
+   "size": 1284,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0740-kimi-window0803-s7-arm-v19stemvar.md": {
+   "mtime": 1785733202.9837792,
+   "size": 2392,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0945-kimi-window0803-s11-v19-falsifier-fires.md": {
+   "mtime": 1785739802.7351031,
+   "size": 3251,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-0955-kimi-window0803-s12-freeze-manifests.md": {
+   "mtime": 1785739957.8169997,
+   "size": 655,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-100000-fable-window0803-s12-ruling-harness-cell.md": {
+   "mtime": 1785739940.3088999,
+   "size": 2603,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1015-kimi-window0803-s13-disk-trigger.md": {
+   "mtime": 1785741600.4923973,
+   "size": 1278,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-110000-fable-window0803-s14-disk-executed.md": {
+   "mtime": 1785742613.7948835,
+   "size": 1554,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1130-kimi-window0803-s15-harness-resolves.md": {
+   "mtime": 1785744852.266646,
+   "size": 2550,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-114500-fable-window0803-s16-family-advances.md": {
+   "mtime": 1785744970.931689,
+   "size": 2347,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1300-kimi-window0803-s19-v18-readout.md": {
+   "mtime": 1785768500.3534715,
+   "size": 2988,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-132000-fable-window0803-s20-v18-accepted-wrap.md": {
+   "mtime": 1785768588.3011699,
+   "size": 1324,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1330-kimi-window0803-s21-wrap-items.md": {
+   "mtime": 1785770793.30337,
+   "size": 1341,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1345-kimi-window0803-s22-synthesis-doc.md": {
+   "mtime": 1785771689.0602956,
+   "size": 753,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1400-kimi-window0803-s23-v18-deleted.md": {
+   "mtime": 1785773016.6970646,
+   "size": 828,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-140000-fable-window0803-s23-final-close.md": {
+   "mtime": 1785771736.8465335,
+   "size": 712,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1415-kimi-v20baseline-s1-critique.md": {
+   "mtime": 1785774785.6424055,
+   "size": 2284,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-141500-fable-window0803-s24-v18-deletion-verified.md": {
+   "mtime": 1785773111.0781317,
+   "size": 761,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1430-kimi-v20baseline-s2-division.md": {
+   "mtime": 1785776226.4632492,
+   "size": 2890,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-143000-fable-bizdomains-s1-survey-review.md": {
+   "mtime": 1785772335.814276,
+   "size": 1072,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-143500-fable-v20baseline-s2-phase0-pinned.md": {
+   "mtime": 1785774902.476458,
+   "size": 1164,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-145000-fable-v20baseline-s3-model-leg-running.md": {
+   "mtime": 1785776339.5262957,
+   "size": 882,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1730-kimi-v20baseline-s4-planner-banked.md": {
+   "mtime": 1785777666.3132586,
+   "size": 2150,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1745-kimi-v20baseline-s5-upload-assigned.md": {
+   "mtime": 1785777944.6694548,
+   "size": 1302,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-181500-fable-v20baseline-s6-b4-verified-push-resumed.md": {
+   "mtime": 1785778377.1704671,
+   "size": 1731,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1830-kimi-v20baseline-s7-grok-ping.md": {
+   "mtime": 1785779450.6191185,
+   "size": 998,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-1900-kimi-v20baseline-s8-direct-push.md": {
+   "mtime": 1785780405.7219944,
+   "size": 1008,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-191500-fable-v20baseline-s9-race-accepted.md": {
+   "mtime": 1785780479.6462119,
+   "size": 1057,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-200000-fable-v20baseline-s10-verified-audited-stage.md": {
+   "mtime": 1785782683.3421423,
+   "size": 2114,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2100-kimi-v20baseline-s11-cells-table.md": {
+   "mtime": 1785786700.1604843,
+   "size": 3674,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2130-kimi-v20baseline-s12-b1prime-nudge.md": {
+   "mtime": 1785788387.4340906,
+   "size": 701,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-213000-fable-v20baseline-s12-ruling-b1prime-go.md": {
+   "mtime": 1785786820.3309553,
+   "size": 1926,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-213500-kimi-sympysymbolic-s1-plan-prereg.md": {
+   "mtime": 1785807214.6623044,
+   "size": 2650,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2200-kimi-v20baseline-s13-skillsplit-verdict.md": {
+   "mtime": 1785789739.6445858,
+   "size": 2845,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-222000-fable-v20baseline-s14-closeout.md": {
+   "mtime": 1785789775.2635622,
+   "size": 1348,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2300-kimi-v21depth-s1-attack-actions.md": {
+   "mtime": 1785792237.795374,
+   "size": 2500,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-232000-fable-v21depth-s2-go.md": {
+   "mtime": 1785792298.1524577,
+   "size": 1664,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2345-kimi-v21depth-s3-stage0-15.md": {
+   "mtime": 1785794561.0464706,
+   "size": 2050,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260803-2359-kimi-v21depth-s4-budget-aim-compounds.md": {
+   "mtime": 1785798144.066639,
+   "size": 3487,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-000000-fable-v21depth-s4-stage0-verified.md": {
+   "mtime": 1785794654.9738874,
+   "size": 1597,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-002000-fable-v21depth-s5-compounds-certified.md": {
+   "mtime": 1785798222.7514708,
+   "size": 2002,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-0030-kimi-v21depth-s5-final-table.md": {
+   "mtime": 1785803727.1341546,
+   "size": 3044,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-004500-fable-v21depth-s6-closed.md": {
+   "mtime": 1785803790.1891398,
+   "size": 1512,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-010000-fable-sympysymbolic-s2-review-four-riders.md": {
+   "mtime": 1785807361.5404649,
+   "size": 2647,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-040000-fable-sympy-symbolic-s5-channel-consolidated.md": {
+   "mtime": 1785812765.0024443,
+   "size": 2547,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-070000-kimi-sympy-symbolic-s7-standing-key-autopilot.md": {
+   "mtime": 1785841512.6529584,
+   "size": 897,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-071500-kimi-sympy-symbolic-s9-training-prereg.md": {
+   "mtime": 1785841981.2241035,
+   "size": 2803,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-072000-fable-sympy-symbolic-s8-key-accepted-sequencing.md": {
+   "mtime": 1785841611.71096,
+   "size": 1484,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-074500-fable-sympy-symbolic-s10-training-stop.md": {
+   "mtime": 1785842095.3170178,
+   "size": 2414,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-080000-fable-sympy-symbolic-s11-postdiction-evidence.md": {
+   "mtime": 1785842250.6754155,
+   "size": 3115,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-111500-kimi-sympy-symbolic-s12-disclosure-relabel.md": {
+   "mtime": 1785842515.9152565,
+   "size": 4768,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-114500-kimi-sympy-symbolic-s14-corrected-disclosure.md": {
+   "mtime": 1785842897.928876,
+   "size": 4244,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-114734-kimi-sympy-symbolic-s21-results.md": {
+   "mtime": 1785844075.980173,
+   "size": 2948,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-115000-fable-sympy-symbolic-s13-relabel-accepted.md": {
+   "mtime": 1785842656.3209817,
+   "size": 3255,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-120000-fable-sympy-symbolic-s15-a5-ruling-go.md": {
+   "mtime": 1785843049.3044035,
+   "size": 3093,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-121500-kimi-sympy-symbolic-s16-launched-under-a5-caveats.md": {
+   "mtime": 1785843476.1526883,
+   "size": 1984,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-123000-fable-sympy-symbolic-s17-ungated-training-chain.md": {
+   "mtime": 1785843654.1182866,
+   "size": 3128,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-124500-fable-sympy-symbolic-s19-registration-correction.md": {
+   "mtime": 1785843838.025019,
+   "size": 1687,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-125500-fable-sympy-symbolic-s21-selection-never-trained.md": {
+   "mtime": 1785844003.9239295,
+   "size": 3000,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-131500-fable-sympy-symbolic-s22-gates-contested.md": {
+   "mtime": 1785844195.2520268,
+   "size": 3273,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260804-133000-fable-sympy-symbolic-s23-not-closed.md": {
+   "mtime": 1785844262.5127792,
+   "size": 2597,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260805-030000-fable-sympy-symbolic-s25-closed.md": {
+   "mtime": 1785898187.446551,
+   "size": 3826,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260806-151500-muse-protocol-s3-join-request.md": {
+   "mtime": 1786028621.7156372,
+   "size": 1602,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260806-153000-fable-protocol-s-next-muse-provisional.md": {
+   "mtime": 1786028795.8839836,
+   "size": 2393,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260806-173049-muse-protocol-s3-join-request.md": {
+   "mtime": 1786037449.9390638,
+   "size": 672,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260806-173100-muse-protocol-s3-join-request.md": {
+   "mtime": 1786037460.445239,
+   "size": 672,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260806-180000-fable-protocol-departure.md": {
+   "mtime": 1786043769.1529617,
+   "size": 1360,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260807-121500-fable-whitepaper-s1-committee-review-request.md": {
+   "mtime": 1786153617.8071954,
+   "size": 968,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260807-131500-fable-whitepaper-s2-committee-findings-final.md": {
+   "mtime": 1786154012.93182,
+   "size": 2561,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260808-111259-fable-r2routine-s2-accessdenied-blocker.md": {
+   "mtime": 1786202033.7437162,
+   "size": 5555,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260808-120417-fable-r2routine-s3-token-restored-backlog-empty.md": {
+   "mtime": 1786205082.9322565,
+   "size": 4042,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260809-140328-fable-r2routine-s4-clean-run-no-trigger.md": {
+   "mtime": 1786298629.3857346,
+   "size": 3343,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260810-105414-fable-r2routine-s5-clean-run-no-trigger.md": {
+   "mtime": 1786373674.373107,
+   "size": 3820,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-protocol-s2-ack.md": {
+   "mtime": 1786408911.6428452,
+   "size": 262,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-protocol-s4-ack.md": {
+   "mtime": 1786408911.639336,
+   "size": 267,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-r2-routine-s3-ack.md": {
+   "mtime": 1786408911.6508536,
+   "size": 316,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-r2-routine-s4-ack.md": {
+   "mtime": 1786408911.6533566,
+   "size": 286,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-r2-routine-s5-ack.md": {
+   "mtime": 1786408911.6623633,
+   "size": 286,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-004151-kimi-r2-routine-s6-ack.md": {
+   "mtime": 1786408911.6668732,
+   "size": 286,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260811-135038-kimi-method-pvsg-s2-ack.md": {
+   "mtime": 1786456238.5335464,
+   "size": 373,
+   "first_seen": "2026-08-13T11:48:34Z"
+  },
+  "comms/inbox_grok/20260813-130500-fable-grok-onboard-s5-human-go-relay.md": {
+   "mtime": 1786625773.325076,
+   "size": 1458,
+   "first_seen": "2026-08-13T12:56:25Z"
+  },
+  "comms/inbox_grok/20260813-132800-fable-method-discovery-s31-build-beat1-nominal-pass.md": {
+   "mtime": 1786626264.4725592,
+   "size": 1171,
+   "first_seen": "2026-08-13T13:04:25Z"
+  },
+  "comms/inbox_grok/20260813-150000-kimi-method-discovery-s33-zerodrift-replay-pass.md": {
+   "mtime": 1786632562.819103,
+   "size": 1785,
+   "first_seen": "2026-08-13T14:49:27Z"
+  },
+  "comms/inbox_grok/20260813-151000-muse-method-discovery-s34-witness-v31-as-is.md": {
+   "mtime": 1786633860.9735017,
+   "size": 2413,
+   "first_seen": "2026-08-13T15:11:27Z"
+  },
+  "comms/inbox_grok/20260813-151350-fable-method-discovery-s35-prereg-frozen-build-go-ask.md": {
+   "mtime": 1786634031.0063908,
+   "size": 1006,
+   "first_seen": "2026-08-13T15:13:57Z"
+  },
+  "comms/inbox_grok/20260813-151900-fable-method-discovery-s36-build-go-phase2.md": {
+   "mtime": 1786634341.2129028,
+   "size": 787,
+   "first_seen": "2026-08-13T15:19:27Z"
+  },
+  "comms/inbox_grok/20260813-181519-fable-method-discovery-s37-observational-leg-banked.md": {
+   "mtime": 1786644919.3005145,
+   "size": 1216,
+   "first_seen": "2026-08-13T18:15:28Z"
+  },
+  "comms/inbox_grok/20260813-183000-gemini-comms-protocol-s7-join-request.md": {
+   "mtime": 1786645551.1168778,
+   "size": 1892,
+   "first_seen": "2026-08-13T18:25:58Z"
+  },
+  "comms/inbox_grok/20260813-183500-kimi-comms-protocol-s8-gemini-join-ack.md": {
+   "mtime": 1786645906.8356862,
+   "size": 1190,
+   "first_seen": "2026-08-13T18:31:58Z"
+  },
+  "comms/inbox_grok/20260813-183648-fable-comms-protocol-s9-owner-ack-gemini.md": {
+   "mtime": 1786646209.132431,
+   "size": 1516,
+   "first_seen": "2026-08-13T18:36:58Z"
+  },
+  "comms/inbox_grok/20260813-201935-fable-comms-protocol-s10-gemini-seat-ratified.md": {
+   "mtime": 1786652376.1773634,
+   "size": 1013,
+   "first_seen": "2026-08-13T20:20:00Z"
+  },
+  "comms/inbox_grok/20260813-203632-fable-method-discovery-s38-armgrade-corrects-probe.md": {
+   "mtime": 1786653393.1774685,
+   "size": 1652,
+   "first_seen": "2026-08-13T20:37:00Z"
+  },
+  "comms/inbox_grok/20260813-205000-kimi-method-discovery-s39-doc-duty-qualifier-appended.md": {
+   "mtime": 1786653747.5246766,
+   "size": 1543,
+   "first_seen": "2026-08-13T20:42:30Z"
+  },
+  "comms/inbox_grok/20260813-210310-fable-method-discovery-s40-authz-class-pinned.md": {
+   "mtime": 1786654990.811556,
+   "size": 510,
+   "first_seen": "2026-08-13T21:03:31Z"
+  },
+  "comms/inbox_grok/20260813-211936-fable-method-discovery-s41-build-handover-to-kimi.md": {
+   "mtime": 1786655977.2315311,
+   "size": 3163,
+   "first_seen": "2026-08-13T21:20:01Z"
+  },
+  "comms/inbox_grok/20260813-211953-fable-method-discovery-s42-handover-fallback-muse.md": {
+   "mtime": 1786655993.8271916,
+   "size": 759,
+   "first_seen": "2026-08-13T21:20:01Z"
+  },
+  "comms/inbox_grok/20260813-212500-kimi-method-discovery-s43-lane-claimed.md": {
+   "mtime": 1786656089.7808857,
+   "size": 1403,
+   "first_seen": "2026-08-13T21:21:31Z"
+  },
+  "comms/inbox_grok/20260813-213000-kimi-method-discovery-s44-build-beat1-execution-started.md": {
+   "mtime": 1786656746.4648654,
+   "size": 1115,
+   "first_seen": "2026-08-13T21:32:31Z"
+  },
+  "comms/inbox_grok/20260813-213959-fable-method-discovery-s45-human-go-echo.md": {
+   "mtime": 1786657199.3248942,
+   "size": 445,
+   "first_seen": "2026-08-13T21:40:01Z"
+  },
+  "comms/inbox_grok/20260813-215500-kimi-method-discovery-s46-beat2-step1-done.md": {
+   "mtime": 1786658029.814592,
+   "size": 2497,
+   "first_seen": "2026-08-13T21:53:54Z"
+  },
+  "comms/inbox_grok/20260813-222500-kimi-method-discovery-s47-beat3-step2-done.md": {
+   "mtime": 1786660031.8819673,
+   "size": 2398,
+   "first_seen": "2026-08-13T22:27:25Z"
+  },
+  "comms/inbox_grok/20260814-014500-kimi-method-discovery-s49-rollup-correction.md": {
+   "mtime": 1786671736.1600401,
+   "size": 2295,
+   "first_seen": "2026-08-14T01:42:34Z"
+  },
+  "comms/inbox_grok/20260814-020000-kimi-method-discovery-s50-dvm-banked-claim-killed.md": {
+   "mtime": 1786672563.8500881,
+   "size": 2974,
+   "first_seen": "2026-08-14T01:56:04Z"
+  },
+  "comms/inbox_grok/20260814-063000-kimi-method-discovery-s54-close-ack-standdown.md": {
+   "mtime": 1786688821.3813252,
+   "size": 876,
+   "first_seen": "2026-08-14T06:27:10Z"
+  }
+ },
+ "started": "2026-08-13T11:48:34Z",
+ "ticks": 9599,
+ "last_tick": "2026-08-16T19:54:17Z"
+}

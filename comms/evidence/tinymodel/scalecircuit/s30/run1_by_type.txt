@@ -1,0 +1,2 @@
+type bridge: n=80 single-pass=0.456 claimed=0.496 iterative+notes=0.535 NA-tagged=2 docs-where-claimed!=sp=19
+type comparison: n=20 single-pass=0.445 claimed=0.445 iterative+notes=0.445 NA-tagged=19 docs-where-claimed!=sp=0

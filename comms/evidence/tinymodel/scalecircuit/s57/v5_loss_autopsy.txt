@@ -1,0 +1,10 @@
+v5 loss autopsy (claimed wiring superset+notes, n=400, mean F1 0.569; missing F1 mass 0.431)
+class                                                           docs  share of missing F1
+reader miss: gold in passage, answer wrong                        59               34.3%
+abstained (comparison/NA) and single-pass wrong                   57               32.1%
+reader partial: right region, wrong span / extra words            67               16.1%
+retrieval miss: gold not in the 3000-token passage                33               15.4%
+abstained, partial credit                                         14                2.2%
+correct                                                          170                0.0%
+type bridge: n=314 mean F1 0.582, exact (F1=1) 133, zero 95
+type comparison: n=86 mean F1 0.524, exact (F1=1) 37, zero 36

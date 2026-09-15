@@ -1,0 +1,17 @@
+1) bridge copying: how often the final answer equals a hop-1 note, by arm (decomposed docs, n=279)
+   superset + notes (notes SHOWN)                   answer == a note: 227  of which wrong:  60  (right: 167)
+   superset (notes NOT shown, same passage order)   answer == a note: 176  of which wrong:  46  (right: 130)
+   decompositions: two-hop 213, one-hop 66
+   wrong answer == note, notes shown: two-hop 45 (genuine bridge copied as final), one-hop 15 (hop-1 itself wrong; not a copying error)
+   of the 45 two-hop bridge copies, how many did the NO-notes arm get right: 8
+
+2) truncation: token lengths in the 'partial: truncated' bucket vs exact matches
+   truncated bucket n=35: mean answer tokens 2.2, mean gold tokens 4.4; golds > 6 tokens: 6
+   exact-match bucket n=120: mean answer tokens 2.1, mean gold tokens 2.1
+   reader instruction: 'Answer with a short phrase using only the passage.'; max_new_tokens=24; greedy
+      doc 8: answer 'André 3000' | gold 'is a song written and produced by André 3000'
+      doc 32: answer 'Singapore Airlines' | gold 'Singapore Airlines Limited'
+      doc 33: answer 'guitar' | gold 'rhythm guitar'
+      doc 36: answer 'Fulgencio Batista' | gold 'Fulgencio Batista y Zaldívar'
+      doc 39: answer 'Kentucky Tennessee Virginia' | gold 'Kentucky, Virginia, and Tennessee'
+      doc 41: answer 'English' | gold 'English-language'

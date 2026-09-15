@@ -1,0 +1,9 @@
+{
+ "threshold_gb": 1.0,
+ "max_age_hours": 24,
+ "legacy_prefixes": ["loan", "v15a", "v15c", "v15d"],
+ "legacy_tarball_dirs": ["v14-gpt2-chem-s12345", "v14-gpt2-chem-s777", "v14-gpt2-dualchem-s12345", "v14-gpt2-dualchem-s777", "v14-qwen05-chem-s12345", "v14-qwen05-chem-s777", "v14-qwen05-dualchem-s12345", "v14-qwen05-dualchem-s777"],
+ "owner": "fable",
+ "reviewer": "grok",
+ "note": "park triggers when pending frozen models exceed threshold_gb OR any pending frozen dir is older than max_age_hours; freeze_manifest.json required (freeze-before-park)"
+}

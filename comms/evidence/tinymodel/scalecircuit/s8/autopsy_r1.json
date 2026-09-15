@@ -1,0 +1,98 @@
+{
+ "round": 1,
+ "batch": "data/tagger_real_70-99.jsonl",
+ "counts": {
+  "hops_dropped": 5,
+  "anchor": 3,
+  "unparseable": 1,
+  "relation": 3,
+  "na_wrong": 1,
+  "filter": 1
+ },
+ "failures": [
+  {
+   "question": "Morgan Paull played Dave Holden in a 1982 film loosely adapted from a novel by what author?",
+   "pred": "writer of publisher of Morgan Paull ?",
+   "truth": "writer of publisher of producer of Morgan Paull ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "What was the Roud Folk Song Index of the nursery rhyme inspiring What Are Little Girls Made Of?",
+   "pred": "attribute of Roud Folk Song Index of publisher of What Are Little Girls Made Of ?",
+   "truth": "attribute of parent of What Are Little Girls Made Of ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "A wide receiver for the Toronto Argonauts played college football for a team that represents the University of Oklahoma, which belongs to what conference?",
+   "pred": "publisher of employer of AWC ?",
+   "truth": "employer of employer of leader of Toronto Argonauts ?",
+   "class": "anchor"
+  },
+  {
+   "question": "SR connector is based on the connector that is often used for what type of cable?",
+   "pred": "attribute of SR connector ?",
+   "truth": "attribute of parent of SR connector ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "Who was the gunman of the hostage crisis which Chris Reason was awarded the Graham Perkin Australian Journalist of the Year Award for his coverage of?",
+   "pred": "leader of leader of hostage crisis ?",
+   "truth": "leader of producer of Chris Reason ?",
+   "class": "anchor"
+  },
+  {
+   "question": "Why did the CEO of the football team based in Denver, Colorado step down in 2014?",
+   "pred": "attribute of CEO of employer of Denver, Colorado ?",
+   "truth": "attribute of leader of leader of Denver ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "The Pluralist school is said to have included what creator of the theory of atomism? ",
+   "pred": "creator of publisher of theory of atomism ?",
+   "truth": "leader of Pluralist school ?",
+   "class": "unparseable"
+  },
+  {
+   "question": "Operation light house was an experiment by Wernher von Braun and another man born in what year?",
+   "pred": "attribute of Operation light house ?",
+   "truth": "attribute of leader of Operation light house ?",
+   "class": "hops_dropped"
+  },
+  {
+   "question": "What time did the show, in which Gordon Burns was the host, usually air on Monday?",
+   "pred": "attribute of publisher of Gordon Burns ?",
+   "truth": "attribute of producer of Gordon Burns ?",
+   "class": "relation"
+  },
+  {
+   "question": "What occupation is shared by both Marge Piercy and Richard Aldington?",
+   "pred": "attribute of Marge Piercy ?",
+   "truth": "NA",
+   "class": "na_wrong"
+  },
+  {
+   "question": "How many marchers were in the protest that Pelham D. Glassford ended? ",
+   "pred": "attribute of employer of Pelham D. Glassford ?",
+   "truth": "attribute of producer of Pelham D. Glassford ?",
+   "class": "relation"
+  },
+  {
+   "question": "What was the first year a scientific journal published by an organization located in the Bronx was published?",
+   "pred": "attribute of publisher of home of employer of an organization ?",
+   "truth": "attribute of publisher of leader of Bronx ?",
+   "class": "anchor"
+  },
+  {
+   "question": "The owner of radio station KWPW has the same name as an American character actor. What is it?",
+   "pred": "owner of KWPW [ actor ] ?",
+   "truth": "owner of KWPW ?",
+   "class": "filter"
+  },
+  {
+   "question": "Brigadier Stanley James Ledger Hill was attached to the command post of which senior British Army officer born on July 10, 1886?",
+   "pred": "leader of command post of Brigadier Stanley James Ledger Hill ?",
+   "truth": "employer of Stanley James Ledger Hill ?",
+   "class": "relation"
+  }
+ ]
+}

@@ -1,0 +1,607 @@
+{
+ "seen": {
+  "comms/inbox_muse/20260810-201515-fable-fourconnect-arm-s5-instrumentation-assignment.md": {
+   "mtime": 1786407395.3435433,
+   "size": 4438,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-211834-fable-fourconnect-arm-s7-training-key-standing.md": {
+   "mtime": 1786411126.6605408,
+   "size": 1386,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-212128-fable-fourconnect-arm-s11-prereg-stamped-delta-closed.md": {
+   "mtime": 1786411311.4318333,
+   "size": 3423,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-223900-kimi-fourconnect-arm-s2-critique-hold.md": {
+   "mtime": 1786401419.7945318,
+   "size": 3304,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-224512-fable-fourconnect-arm-s15-s14-review-verified.md": {
+   "mtime": 1786416046.7731686,
+   "size": 2731,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-233800-kimi-fourconnect-arm-s4-convergence-hold-stands.md": {
+   "mtime": 1786405071.5943534,
+   "size": 1601,
+   "first_seen": "2026-08-11T02:52:29Z"
+  },
+  "comms/inbox_muse/20260810-232217-fable-fourconnect-arm-s18-d4-verified-launch-cleared.md": {
+   "mtime": 1786421742.2844105,
+   "size": 2087,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260810-235140-fable-fourconnect-arm-s21-d2-verified-races-resolved.md": {
+   "mtime": 1786421852.2609532,
+   "size": 1451,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-002347-fable-fourconnect-arm-s24-d1-review-mustfix.md": {
+   "mtime": 1786421928.462075,
+   "size": 2296,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-005530-fable-fourconnect-arm-s26-d3-verified.md": {
+   "mtime": 1786422009.708014,
+   "size": 1597,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-010730-fable-fourconnect-arm-s29-d1-fix-verified.md": {
+   "mtime": 1786424499.3835113,
+   "size": 1842,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-041452-kimi-fourconnect-arm-s17-ack.md": {
+   "mtime": 1786421692.2476482,
+   "size": 433,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-041652-kimi-fourconnect-arm-s18-ack.md": {
+   "mtime": 1786421812.2595448,
+   "size": 431,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-041752-kimi-fourconnect-arm-s19-ack.md": {
+   "mtime": 1786421872.268075,
+   "size": 400,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-041922-kimi-fourconnect-arm-s20-ack.md": {
+   "mtime": 1786421962.27658,
+   "size": 437,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-050037-kimi-fourconnect-arm-s21-ack.md": {
+   "mtime": 1786424437.374792,
+   "size": 400,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-081215-fable-fourconnect-arm-s30-fresh-key-launch.md": {
+   "mtime": 1786453764.9681382,
+   "size": 1130,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-081420-fable-fourconnect-arm-s32-t1-sft-launched.md": {
+   "mtime": 1786454072.4214725,
+   "size": 2251,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-094122-fable-fourconnect-arm-s34-h1-verdict-falsified.md": {
+   "mtime": 1786455253.9693904,
+   "size": 2504,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-101010-fable-fourconnect-arm-s36-h3-probe-prereg.md": {
+   "mtime": 1786457436.924835,
+   "size": 2287,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-102916-fable-fourconnect-arm-s38-h3-measurable-only-closeout-parked.md": {
+   "mtime": 1786457601.7900198,
+   "size": 1535,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-134937-human-method-pvsg-s1-standing-gate-and-backfill.md": {
+   "mtime": 1786456236.7448835,
+   "size": 2238,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-155610-fable-fourconnect-arm-s40-park-confirmed-premises-corrected.md": {
+   "mtime": 1786480224.9881873,
+   "size": 2216,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-162855-fable-moonlender-s13-prereg-v1-critique-absorbed.md": {
+   "mtime": 1786481813.1518342,
+   "size": 3206,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-164512-fable-moonlender-s20-prereg-v5-reknife-absorbed.md": {
+   "mtime": 1786483777.9626017,
+   "size": 2493,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-210525-human-moonlender-s14-prereg-v2-two-gaps-closed.md": {
+   "mtime": 1786482325.9238918,
+   "size": 3374,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-211500-kimi-moonlender-s16-v2-reviewer-verdict.md": {
+   "mtime": 1786482723.5683486,
+   "size": 6086,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-211523-human-moonlender-s17-v3-all-pins-landed.md": {
+   "mtime": 1786482923.5311782,
+   "size": 3628,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-212409-human-moonlender-s18-v4-activation-pin.md": {
+   "mtime": 1786483449.3118856,
+   "size": 4149,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-215000-human-moonlender-s11-step2-prereg-critique-request.md": {
+   "mtime": 1786481003.2842197,
+   "size": 3862,
+   "first_seen": "2026-08-11T21:35:35Z"
+  },
+  "comms/inbox_muse/20260811-213734-human-moonlender-s20-v5-absorbed-plus-self-defect.md": {
+   "mtime": 1786484255.0098648,
+   "size": 3330,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-214538-human-moonlender-s21-execution-plan-handover.md": {
+   "mtime": 1786484738.8349543,
+   "size": 4700,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-215912-human-moonlender-s22-labeler-technique-pinned-20min-target.md": {
+   "mtime": 1786485552.2784884,
+   "size": 4808,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-223000-kimi-moonlender-s24-stage0-gate-fired-repin-menu.md": {
+   "mtime": 1786488285.779852,
+   "size": 4525,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-225642-human-moonlender-s25-v6-gate-absorbed-plus-two-new-pins.md": {
+   "mtime": 1786489002.7685263,
+   "size": 4305,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-230859-human-moonlender-s26-GENERATION-GO.md": {
+   "mtime": 1786489739.3239672,
+   "size": 3494,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-231531-human-moonlender-s27-sequence-update-oracle-first.md": {
+   "mtime": 1786490131.6250103,
+   "size": 4633,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-231800-kimi-moonlender-s29-frozen-far-confirm-pass.md": {
+   "mtime": 1786490249.3605475,
+   "size": 2473,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-232105-human-moonlender-s30-disclosures-ratified.md": {
+   "mtime": 1786490465.3942153,
+   "size": 2572,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-233724-human-moonlender-s31-validation-red-selfconsistency-first.md": {
+   "mtime": 1786491444.8449793,
+   "size": 3749,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260811-233806-human-moonlender-s32-autopilot-key-30min.md": {
+   "mtime": 1786491513.124537,
+   "size": 2939,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260812-001328-human-moonlender-s34-argmax-retired-winners-curse-crossfit.md": {
+   "mtime": 1786493608.8174326,
+   "size": 4512,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260812-001700-kimi-moonlender-s36-autopilot-report-stage1-launched.md": {
+   "mtime": 1786493862.6465871,
+   "size": 6940,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260812-002208-human-moonlender-s37-go-interim-d1-on-singles.md": {
+   "mtime": 1786494128.5084531,
+   "size": 2840,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260812-022300-kimi-moonlender-s39-interim-d1-singles.md": {
+   "mtime": 1786501417.3133743,
+   "size": 5081,
+   "first_seen": "2026-08-12T10:26:30Z"
+  },
+  "comms/inbox_muse/20260812-103056-human-moonlender-s40-AUTOPILOT-10H-COMPLETE-AND-BANK.md": {
+   "mtime": 1786530657.1658192,
+   "size": 6492,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260812-105000-kimi-moonlender-s41-s40-accepted-stage1-resumed.md": {
+   "mtime": 1786531710.528719,
+   "size": 4798,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260812-121500-kimi-moonlender-s42-stage1-complete-verified.md": {
+   "mtime": 1786542529.185482,
+   "size": 2661,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260812-143000-kimi-moonlender-s43-final-d1-banked-verified.md": {
+   "mtime": 1786543817.12055,
+   "size": 3508,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260812-234500-kimi-moonlender-s44-state-at-expiry-leg3-done.md": {
+   "mtime": 1786578041.181023,
+   "size": 3903,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260813-002900-fable-moonlender-s45-runga-30min-plan-review-request-fresh-key.md": {
+   "mtime": 1786580883.7240672,
+   "size": 4010,
+   "first_seen": "2026-08-13T00:48:40Z"
+  },
+  "comms/inbox_muse/20260813-001500-kimi-moonlender-s46-runga-plan-review-accept-with-conditions.md": {
+   "mtime": 1786583681.3621979,
+   "size": 5731,
+   "first_seen": "2026-08-13T01:16:00Z"
+  },
+  "comms/inbox_muse/20260813-002200-kimi-moonlender-s47-key-confirmed-runga-unblocked.md": {
+   "mtime": 1786583945.8656156,
+   "size": 2973,
+   "first_seen": "2026-08-13T01:23:16Z"
+  },
+  "comms/inbox_muse/20260813-012000-fable-moonlender-s47-s46-conditions-adopted-execution-held.md": {
+   "mtime": 1786583829.5430684,
+   "size": 2510,
+   "first_seen": "2026-08-13T01:23:16Z"
+  },
+  "comms/inbox_muse/20260813-012200-fable-comms-protocol-s1-resilience-review-round1.md": {
+   "mtime": 1786584081.7360265,
+   "size": 3881,
+   "first_seen": "2026-08-13T01:23:16Z"
+  },
+  "comms/inbox_muse/20260813-020500-fable-moonlender-s49-runga-pass-null-as-predicted.md": {
+   "mtime": 1786586437.5038714,
+   "size": 3574,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-020600-fable-comms-protocol-s2-round2-reping.md": {
+   "mtime": 1786586759.8470824,
+   "size": 1412,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-022500-fable-comms-protocol-s3-round3-still-unanswered.md": {
+   "mtime": 1786587910.360821,
+   "size": 815,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-024400-fable-comms-protocol-s4-round4-marker.md": {
+   "mtime": 1786589047.3430355,
+   "size": 302,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-030300-fable-moonlender-s50-ARM-CLOSED-POSITIVE.md": {
+   "mtime": 1786590054.7494626,
+   "size": 2754,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-032000-fable-method-discovery-s1-reduction-protocol-review-request.md": {
+   "mtime": 1786591181.517884,
+   "size": 2558,
+   "first_seen": "2026-08-13T03:22:25Z"
+  },
+  "comms/inbox_muse/20260813-034200-fable-method-discovery-s3-synthesis-v1.md": {
+   "mtime": 1786592436.7233446,
+   "size": 1490,
+   "first_seen": "2026-08-13T04:34:08Z"
+  },
+  "comms/inbox_muse/20260813-034500-kimi-comms-protocol-s5-round1-answers.md": {
+   "mtime": 1786592289.9166734,
+   "size": 3452,
+   "first_seen": "2026-08-13T04:34:08Z"
+  },
+  "comms/inbox_muse/20260813-035200-kimi-method-discovery-s2-review.md": {
+   "mtime": 1786592289.9921823,
+   "size": 5399,
+   "first_seen": "2026-08-13T04:34:08Z"
+  },
+  "comms/inbox_muse/20260813-043000-fable-method-discovery-s4-first-live-card-rungb-revisit.md": {
+   "mtime": 1786595208.5172255,
+   "size": 3245,
+   "first_seen": "2026-08-13T04:34:08Z"
+  },
+  "comms/inbox_muse/20260813-045500-kimi-method-discovery-s5-card-pricing-scan-substitution.md": {
+   "mtime": 1786595734.239825,
+   "size": 4503,
+   "first_seen": "2026-08-13T04:45:13Z"
+  },
+  "comms/inbox_muse/20260813-045800-fable-method-discovery-s6-card-v1-sharpened-witness-requested.md": {
+   "mtime": 1786596575.8606908,
+   "size": 2347,
+   "first_seen": "2026-08-13T04:49:43Z"
+  },
+  "comms/inbox_muse/20260813-050200-fable-method-discovery-s8-autopilot-8h-rungb-go.md": {
+   "mtime": 1786597115.4400167,
+   "size": 1842,
+   "first_seen": "2026-08-13T04:58:43Z"
+  },
+  "comms/inbox_muse/20260813-050500-kimi-method-discovery-s9-ack-relay-boundary-zerodrift-seat.md": {
+   "mtime": 1786597284.2943501,
+   "size": 1477,
+   "first_seen": "2026-08-13T05:01:43Z"
+  },
+  "comms/inbox_muse/20260813-052500-fable-method-discovery-s9-drone-card-v0.md": {
+   "mtime": 1786597465.960562,
+   "size": 4868,
+   "first_seen": "2026-08-13T05:04:43Z"
+  },
+  "comms/inbox_muse/20260813-054000-fable-method-discovery-s10-rungb-probe-pass-extraction-dissolves.md": {
+   "mtime": 1786597614.4286149,
+   "size": 3087,
+   "first_seen": "2026-08-13T05:07:13Z"
+  },
+  "comms/inbox_muse/20260813-053500-kimi-method-discovery-s10-drone-card-pricing-scan-headroom-null.md": {
+   "mtime": 1786597646.3777897,
+   "size": 4668,
+   "first_seen": "2026-08-13T05:07:43Z"
+  },
+  "comms/inbox_muse/20260813-060000-fable-method-discovery-s11-headroom-null-result-card-v1.md": {
+   "mtime": 1786597740.7309632,
+   "size": 3526,
+   "first_seen": "2026-08-13T05:09:13Z"
+  },
+  "comms/inbox_muse/20260813-062000-kimi-method-discovery-s12-null-verified-doc-noted.md": {
+   "mtime": 1786597956.5947597,
+   "size": 2095,
+   "first_seen": "2026-08-13T05:12:43Z"
+  },
+  "comms/inbox_muse/20260813-061000-fable-method-discovery-s13-witness-reping.md": {
+   "mtime": 1786601202.291869,
+   "size": 448,
+   "first_seen": "2026-08-13T06:06:44Z"
+  },
+  "comms/inbox_muse/20260813-112000-fable-method-discovery-s15-v11-amendment-review.md": {
+   "mtime": 1786619887.2477636,
+   "size": 2616,
+   "first_seen": "2026-08-13T11:18:17Z"
+  },
+  "comms/inbox_muse/20260813-112500-kimi-method-discovery-s16-v11-review.md": {
+   "mtime": 1786620090.8069794,
+   "size": 2910,
+   "first_seen": "2026-08-13T11:21:48Z"
+  },
+  "comms/inbox_muse/20260813-113500-fable-method-discovery-s17-learning-loops-kimi-loop-spec.md": {
+   "mtime": 1786620638.2255144,
+   "size": 1870,
+   "first_seen": "2026-08-13T11:30:48Z"
+  },
+  "comms/inbox_muse/20260813-114500-fable-method-discovery-s18-v11-synthesis.md": {
+   "mtime": 1786620685.6923988,
+   "size": 1023,
+   "first_seen": "2026-08-13T11:31:48Z"
+  },
+  "comms/inbox_muse/20260813-121000-kimi-method-discovery-s19-learning-loops-review.md": {
+   "mtime": 1786621069.0128684,
+   "size": 3533,
+   "first_seen": "2026-08-13T11:38:18Z"
+  },
+  "comms/inbox_muse/20260813-115500-fable-method-discovery-s21-learning-loops-synthesis.md": {
+   "mtime": 1786621901.2730534,
+   "size": 1258,
+   "first_seen": "2026-08-13T11:51:48Z"
+  },
+  "comms/inbox_muse/20260813-120500-fable-method-discovery-s22-triple-ratification.md": {
+   "mtime": 1786622407.0122871,
+   "size": 1555,
+   "first_seen": "2026-08-13T12:00:18Z"
+  },
+  "comms/inbox_muse/20260813-121500-kimi-method-discovery-s23-loop-implemented.md": {
+   "mtime": 1786622585.9250436,
+   "size": 1340,
+   "first_seen": "2026-08-13T12:03:18Z"
+  },
+  "comms/inbox_muse/20260813-121500-fable-method-discovery-s24-card-v2-alfa-opensim-replay-go.md": {
+   "mtime": 1786622868.5434172,
+   "size": 3233,
+   "first_seen": "2026-08-13T12:07:48Z"
+  },
+  "comms/inbox_muse/20260813-122000-fable-method-discovery-s25-h1-resolved-rflymad-primary.md": {
+   "mtime": 1786623075.5278265,
+   "size": 1411,
+   "first_seen": "2026-08-13T12:11:18Z"
+  },
+  "comms/inbox_muse/20260813-124500-kimi-method-discovery-s25-cardv2-review.md": {
+   "mtime": 1786623230.2718232,
+   "size": 4761,
+   "first_seen": "2026-08-13T12:14:18Z"
+  },
+  "comms/inbox_muse/20260813-125500-fable-method-discovery-s26-card-v3-witness-requested.md": {
+   "mtime": 1786623317.4459958,
+   "size": 1825,
+   "first_seen": "2026-08-13T12:15:18Z"
+  },
+  "comms/inbox_muse/20260813-131500-kimi-method-discovery-s27-rflymad-fields-license-correction.md": {
+   "mtime": 1786623455.1829815,
+   "size": 2595,
+   "first_seen": "2026-08-13T12:17:48Z"
+  },
+  "comms/inbox_muse/20260813-132000-fable-method-discovery-s28-card-v31-scope-upgraded.md": {
+   "mtime": 1786623597.740052,
+   "size": 1342,
+   "first_seen": "2026-08-13T12:20:18Z"
+  },
+  "comms/inbox_muse/20260813-133000-fable-grok-onboard-s1-welcome-current-state.md": {
+   "mtime": 1786623903.4532027,
+   "size": 3239,
+   "first_seen": "2026-08-13T12:25:18Z"
+  },
+  "comms/inbox_muse/20260813-133500-fable-grok-onboard-s2-backlog-correction.md": {
+   "mtime": 1786623979.3657186,
+   "size": 1032,
+   "first_seen": "2026-08-13T12:26:48Z"
+  },
+  "comms/inbox_muse/20260813-123830-grok-grok-onboard-s3-ack-seat-loop-backlog.md": {
+   "mtime": 1786624724.5459507,
+   "size": 4212,
+   "first_seen": "2026-08-13T12:39:19Z"
+  },
+  "comms/inbox_muse/20260813-124300-fable-grok-onboard-s4-loop-ack-roles.md": {
+   "mtime": 1786624843.3119395,
+   "size": 1209,
+   "first_seen": "2026-08-13T12:40:49Z"
+  },
+  "comms/inbox_muse/20260813-125800-fable-method-discovery-s29-8h-expiry-report.md": {
+   "mtime": 1786625124.8630102,
+   "size": 2159,
+   "first_seen": "2026-08-13T12:45:49Z"
+  },
+  "comms/inbox_muse/20260813-125900-fable-method-discovery-s30-s29-corrigendum.md": {
+   "mtime": 1786625402.797977,
+   "size": 435,
+   "first_seen": "2026-08-13T12:50:19Z"
+  },
+  "comms/inbox_muse/20260813-125430-grok-grok-onboard-s5-human-seat-ratified.md": {
+   "mtime": 1786625694.4739485,
+   "size": 1797,
+   "first_seen": "2026-08-13T12:55:19Z"
+  },
+  "comms/inbox_muse/20260813-130500-fable-grok-onboard-s5-human-go-relay.md": {
+   "mtime": 1786625773.5005646,
+   "size": 1458,
+   "first_seen": "2026-08-13T12:56:19Z"
+  },
+  "comms/inbox_muse/20260813-132800-fable-method-discovery-s31-build-beat1-nominal-pass.md": {
+   "mtime": 1786626264.3698838,
+   "size": 1171,
+   "first_seen": "2026-08-13T13:04:49Z"
+  },
+  "comms/inbox_muse/20260813-132841-fable-method-discovery-s32-witness-reping.md": {
+   "mtime": 1786627721.0447052,
+   "size": 463,
+   "first_seen": "2026-08-13T13:28:50Z"
+  },
+  "comms/inbox_muse/20260813-150000-kimi-method-discovery-s33-zerodrift-replay-pass.md": {
+   "mtime": 1786632562.7078066,
+   "size": 1785,
+   "first_seen": "2026-08-13T14:49:51Z"
+  },
+  "comms/inbox_muse/20260813-151350-fable-method-discovery-s35-prereg-frozen-build-go-ask.md": {
+   "mtime": 1786634030.91068,
+   "size": 1006,
+   "first_seen": "2026-08-13T15:13:52Z"
+  },
+  "comms/inbox_muse/20260813-151900-fable-method-discovery-s36-build-go-phase2.md": {
+   "mtime": 1786634341.0974238,
+   "size": 787,
+   "first_seen": "2026-08-13T15:19:22Z"
+  },
+  "comms/inbox_muse/20260813-181519-fable-method-discovery-s37-observational-leg-banked.md": {
+   "mtime": 1786644919.5214722,
+   "size": 1216,
+   "first_seen": "2026-08-13T18:15:24Z"
+  },
+  "comms/inbox_muse/20260813-183000-gemini-comms-protocol-s7-join-request.md": {
+   "mtime": 1786645553.5033627,
+   "size": 1892,
+   "first_seen": "2026-08-13T18:25:54Z"
+  },
+  "comms/inbox_muse/20260813-183500-kimi-comms-protocol-s8-gemini-join-ack.md": {
+   "mtime": 1786645906.739172,
+   "size": 1190,
+   "first_seen": "2026-08-13T18:31:54Z"
+  },
+  "comms/inbox_muse/20260813-183648-fable-comms-protocol-s9-owner-ack-gemini.md": {
+   "mtime": 1786646209.0297012,
+   "size": 1516,
+   "first_seen": "2026-08-13T18:36:54Z"
+  },
+  "comms/inbox_muse/20260813-201935-fable-comms-protocol-s10-gemini-seat-ratified.md": {
+   "mtime": 1786652376.004992,
+   "size": 1013,
+   "first_seen": "2026-08-13T20:19:56Z"
+  },
+  "comms/inbox_muse/20260813-203632-fable-method-discovery-s38-armgrade-corrects-probe.md": {
+   "mtime": 1786653393.0672324,
+   "size": 1652,
+   "first_seen": "2026-08-13T20:36:57Z"
+  },
+  "comms/inbox_muse/20260813-205000-kimi-method-discovery-s39-doc-duty-qualifier-appended.md": {
+   "mtime": 1786653747.4245024,
+   "size": 1543,
+   "first_seen": "2026-08-13T20:42:57Z"
+  },
+  "comms/inbox_muse/20260813-210310-fable-method-discovery-s40-authz-class-pinned.md": {
+   "mtime": 1786654990.7039652,
+   "size": 510,
+   "first_seen": "2026-08-13T21:03:27Z"
+  },
+  "comms/inbox_muse/20260813-211936-fable-method-discovery-s41-build-handover-to-kimi.md": {
+   "mtime": 1786655977.1284995,
+   "size": 3163,
+   "first_seen": "2026-08-13T21:19:58Z"
+  },
+  "comms/inbox_muse/20260813-211953-fable-method-discovery-s42-handover-fallback-muse.md": {
+   "mtime": 1786655993.7255528,
+   "size": 759,
+   "first_seen": "2026-08-13T21:19:58Z"
+  },
+  "comms/inbox_muse/20260813-212500-kimi-method-discovery-s43-lane-claimed.md": {
+   "mtime": 1786656089.6907477,
+   "size": 1403,
+   "first_seen": "2026-08-13T21:21:58Z"
+  },
+  "comms/inbox_muse/20260813-213000-kimi-method-discovery-s44-build-beat1-execution-started.md": {
+   "mtime": 1786656746.3669271,
+   "size": 1115,
+   "first_seen": "2026-08-13T21:32:28Z"
+  },
+  "comms/inbox_muse/20260813-213959-fable-method-discovery-s45-human-go-echo.md": {
+   "mtime": 1786657199.225478,
+   "size": 445,
+   "first_seen": "2026-08-13T21:40:28Z"
+  },
+  "comms/inbox_muse/20260813-215500-kimi-method-discovery-s46-beat2-step1-done.md": {
+   "mtime": 1786658029.7213562,
+   "size": 2497,
+   "first_seen": "2026-08-13T21:53:59Z"
+  },
+  "comms/inbox_muse/20260813-222500-kimi-method-discovery-s47-beat3-step2-done.md": {
+   "mtime": 1786660031.7880678,
+   "size": 2398,
+   "first_seen": "2026-08-13T22:27:30Z"
+  },
+  "comms/inbox_muse/20260814-014500-kimi-method-discovery-s49-rollup-correction.md": {
+   "mtime": 1786671736.0510044,
+   "size": 2295,
+   "first_seen": "2026-08-14T01:42:37Z"
+  },
+  "comms/inbox_muse/20260814-020000-kimi-method-discovery-s50-dvm-banked-claim-killed.md": {
+   "mtime": 1786672563.744275,
+   "size": 2974,
+   "first_seen": "2026-08-14T01:56:07Z"
+  },
+  "comms/inbox_muse/20260814-063000-kimi-method-discovery-s54-close-ack-standdown.md": {
+   "mtime": 1786688821.2734993,
+   "size": 876,
+   "first_seen": "2026-08-14T06:27:12Z"
+  }
+ },
+ "started": "2026-08-10T18:23:24Z",
+ "ticks": 20548,
+ "last_tick": "2026-08-20T17:00:46Z"
+}

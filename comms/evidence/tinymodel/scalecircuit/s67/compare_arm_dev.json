@@ -1,0 +1,677 @@
+{
+ "summary": {
+  "n": 39,
+  "extracted": 38,
+  "f1_sp": 0.6275476660092044,
+  "f1_compare": 0.5262878147493532,
+  "wins": 5,
+  "losses": 8,
+  "yes_no": {
+   "n": 12,
+   "f1_sp": 0.8333333333333334,
+   "f1_compare": 0.75
+  }
+ },
+ "rows": [
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 1,
+   "q": "Which became a Cathedral first St Chad's Cathedral, Birmingham or Chelmsford Cathedral?",
+   "gold": [
+    "Metropolitan Cathedral Church and Basilica of Saint Chad"
+   ],
+   "entities": [
+    "Birmingham",
+    "Chelmsford Cathedral"
+   ],
+   "single_pass": "St Chad's Cathedral, Birmingham",
+   "compare": "St Chad's Cathedral, Birmingham",
+   "f1_sp": 0.3076923076923077,
+   "f1_compare": 0.3076923076923077,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 9,
+   "q": "Are Random House Tower and 888 7th Avenue both used for real estate?",
+   "gold": [
+    "no"
+   ],
+   "entities": null,
+   "single_pass": "No",
+   "compare": "No",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 11,
+   "q": "Who is affiliated with more countries as a director, Robert Florey and R. G. Springsteen?",
+   "gold": [
+    "Robert Florey"
+   ],
+   "entities": [
+    "Robert Florey",
+    "R. G. Springsteen"
+   ],
+   "single_pass": "Robert Florey",
+   "compare": "R. G. Springsteen",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 15,
+   "q": "Which park is larger, Timanfaya National Park or Sierra Nevada National Park?",
+   "gold": [
+    "Sierra Nevada National Park"
+   ],
+   "entities": [
+    "Timanfaya National Park",
+    "Sierra Nevada National Park"
+   ],
+   "single_pass": "Sierra Nevada National Park",
+   "compare": "Sierra Nevada National Park",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 18,
+   "q": "Which movie is a documentary about \"Beowulf & Grendel\", between My Kid Could Paint That and Wrath of Gods?",
+   "gold": [
+    "Wrath of Gods"
+   ],
+   "entities": [
+    "My Kid Could Paint That",
+    "Wrath of Gods"
+   ],
+   "single_pass": "Wrath of Gods",
+   "compare": "Wrath of Gods",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 23,
+   "q": "Which magazine was founded first, Diva or Elle?",
+   "gold": [
+    "Elle"
+   ],
+   "entities": [
+    "Diva",
+    "Elle"
+   ],
+   "single_pass": "Elle",
+   "compare": "Elle",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 25,
+   "q": "Do both Korematsu v. United States and Chaplinsky v. New Hampshire cases regard the rights of U. S. citizens?",
+   "gold": [
+    "yes"
+   ],
+   "entities": [
+    "United States",
+    "Chaplinsky"
+   ],
+   "single_pass": "yes",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 29,
+   "q": "Which American Director doubled as a choreographer also, Stanley Kubrick or Kenny Ortega?",
+   "gold": [
+    "Kenneth John \"Kenny\" Ortega (born April 18, 1950) is an American producer, director, and choreographer."
+   ],
+   "entities": [
+    "Stanley Kubrick",
+    "Kenny Ortega"
+   ],
+   "single_pass": "Kenny Ortega",
+   "compare": "Kenny Ortega",
+   "f1_sp": 0.25,
+   "f1_compare": 0.25,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 30,
+   "q": "Which of the two came out first, The Wind in the Willows or The Bears and I?",
+   "gold": [
+    "The Wind in the Willows"
+   ],
+   "entities": [
+    "Willows",
+    "The Bears"
+   ],
+   "single_pass": "The Wind in the Willows",
+   "compare": "The Wind in the Willows",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 31,
+   "q": "Which film director is younger, Robert Z. Leonard or Sinclair Hill?",
+   "gold": [
+    "Sinclair Hill"
+   ],
+   "entities": [
+    "Robert Z. Leonard",
+    "Sinclair Hill"
+   ],
+   "single_pass": "Sinclair Hill",
+   "compare": "Robert Z. Leonard",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 35,
+   "q": "The  Actaea genus is native to what continent that the Onoclea genus is not?",
+   "gold": [
+    "Europe"
+   ],
+   "entities": [
+    "The  Actaea",
+    "Onoclea"
+   ],
+   "single_pass": "Europe",
+   "compare": "Asia",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 39,
+   "q": "Which was released first, Hot Girls Wanted or China Blue?",
+   "gold": [
+    "China Blue"
+   ],
+   "entities": [
+    "Hot Girls Wanted",
+    "China Blue"
+   ],
+   "single_pass": "Hot Girls Wanted",
+   "compare": "China Blue",
+   "f1_sp": 0.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 47,
+   "q": "Are Steve Perry and Leslie West both singers?",
+   "gold": [
+    "yes"
+   ],
+   "entities": [
+    "Are Steve Perry",
+    "Leslie West"
+   ],
+   "single_pass": "yes",
+   "compare": "yes",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 53,
+   "q": "Are Wilco Melissant and Todd Field both involved in the film industry (e.g. director, filmmaker, actor)?",
+   "gold": [
+    "yes"
+   ],
+   "entities": [
+    "Are Wilco Melissant",
+    "Todd Field"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 56,
+   "q": "Is Gasherbrum II or Nuptse closest to the tallest mountain in the world?",
+   "gold": [
+    "It lies two kilometres WSW of Mount Everest."
+   ],
+   "entities": [
+    "Is Gasherbrum II",
+    "Nuptse"
+   ],
+   "single_pass": "Gasherbrum II",
+   "compare": "Nuptse",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 57,
+   "q": "Which musician or band is from further north, Matthew Good or Modern Baseball?",
+   "gold": [
+    "Matthew Good"
+   ],
+   "entities": [
+    "Matthew Good",
+    "Modern Baseball"
+   ],
+   "single_pass": "Matthew Good",
+   "compare": "Matthew Good",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 65,
+   "q": "Which magazine is focused more on the adult demographic, Jack and Jill or Paper?",
+   "gold": [
+    "Paper"
+   ],
+   "entities": [
+    "Jack and Jill",
+    "Paper"
+   ],
+   "single_pass": "Digital Max",
+   "compare": "Paper",
+   "f1_sp": 0.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 72,
+   "q": "Are both Jim McBride and Neil Jordan American?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Jim McBride",
+    "Neil Jordan American"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 81,
+   "q": "Gabriela Mistral and Alan Sillitoe were both in what profession?",
+   "gold": [
+    "writers"
+   ],
+   "entities": [
+    "Gabriela Mistral",
+    "Alan Sillitoe"
+   ],
+   "single_pass": "writer",
+   "compare": "no",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 92,
+   "q": "Both Tsai Ming-liang and Giacomo Gentilomo were involved with which profession?",
+   "gold": [
+    "film director"
+   ],
+   "entities": [
+    "Tsai Ming-liang",
+    "Giacomo Gentilomo"
+   ],
+   "single_pass": "film director",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 96,
+   "q": "Are Harry Everett Smith and Vladimir Danilevich both from Russia?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Are Harry Everett Smith",
+    "Vladimir Danilevich"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev2_v1.jsonl",
+   "doc": 99,
+   "q": "Between Greyia and Calibanus, which genus contains more species?",
+   "gold": [
+    "Greyia"
+   ],
+   "entities": [
+    "Between Greyia",
+    "Calibanus"
+   ],
+   "single_pass": "Greyia",
+   "compare": "Greyia",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 9,
+   "q": "Renáta Tomanová and Larisa Neiland are former professional athletes for what sport?",
+   "gold": [
+    "professional tennis"
+   ],
+   "entities": [
+    "Renáta Tomanová",
+    "Larisa Neiland"
+   ],
+   "single_pass": "tennis",
+   "compare": "No",
+   "f1_sp": 0.6666666666666666,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 10,
+   "q": "Does the band God Lives Underwater or the band The Dear Hunter come from a larger state?",
+   "gold": [
+    "God Lives Underwater"
+   ],
+   "entities": [
+    "God Lives Underwater",
+    "The Dear Hunter"
+   ],
+   "single_pass": "Pennsylvania",
+   "compare": "The Dear Hunter comes from a larger state. Rhode Island is larger than any state in the U.S., whereas God Lives",
+   "f1_sp": 0.0,
+   "f1_compare": 0.18181818181818182,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 18,
+   "q": "Did Franki Valli sing with Hellogoodbye or The Four Seasons?",
+   "gold": [
+    "The Four Seasons"
+   ],
+   "entities": [
+    "Hellogoodbye",
+    "The Four Seasons"
+   ],
+   "single_pass": "The Four Seasons",
+   "compare": "No",
+   "f1_sp": 1.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 23,
+   "q": "Which of the case was held in a higher ranking court, South Dakota v. Dole or Rogers v. Okin?",
+   "gold": [
+    "South Dakota v. Dole"
+   ],
+   "entities": [
+    "Dole",
+    "Rogers"
+   ],
+   "single_pass": "South Dakota v. Dole",
+   "compare": "Rogers v. Okin",
+   "f1_sp": 1.0,
+   "f1_compare": 0.28571428571428575,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 27,
+   "q": "Were Cinderella and The Emperor's New Groove released by the same picture company?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Were Cinderella",
+    "The Emperor's New Groove"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 35,
+   "q": "In between Anaïs Nin and Odysseas Elytis who was awarded the Nobel Prize in Literature?",
+   "gold": [
+    "Odysseas Elytis"
+   ],
+   "entities": [
+    "Anaïs Nin",
+    "Odysseas Elytis"
+   ],
+   "single_pass": "Odysseas Elytis",
+   "compare": "Odysseas Elytis",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 40,
+   "q": "Which band was formed in a country closer to England, Kodaline or Rivermaya ?",
+   "gold": [
+    "Kodaline"
+   ],
+   "entities": [
+    "Kodaline",
+    "Rivermaya"
+   ],
+   "single_pass": "Rivermaya",
+   "compare": "Rivermaya",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 41,
+   "q": "Which band formed first, Duran Duran or The Fratellis?",
+   "gold": [
+    "Duran Duran"
+   ],
+   "entities": [
+    "Duran Duran",
+    "The Fratellis"
+   ],
+   "single_pass": "The Fratellis",
+   "compare": "The Fratellis",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 43,
+   "q": "Are David O. Russell and Tony Gatlif from the same country?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Are David O. Russell",
+    "Tony Gatlif"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 52,
+   "q": "Are the movies \"Monsters, Inc.\" and \"Mary Poppins\" both by the same company?",
+   "gold": [
+    "yes"
+   ],
+   "entities": [
+    "Mary Poppins",
+    "Monsters"
+   ],
+   "single_pass": "no",
+   "compare": "no",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 54,
+   "q": "Which as more species Cassiope or Deutzia?",
+   "gold": [
+    "Deutzia"
+   ],
+   "entities": [
+    "Cassiope",
+    "Deutzia"
+   ],
+   "single_pass": "Cassiope",
+   "compare": "Cassiope",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 58,
+   "q": "Which of the bands, Hot Snakes or UB40, has more band members?",
+   "gold": [
+    "UB40"
+   ],
+   "entities": [
+    "Hot Snakes",
+    "UB40"
+   ],
+   "single_pass": "Hot Snakes\n\nUB40 has more band members.",
+   "compare": "UB40",
+   "f1_sp": 0.25,
+   "f1_compare": 1.0,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 73,
+   "q": "Did the Sandy and Beaver Canal remain operational until a later date than the Los Angeles Aqueduct?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Did the Sandy",
+    "Beaver Canal"
+   ],
+   "single_pass": "no",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 76,
+   "q": "Are Hanafuda and Okey both card games?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Are Hanafuda",
+    "Okey"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 78,
+   "q": "Who was born first out of Nick Grinde and Karel Reisz?",
+   "gold": [
+    "Nick Grindé"
+   ],
+   "entities": [
+    "Nick Grinde",
+    "Karel Reisz"
+   ],
+   "single_pass": "Karel Reisz",
+   "compare": "Nick Grinde",
+   "f1_sp": 0.0,
+   "f1_compare": 0.5,
+   "yes_no": false
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 86,
+   "q": "Are both Leycesteria and Anigozanthos native to Australia?",
+   "gold": [
+    "no"
+   ],
+   "entities": [
+    "Leycesteria",
+    "Anigozanthos"
+   ],
+   "single_pass": "No",
+   "compare": "no",
+   "f1_sp": 1.0,
+   "f1_compare": 1.0,
+   "yes_no": true
+  },
+  {
+   "file": "data/hotpot_dev3_v1.jsonl",
+   "doc": 87,
+   "q": "Zakk Wylde and Damon Albarn are both what?",
+   "gold": [
+    "singer, songwriter, and multi-instrumentalist"
+   ],
+   "entities": [
+    "Zakk Wylde",
+    "Damon Albarn"
+   ],
+   "single_pass": "rhythm guitarist",
+   "compare": "both musicians",
+   "f1_sp": 0.0,
+   "f1_compare": 0.0,
+   "yes_no": false
+  }
+ ]
+}

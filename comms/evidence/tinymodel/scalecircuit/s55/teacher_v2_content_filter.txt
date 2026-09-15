@@ -1,0 +1,1 @@
+content filter: 1493 in, 1491 kept, 2 dropped; counts {'email': 0, 'phone': 0, 'ssn_like': 0, 'card_like': 0, 'street_address': 2, 'harm_instruction': 0, 'sexual_minor': 0, 'slur_or_abuse': 0}

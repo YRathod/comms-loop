@@ -1,0 +1,10 @@
+{
+ "file": "data/reader_sft_train.jsonl",
+ "rows": 2000,
+ "abstained": 593,
+ "seed": 20260915,
+ "picked": 2000,
+ "seconds": 4804,
+ "recipe": "own paragraphs + 8 from two other train rows; decomposer hops; hop reads by the frozen reader; superset passage + notes; gold short answer target",
+ "utc": "2026-09-15T16:51:02Z"
+}

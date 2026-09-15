@@ -1,0 +1,64 @@
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Loading weights:   0%|          | 0/338 [00:00<?, ?it/s]Loading weights: 100%|##########| 338/338 [00:00<00:00, 4915.89it/s]
+<local>/model-training\.venv\Lib\site-packages\torch\nn\modules\module.py:1096: UserWarning: expandable_segments not supported on this platform (Triggered internally at C:\actions-runner\_work\pytorch\pytorch\c10/cuda/CUDAAllocatorConfig.h:40.)
+  return self._apply(lambda t: t.cuda(device))
+provenance stamp CLEAN 2026-09-14T14:16:52Z
+W0914 10:17:01.029000 37000 Lib\site-packages\torch\utils\flop_counter.py:29] triton not found; flop counting will not work for triton kernels
+trainable params: 18,464,768 || all params: 1,562,179,072 || trainable%: 1.1820
+pairs 2986 steps 374
+step 25/374 loss 0.5155 ema 0.5846 238s
+step 50/374 loss 0.5689 ema 0.4247 442s
+step 75/374 loss 0.4395 ema 0.3873 647s
+step 100/374 loss 0.4412 ema 0.3169 852s
+step 125/374 loss 0.1603 ema 0.2960 1069s
+step 150/374 loss 0.2873 ema 0.2855 1292s
+step 175/374 loss 0.1958 ema 0.2987 1518s
+step 200/374 loss 0.2294 ema 0.2355 1787s
+step 225/374 loss 0.0652 ema 0.1518 2038s
+step 250/374 loss 0.3751 ema 0.1870 2313s
+step 275/374 loss 0.1853 ema 0.1809 2573s
+step 300/374 loss 0.2119 ema 0.2230 2818s
+step 325/374 loss 0.0340 ema 0.1474 3060s
+step 350/374 loss 0.1566 ema 0.1570 3315s
+  'What collaboration with DJ Muggs did Gary Grice participate do in 2005' -> 'H1: What collaboration with DJ Muggs did Gary Grice participate in?\nH2: In what year was #'
+  "Which became a Cathedral first St Chad's Cathedral, Birmingham or Chel" -> "H1: Which became a Cathedral first, St Chad's Cathedral in Birmingham or Chelmsford Cathed"
+  ' Heaven starred what Australian actress who portrayed Katharine Hepbur' -> 'H1: What Australian actress starred in the 2004 film "The Aviator"?\nH2: In which movie did'
+  ' "JK Wedding Entrance Dance" is a viral video that uses a song by a ra' -> "H1: Which rapper's first album was certified what?\nH2: What certification did #1 receive f"
+  'Where does the founder of The International Grenfell Association act a' -> 'H1: Who founded The International Grenfell Association?\nH2: Where does #1 act as a mission'
+  ' If You Ever Get Lonely was covered by what Lyric Street Records-affil' -> 'H1: What Lyric Street Records-affiliated band covered If You Ever Get Lonely?\nH2: Which ba'
+  'Where does the team coached by someone with the nickname "Coach K" pla' -> 'H1: Who has the nickname "Coach K"?\nH2: Where does the team coached by #1 play?'
+  "The Rhymers' Club met at Ye Olde Cheshire Cheese listed as what type o" -> "H1: What type of house was Ye Olde Cheshire Cheese?\nH2: Where did The Rhymers' Club meet, "
+  'The 1978 NBA World Championship Series had as MVP which Hall of Fame c' -> 'H1: Who was the MVP of the 1978 NBA World Championship Series?\nH2: Which Hall of Fame clas'
+  'Are Random House Tower and 888 7th Avenue both used for real estate?' -> 'NA'
+  'Which composer, who was a crucial figure in the transition between the' -> 'H1: Which composer wrote Piano Sonata No. 16?\nH2: Who did #1 belong to?'
+  'Who is affiliated with more countries as a director, Robert Florey and' -> 'H1: How many countries are affiliated with by Robert Florey?\nH2: How many countries are af'
+  'Carlo Buccirosso had a role in a movie that premiered at what film fes' -> 'H1: Which movie did Carlo Buccirosso have a role in?\nH2: At which film festival did #1 pre'
+  'Skyplex has which roller coaster that will become the tallest in the w' -> 'H1: Which roller coaster at Skyplex will open in 2020?\nH2: What roller coaster at Skyplex,'
+  'How was Tiger Pataudi related to Iftikhar Ali Khan Pataudi?' -> 'H1: Who is the father of Iftikhar Ali Khan Pataudi?\nH2: How is #1 related to Tiger Pataudi'
+  'Which park is larger, Timanfaya National Park or Sierra Nevada Nationa' -> 'NA'
+  ' The 1919 Mississippi gubernatorial election Incumbent Democrat was a ' -> 'H1: Who was the incumbent Democrat in the 1919 Mississippi gubernatorial election?\nH2: Wha'
+  'Which Olympic game featured Boules and happened right before medals st' -> 'H1: Which Olympic games featured boules?\nH2: What was the year of #1?'
+  'Which movie is a documentary about "Beowulf & Grendel", between My Kid' -> 'H1: Which movie is a documentary about "Beowulf & Grendel"?\nH2: Is #1 My Kid Could Paint T'
+  'What award won by only twelve people has a man who Ted Kooshian has pe' -> 'H1: What award has been won by only twelve people?\nH2: Who did #1 have perform with?'
+  'Phil Lloyd played Tim Mathieson, the partner of this prime minister wh' -> 'H1: Who was the 27th Prime Minister of Australia from 2010 to?\nH2: What position did Phil '
+  'What Actor whose birth name was Charles Dennis Buchinsky, was part of ' -> "H1: Which actor's birth name was Charles Dennis Buchinsky?\nH2: Was #1 part of the Leslie N"
+  'Romans stars which Tamil and Telugu actress?' -> 'H1: Which Tamil and Telugu actress starred in the Roman?\nH2: In what movie did #1 star?'
+  'Which magazine was founded first, Diva or Elle?' -> 'H1: Which magazine was founded first, Diva or Elle?\nH2: What is the founding year of #1?'
+  'Which movie directed by James Gunn portrayed the fictional character, ' -> 'H1: Which movies were directed by James Gunn?\nH2: In which of #1 did the character Ego the'
+  'Do both Korematsu v. United States and Chaplinsky v. New Hampshire cas' -> 'NA'
+  'Where do both the New Jersey Devils and the Seton Hall Pirates play?' -> 'H1: Where does the New Jersey Devils play?\nH2: Where does #1 play?'
+  "Which The Wind's Twelve Quarters story depicts a summer festival in th" -> "H1: Which The Wind's Twelve Quarters story depicts a summer festival in the utopian city o"
+  'Who was the producer of the 1994 American animated epic musical film w' -> 'H1: What was the name of the 1994 American animated epic musical film that Mel Shaw animat'
+  'Which American Director doubled as a choreographer also, Stanley Kubri' -> 'H1: Which American Director was both a director and a choreographer?\nH2: Was #1 Stanley Ku'
+  'Which of the two came out first, The Wind in the Willows or The Bears ' -> 'NA'
+  'Which film director is younger, Robert Z. Leonard or Sinclair Hill?' -> 'H1: What is the age of Robert Z. Leonard?\nH2: What is the age of #1?'
+  'Why I Write was penned by which English novelist and critic?' -> 'H1: Which English novelist and critic wrote Why I Write?\nH2: What is the name of #1?'
+  'What party does the person that represents Stoke Newington Central bel' -> 'H1: What political party does the representative of Stoke Newington Central belong to?\nH2:'
+  'What song by the American rapper Coolio is on his greatest hits album ' -> 'H1: What song by Coolio is on his greatest hits album "Fantiastic Voyage"?\nH2: Which song '
+  'The  Actaea genus is native to what continent that the Onoclea genus i' -> 'H1: What continent is the Actaea genus native to?\nH2: Is the Onoclea genus native to the s'
+  'What is the colloquial name of the professional football team in which' -> 'H1: What is the colloquial name of the professional football team that striker Frederico C'
+  'TimeCamp enables what type of commercial documents from a seller to a ' -> 'H1: What type of commercial documents does TimeCamp enable?\nH2: From a seller to a buyer, '
+  'James Leal Greenleaf worked on a monument located where? ' -> "H1: Where was James Leal Greenleaf's work on a monument located?\nH2: What location did #1 "
+  'Which was released first, Hot Girls Wanted or China Blue?' -> 'H1: Which movie was released first, Hot Girls Wanted or China Blue?\nH2: What is the releas'
+dev: {'n': 40, 'parses': 40, 'anchor_kept': 38, 'na_agree': 0}
+saved models/decomp_v2_1.5b 3672s

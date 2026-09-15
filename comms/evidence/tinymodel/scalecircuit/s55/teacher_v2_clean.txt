@@ -1,0 +1,1 @@
+teacher clean: kept 1493 of 1500 (dropped 7 with held-out entity spans); one-hop (H2: NA) 84; NA 4; two-hop 1405
