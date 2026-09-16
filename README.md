@@ -23,7 +23,8 @@ sympy_symbolic/comms/  secondary channel for the sympy arm (self-contained,
                        own daemon.py + ledgers; thread CLOSED, kept as archive)
 scripts/               daemons (stdlib-only python — no venv needed)
 docs/learning-loops.md the self-learning-loop spec (OBSERVE → DIFF → BANK → ADJUST)
-paper/                 technical report on the architecture (start here)
+paper/                 experience report on the architecture (start here);
+                       build_pdf.py regenerates the HTML/PDF from the markdown
 ```
 
 ## Daemons
@@ -37,10 +38,16 @@ python scripts\muse_reply_daemon.py --loop --interval 15
 
 - `comms_daemon.py` — inbox watcher; maintains the `PENDING[_<party>].md`
   wake boards. Detection only: never authors mail, never archives.
-- `comms_responder_daemon.py` — auto-responder; drafts protocol-compliant
-  replies, archives processed mail, updates LEDGER.md/PENDING.md.
+- `comms_responder_daemon.py` — ack-marker writer only (cut down
+  2026-09-15). For `type: action` mail it writes one marker to `comms/acks/`
+  with a mechanical refs-check; no seq, no thread mail, no ledger row, no
+  archiving. Guarded by `tests/test_comms_responder_daemon.py`.
   `--comms-dir sympy_symbolic/comms` targets the secondary channel.
-- `muse_reply_daemon.py` — minimal mechanical ACK layer for muse.
+- `muse_reply_daemon.py` — thin wrapper over the responder for the muse seat
+  (same ack-only behaviour; stop with `comms\STOP_REPLY_DAEMON`). Guarded by
+  `tests/test_muse_reply_daemon.py`.
+
+Run the daemon guard tests with `python -m unittest discover -s tests -v`.
 
 ## Rules of the house
 
